@@ -129,6 +129,7 @@ body {
 
 .eyebrow,
 .subtitle,
+.intro-subtitle,
 .market-sub,
 .product-copy p,
 .copy-stage p,
@@ -241,6 +242,11 @@ h5,
 }
 
 @media (max-width: 720px) {
+  .mobile-nav-enabled .mobile-menu-open span,
+  .home-page .mobile-menu-open span {
+    background: #e8edf7 !important;
+  }
+
   .topbar .logo .logo-mark {
     width: 112px;
   }

@@ -36,6 +36,7 @@
           </div>
           <div class="group">
             <a href="?cat=living" data-filter-type="major" data-major="living">Living&amp;Health</a>
+            <a href="?cat=living&amp;sub=ice-recovery" data-filter-type="sub" data-major="living" data-sub="ice-recovery">- Ice recovery</a>
             <a href="?cat=living&amp;sub=magnetic-pillow" data-filter-type="sub" data-major="living" data-sub="magnetic-pillow">- Magnetic pillow</a>
             <a href="?cat=living&amp;sub=magnetic-blanket" data-filter-type="sub" data-major="living" data-sub="magnetic-blanket">- Magnetic blanket</a>
             <a href="?cat=living&amp;sub=etc" data-filter-type="sub" data-major="living" data-sub="etc">- etc (보호대, 안마기)</a>
@@ -77,13 +78,13 @@
             <h3>Active Lifestyle</h3>
             <div class="product-grid">
               <article id="energetic-ring" class="item" data-major="active" data-sub="energetic-ring">
-                <img src="../asset/product/active/ice.png" alt="Energetic ring" />
+                <img src="../asset/product/active/energyRing.png" alt="Energetic ring" />
                 <h4>Energetic Ring</h4>
                 <p>운동 시 집중력을 높여주는 액티브 링</p>
                 <span>₩69,000</span>
               </article>
               <article id="reju-ring" class="item" data-major="active" data-sub="reju-ring">
-                <img src="../asset/product/active/ice.png" alt="Reju ring" />
+                <img src="../asset/product/active/energyRing.png" alt="Reju ring" />
                 <h4>Reju Ring</h4>
                 <p>리커버리 루틴을 위한 경량 웰니스 링</p>
                 <span>₩72,000</span>
@@ -100,6 +101,12 @@
           <section id="living" class="catalog-block" data-major="living">
             <h3>Living &amp; Health</h3>
             <div class="product-grid">
+              <article id="ice-recovery" class="item" data-major="living" data-sub="ice-recovery">
+                <img src="../asset/product/living/ice.png" alt="Ice recovery care" />
+                <h4>Ice Recovery Care</h4>
+                <p>편안한 휴식을 돕는 리빙 웰니스 아이스 케어</p>
+                <span>₩89,000</span>
+              </article>
               <article id="magnetic-pillow" class="item" data-major="living" data-sub="magnetic-pillow">
                 <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Magnetic pillow" />
                 <h4>Magnetic Pillow</h4>
@@ -151,8 +158,10 @@
     <script>
       (function () {
         var navLinks = Array.from(document.querySelectorAll(".shop-nav a[data-filter-type]"));
+        var navGroups = Array.from(document.querySelectorAll(".shop-nav .group"));
         var blocks = Array.from(document.querySelectorAll(".catalog-block"));
         var items = Array.from(document.querySelectorAll(".catalog-block .item"));
+        var mobileMq = window.matchMedia("(max-width: 760px)");
 
         function resetVisibility() {
           blocks.forEach(function (block) {
@@ -173,12 +182,28 @@
           });
         }
 
+        function syncMobileNavState(major) {
+          if (!mobileMq.matches) {
+            navGroups.forEach(function (group) {
+              group.classList.remove("mobile-open");
+            });
+            return;
+          }
+
+          navGroups.forEach(function (group) {
+            var groupMajor = group.querySelector("a[data-filter-type='major']");
+            var isOpen = !!major && groupMajor && groupMajor.dataset.major === major;
+            group.classList.toggle("mobile-open", isOpen);
+          });
+        }
+
         function applyFilter(major, sub) {
           resetVisibility();
           if (!major) {
             navLinks.forEach(function (link) {
               link.classList.remove("active-filter");
             });
+            syncMobileNavState(null);
             return;
           }
 
@@ -197,6 +222,7 @@
           }
 
           setActiveLink(major, sub);
+          syncMobileNavState(major);
           var firstVisible = document.querySelector(".catalog-block:not(.hidden)");
           if (firstVisible) {
             firstVisible.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -223,6 +249,11 @@
             window.history.replaceState({}, "", nextUrl);
             applyFilter(major, sub);
           });
+        });
+
+        mobileMq.addEventListener("change", function () {
+          var params = new URLSearchParams(window.location.search);
+          syncMobileNavState(params.get("cat"));
         });
 
         syncFromUrl();

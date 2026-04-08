@@ -4,6 +4,11 @@
 
   var banners = ["../asset/banner/main/banner1.png", "../asset/banner/main/banner2.png", "../asset/banner/main/banner3.png"];
   var categories = ["medi", "active", "living"];
+  var captions = [
+    "THE MOST ELEGANT WAY TO GAIN ENEGY",
+    "INVISIBLE POWER CLAVIS",
+    "provides energy closely integrated into daily life"
+  ];
   var current = 0;
   var autoTimer = null;
   var isDragging = false;
@@ -22,12 +27,7 @@
       );
     }
 
-    return (
-      "linear-gradient(to bottom, rgba(230, 230, 230, 0.72), rgba(236, 236, 236, 0.6)), " +
-      'url("' +
-      src +
-      '")'
-    );
+    return 'url("' + src + '")';
   }
 
   hero.style.position = "relative";
@@ -64,9 +64,21 @@
   hero.insertBefore(track, hero.firstChild);
 
   var overlay = hero.querySelector(".hero-overlay");
+  var overlayTitle = hero.querySelector(".hero-overlay h1");
+  var overlayEyebrow = hero.querySelector(".hero-overlay p");
   if (overlay) {
     overlay.style.position = "relative";
     overlay.style.zIndex = "1";
+  }
+
+  function updateCaption() {
+    if (overlayTitle) {
+      overlayTitle.textContent = captions[current] || captions[0];
+    }
+    if (overlayEyebrow) {
+      overlayEyebrow.style.display = "none";
+      overlayEyebrow.textContent = "";
+    }
   }
 
   function updateTrack(withAnimation) {
@@ -82,6 +94,7 @@
     current = index;
     dragDeltaX = 0;
     updateTrack(true);
+    updateCaption();
   }
 
   function startAuto() {
@@ -168,5 +181,6 @@
   });
 
   updateTrack(false);
+  updateCaption();
   startAuto();
 })();

@@ -247,12 +247,7 @@ a {
 
 .hero {
   min-height: 640px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(230, 230, 230, 0.72),
-      rgba(236, 236, 236, 0.6)
-    ),
-    url("../asset/banner/main/banner1.png");
+  background-image: url("../asset/banner/main/banner1.png");
   background-position: center;
   background-size: cover;
   display: grid;
@@ -273,8 +268,11 @@ a {
 
 .hero-overlay h1 {
   margin: 0;
-  font-size: 34px;
-  font-weight: 400;
+  font-size: clamp(17px, 2.7vw, 32px);
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: min(90vw, 980px);
+  text-align: center;
 }
 
 .welcome,
@@ -385,6 +383,62 @@ a {
   letter-spacing: 0.06em;
 }
 
+.collection-tech-metrics {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  padding: 44px 28px 30px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.collection-tech-metrics .eyebrow {
+  margin: 0 0 14px;
+}
+
+.collection-tech-metrics h2 {
+  margin: 0 0 30px;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.collection-tech-metrics .metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.collection-tech-metrics .metrics-grid article {
+  border: 1px solid #e7e2da;
+  background: #fff;
+  padding: 30px 18px;
+}
+
+.collection-tech-metrics .metrics-grid strong {
+  display: block;
+  color: var(--accent);
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.collection-tech-metrics .metrics-grid h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.collection-tech-metrics .metrics-grid p {
+  margin: 0;
+  color: #6d6862;
+  line-height: 1.6;
+  font-size: 13px;
+}
+
 .feature-cards {
   max-width: 1120px;
   margin: 16px auto 74px;
@@ -487,6 +541,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .collection-tech-metrics .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .footer-inner {
     grid-template-columns: 1fr 1fr;
   }
@@ -532,6 +590,23 @@ a {
   .welcome h2,
   .experience h2 {
     font-size: 28px;
+  }
+
+  .collection-tech-metrics {
+    padding: 34px 16px 20px;
+  }
+
+  .collection-tech-metrics h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .collection-tech-metrics .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-tech-metrics .metrics-grid strong {
+    font-size: 44px;
   }
 
   .footer-inner {
@@ -842,6 +917,18 @@ a {
   .home-page .feature-cards {
     margin: 10px auto 42px;
     gap: 14px;
+  }
+
+  .home-page .feature-card.feature-medi {
+    order: 1;
+  }
+
+  .home-page .feature-card.feature-active {
+    order: 2;
+  }
+
+  .home-page .feature-card.feature-living {
+    order: 3;
   }
 
   .home-page .feature-card {

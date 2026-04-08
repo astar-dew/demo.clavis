@@ -232,81 +232,37 @@ a {
   font-size: 12px;
 }
 
-.intro-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 44px;
-  align-items: center;
-}
-
-.intro {
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 18% 28%, rgba(184, 158, 120, 0.15), transparent 34%),
-    radial-gradient(circle at 86% 82%, rgba(184, 158, 120, 0.11), transparent 38%),
-    #fff;
+.intro.panel {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 52px;
+  text-align: center;
 }
 
 .intro h1 {
-  margin: 0 0 22px;
-  font-family: "SUIT Variable", sans-serif;
-  font-size: 58px;
-  font-weight: 500;
-  line-height: 0.9;
-}
-
-.intro p {
   margin: 0;
-  color: #6d6862;
-  line-height: 1.8;
-  font-size: 14px;
-}
-
-.identity-tags {
-  margin-top: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.identity-tags span {
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 10px;
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  color: #7f6646;
-  border: 1px solid #d8c7ab;
-  background: rgba(245, 241, 234, 0.95);
-}
-
-.symbol-wrap {
-  display: grid;
-  place-items: center;
-}
-
-.symbol-ring {
-  width: 240px;
-  height: 240px;
-  border: 1px solid #ddd6ca;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: radial-gradient(circle at center, #ffffff 42%, #f7f2ea 100%);
-  box-shadow: 0 16px 34px rgba(68, 52, 28, 0.12);
-}
-
-.symbol-ring span {
-  width: 72px;
-  height: 72px;
-  border: 2px solid var(--accent);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  color: var(--accent);
   font-family: "SUIT Variable", sans-serif;
-  font-size: 40px;
+  font-size: clamp(36px, 4vw, 54px);
+  font-weight: 500;
+  line-height: 1.12;
+  color: var(--text);
+}
+
+.intro-line {
+  display: block;
+  width: 56px;
+  height: 2px;
+  margin: 20px auto 18px;
+  background: rgba(184, 158, 120, 0.8);
+}
+
+.intro-subtitle {
+  margin: 0 auto;
+  max-width: 620px;
+  color: #77726c;
+  line-height: 1.75;
+  font-size: 15px;
 }
 
 .core {
@@ -650,7 +606,6 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .intro-grid,
   .core,
   .future-grid {
     grid-template-columns: 1fr;
@@ -677,9 +632,18 @@ a {
 }
 
 @media (max-width: 760px) {
-  .identity-tags span {
-    font-size: 10px;
-    letter-spacing: 0.1em;
+  .intro h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .intro-line {
+    margin: 14px auto 12px;
+  }
+
+  .intro-subtitle {
+    font-size: 13px;
+    line-height: 1.65;
   }
 
   .mobile-nav-enabled .topbar-inner {
