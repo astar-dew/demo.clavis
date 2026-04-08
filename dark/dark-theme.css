@@ -20,8 +20,8 @@ body {
   border-bottom-color: #232b39;
 }
 
-.topbar .logo .logo-submark,
-.mobile-nav-logo .logo-submark {
+.topbar .logo .logo-mark,
+.mobile-nav-logo .logo-mark {
   display: block;
   width: 132px;
   height: auto;
@@ -128,10 +128,8 @@ body {
 }
 
 .eyebrow,
-.period,
 .subtitle,
 .market-sub,
-.core-lead,
 .product-copy p,
 .copy-stage p,
 .crisis-grid p,
@@ -161,20 +159,51 @@ h5,
   color: #e8ebf2;
 }
 
+.period,
+.core-lead,
+.stats-grid strong,
+.science-page strong,
+.tt-page strong,
+.review-grid strong {
+  color: #f3f6fc !important;
+}
+
+.stats-grid h3 {
+  color: #e0be89 !important;
+}
+
+.stats-grid p {
+  color: #c1c9d7 !important;
+}
+
+.section-head h2,
+.catalog-block h3,
+.feature-card h4 {
+  color: #eef2f9 !important;
+}
+
+.cta h2 {
+  color: #f2f5fb !important;
+}
+
+.cta p {
+  color: #c7cfdd !important;
+}
+
 .btn,
 .filled-btn,
 .outline-btn,
 .cta-actions .filled {
-  background: #3b3123;
-  color: #f0e4cf;
-  border-color: #5c4c34;
+  background: #4a3d2b;
+  color: #f7e9d0;
+  border-color: #7a6648;
 }
 
 .btn-outline,
 .cta-actions .outline {
   background: transparent;
-  border-color: #5c4c34;
-  color: #d8c09a;
+  border-color: #7a6648;
+  color: #e2c79b;
 }
 
 .tags span,
@@ -212,11 +241,11 @@ h5,
 }
 
 @media (max-width: 720px) {
-  .topbar .logo .logo-submark {
+  .topbar .logo .logo-mark {
     width: 112px;
   }
 
-  .mobile-nav-enabled .mobile-nav-logo .logo-submark {
+  .mobile-nav-enabled .mobile-nav-logo .logo-mark {
     width: 96px;
   }
 }
