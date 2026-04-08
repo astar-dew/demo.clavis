@@ -1,0 +1,161 @@
+.detail-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 56px 20px 90px;
+}
+
+.product-hero {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  align-items: center;
+}
+
+.product-hero img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  background: #f4f4f2;
+}
+
+.eyebrow.gold {
+  color: var(--accent);
+}
+
+.product-meta h1 {
+  margin: 0 0 14px;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  color: #1c1c1c;
+}
+
+.price {
+  margin: 0 0 18px;
+  font-size: 30px;
+  color: #191919;
+  font-family: "SUIT Variable", sans-serif;
+}
+
+.desc {
+  margin: 0 0 20px;
+  color: #65605a;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.detail-tags span {
+  font-size: 11px;
+  border: 1px solid #e5dfd6;
+  background: #f7f3ee;
+  color: #8b7d67;
+  padding: 5px 9px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid #c8b294;
+  color: #6d5a40;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.info-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.info-grid article {
+  background: var(--bg-soft);
+  border: 1px solid #e5dfd6;
+  padding: 20px 18px;
+}
+
+.info-grid h3 {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.info-grid p {
+  margin: 0;
+  color: #5b5650;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.related {
+  margin-top: 38px;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 30px;
+}
+
+.related h2 {
+  margin: 0 0 16px;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.related-card {
+  border: 1px solid #e5dfd6;
+  background: #f8f8f6;
+  padding: 18px;
+}
+
+.related-card h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.related-card p {
+  margin: 0 0 10px;
+  color: #69645d;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.related-card a {
+  font-size: 12px;
+  color: var(--accent);
+}
+
+@media (max-width: 960px) {
+  .product-hero {
+    grid-template-columns: 1fr;
+    padding: 28px;
+    gap: 24px;
+  }
+
+  .info-grid,
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+}

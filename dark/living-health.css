@@ -1,0 +1,283 @@
+.living-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 18px 20px 70px;
+}
+
+.collection-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 16px;
+  background: var(--bg-soft);
+  margin-bottom: 24px;
+}
+
+.collection-tabs a {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #7d776f;
+  padding: 6px 4px;
+  border-bottom: 1px solid transparent;
+}
+
+.collection-tabs a.active {
+  color: #6f5a3f;
+  border-bottom-color: #b89e78;
+}
+
+.hero-split {
+  background: var(--bg-soft);
+  padding: 64px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.hero-copy h1 {
+  margin: 0 0 16px;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.hero-copy p {
+  margin: 0 0 20px;
+  color: #6d6862;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.filled-btn {
+  display: inline-block;
+  background: #101725;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.benefits article {
+  background: #fff;
+  border: 1px solid #e7e2da;
+  padding: 18px 14px;
+}
+
+.benefits h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #7a5f3d;
+  letter-spacing: 0.05em;
+}
+
+.benefits p {
+  margin: 0;
+  color: #6d6862;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.signature {
+  background: var(--bg-soft);
+  padding: 34px 28px 30px;
+  margin-bottom: 36px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.section-head a {
+  font-size: 12px;
+  color: #7d776f;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #e7e2da;
+  padding: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin: 0 0 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-card p {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: #6d6862;
+}
+
+.product-card span {
+  font-size: 12px;
+  color: #5b4e39;
+}
+
+.review {
+  margin-bottom: 40px;
+}
+
+.review h2 {
+  margin: 0 0 14px;
+  font-size: 54px;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.review-grid article {
+  position: relative;
+  overflow: hidden;
+}
+
+.review-grid img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.review-grid div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 14px;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+}
+
+.review-grid strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.review-grid p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.cta {
+  background: #ede9df;
+  padding: 54px 30px;
+  text-align: center;
+}
+
+.cta h2 {
+  margin: 0 0 10px;
+  font-size: 42px;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+}
+
+.cta p {
+  margin: 0 0 20px;
+  color: #6d6862;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cta-actions a {
+  padding: 11px 20px;
+  font-size: 12px;
+  border: 1px solid #101725;
+}
+
+.cta-actions .filled {
+  background: #101725;
+  color: #fff;
+}
+
+.cta-actions .outline {
+  background: transparent;
+  color: #101725;
+}
+
+.alt-footer {
+  margin-top: 0;
+  background: #1a2334;
+}
+
+@media (max-width: 1024px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits,
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .collection-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-copy h1 {
+    font-size: 28px;
+  }
+
+  .benefits,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta h2 {
+    font-size: 30px;
+  }
+}

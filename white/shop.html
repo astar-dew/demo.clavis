@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/@sun-typeface/suit@2.0.5/fonts/variable/woff2/SUIT-Variable.min.css" rel="stylesheet" />
+    <title>ClaviS - Shop</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./shop.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <nav class="menu left">
+          <div class="menu-item has-submenu">
+            <a href="./brand.html">ABOUT</a>
+            <div class="submenu">
+              <a href="./brand.html">BRAND</a>
+              <a href="./science.html">SCIENCE</a>
+              <a href="./techtrust.html">TECH &amp; TRUST</a>
+            </div>
+          </div>
+          <div class="menu-item has-submenu">
+            <a href="./medi-jewelry.html">COLLECTION</a>
+            <div class="submenu">
+              <a href="./medi-jewelry.html">MEDI JEWELRY</a>
+              <a href="./active-lifestyle.html">ACTIVE LIFESTYLE</a>
+              <a href="./living-health.html">LIVING &amp; HEALTH</a>
+            </div>
+          </div>
+        </nav>
+        <a class="logo" href="./index.html">ClaviS</a>
+        <nav class="menu right">
+          <a href="./shop.html">SHOP</a>
+          <button aria-label="검색" class="icon-btn icon-search"><span aria-hidden="true"></span></button>
+          <button aria-label="로그인" class="icon-btn icon-user"><span aria-hidden="true"></span></button>
+          <button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>
+        </nav>
+      </div>
+      <!-- <div class="subpage-title">클라비스 샵: 웰니스 주얼리와 라이프케어 컬렉션</div> -->
+    </header>
+
+    <main class="shop-page">
+      <section class="shop-hero">
+        <p class="eyebrow">SHOP BY CATEGORY</p>
+        <h1>당신의 라이프스타일에 맞춘 웰니스 셀렉션</h1>
+      </section>
+
+      <div class="shop-layout">
+        <aside class="shop-nav">
+          <h2>SHOP MENU</h2>
+          <div class="group">
+            <a href="?cat=medi" data-filter-type="major" data-major="medi">medi&amp;jewelry</a>
+            <a href="?cat=medi&amp;sub=bracelet" data-filter-type="sub" data-major="medi" data-sub="bracelet">- Bracelet</a>
+            <a href="?cat=medi&amp;sub=necklace" data-filter-type="sub" data-major="medi" data-sub="necklace">- Necklace</a>
+            <a href="?cat=medi&amp;sub=anklet" data-filter-type="sub" data-major="medi" data-sub="anklet">- Anklet</a>
+            <a href="?cat=medi&amp;sub=set" data-filter-type="sub" data-major="medi" data-sub="set">- Bracelet + Necklace</a>
+          </div>
+          <div class="group">
+            <a href="?cat=active" data-filter-type="major" data-major="active">active lifestyle</a>
+            <a href="?cat=active&amp;sub=energetic-ring" data-filter-type="sub" data-major="active" data-sub="energetic-ring">- Energetic ring</a>
+            <a href="?cat=active&amp;sub=reju-ring" data-filter-type="sub" data-major="active" data-sub="reju-ring">- Reju ring</a>
+            <a href="?cat=active&amp;sub=power-belt" data-filter-type="sub" data-major="active" data-sub="power-belt">- Power belt</a>
+          </div>
+          <div class="group">
+            <a href="?cat=living" data-filter-type="major" data-major="living">Living&amp;Health</a>
+            <a href="?cat=living&amp;sub=magnetic-pillow" data-filter-type="sub" data-major="living" data-sub="magnetic-pillow">- Magnetic pillow</a>
+            <a href="?cat=living&amp;sub=magnetic-blanket" data-filter-type="sub" data-major="living" data-sub="magnetic-blanket">- Magnetic blanket</a>
+            <a href="?cat=living&amp;sub=etc" data-filter-type="sub" data-major="living" data-sub="etc">- etc (보호대, 안마기)</a>
+          </div>
+        </aside>
+
+        <section class="shop-content">
+          <section id="medi-jewelry" class="catalog-block" data-major="medi">
+            <h3>Medi &amp; Jewelry</h3>
+            <div class="product-grid">
+              <article id="bracelet" class="item" data-major="medi" data-sub="bracelet">
+                <img src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=900&q=80" alt="Bracelet" />
+                <h4>Ares Bracelet</h4>
+                <p>프리미엄 네오디움 코어 브레이슬릿</p>
+                <span>₩89,000</span>
+              </article>
+              <article id="necklace" class="item" data-major="medi" data-sub="necklace">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80" alt="Necklace" />
+                <h4>Nova Necklace</h4>
+                <p>목선 밸런스를 고려한 웰니스 넥 라인</p>
+                <span>₩119,000</span>
+              </article>
+              <article id="anklet" class="item" data-major="medi" data-sub="anklet">
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80" alt="Anklet" />
+                <h4>Flow Anklet</h4>
+                <p>가벼운 착용감의 데일리 앵클릿</p>
+                <span>₩79,000</span>
+              </article>
+              <article id="set" class="item" data-major="medi" data-sub="set">
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80" alt="Bracelet + Necklace" />
+                <h4>Balance Set</h4>
+                <p>브레이슬릿+넥클리스 구성 스페셜 세트</p>
+                <span>₩179,000</span>
+              </article>
+            </div>
+          </section>
+
+          <section id="active" class="catalog-block" data-major="active">
+            <h3>Active Lifestyle</h3>
+            <div class="product-grid">
+              <article id="energetic-ring" class="item" data-major="active" data-sub="energetic-ring">
+                <img src="https://images.unsplash.com/photo-1586878341523-7f50f4b7ad0f?auto=format&fit=crop&w=900&q=80" alt="Energetic ring" />
+                <h4>Energetic Ring</h4>
+                <p>운동 시 집중력을 높여주는 액티브 링</p>
+                <span>₩69,000</span>
+              </article>
+              <article id="reju-ring" class="item" data-major="active" data-sub="reju-ring">
+                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=900&q=80" alt="Reju ring" />
+                <h4>Reju Ring</h4>
+                <p>리커버리 루틴을 위한 경량 웰니스 링</p>
+                <span>₩72,000</span>
+              </article>
+              <article id="power-belt" class="item" data-major="active" data-sub="power-belt">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Power belt" />
+                <h4>Power Belt</h4>
+                <p>코어 밸런스를 보조하는 파워 벨트</p>
+                <span>₩149,000</span>
+              </article>
+            </div>
+          </section>
+
+          <section id="living" class="catalog-block" data-major="living">
+            <h3>Living &amp; Health</h3>
+            <div class="product-grid">
+              <article id="magnetic-pillow" class="item" data-major="living" data-sub="magnetic-pillow">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Magnetic pillow" />
+                <h4>Magnetic Pillow</h4>
+                <p>숙면을 위한 자기장 밸런스 필로우</p>
+                <span>₩169,000</span>
+              </article>
+              <article id="magnetic-blanket" class="item" data-major="living" data-sub="magnetic-blanket">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=80" alt="Magnetic blanket" />
+                <h4>Magnetic Blanket</h4>
+                <p>체온 유지와 편안함을 위한 리커버리 블랭킷</p>
+                <span>₩199,000</span>
+              </article>
+              <article id="etc" class="item" data-major="living" data-sub="etc">
+                <img src="https://images.unsplash.com/photo-1611843467160-25afb8df1074?auto=format&fit=crop&w=900&q=80" alt="Supports and massager" />
+                <h4>Etc Care Line</h4>
+                <p>보호대, 안마기 등 일상 케어 액세서리</p>
+                <span>₩49,000 ~</span>
+              </article>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <a class="logo footer-logo" href="./index.html">ClaviS</a>
+          <p>네오디움 기반 프리미엄<br />자기장 헬스케어</p>
+        </div>
+        <div>
+          <h5>ABOUT</h5>
+          <a href="./brand.html">BRAND</a>
+          <a href="./science.html">SCIENCE</a>
+          <a href="./techtrust.html">TECH &amp; TRUST</a>
+        </div>
+        <div>
+          <h5>COLLECTIONS</h5>
+          <a href="./medi-jewelry.html">MEDI-JEWELRY</a>
+          <a href="./active-lifestyle.html">ACTIVE LIFESTYLE</a>
+          <a href="./living-health.html">LIVING &amp; HEALTH</a>
+        </div>
+        <div>
+          <h5>고객센터</h5>
+          <p class="contact">02-3785-3725<br />평일 09:00 ~ 17:00</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var navLinks = Array.from(document.querySelectorAll(".shop-nav a[data-filter-type]"));
+        var blocks = Array.from(document.querySelectorAll(".catalog-block"));
+        var items = Array.from(document.querySelectorAll(".catalog-block .item"));
+
+        function resetVisibility() {
+          blocks.forEach(function (block) {
+            block.classList.remove("hidden");
+          });
+          items.forEach(function (item) {
+            item.classList.remove("hidden");
+          });
+        }
+
+        function setActiveLink(major, sub) {
+          navLinks.forEach(function (link) {
+            var isMajor = link.dataset.filterType === "major";
+            var match = isMajor
+              ? link.dataset.major === major && !sub
+              : link.dataset.major === major && link.dataset.sub === sub;
+            link.classList.toggle("active-filter", !!match);
+          });
+        }
+
+        function applyFilter(major, sub) {
+          resetVisibility();
+          if (!major) {
+            navLinks.forEach(function (link) {
+              link.classList.remove("active-filter");
+            });
+            return;
+          }
+
+          blocks.forEach(function (block) {
+            if (block.dataset.major !== major) {
+              block.classList.add("hidden");
+            }
+          });
+
+          if (sub) {
+            items.forEach(function (item) {
+              if (!(item.dataset.major === major && item.dataset.sub === sub)) {
+                item.classList.add("hidden");
+              }
+            });
+          }
+
+          setActiveLink(major, sub);
+          var firstVisible = document.querySelector(".catalog-block:not(.hidden)");
+          if (firstVisible) {
+            firstVisible.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
+
+        function syncFromUrl() {
+          var params = new URLSearchParams(window.location.search);
+          applyFilter(params.get("cat"), params.get("sub"));
+        }
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            var major = link.dataset.major;
+            var sub = link.dataset.filterType === "sub" ? link.dataset.sub : null;
+            var nextUrl = new URL(window.location.href);
+            nextUrl.searchParams.set("cat", major);
+            if (sub) {
+              nextUrl.searchParams.set("sub", sub);
+            } else {
+              nextUrl.searchParams.delete("sub");
+            }
+            window.history.replaceState({}, "", nextUrl);
+            applyFilter(major, sub);
+          });
+        });
+
+        syncFromUrl();
+      })();
+    </script>
+      <script src="./mobile-nav.js"></script>
+      <script src="./theme-toggle.js"></script>
+  </body>
+</html>

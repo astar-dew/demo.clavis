@@ -1,0 +1,204 @@
+:root {
+  --bg: #111318;
+  --bg-soft: #171b23;
+  --text: #e6e9ef;
+  --muted: #9ea6b5;
+  --accent: #d4b27a;
+  --button: #3f3526;
+  --black: #090c12;
+  --line: #2b3342;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.topbar {
+  background: #12161f;
+  border-bottom-color: #232b39;
+}
+
+.submenu {
+  background: #181d27;
+  border-color: #2a3344;
+}
+
+.submenu a {
+  color: #d3d9e4;
+}
+
+.submenu a.active,
+.submenu a:hover {
+  background: #222938;
+}
+
+.icon-btn {
+  color: #dde3ee;
+}
+
+.icon-user > span,
+.icon-cart > span:first-child,
+.icon-cart > span:first-child::before {
+  background: #dde3ee;
+  border-color: #dde3ee;
+}
+
+.icon-user > span::before,
+.icon-user > span::after {
+  background: #202532;
+}
+
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(16, 20, 28, 0.72),
+      rgba(16, 20, 28, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1900&q=80");
+}
+
+.hero-overlay p,
+.hero-overlay h1 {
+  color: #f1f3f8;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+}
+
+.welcome,
+.experience,
+.collection-tabs,
+.hero-split,
+.signature,
+.shop-hero,
+.shop-nav,
+.catalog-block,
+.panel,
+.proof-box,
+.source-box,
+.related,
+.cta,
+.journey-foot div,
+.channel-grid div,
+.benefits article,
+.product-card,
+.item,
+.info-grid article,
+.mini-precision article,
+.two-column-footer article,
+.issue-grid article,
+.feature-card {
+  background: #171b23 !important;
+  border-color: var(--line) !important;
+}
+
+.feature-card,
+.product-card,
+.item,
+.related-card,
+.roadmap-grid article,
+.order-cards article,
+.effect-grid article,
+.stats-grid article {
+  background: #181d27 !important;
+  border-color: var(--line) !important;
+}
+
+.related-card,
+.journey-grid img,
+.cert-grid img {
+  border-color: var(--line) !important;
+}
+
+.footer {
+  background: #090c12 !important;
+}
+
+.footer a,
+.footer p {
+  color: #aeb7c7;
+}
+
+.eyebrow,
+.period,
+.subtitle,
+.market-sub,
+.core-lead,
+.product-copy p,
+.copy-stage p,
+.crisis-grid p,
+.longevity-copy p,
+.bio-copy p,
+.precision-copy p,
+.two-column-footer p,
+.roadmap-grid article p,
+.cta p,
+.benefits p,
+.item p,
+.product-card p {
+  color: #b1b9c8 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.logo,
+.mobile-nav-logo,
+.journey-grid h3,
+.product-card h3,
+.item h4,
+.review h2 {
+  color: #e8ebf2;
+}
+
+.btn,
+.filled-btn,
+.outline-btn,
+.cta-actions .filled {
+  background: #3b3123;
+  color: #f0e4cf;
+  border-color: #5c4c34;
+}
+
+.btn-outline,
+.cta-actions .outline {
+  background: transparent;
+  border-color: #5c4c34;
+  color: #d8c09a;
+}
+
+.tags span,
+.detail-tags span,
+.two-column-footer .banner,
+.effect-grid em {
+  background: #242b38;
+  border-color: #354057;
+  color: #d4b27a;
+}
+
+.mobile-nav-overlay {
+  background: #111318 !important;
+}
+
+.mobile-nav-group {
+  border-bottom-color: #273043 !important;
+}
+
+.mobile-nav-toggle,
+.mobile-nav-direct,
+.mobile-nav-links a {
+  color: #dce2ee !important;
+}
+
+.chev {
+  border-right-color: #dce2ee !important;
+  border-bottom-color: #dce2ee !important;
+}
+
+.theme-toggle-btn {
+  border-color: #65553e;
+  background: #2a2319;
+  color: #e4c493;
+}

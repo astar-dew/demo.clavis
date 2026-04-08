@@ -1,0 +1,88 @@
+.subpage-title {
+  max-width: 1240px;
+  margin: 0 auto 14px;
+  font-size: 12px;
+  padding: 10px 20px 14px;
+  color: #6d6862;
+  border-top: 1px solid #f2f0ed;
+}
+
+.catalog-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 34px 20px 80px;
+}
+
+.collection-hero {
+  text-align: center;
+  background: var(--bg-soft);
+  padding: 70px 24px;
+  margin-bottom: 22px;
+}
+
+.collection-hero h1 {
+  margin: 0 0 12px;
+  font-size: 44px;
+  font-family: "SUIT Variable", sans-serif;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.collection-hero p {
+  margin: 0;
+  color: #6d6862;
+  font-size: 14px;
+}
+
+.collection-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.collection-tabs a {
+  text-align: center;
+  padding: 12px 10px;
+  border: 1px solid #e5dfd6;
+  background: #fff;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.collection-tabs a:hover {
+  background: #f7f3ee;
+}
+
+.catalog-section {
+  background: var(--bg-soft);
+  padding: 42px 28px;
+  margin-bottom: 20px;
+}
+
+.catalog-section h2 {
+  margin: 0 0 12px;
+  font-size: 36px;
+  font-family: "SUIT Variable", sans-serif;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.catalog-section .product-row {
+  padding: 18px 0;
+}
+
+@media (max-width: 720px) {
+  .collection-hero h1,
+  .catalog-section h2 {
+    font-size: 30px;
+  }
+
+  .collection-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-section {
+    padding: 28px 16px;
+  }
+}

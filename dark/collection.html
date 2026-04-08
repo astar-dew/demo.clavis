@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/@sun-typeface/suit@2.0.5/fonts/variable/woff2/SUIT-Variable.min.css" rel="stylesheet" />
+    <title>ClaviS - Collection</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./collection.css" />
+      <link rel="stylesheet" href="./dark-theme.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <nav class="menu left">
+          <div class="menu-item has-submenu">
+            <a href="./brand.html">ABOUT</a>
+            <div class="submenu">
+              <a href="./brand.html">BRAND</a>
+              <a href="./science.html">SCIENCE</a>
+              <a href="./techtrust.html">TECH &amp; TRUST</a>
+            </div>
+          </div>
+          <div class="menu-item has-submenu">
+            <a href="./medi-jewelry.html">COLLECTION</a>
+            <div class="submenu">
+              <a class="active" href="./medi-jewelry.html">MEDI JEWELRY</a>
+              <a href="./active-lifestyle.html">ACTIVE LIFESTYLE</a>
+              <a href="./living-health.html">LIVING &amp; HEALTH</a>
+            </div>
+          </div>
+        </nav>
+        <a class="logo" href="./index.html">ClaviS</a>
+        <nav class="menu right">
+          <a href="./shop.html">SHOP</a>
+          <button aria-label="검색" class="icon-btn icon-search"><span aria-hidden="true"></span></button>
+          <button aria-label="로그인" class="icon-btn icon-user"><span aria-hidden="true"></span></button>
+          <button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>
+        </nav>
+      </div>
+      <!-- <div class="subpage-title">클라비스 컬렉션: 메디 주얼리, 액티브 라이프스타일, 리빙 앤 헬스</div> -->
+    </header>
+
+    <main class="catalog-page">
+      <section class="collection-hero">
+        <p class="eyebrow">CLAVIS COLLECTION</p>
+        <h1>당신의 하루에 맞춘 웰니스 라인업</h1>
+        <p>사용 환경과 취향에 따라 선택하는 3가지 컬렉션</p>
+      </section>
+
+      <section class="collection-tabs">
+        <a href="./medi-jewelry.html">MEDI JEWELRY</a>
+        <a href="./active-lifestyle.html">ACTIVE LIFESTYLE</a>
+        <a href="./living-health.html">LIVING &amp; HEALTH</a>
+      </section>
+
+      <section id="medi-jewelry" class="catalog-section">
+        <p class="eyebrow">MEDI JEWELRY</p>
+        <h2>프리미엄 메디 주얼리</h2>
+        <article class="product-row">
+          <img
+            src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=960&q=80"
+            alt="Ares bracelet"
+          />
+          <div class="product-copy">
+            <h3>ARES</h3>
+            <p>전통의 심미성과 웰빙을 모티브로 디자인된 남성용 프리미엄 팔찌.</p>
+            <div class="tags">
+              <span>네오디움 자석</span><span>로즈골드 포인트</span><span>오닉스 텍스처</span>
+            </div>
+            <a href="./shop.html?cat=medi" class="btn">SHOP NOW</a>
+          </div>
+        </article>
+        <article class="product-row reverse">
+          <img
+            src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=960&q=80"
+            alt="Astra bracelet"
+          />
+          <div class="product-copy">
+            <h3>ASTRA</h3>
+            <p>간결한 라인과 부드러운 곡선이 돋보이는 미니멀한 데일리 라인.</p>
+            <div class="tags">
+              <span>실리콘 스트랩</span><span>가벼운 착용감</span><span>로즈골드 디테일</span>
+            </div>
+            <a href="./shop.html?cat=active" class="btn">SHOP NOW</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="active-lifestyle" class="catalog-section">
+        <p class="eyebrow">ACTIVE LIFESTYLE</p>
+        <h2>활동적인 하루를 위한 선택</h2>
+        <article class="product-row">
+          <img
+            src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=960&q=80"
+            alt="Bach bracelet"
+          />
+          <div class="product-copy">
+            <h3>BACH</h3>
+            <p>스포츠와 캐주얼 웨어에 조화롭게 어울리는 내구성 중심 라인.</p>
+            <div class="tags">
+              <span>생활 방수</span><span>유연한 스트랩</span><span>메탈 포인트</span>
+            </div>
+            <a href="./shop.html?cat=living" class="btn">SHOP NOW</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="living-health" class="catalog-section">
+        <p class="eyebrow">LIVING &amp; HEALTH</p>
+        <h2>일상 공간을 위한 웰니스 아이템</h2>
+        <article class="product-row reverse">
+          <img
+            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=960&q=80"
+            alt="Living collection"
+          />
+          <div class="product-copy">
+            <h3>CIRCLE</h3>
+            <p>라이프스타일 공간과 함께하는 자기장 웰니스 라인업.</p>
+            <div class="tags">
+              <span>홈 케어</span><span>밸런스 디자인</span><span>프리미엄 마감</span>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <a class="logo footer-logo" href="./index.html">ClaviS</a>
+          <p>네오디움 기반 프리미엄<br />자기장 헬스케어</p>
+        </div>
+        <div>
+          <h5>ABOUT</h5>
+          <a href="./brand.html">BRAND</a>
+          <a href="./science.html">SCIENCE</a>
+          <a href="./techtrust.html">TECH &amp; TRUST</a>
+        </div>
+        <div>
+          <h5>COLLECTIONS</h5>
+          <a href="#medi-jewelry">MEDI-JEWELRY</a>
+          <a href="./active-lifestyle.html">ACTIVE LIFESTYLE</a>
+          <a href="./living-health.html">LIVING &amp; HEALTH</a>
+        </div>
+        <div>
+          <h5>고객센터</h5>
+          <p class="contact">02-3785-3725<br />평일 09:00 ~ 17:00</p>
+        </div>
+      </div>
+    </footer>
+      <script src="./mobile-nav.js"></script>
+      <script src="./theme-toggle.js"></script>
+  </body>
+</html>
