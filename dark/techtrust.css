@@ -102,7 +102,11 @@ a {
 .tt-page {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 72px 24px 116px;
+  padding: 88px 24px 140px;
+}
+
+.tt-page > section + section {
+  margin-top: 150px;
 }
 
 .center {
@@ -125,9 +129,9 @@ h4 {
 }
 
 .intro h1 {
-  font-size: 44px;
+  font-size: 46px;
   font-family: "SUIT Variable", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 
 .intro .line {
@@ -135,7 +139,7 @@ h4 {
   width: 66px;
   height: 2px;
   background: #ccb389;
-  margin: 4px 0 14px;
+  margin: 6px 0 22px;
 }
 
 .subtitle {
@@ -143,21 +147,24 @@ h4 {
   color: #6f6a63;
   font-size: 14px;
   line-height: 1.8;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .safety-dark {
-  margin-top: 60px;
+  margin-top: 0;
   background: linear-gradient(135deg, #172131, #111826);
   color: #fff;
   border: 1px solid #222b3b;
-  padding: 84px 42px 52px;
+  padding: 96px 52px 64px;
   text-align: center;
 }
 
 .safety-dark h2 {
   font-size: 42px;
   line-height: 1.25;
-  margin-bottom: 44px;
+  margin-bottom: 66px;
 }
 
 .safety-data-image {
@@ -207,7 +214,7 @@ h4 {
 .journey,
 .authority,
 .market {
-  margin-top: 84px;
+  margin-top: 0;
 }
 
 .journey h2,
@@ -216,13 +223,13 @@ h4 {
   font-family: "SUIT Variable", sans-serif;
   font-size: 46px;
   line-height: 1.25;
-  margin-bottom: 38px;
+  margin-bottom: 60px;
 }
 
 .journey-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 30px;
   text-align: left;
 }
 
@@ -261,7 +268,7 @@ h4 {
 }
 
 .journey-foot {
-  margin-top: 40px;
+  margin-top: 54px;
   border: 1px solid #ccb389;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -290,10 +297,10 @@ h4 {
 }
 
 .cert-grid {
-  margin-top: 36px;
+  margin-top: 44px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 34px;
+  gap: 42px;
 }
 
 .cert-grid article {
@@ -311,27 +318,27 @@ h4 {
 }
 
 .cert-grid p {
-  margin: 14px 0 0;
+  margin: 18px 0 0;
   font-size: 24px;
 }
 
 .proof-box {
-  margin-top: 60px;
+  margin-top: 0;
   border: 1px solid var(--line);
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  padding: 52px;
-  gap: 46px;
+  padding: 68px 62px;
+  gap: 56px;
 }
 
 .proof-left {
   border-right: 1px solid var(--line);
-  padding-right: 36px;
+  padding-right: 44px;
 }
 
 .proof-left p {
   margin: 0;
-  padding: 22px 0;
+  padding: 26px 0;
   border-bottom: 1px solid #ebe8e1;
   font-size: 16px;
 }
@@ -348,7 +355,7 @@ h4 {
 
 .circle {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .circle strong {
@@ -368,15 +375,15 @@ h4 {
   margin: 0;
   color: #88827b;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.65;
 }
 
 .market-sub {
-  margin: 0 auto 40px;
-  max-width: 860px;
+  margin: 0 auto 52px;
+  max-width: 920px;
   color: #7a746c;
   font-size: 15px;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
 .channel-grid {
@@ -386,7 +393,7 @@ h4 {
 }
 
 .channel-grid div {
-  padding: 18px 16px;
+  padding: 22px 20px;
   border-right: 1px solid #ddd3c2;
   border-bottom: 1px solid #ddd3c2;
   text-align: left;
@@ -402,12 +409,12 @@ h4 {
 }
 
 blockquote {
-  margin: 36px 0 0;
+  margin: 52px 0 0;
   border: 1px solid var(--line);
-  padding: 40px;
+  padding: 50px 56px;
   color: #595550;
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.8;
   font-style: italic;
 }
 
@@ -418,20 +425,20 @@ blockquote em {
 }
 
 .stats-grid {
-  margin-top: 40px;
+  margin-top: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 26px;
 }
 
 .stats-grid article {
   border: 1px solid var(--line);
   background: #f8f8f6;
-  min-height: 340px;
+  min-height: 370px;
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 24px;
+  padding: 34px 28px;
 }
 
 .stats-grid strong {
@@ -448,7 +455,7 @@ blockquote em {
 }
 
 .stats-grid p {
-  margin: 12px 0 0;
+  margin: 16px 0 0;
   color: #8c8780;
   font-size: 16px;
   line-height: 1.8;
@@ -487,6 +494,10 @@ blockquote em {
 }
 
 @media (max-width: 1024px) {
+  .tt-page > section + section {
+    margin-top: 110px;
+  }
+
   .safety-grid,
   .journey-grid,
   .journey-foot,
@@ -535,7 +546,56 @@ blockquote em {
   }
 
   .tt-page {
-    padding: 28px 14px 70px;
+    padding: 34px 14px 84px;
+  }
+
+  .tt-page > section + section {
+    margin-top: 80px;
+  }
+
+  .intro h1 {
+    margin-bottom: 14px;
+  }
+
+  .intro .line {
+    margin: 4px 0 16px;
+  }
+
+  .safety-dark h2,
+  .journey h2,
+  .authority h2,
+  .market h2 {
+    margin-bottom: 34px;
+  }
+
+  .cert-grid {
+    gap: 22px;
+  }
+
+  .proof-box {
+    padding: 36px 22px;
+    gap: 28px;
+  }
+
+  .proof-left {
+    padding-right: 0;
+  }
+
+  .channel-grid div {
+    padding: 16px 14px;
+  }
+
+  blockquote {
+    padding: 30px 22px;
+  }
+
+  .stats-grid {
+    gap: 16px;
+  }
+
+  .stats-grid article {
+    min-height: 300px;
+    padding: 24px 18px;
   }
 
   .intro h1,

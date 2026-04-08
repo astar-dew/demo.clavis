@@ -398,7 +398,7 @@ a {
 .collection-tech-metrics h2 {
   margin: 0 0 30px;
   font-family: "SUIT Variable", sans-serif;
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -412,31 +412,31 @@ a {
 .collection-tech-metrics .metrics-grid article {
   border: 1px solid #e7e2da;
   background: #fff;
-  padding: 30px 18px;
+  padding: 26px 16px;
 }
 
 .collection-tech-metrics .metrics-grid strong {
   display: block;
   color: var(--accent);
   font-family: "SUIT Variable", sans-serif;
-  font-size: 56px;
+  font-size: clamp(34px, 3vw, 46px);
   font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   line-height: 1;
 }
 
 .collection-tech-metrics .metrics-grid h3 {
-  margin: 0 0 12px;
-  font-size: 22px;
+  margin: 0 0 10px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 .collection-tech-metrics .metrics-grid p {
   margin: 0;
   color: #6d6862;
-  line-height: 1.6;
-  font-size: 13px;
+  line-height: 1.65;
+  font-size: 12px;
 }
 
 .feature-cards {
@@ -597,7 +597,7 @@ a {
   }
 
   .collection-tech-metrics h2 {
-    font-size: 30px;
+    font-size: 26px;
     margin-bottom: 20px;
   }
 
@@ -606,7 +606,7 @@ a {
   }
 
   .collection-tech-metrics .metrics-grid strong {
-    font-size: 44px;
+    font-size: 36px;
   }
 
   .footer-inner {
@@ -781,6 +781,10 @@ a {
     padding: 10px 0;
     color: #555;
     font-size: 14px;
+  }
+
+  .mobile-nav-enabled .mobile-nav-group .mobile-nav-links a {
+    padding-left: 16px;
   }
 
   .mobile-nav-enabled.mobile-nav-open {
@@ -1051,6 +1055,10 @@ a {
     padding: 10px 0;
     color: #555;
     font-size: 14px;
+  }
+
+  .home-page .mobile-nav-group .mobile-nav-links a {
+    padding-left: 16px;
   }
 
   .home-page.mobile-nav-open {
