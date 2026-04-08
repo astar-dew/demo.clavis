@@ -14,18 +14,7 @@
 
   var url = new URL(window.location.href);
   var currentIsDark = isDarkPath(url.pathname);
-  var preferred = localStorage.getItem(STORAGE_KEY);
-
-  if (preferred === "dark" || preferred === "light") {
-    var shouldBeDark = preferred === "dark";
-    if (shouldBeDark !== currentIsDark) {
-      var corrected = swapThemePath(url.pathname, shouldBeDark);
-      if (corrected !== url.pathname) {
-        window.location.replace(corrected + url.search + url.hash);
-        return;
-      }
-    }
-  }
+  localStorage.setItem(STORAGE_KEY, currentIsDark ? "dark" : "light");
 
   var targetLabel = currentIsDark ? "LIGHT" : "DARK";
   var btn = rightMenu.querySelector(".theme-toggle-btn");
