@@ -1,6 +1,6 @@
 :root {
-  --bg: #f3f3f3;
-  --bg-soft: #efefef;
+  --bg: #ffffff;
+  --bg-soft: #ffffff;
   --text: #1d1d1d;
   --muted: #8f8b86;
   --accent: #b89e78;
@@ -92,10 +92,27 @@ a {
 }
 
 .logo {
-  font-family: "SUIT Variable", sans-serif;
-  font-size: 42px;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
   line-height: 1;
+}
+
+.logo-mark {
+  display: block;
+  width: 132px;
+  height: auto;
+  object-fit: contain;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .icon-btn {
@@ -208,7 +225,10 @@ a {
   display: none;
 }
 
-.theme-toggle-btn {
+.topbar .menu.right .theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: auto;
   min-width: 44px;
   height: 24px;
@@ -216,10 +236,13 @@ a {
   border-radius: 999px;
   padding: 0 10px;
   font-size: 10px;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
   letter-spacing: 0.1em;
   color: #7d6746;
   background: #fff;
   line-height: 1;
+  cursor: pointer;
 }
 
 .hero {
@@ -229,7 +252,7 @@ a {
       rgba(230, 230, 230, 0.72),
       rgba(236, 236, 236, 0.6)
     ),
-    url("https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1900&q=80");
+    url("../asset/banner/main/banner1.png");
   background-position: center;
   background-size: cover;
   display: grid;
@@ -316,6 +339,11 @@ a {
   border-radius: 16px;
   margin: 0 auto;
   background: #fff;
+}
+
+.home-page .product-row img {
+  object-fit: contain;
+  object-position: center;
 }
 
 .product-copy h3 {
@@ -487,6 +515,11 @@ a {
     font-size: 36px;
   }
 
+  .logo-mark {
+    width: 112px;
+    height: auto;
+  }
+
   .hero {
     min-height: 440px;
   }
@@ -591,11 +624,18 @@ a {
   }
 
   .mobile-nav-enabled .mobile-nav-logo {
+    display: inline-flex;
+    align-items: center;
     font-family: "SUIT Variable", sans-serif;
     font-size: 30px;
     letter-spacing: 0.04em;
     color: #1c273a;
     font-weight: 600;
+  }
+
+  .mobile-nav-enabled .mobile-nav-logo .logo-mark {
+    width: 140px;
+    height: auto;
   }
 
   .mobile-nav-enabled .mobile-menu-close {
@@ -688,6 +728,11 @@ a {
   .home-page .logo {
     font-size: 52px;
     letter-spacing: 0.03em;
+  }
+
+  .home-page .logo-mark {
+    width: 126px;
+    height: auto;
   }
 
   .home-page .menu.right {
@@ -837,11 +882,18 @@ a {
   }
 
   .home-page .mobile-nav-logo {
+    display: inline-flex;
+    align-items: center;
     font-family: "SUIT Variable", sans-serif;
     font-size: 30px;
     letter-spacing: 0.04em;
     color: #1c273a;
     font-weight: 600;
+  }
+
+  .home-page .mobile-nav-logo .logo-mark {
+    width: 140px;
+    height: auto;
   }
 
   .home-page .mobile-menu-close {

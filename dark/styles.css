@@ -92,10 +92,27 @@ a {
 }
 
 .logo {
-  font-family: "SUIT Variable", sans-serif;
-  font-size: 42px;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
   line-height: 1;
+}
+
+.logo-mark {
+  display: block;
+  width: 132px;
+  height: auto;
+  object-fit: contain;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .icon-btn {
@@ -215,7 +232,7 @@ a {
       rgba(230, 230, 230, 0.72),
       rgba(236, 236, 236, 0.6)
     ),
-    url("https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1900&q=80");
+    url("../asset/banner/main/banner1.png");
   background-position: center;
   background-size: cover;
   display: grid;
@@ -271,6 +288,92 @@ a {
   font-size: 14px;
 }
 
+.main-tail-visual {
+  min-height: 1400px;
+  padding: 88px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.96)), url("../asset/banner/main/banner2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-tail-label {
+  margin: 0 0 14px;
+  color: rgba(232, 235, 242, 0.7);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.main-tail-visual h2 {
+  margin: 0;
+  color: #f6f8fc;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 3.4vw, 70px);
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.main-tail-gallery {
+  width: min(1120px, 100%);
+  margin-top: 70px;
+  display: grid;
+  gap: 28px;
+}
+
+.main-tail-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #000;
+}
+
+.main-tail-card img {
+  width: 100%;
+  height: clamp(260px, 34vw, 420px);
+  display: block;
+  object-fit: cover;
+}
+
+.main-tail-copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 26px 24px 24px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  text-align: left;
+}
+
+.main-tail-kicker {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  color: rgba(232, 235, 242, 0.82);
+}
+
+.main-tail-copy h3 {
+  margin: 0 0 8px;
+  color: #f6f8fc;
+  font-size: clamp(22px, 2vw, 32px);
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.main-tail-copy p {
+  margin: 0;
+  color: rgba(232, 235, 242, 0.84);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .collection {
   max-width: 1120px;
   margin: 0 auto;
@@ -302,6 +405,11 @@ a {
   border-radius: 16px;
   margin: 0 auto;
   background: #fff;
+}
+
+.home-page .product-row img {
+  object-fit: contain;
+  object-position: center;
 }
 
 .product-copy h3 {
@@ -473,6 +581,11 @@ a {
     font-size: 36px;
   }
 
+  .logo-mark {
+    width: 112px;
+    height: auto;
+  }
+
   .hero {
     min-height: 440px;
   }
@@ -485,6 +598,41 @@ a {
   .welcome h2,
   .experience h2 {
     font-size: 28px;
+  }
+
+  .main-tail-visual {
+    min-height: 920px;
+    padding-top: 70px;
+  }
+
+  .main-tail-label {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
+
+  .main-tail-visual h2 {
+    font-size: clamp(30px, 9vw, 44px);
+  }
+
+  .main-tail-gallery {
+    margin-top: 42px;
+    gap: 16px;
+  }
+
+  .main-tail-card img {
+    height: 220px;
+  }
+
+  .main-tail-copy {
+    padding: 18px 16px 16px;
+  }
+
+  .main-tail-copy h3 {
+    font-size: 20px;
+  }
+
+  .main-tail-copy p {
+    font-size: 12px;
   }
 
   .footer-inner {
@@ -577,11 +725,18 @@ a {
   }
 
   .mobile-nav-enabled .mobile-nav-logo {
+    display: inline-flex;
+    align-items: center;
     font-family: "SUIT Variable", sans-serif;
     font-size: 30px;
     letter-spacing: 0.04em;
     color: #1c273a;
     font-weight: 600;
+  }
+
+  .mobile-nav-enabled .mobile-nav-logo .logo-mark {
+    width: 140px;
+    height: auto;
   }
 
   .mobile-nav-enabled .mobile-menu-close {
@@ -674,6 +829,11 @@ a {
   .home-page .logo {
     font-size: 52px;
     letter-spacing: 0.03em;
+  }
+
+  .home-page .logo-mark {
+    width: 126px;
+    height: auto;
   }
 
   .home-page .menu.right {
@@ -823,11 +983,18 @@ a {
   }
 
   .home-page .mobile-nav-logo {
+    display: inline-flex;
+    align-items: center;
     font-family: "SUIT Variable", sans-serif;
     font-size: 30px;
     letter-spacing: 0.04em;
     color: #1c273a;
     font-weight: 600;
+  }
+
+  .home-page .mobile-nav-logo .logo-mark {
+    width: 140px;
+    height: auto;
   }
 
   .home-page .mobile-menu-close {

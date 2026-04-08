@@ -1,10 +1,10 @@
 :root {
-  --bg: #f3f3f3;
+  --bg: #ffffff;
   --text: #1d1d1d;
   --muted: #8f8b86;
   --accent: #b89e78;
   --line: #dfdfdf;
-  --soft: #f6f6f4;
+  --soft: #ffffff;
   --black: #050505;
 }
 
@@ -163,6 +163,10 @@ h4 {
 
 .image-stage {
   position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 24px;
 }
 
 .image-stage .orbit {
@@ -171,16 +175,19 @@ h4 {
   height: 320px;
   border: 1px solid #e9dcc5;
   border-radius: 50%;
-  left: 80px;
-  top: -70px;
+  left: 68px;
+  top: 34px;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .image-stage img {
   position: relative;
   width: 100%;
-  height: 370px;
-  object-fit: cover;
+  height: 340px;
+  object-fit: contain;
   z-index: 1;
+  background: #fff;
 }
 
 .copy-stage h2 {
@@ -345,7 +352,7 @@ h4 {
 
 .village-box {
   min-height: 360px;
-  background: #f3f1ec;
+  background: #fff;
   display: grid;
   place-items: center;
   text-align: center;

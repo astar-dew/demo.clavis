@@ -1,6 +1,6 @@
 :root {
-  --bg: #f3f3f3;
-  --bg-soft: #efefef;
+  --bg: #ffffff;
+  --bg-soft: #ffffff;
   --text: #1d1d1d;
   --muted: #8f8b86;
   --accent: #b89e78;
@@ -334,13 +334,20 @@ a {
 }
 
 .history h2,
-.roadmap h2,
 .future h2,
 .closeout h2 {
   margin: 0 0 34px;
   text-align: center;
   font-family: "SUIT Variable", sans-serif;
   font-size: 42px;
+  font-weight: 500;
+}
+
+.roadmap h2 {
+  margin: 0 0 34px;
+  text-align: center;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 34px;
   font-weight: 500;
 }
 
@@ -375,8 +382,8 @@ a {
 .roadmap-grid article {
   border-right: 1px solid #e5dfd6;
   background: #fff;
-  padding: 64px 42px 94px;
-  min-height: 560px;
+  padding: 52px 34px 72px;
+  min-height: 480px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -392,7 +399,7 @@ a {
 
 .roadmap-grid h4 {
   margin: 0 0 28px;
-  font-size: 36px;
+  font-size: 24px;
   font-family: "SUIT Variable", sans-serif;
   color: #8b8b8b;
   letter-spacing: 0.12em;
@@ -402,16 +409,26 @@ a {
 .period {
   color: #1f1f1f;
   margin: 0 0 26px;
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 1.05;
 }
 
 .roadmap-grid h5 {
   margin: 0 0 26px;
-  font-size: 52px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.05;
+}
+
+.roadmap-grid article:nth-child(2) .period {
+  white-space: nowrap;
+  font-size: clamp(26px, 1.9vw, 34px);
+}
+
+.roadmap-grid article:nth-child(2) h5 {
+  white-space: nowrap;
+  font-size: clamp(28px, 2vw, 36px);
 }
 
 .roadmap-list {
@@ -419,8 +436,8 @@ a {
   padding: 0;
   list-style: none;
   color: #7a746c;
-  font-size: 16px;
-  line-height: 1.9;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
 .roadmap-list li {
@@ -858,10 +875,13 @@ a {
 
   .intro h1,
   .history h2,
-  .roadmap h2,
   .future h2,
   .closeout h2 {
     font-size: 34px;
+  }
+
+  .roadmap h2 {
+    font-size: 28px;
   }
 
   .roadmap-grid {
@@ -874,11 +894,11 @@ a {
   }
 
   .period {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .roadmap-grid h5 {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .footer-inner {

@@ -9,38 +9,9 @@
     <link rel="stylesheet" href="./shop.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="topbar-inner">
-        <nav class="menu left">
-          <div class="menu-item has-submenu">
-            <a href="./brand.html">ABOUT</a>
-            <div class="submenu">
-              <a href="./brand.html">BRAND</a>
-              <a href="./science.html">SCIENCE</a>
-              <a href="./techtrust.html">TECH &amp; TRUST</a>
-            </div>
-          </div>
-          <div class="menu-item has-submenu">
-            <a href="./medi-jewelry.html">COLLECTION</a>
-            <div class="submenu">
-              <a href="./medi-jewelry.html">MEDI JEWELRY</a>
-              <a href="./active-lifestyle.html">ACTIVE LIFESTYLE</a>
-              <a href="./living-health.html">LIVING &amp; HEALTH</a>
-            </div>
-          </div>
-        </nav>
-        <a class="logo" href="./index.html">ClaviS</a>
-        <nav class="menu right">
-          <a href="./shop.html">SHOP</a>
-          <button aria-label="검색" class="icon-btn icon-search"><span aria-hidden="true"></span></button>
-          <button aria-label="로그인" class="icon-btn icon-user"><span aria-hidden="true"></span></button>
-          <button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>
-        </nav>
-      </div>
-      <!-- <div class="subpage-title">클라비스 샵: 웰니스 주얼리와 라이프케어 컬렉션</div> -->
-    </header>
+    <div id="gnb-root"></div>
 
-    <main class="shop-page">
+<main class="shop-page">
       <section class="shop-hero">
         <p class="eyebrow">SHOP BY CATEGORY</p>
         <h1>당신의 라이프스타일에 맞춘 웰니스 셀렉션</h1>
@@ -256,6 +227,7 @@
         syncFromUrl();
       })();
     </script>
+      <script src="./gnb.js"></script>
       <script src="./mobile-nav.js"></script>
       <script src="./theme-toggle.js"></script>
   </body>

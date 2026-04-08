@@ -1,0 +1,26 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#F4F4F2"/>
+  <ellipse cx="700" cy="450" rx="460" ry="230" stroke="#D4B27A" stroke-width="2"/>
+  <ellipse cx="700" cy="450" rx="390" ry="185" stroke="#DDC49A" stroke-width="2"/>
+  <ellipse cx="700" cy="450" rx="320" ry="150" stroke="#E7D6B8" stroke-width="2"/>
+  <ellipse cx="700" cy="450" rx="250" ry="115" stroke="#EEDFCA" stroke-width="2"/>
+  <ellipse cx="700" cy="450" rx="180" ry="85" stroke="#F3E8D8" stroke-width="2"/>
+
+  <g>
+    <circle cx="570" cy="450" r="118" stroke="#C9B08A" stroke-width="2"/>
+    <circle cx="830" cy="450" r="118" stroke="#C9B08A" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#a)">
+    <rect x="585" y="370" width="120" height="160" rx="28" fill="#E6E7E9"/>
+    <rect x="695" y="370" width="120" height="160" rx="28" fill="#D9DADF"/>
+    <rect x="690" y="370" width="20" height="160" fill="#BFC2C9"/>
+    <circle cx="700" cy="450" r="10" fill="#B89E78"/>
+  </g>
+
+  <defs>
+    <filter id="a" x="565" y="350" width="270" height="200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+</svg>

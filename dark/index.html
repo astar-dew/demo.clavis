@@ -9,37 +9,9 @@
       <link rel="stylesheet" href="./dark-theme.css" />
   </head>
   <body class="home-page">
-    <header class="topbar">
-      <div class="topbar-inner">
-        <nav class="menu left">
-          <div class="menu-item has-submenu">
-            <a href="./brand.html">ABOUT</a>
-            <div class="submenu">
-              <a href="./brand.html">BRAND</a>
-              <a href="./science.html">SCIENCE</a>
-              <a href="./techtrust.html">TECH &amp; TRUST</a>
-            </div>
-          </div>
-          <div class="menu-item has-submenu">
-            <a href="./medi-jewelry.html">COLLECTION</a>
-            <div class="submenu">
-              <a href="./medi-jewelry.html">MEDI JEWELRY</a>
-              <a href="./active-lifestyle.html">ACTIVE LIFESTYLE</a>
-              <a href="./living-health.html">LIVING &amp; HEALTH</a>
-            </div>
-          </div>
-        </nav>
-        <a class="logo" href="./index.html">ClaviS</a>
-        <nav class="menu right">
-          <a href="./shop.html">SHOP</a>
-          <button aria-label="검색" class="icon-btn icon-search"><span aria-hidden="true"></span></button>
-          <button aria-label="로그인" class="icon-btn icon-user"><span aria-hidden="true"></span></button>
-          <button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>
-        </nav>
-      </div>
-    </header>
+    <div id="gnb-root"></div>
 
-    <main>
+<main>
       <section class="hero">
         <div class="hero-overlay">
           <p>PREMIUM MAGNETIC HEALTHCARE</p>
@@ -62,7 +34,7 @@
 
         <article class="product-row">
           <img
-            src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=960&q=80"
+            src="../asset/product/jewelry/pro1.png"
             alt="Ares bracelet"
           />
           <div class="product-copy">
@@ -80,7 +52,7 @@
 
         <article class="product-row reverse">
           <img
-            src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=960&q=80"
+            src="../asset/product/jewelry/pro2.png"
             alt="Astra bracelet"
           />
           <div class="product-copy">
@@ -98,7 +70,7 @@
 
         <article class="product-row">
           <img
-            src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=960&q=80"
+            src="../asset/product/jewelry/pro3.png"
             alt="Bach bracelet"
           />
           <div class="product-copy">
@@ -116,7 +88,7 @@
 
         <article class="product-row reverse">
           <img
-            src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=960&q=80"
+            src="../asset/product/jewelry/pro4.png"
             alt="Circle bracelet"
           />
           <div class="product-copy">
@@ -136,7 +108,7 @@
       <section class="feature-cards">
         <article class="feature-card">
           <img
-            src="https://images.unsplash.com/photo-1522556189639-b15014c64751?auto=format&fit=crop&w=700&q=80"
+            src="../asset/banner/main/banner1.png"
             alt="Active lifestyle"
           />
           <div>
@@ -147,7 +119,7 @@
         </article>
         <article class="feature-card">
           <img
-            src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=80"
+            src="../asset/banner/main/banner2.png"
             alt="Medi jewelry"
           />
           <div>
@@ -158,7 +130,7 @@
         </article>
         <article class="feature-card">
           <img
-            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80"
+            src="../asset/banner/main/banner3.png"
             alt="Living health"
           />
           <div>
@@ -176,6 +148,37 @@
           클라비스 라인즈를 위한 마그네스 소재 기반 헬스케어 밴드로
           특별함이 추가된 새로운 건강 솔루션을 선보입니다.
         </p>
+      </section>
+
+      <section class="main-tail-visual">
+        <p class="main-tail-label">MAGNETIC THERAPY COLLECTION</p>
+        <h2>BY YOUR SIDE, FOR LIFE</h2>
+        <div class="main-tail-gallery">
+          <article class="main-tail-card">
+            <img src="../asset/banner/main/banner1.png" alt="Medi Jewelry banner" />
+            <div class="main-tail-copy">
+              <p class="main-tail-kicker">BANNER 01</p>
+              <h3>MEDI JEWELRY</h3>
+              <p>Daily magnetic care for refined style.</p>
+            </div>
+          </article>
+          <article class="main-tail-card">
+            <img src="../asset/banner/main/banner2.png" alt="Active lifestyle banner" />
+            <div class="main-tail-copy">
+              <p class="main-tail-kicker">BANNER 02</p>
+              <h3>ACTIVE LIFESTYLE</h3>
+              <p>Move with recovery, strength, and balance.</p>
+            </div>
+          </article>
+          <article class="main-tail-card">
+            <img src="../asset/banner/main/banner3.png" alt="Living and health banner" />
+            <div class="main-tail-copy">
+              <p class="main-tail-kicker">BANNER 03</p>
+              <h3>LIVING &amp; HEALTH</h3>
+              <p>Comfort-focused wellness in everyday spaces.</p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
@@ -203,7 +206,9 @@
         </div>
       </div>
     </footer>
-    <script src="./mobile-nav.js"></script>
+    <script src="./gnb.js"></script>
+      <script src="./mobile-nav.js"></script>
       <script src="./theme-toggle.js"></script>
+      <script src="../asset/js/main-banner-slider.js"></script>
   </body>
 </html>

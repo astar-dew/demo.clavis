@@ -68,7 +68,7 @@
       '<a class="mobile-nav-logo" href="' +
       logo.getAttribute("href") +
       '">' +
-      logo.textContent +
+      logo.innerHTML +
       "</a>" +
       '<button aria-label="메뉴 닫기" class="mobile-menu-close">✕</button>' +
       "</div>" +

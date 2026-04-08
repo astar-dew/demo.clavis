@@ -20,6 +20,14 @@ body {
   border-bottom-color: #232b39;
 }
 
+.topbar .logo .logo-submark,
+.mobile-nav-logo .logo-submark {
+  display: block;
+  width: 132px;
+  height: auto;
+  object-fit: contain;
+}
+
 .submenu {
   background: #181d27;
   border-color: #2a3344;
@@ -56,7 +64,7 @@ body {
       rgba(16, 20, 28, 0.72),
       rgba(16, 20, 28, 0.8)
     ),
-    url("https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1900&q=80");
+    url("../asset/banner/main/banner1.png");
 }
 
 .hero-overlay p,
@@ -201,4 +209,14 @@ h5,
   border-color: #65553e;
   background: #2a2319;
   color: #e4c493;
+}
+
+@media (max-width: 720px) {
+  .topbar .logo .logo-submark {
+    width: 112px;
+  }
+
+  .mobile-nav-enabled .mobile-nav-logo .logo-submark {
+    width: 96px;
+  }
 }

@@ -9,37 +9,9 @@
     <link rel="stylesheet" href="./living-health.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="topbar-inner">
-        <nav class="menu left">
-          <div class="menu-item has-submenu">
-            <a href="./brand.html">ABOUT</a>
-            <div class="submenu">
-              <a href="./brand.html">BRAND</a>
-              <a href="./science.html">SCIENCE</a>
-              <a href="./techtrust.html">TECH &amp; TRUST</a>
-            </div>
-          </div>
-          <div class="menu-item has-submenu">
-            <a href="./medi-jewelry.html">COLLECTION</a>
-            <div class="submenu">
-              <a href="./medi-jewelry.html">MEDI JEWELRY</a>
-              <a href="./active-lifestyle.html">ACTIVE LIFESTYLE</a>
-              <a class="active" href="./living-health.html">LIVING &amp; HEALTH</a>
-            </div>
-          </div>
-        </nav>
-        <a class="logo" href="./index.html">ClaviS</a>
-        <nav class="menu right">
-          <a href="./shop.html">SHOP</a>
-          <button aria-label="검색" class="icon-btn icon-search"><span aria-hidden="true"></span></button>
-          <button aria-label="로그인" class="icon-btn icon-user"><span aria-hidden="true"></span></button>
-          <button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>
-        </nav>
-      </div>
-    </header>
+    <div id="gnb-root"></div>
 
-    <main class="living-page">
+<main class="living-page">
       <section class="collection-tabs">
         <a href="./medi-jewelry.html">MEDI JEWELRY</a>
         <a href="./active-lifestyle.html">ACTIVITY LIFESTYLE</a>
@@ -58,7 +30,7 @@
         </div>
         <div class="hero-visual">
           <img
-            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+            src="../asset/banner/main/banner3.png"
             alt="Living and health hero"
           />
         </div>
@@ -156,6 +128,7 @@
         </div>
       </div>
     </footer>
+      <script src="./gnb.js"></script>
       <script src="./mobile-nav.js"></script>
       <script src="./theme-toggle.js"></script>
   </body>
