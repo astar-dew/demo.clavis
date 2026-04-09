@@ -260,6 +260,68 @@ h5,
   color: #f4f6fa !important;
 }
 
+/* Collection sub pages: dark tone for added tech block under main banner */
+.medi-tech-flow,
+.active-tech-flow,
+.living-tech-flow {
+  background: #151a22 !important;
+  border-color: #2f3747 !important;
+}
+
+.medi-tech-copy h2,
+.active-tech-copy h2,
+.living-tech-copy h2 {
+  color: #eef2f9 !important;
+}
+
+.medi-tech-copy .eyebrow,
+.active-tech-copy .eyebrow,
+.living-tech-copy .eyebrow,
+.medi-tech-mechanism .eyebrow,
+.active-tech-cycle .eyebrow,
+.living-tech-cycle .eyebrow {
+  color: #d4b27a !important;
+}
+
+.medi-tech-copy p,
+.active-tech-copy p,
+.living-tech-copy p {
+  color: #b7c0cf !important;
+}
+
+.medi-tech-steps,
+.active-tech-steps,
+.living-tech-steps {
+  background: #171d27 !important;
+  border-color: #2f3747 !important;
+}
+
+.medi-tech-steps article,
+.active-tech-steps article,
+.living-tech-steps article {
+  background: #171d27 !important;
+  border-right-color: #2f3747 !important;
+}
+
+.medi-tech-steps h3,
+.active-tech-steps h3,
+.living-tech-steps h3 {
+  color: #eef2f9 !important;
+}
+
+.medi-tech-steps p,
+.active-tech-steps p,
+.living-tech-steps p {
+  color: #b7c0cf !important;
+}
+
+.medi-tech-steps .icon,
+.active-tech-steps .icon,
+.living-tech-steps .icon {
+  background: #242d3b !important;
+  color: #d9e0ec !important;
+}
+
 .science-tech-banner p,
 .science-tech-btn {
   color: #f0f3f9 !important;
@@ -294,6 +356,40 @@ h5,
 
 .science-page .gauss-note {
   color: #8f99ab !important;
+}
+
+.medi-tech-flow,
+.active-tech-flow,
+.living-tech-flow {
+  background: #151a22 !important;
+  border-color: #2f3747 !important;
+}
+
+.medi-tech-copy .eyebrow,
+.active-tech-copy .eyebrow,
+.living-tech-copy .eyebrow,
+.medi-tech-mechanism .eyebrow,
+.active-tech-cycle .eyebrow,
+.living-tech-cycle .eyebrow {
+  color: #d4b27a !important;
+}
+
+.medi-tech-copy h2,
+.active-tech-copy h2,
+.living-tech-copy h2,
+.medi-tech-steps h3,
+.active-tech-steps h3,
+.living-tech-steps h3 {
+  color: #eef2f9 !important;
+}
+
+.medi-tech-copy p,
+.active-tech-copy p,
+.living-tech-copy p,
+.medi-tech-steps p,
+.active-tech-steps p,
+.living-tech-steps p {
+  color: #b7c0cf !important;
 }
 
 @media (max-width: 720px) {
