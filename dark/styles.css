@@ -245,6 +245,44 @@ a {
   cursor: pointer;
 }
 
+.layout-switcher-panel {
+  max-width: 1240px;
+  margin: 14px auto 0;
+  padding: 0 20px;
+}
+
+.layout-switcher-panel > p {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: #8f8b86;
+}
+
+.layout-switcher-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.layout-switcher-buttons button {
+  border: 1px solid #d7d0c3;
+  background: #fff;
+  color: #6b5840;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.layout-switcher-buttons button.is-active {
+  background: #f1e7d7;
+  border-color: #c6ac86;
+  color: #5c452a;
+  font-weight: 600;
+}
+
 .hero {
   min-height: 640px;
   background-image: linear-gradient(
