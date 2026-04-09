@@ -344,6 +344,96 @@ a {
   font-size: 14px;
 }
 
+.main-tail-visual {
+  display: none;
+}
+
+[data-clavis-layout="layout2"] .main-tail-visual {
+  min-height: 1400px;
+  padding: 88px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.96)), url("../asset/banner/main/banner2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+[data-clavis-layout="layout2"] .main-tail-label {
+  margin: 0 0 14px;
+  color: rgba(232, 235, 242, 0.7);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+[data-clavis-layout="layout2"] .main-tail-visual h2 {
+  margin: 0;
+  color: #f6f8fc;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 3.4vw, 70px);
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+[data-clavis-layout="layout2"] .main-tail-gallery {
+  width: min(1120px, 100%);
+  margin-top: 70px;
+  display: grid;
+  gap: 28px;
+}
+
+[data-clavis-layout="layout2"] .main-tail-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #000;
+}
+
+[data-clavis-layout="layout2"] .main-tail-card img {
+  width: 100%;
+  height: clamp(260px, 34vw, 420px);
+  display: block;
+  object-fit: cover;
+}
+
+[data-clavis-layout="layout2"] .main-tail-copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 26px 24px 24px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  text-align: left;
+}
+
+[data-clavis-layout="layout2"] .main-tail-kicker {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  color: rgba(232, 235, 242, 0.82);
+}
+
+[data-clavis-layout="layout2"] .main-tail-copy h3 {
+  margin: 0 0 8px;
+  color: #f6f8fc;
+  font-size: clamp(22px, 2vw, 32px);
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+[data-clavis-layout="layout2"] .main-tail-copy p {
+  margin: 0;
+  color: rgba(232, 235, 242, 0.84);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .collection {
   max-width: 1120px;
   margin: 0 auto;
@@ -439,6 +529,13 @@ a {
   font-size: 34px;
   font-weight: 500;
   line-height: 1.2;
+}
+
+.collection-tech-metrics .metrics-note {
+  margin: -14px 0 24px;
+  color: #7f786f;
+  font-size: 12px;
+  line-height: 1.65;
 }
 
 .collection-tech-metrics .metrics-grid {
@@ -639,12 +736,52 @@ a {
     margin-bottom: 20px;
   }
 
+  .collection-tech-metrics .metrics-note {
+    margin: -8px 0 18px;
+    font-size: 11px;
+  }
+
   .collection-tech-metrics .metrics-grid {
     grid-template-columns: 1fr;
   }
 
   .collection-tech-metrics .metrics-grid strong {
     font-size: 36px;
+  }
+
+  [data-clavis-layout="layout2"] .main-tail-visual {
+    min-height: 920px;
+    padding-top: 70px;
+  }
+
+  [data-clavis-layout="layout2"] .main-tail-label {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
+
+  [data-clavis-layout="layout2"] .main-tail-visual h2 {
+    font-size: clamp(30px, 9vw, 44px);
+  }
+
+  [data-clavis-layout="layout2"] .main-tail-gallery {
+    margin-top: 42px;
+    gap: 16px;
+  }
+
+  [data-clavis-layout="layout2"] .main-tail-card img {
+    height: 220px;
+  }
+
+  [data-clavis-layout="layout2"] .main-tail-copy {
+    padding: 18px 16px 16px;
+  }
+
+  [data-clavis-layout="layout2"] .main-tail-copy h3 {
+    font-size: 20px;
+  }
+
+  [data-clavis-layout="layout2"] .main-tail-copy p {
+    font-size: 12px;
   }
 
   .footer-inner {

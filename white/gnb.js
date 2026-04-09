@@ -24,6 +24,7 @@
       ".topbar.layout-2 .logo{justify-self:center;margin:0;}" +
       ".topbar.layout-2 .menu.right{gap:12px;flex-wrap:nowrap;justify-content:flex-end;min-width:0;}" +
       ".topbar.layout-2 .menu.right > a{font-weight:600;letter-spacing:0.1em;}" +
+      "@media (max-width:720px){.footer-inner{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 16px;padding:56px 20px;}.footer-inner>div:first-child{grid-column:1/-1;}.footer-inner>div:last-child{grid-column:1/-1;border-top:1px solid var(--line);padding-top:16px;}.footer-logo{font-size:56px;}.footer-inner h5{font-size:14px;line-height:1.2;margin:0 0 10px;}.footer-inner a,.footer-inner p{font-size:13px;line-height:1.6;margin:4px 0;}.footer .contact{font-size:13px;line-height:1.7;}}" +
       "@media (max-width:760px){.topbar.layout-2 .topbar-inner{display:flex;height:56px;}}";
     document.head.appendChild(style);
   }

@@ -532,6 +532,13 @@ a {
   line-height: 1.2;
 }
 
+.collection-tech-metrics .metrics-note {
+  margin: -14px 0 24px;
+  color: #7f786f;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
 .collection-tech-metrics .metrics-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -728,6 +735,11 @@ a {
   .collection-tech-metrics h2 {
     font-size: 26px;
     margin-bottom: 20px;
+  }
+
+  .collection-tech-metrics .metrics-note {
+    margin: -8px 0 18px;
+    font-size: 11px;
   }
 
   .collection-tech-metrics .metrics-grid {
