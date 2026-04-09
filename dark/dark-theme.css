@@ -67,6 +67,12 @@ body {
     url("../asset/banner/main/banner1.png");
 }
 
+.science-page .hero {
+  background-image: none !important;
+  background: #151a22 !important;
+  border-color: var(--line) !important;
+}
+
 .hero-overlay p,
 .hero-overlay h1 {
   color: #f1f3f8;
@@ -242,6 +248,7 @@ h5,
 }
 
 .science-tech-banner {
+  background: #151a22 !important;
   border-color: #3a414f !important;
 }
 
@@ -259,7 +266,8 @@ h5,
 }
 
 .science-tech-btn {
-  border-color: rgba(240, 243, 249, 0.65) !important;
+  border-color: #7a6648 !important;
+  background: transparent !important;
 }
 
 .tech-link-banner {

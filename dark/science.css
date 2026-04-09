@@ -108,6 +108,9 @@ a {
 .hero {
   text-align: center;
   margin-bottom: 52px;
+  border: 1px solid var(--line);
+  background: #faf8f4;
+  padding: 72px 28px;
 }
 
 .eyebrow {
@@ -130,13 +133,18 @@ h4 {
 }
 
 .hero h1 {
-  font-size: 34px;
+  font-size: 46px;
   font-family: "SUIT Variable", sans-serif;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
 }
 
 .subtitle {
-  margin: 12px 0 0;
-  color: #77726c;
+  margin: 18px auto 0;
+  color: #6f6a63;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 720px;
 }
 
 .panel {
