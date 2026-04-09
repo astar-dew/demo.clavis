@@ -29,31 +29,47 @@
     overlay.setAttribute("aria-hidden", "true");
 
     var groupsHtml = "";
-    var leftGroups = Array.from(document.querySelectorAll(".menu.left .menu-item.has-submenu"));
-    leftGroups.forEach(function (group, index) {
-      var rootLink = group.querySelector(":scope > a");
-      var title = rootLink ? rootLink.textContent.trim() : "MENU";
-      var links = Array.from(group.querySelectorAll(".submenu a"));
-      var linkHtml = links
-        .map(function (a) {
-          return '<a href="' + a.getAttribute("href") + '">' + a.textContent.trim() + "</a>";
-        })
-        .join("");
-
+    var layout = document.documentElement.getAttribute("data-clavis-layout");
+    if (layout === "layout2") {
+      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./brand.html">BRAND</a></section>';
+      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./science.html">SCIENCE</a></section>';
+      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./techtrust.html">TECH &amp; TRUST</a></section>';
       groupsHtml +=
-        '<section class="mobile-nav-group' +
-        (index === 0 ? " open" : "") +
-        '">' +
-        '<button class="mobile-nav-toggle" type="button" aria-expanded="' +
-        (index === 0 ? "true" : "false") +
-        '">' +
-        "<span>" +
-        title +
-        '</span><span class="chev"></span></button>' +
+        '<section class="mobile-nav-group open">' +
+        '<button class="mobile-nav-toggle" type="button" aria-expanded="true">' +
+        "<span>COLLECTION</span><span class=\"chev\"></span></button>" +
         '<div class="mobile-nav-links">' +
-        linkHtml +
+        '<a href="./medi-jewelry.html">- medi-jewelry</a>' +
+        '<a href="./science.html">- science</a>' +
+        '<a href="./techtrust.html">- tech&amp;trust</a>' +
         "</div></section>";
-    });
+    } else {
+      var leftGroups = Array.from(document.querySelectorAll(".menu.left .menu-item.has-submenu"));
+      leftGroups.forEach(function (group, index) {
+        var rootLink = group.querySelector(":scope > a");
+        var title = rootLink ? rootLink.textContent.trim() : "MENU";
+        var links = Array.from(group.querySelectorAll(".submenu a"));
+        var linkHtml = links
+          .map(function (a) {
+            return '<a href="' + a.getAttribute("href") + '">' + a.textContent.trim() + "</a>";
+          })
+          .join("");
+
+        groupsHtml +=
+          '<section class="mobile-nav-group' +
+          (index === 0 ? " open" : "") +
+          '">' +
+          '<button class="mobile-nav-toggle" type="button" aria-expanded="' +
+          (index === 0 ? "true" : "false") +
+          '">' +
+          "<span>" +
+          title +
+          '</span><span class="chev"></span></button>' +
+          '<div class="mobile-nav-links">' +
+          linkHtml +
+          "</div></section>";
+      });
+    }
 
     var shopAnchor = rightMenu.querySelector('a[href*="shop"]');
     if (shopAnchor) {

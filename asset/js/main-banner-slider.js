@@ -63,6 +63,39 @@
 
   hero.insertBefore(track, hero.firstChild);
 
+  var indicator = document.createElement("div");
+  indicator.className = "main-banner-indicator";
+  indicator.style.position = "absolute";
+  indicator.style.left = "50%";
+  indicator.style.bottom = "22px";
+  indicator.style.transform = "translateX(-50%)";
+  indicator.style.display = "flex";
+  indicator.style.gap = "8px";
+  indicator.style.zIndex = "2";
+
+  var dots = banners.map(function (_src, index) {
+    var dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "main-banner-dot";
+    dot.setAttribute("aria-label", "배너 " + (index + 1));
+    dot.style.width = "8px";
+    dot.style.height = "8px";
+    dot.style.borderRadius = "999px";
+    dot.style.border = "0";
+    dot.style.padding = "0";
+    dot.style.cursor = "pointer";
+    dot.style.background = "rgba(255,255,255,0.45)";
+    dot.style.transition = "all 180ms ease";
+    dot.addEventListener("click", function (event) {
+      event.stopPropagation();
+      goTo(index);
+      startAuto();
+    });
+    indicator.appendChild(dot);
+    return dot;
+  });
+  hero.appendChild(indicator);
+
   var overlay = hero.querySelector(".hero-overlay");
   var overlayTitle = hero.querySelector(".hero-overlay h1");
   var overlayEyebrow = hero.querySelector(".hero-overlay p");
@@ -79,6 +112,16 @@
       overlayEyebrow.style.display = "none";
       overlayEyebrow.textContent = "";
     }
+    updateIndicator();
+  }
+
+  function updateIndicator() {
+    dots.forEach(function (dot, index) {
+      var active = index === current;
+      dot.style.width = active ? "20px" : "8px";
+      dot.style.background = active ? "#ffffff" : "rgba(255,255,255,0.45)";
+      dot.style.opacity = active ? "1" : "0.88";
+    });
   }
 
   function updateTrack(withAnimation) {
