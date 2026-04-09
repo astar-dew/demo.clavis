@@ -10,7 +10,7 @@
 
   var LAYOUT_KEY = "clavis-layout";
   var savedLayout = localStorage.getItem(LAYOUT_KEY);
-  var layout = savedLayout === "layout2" ? "layout2" : "layout1";
+  var layout = savedLayout === "layout2" || savedLayout === "layout3" ? savedLayout : "layout1";
   localStorage.setItem(LAYOUT_KEY, layout);
 
   function ensureLayoutStyles() {
@@ -24,8 +24,13 @@
       ".topbar.layout-2 .logo{justify-self:center;margin:0;}" +
       ".topbar.layout-2 .menu.right{gap:12px;flex-wrap:nowrap;justify-content:flex-end;min-width:0;}" +
       ".topbar.layout-2 .menu.right > a{font-weight:600;letter-spacing:0.1em;}" +
+      ".topbar.layout-3 .topbar-inner{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:24px;height:70px;}" +
+      ".topbar.layout-3 .logo{margin:0;}" +
+      ".topbar.layout-3 .menu.left{gap:22px;flex-wrap:nowrap;justify-content:center;min-width:0;}" +
+      ".topbar.layout-3 .menu.right{gap:12px;flex-wrap:nowrap;justify-content:flex-end;min-width:0;}" +
+      ".topbar.layout-3 .menu.right > a{font-weight:600;letter-spacing:0.1em;}" +
       "@media (max-width:720px){.footer-inner{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 16px;padding:56px 20px;}.footer-inner>div:first-child{grid-column:1/-1;}.footer-inner>div:last-child{grid-column:1/-1;border-top:1px solid var(--line);padding-top:16px;}.footer-logo{font-size:56px;}.footer-inner h5{font-size:14px;line-height:1.2;margin:0 0 10px;}.footer-inner a,.footer-inner p{font-size:13px;line-height:1.6;margin:4px 0;}.footer .contact{font-size:13px;line-height:1.7;}}" +
-      "@media (max-width:760px){.topbar.layout-2 .topbar-inner{display:flex;height:56px;}}";
+      "@media (max-width:760px){.topbar.layout-2 .topbar-inner,.topbar.layout-3 .topbar-inner{display:flex;height:56px;}}";
     document.head.appendChild(style);
   }
 
@@ -140,20 +145,21 @@
     '<button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>' +
     "</nav>";
 
-  var leftMenu = layout === "layout2" ? leftMenuLayout2 : leftMenuLayout1;
-  var rightMenu = layout === "layout2" ? rightMenuLayout2 : rightMenuLayout1;
-  var inner = leftMenu + logo + rightMenu;
+  var isLayout2Like = layout === "layout2" || layout === "layout3";
+  var leftMenu = isLayout2Like ? leftMenuLayout2 : leftMenuLayout1;
+  var rightMenu = isLayout2Like ? rightMenuLayout2 : rightMenuLayout1;
+  var inner = layout === "layout3" ? logo + leftMenu + rightMenu : leftMenu + logo + rightMenu;
 
   root.innerHTML =
     '<header class="topbar layout-' +
-    (layout === "layout2" ? "2" : "1") +
+    (layout === "layout2" ? "2" : layout === "layout3" ? "3" : "1") +
     '">' +
     '<div class="topbar-inner">' +
     inner +
     "</div></header>";
 
   function syncFooterByLayout() {
-    if (layout !== "layout2") return;
+    if (layout !== "layout2" && layout !== "layout3") return;
     var footerBlocks = document.querySelectorAll(".footer-inner > div");
     footerBlocks.forEach(function (block) {
       var heading = block.querySelector("h5");

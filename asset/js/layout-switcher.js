@@ -6,7 +6,7 @@
   var THEME_KEY = "clavis-theme";
 
   function normalizeLayout(value) {
-    return value === "layout2" ? "layout2" : "layout1";
+    return value === "layout2" || value === "layout3" ? value : "layout1";
   }
 
   function normalizeTheme(value) {
