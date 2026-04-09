@@ -22,12 +22,15 @@
     btn = document.createElement("button");
     btn.className = "icon-btn theme-toggle-btn";
     btn.type = "button";
-    var shopLink = rightMenu.querySelector('a[href*="shop"]');
-    if (shopLink && shopLink.nextSibling) {
-      rightMenu.insertBefore(btn, shopLink.nextSibling);
-    } else {
-      rightMenu.insertBefore(btn, rightMenu.firstChild);
-    }
+  }
+
+  var cartBtn = rightMenu.querySelector(".icon-cart");
+  if (cartBtn && cartBtn.nextSibling) {
+    rightMenu.insertBefore(btn, cartBtn.nextSibling);
+  } else if (cartBtn) {
+    rightMenu.appendChild(btn);
+  } else {
+    rightMenu.appendChild(btn);
   }
 
   btn.textContent = targetLabel;

@@ -215,18 +215,18 @@ a {
 .brand-page {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 56px 20px 104px;
+  padding: 106px 20px 210px;
 }
 
 .panel {
   background: #fff;
   border: 1px solid var(--line);
-  padding: 56px 62px;
-  margin-bottom: 34px;
+  padding: 52px 104px;
+  margin-bottom: 36px;
 }
 
 .eyebrow {
-  margin: 0 0 14px;
+  margin: 0 0 28px;
   color: var(--muted);
   letter-spacing: 0.15em;
   font-size: 12px;
@@ -236,7 +236,7 @@ a {
   border: 0;
   background: transparent;
   padding: 0;
-  margin-bottom: 52px;
+  margin-bottom: 230px;
   text-align: center;
 }
 
@@ -253,7 +253,7 @@ a {
   display: block;
   width: 56px;
   height: 2px;
-  margin: 20px auto 18px;
+  margin: 40px auto 36px;
   background: rgba(184, 158, 120, 0.8);
 }
 
@@ -273,7 +273,7 @@ a {
 }
 
 .core-item {
-  padding: 64px 62px;
+  padding: 128px 124px;
   text-align: center;
 }
 
@@ -286,14 +286,14 @@ a {
 }
 
 .core-item h3 {
-  margin: 0 0 28px;
+  margin: 0 0 56px;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.05;
 }
 
 .core-num {
-  margin: 0 0 36px;
+  margin: 0 0 72px;
   color: var(--accent);
   letter-spacing: 0.18em;
   font-size: 12px;
@@ -302,7 +302,7 @@ a {
 }
 
 .core-lead {
-  margin: 0 0 10px;
+  margin: 0 0 20px;
   font-size: 22px;
   font-weight: 700;
   color: #1c1c1c;
@@ -321,7 +321,7 @@ a {
 .history h2,
 .future h2,
 .closeout h2 {
-  margin: 0 0 34px;
+  margin: 0 0 68px;
   text-align: center;
   font-family: "SUIT Variable", sans-serif;
   font-size: 42px;
@@ -329,7 +329,7 @@ a {
 }
 
 .roadmap h2 {
-  margin: 0 0 34px;
+  margin: 0 0 68px;
   text-align: center;
   font-family: "SUIT Variable", sans-serif;
   font-size: 34px;
@@ -343,7 +343,7 @@ a {
 }
 
 .history li {
-  padding: 16px 0;
+  padding: 32px 0;
   border-bottom: 1px solid #e5dfd6;
   font-size: 14px;
   color: #645f59;
@@ -367,8 +367,8 @@ a {
 .roadmap-grid article {
   border-right: 1px solid #e5dfd6;
   background: #fff;
-  padding: 44px 24px 56px;
-  min-height: 430px;
+  padding: 72px 40px 72px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -383,7 +383,7 @@ a {
 }
 
 .roadmap-grid h4 {
-  margin: 0 0 18px;
+  margin: 0 0 36px;
   font-size: 18px;
   font-family: "SUIT Variable", sans-serif;
   color: #8b8b8b;
@@ -393,30 +393,31 @@ a {
 
 .period {
   color: #1f1f1f;
-  margin: 0 0 16px;
-  font-size: clamp(20px, 1.4vw, 24px);
+  margin: 0 0 32px;
+  font-size: clamp(18px, 1.2vw, 21px);
   font-weight: 700;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 .roadmap-grid h5 {
-  margin: 0 0 18px;
-  font-size: clamp(22px, 1.6vw, 28px);
+  margin: 0 0 36px;
+  font-size: clamp(19px, 1.3vw, 23px);
   font-weight: 700;
   line-height: 1.2;
-  word-break: keep-all;
+  white-space: nowrap;
 }
 
 .roadmap-grid article:nth-child(4) .period {
-  font-size: clamp(19px, 1.3vw, 22px);
+  font-size: clamp(17px, 1.1vw, 20px);
 }
 
 .roadmap-grid article:nth-child(4) h5 {
-  font-size: clamp(20px, 1.4vw, 24px);
+  font-size: clamp(18px, 1.2vw, 21px);
 }
 
 .roadmap-list {
-  margin: 0 0 28px;
+  margin: 0 0 24px;
   padding: 0;
   list-style: none;
   color: #7a746c;
@@ -437,9 +438,9 @@ a {
 }
 
 .roadmap-status {
-  margin-top: auto;
+  margin-top: 9px;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 16px 32px;
   font-size: 11px;
   letter-spacing: 0.12em;
   font-weight: 700;
@@ -477,7 +478,7 @@ a {
 .future-grid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
-  gap: 48px;
+  gap: 96px;
   align-items: center;
 }
 
@@ -492,14 +493,14 @@ a {
 }
 
 .future h3 {
-  margin: 0 0 14px;
+  margin: 0 0 28px;
   font-size: 24px;
   font-family: "SUIT Variable", sans-serif;
   font-weight: 500;
 }
 
 .future p {
-  margin: 0 0 12px;
+  margin: 0 0 24px;
   line-height: 1.7;
   font-size: 14px;
   color: #645f59;
@@ -511,6 +512,103 @@ a {
   color: #645f59;
   line-height: 1.9;
   font-size: 13px;
+}
+
+.science-tech-banner {
+  margin: 16px 0 60px;
+  padding: 72px 24px;
+  height: 460px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(rgba(133, 133, 133, 0.78), rgba(133, 133, 133, 0.78)),
+    url("../asset/banner/main/banner1.png") center / cover no-repeat;
+  color: #fff;
+  text-align: center;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.science-tech-banner .eyebrow {
+  margin: 0 0 56px;
+  color: #d4b27a;
+  letter-spacing: 0.3em;
+  font-size: 13px;
+}
+
+.science-tech-banner h2 {
+  margin: 0;
+  font-size: clamp(40px, 4.8vw, 56px);
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+  color: #fff;
+}
+
+.science-tech-banner p {
+  margin: 60px 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.science-tech-btn {
+  margin-top: 84px;
+  min-width: 390px;
+  height: 72px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  letter-spacing: 0.12em;
+  color: #fff;
+}
+
+.tech-link-banner {
+  margin: 0 0 60px;
+  border: 1px solid var(--line);
+  background: #f8f6f1;
+  text-align: center;
+  min-height: 460px;
+  padding: 84px 52px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.tech-link-banner .eyebrow {
+  margin: 0 0 28px;
+  color: #a98856;
+  width: 100%;
+  text-align: center;
+}
+
+.tech-link-banner h3 {
+  margin: 0 0 28px;
+  font-size: clamp(38px, 4.2vw, 52px);
+  font-weight: 500;
+  color: #2b2b2b;
+}
+
+.tech-link-banner p {
+  margin: 0 auto;
+  max-width: 760px;
+  color: #6f6a63;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.tech-link-btn {
+  margin-top: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+  height: 48px;
+  border: 1px solid #c9b08a;
+  color: #7d6340;
+  font-size: 12px;
+  letter-spacing: 0.14em;
 }
 
 .closeout {
@@ -527,11 +625,11 @@ a {
 
 .feature-cards {
   max-width: 1120px;
-  margin: 30px auto 86px;
+  margin: 60px auto 172px;
   padding: 0 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 40px;
 }
 
 .feature-card {
@@ -548,11 +646,11 @@ a {
 }
 
 .feature-card div {
-  padding: 14px 16px 18px;
+  padding: 28px 32px 36px;
 }
 
 .feature-card h4 {
-  margin: 0 0 8px;
+  margin: 0 0 16px;
   font-size: 35px;
   line-height: 0.95;
   font-family: "SUIT Variable", sans-serif;
@@ -561,7 +659,7 @@ a {
 }
 
 .feature-card p {
-  margin: 0 0 9px;
+  margin: 0 0 18px;
   color: #7d776f;
   font-size: 13px;
 }
@@ -574,16 +672,16 @@ a {
 .footer {
   background: var(--black);
   color: #f0efec;
-  margin-top: 42px;
+  margin-top: 84px;
 }
 
 .footer-inner {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 100px 20px;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1fr;
-  gap: 18px;
+  gap: 36px;
 }
 
 .footer-logo {
@@ -632,6 +730,10 @@ a {
 }
 
 @media (max-width: 760px) {
+  .brand-page {
+    padding: 34px 14px 84px;
+  }
+
   .intro h1 {
     font-size: 30px;
     line-height: 1.2;
@@ -644,6 +746,53 @@ a {
   .intro-subtitle {
     font-size: 13px;
     line-height: 1.65;
+  }
+
+  .intro.panel {
+    margin-bottom: 80px;
+  }
+
+  .science-tech-banner {
+    min-height: 340px;
+    padding: 64px 18px;
+  }
+
+  .science-tech-banner .eyebrow {
+    margin-bottom: 16px;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+  }
+
+  .science-tech-banner h2 {
+    font-size: 36px;
+  }
+
+  .science-tech-banner p {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .science-tech-btn {
+    margin-top: 24px;
+    min-width: 228px;
+    height: 46px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    padding: 0 18px;
+  }
+
+  .tech-link-banner {
+    padding: 38px 18px 42px;
+  }
+
+  .tech-link-banner h3 {
+    font-size: 34px;
+  }
+
+  .tech-link-banner p {
+    font-size: 13px;
+    line-height: 1.7;
   }
 
   .mobile-nav-enabled .topbar-inner {
@@ -752,7 +901,7 @@ a {
 
   .mobile-nav-enabled .mobile-nav-group {
     border-bottom: 1px solid #e4e4e2;
-    padding: 16px 0;
+    padding: 32px 0;
   }
 
   .mobile-nav-enabled .mobile-nav-toggle {
@@ -822,7 +971,7 @@ a {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 36px;
   }
 
   .submenu {
@@ -891,11 +1040,11 @@ a {
   }
 
   .period {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .roadmap-grid h5 {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .footer-inner {

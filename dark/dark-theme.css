@@ -241,6 +241,49 @@ h5,
   color: #e4c493;
 }
 
+.science-tech-banner {
+  border-color: #3a414f !important;
+}
+
+.science-tech-banner .eyebrow {
+  color: #d9b879 !important;
+}
+
+.science-tech-banner h2 {
+  color: #f4f6fa !important;
+}
+
+.science-tech-banner p,
+.science-tech-btn {
+  color: #f0f3f9 !important;
+}
+
+.science-tech-btn {
+  border-color: rgba(240, 243, 249, 0.65) !important;
+}
+
+.tech-link-banner {
+  background: #151a22 !important;
+  border-color: #343c4c !important;
+}
+
+.tech-link-banner .eyebrow {
+  color: #d3b072 !important;
+}
+
+.tech-link-banner h3 {
+  color: #eef2f9 !important;
+}
+
+.tech-link-banner p {
+  color: #c2cad8 !important;
+}
+
+.tech-link-btn {
+  border-color: #7a6648 !important;
+  color: #e2c79b !important;
+}
+
 @media (max-width: 720px) {
   .mobile-nav-enabled .mobile-menu-open span,
   .home-page .mobile-menu-open span {

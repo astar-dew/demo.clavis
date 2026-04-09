@@ -154,9 +154,9 @@ h4 {
 
 .safety-dark {
   margin-top: 0;
-  background: linear-gradient(135deg, #172131, #111826);
+  background: #000;
   color: #fff;
-  border: 1px solid #222b3b;
+  border: 1px solid #1f1f1f;
   padding: 96px 52px 64px;
   text-align: center;
 }
@@ -172,7 +172,7 @@ h4 {
   max-width: 1120px;
   height: auto;
   display: block;
-  margin: 0 auto 28px;
+  margin: 0 auto 70px;
   border: 1px solid rgba(222, 200, 161, 0.2);
 }
 
@@ -183,8 +183,9 @@ h4 {
 }
 
 .safety-grid article {
-  border: 1px solid rgba(222, 200, 161, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 32px 18px;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .ring {
@@ -193,8 +194,8 @@ h4 {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 1px solid #b89e78;
-  color: #b89e78;
+  border: 1px solid #d1b279;
+  color: #d1b279;
   font-size: 12px;
   margin-bottom: 14px;
 }
@@ -202,12 +203,13 @@ h4 {
 .safety-grid h3 {
   font-size: 18px;
   margin-bottom: 8px;
+  color: #f3f5f8;
 }
 
 .safety-grid p {
   margin: 0;
   font-size: 13px;
-  color: #adb3be;
+  color: #d1d5dd;
   line-height: 1.7;
 }
 
@@ -551,6 +553,10 @@ blockquote em {
 
   .tt-page > section + section {
     margin-top: 80px;
+  }
+
+  .safety-data-image {
+    margin-bottom: 40px;
   }
 
   .intro h1 {
