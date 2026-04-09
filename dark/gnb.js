@@ -150,4 +150,17 @@
     '<div class="topbar-inner">' +
     inner +
     "</div></header>";
+
+  function syncFooterByLayout() {
+    if (layout !== "layout2") return;
+    var footerBlocks = document.querySelectorAll(".footer-inner > div");
+    footerBlocks.forEach(function (block) {
+      var heading = block.querySelector("h5");
+      if (heading && heading.textContent.trim().toUpperCase() === "ABOUT") {
+        heading.remove();
+      }
+    });
+  }
+
+  syncFooterByLayout();
 })();

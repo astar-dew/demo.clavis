@@ -410,6 +410,14 @@ h4 {
   background: #bcbcbc;
 }
 
+.gauss-note {
+  margin: 8px 0 0;
+  font-size: 11px;
+  color: #9a948c;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+}
+
 .source-box {
   border: 1px solid var(--line);
   min-height: 480px;
@@ -485,6 +493,13 @@ h4 {
 
 .precision-grid {
   align-items: stretch;
+}
+
+.precision-copy {
+  min-height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .penetration-box {
@@ -657,6 +672,10 @@ h4 {
 
   .footer-inner {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .precision-copy {
+    min-height: auto;
   }
 }
 

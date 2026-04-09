@@ -292,6 +292,10 @@ h5,
   color: #e2c79b !important;
 }
 
+.science-page .gauss-note {
+  color: #8f99ab !important;
+}
+
 @media (max-width: 720px) {
   .mobile-nav-enabled .mobile-menu-open span,
   .home-page .mobile-menu-open span {
