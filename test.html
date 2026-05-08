@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토탈풋볼 팀원 모집</title>
+    <style>
+        :root {
+            --primary-blue: #0A1931;
+            --accent-gold: #FFC947;
+            --text-white: #FFFFFF;
+            --bg-gray: #F4F6F8;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Pretendard', sans-serif;
+            background-color: var(--bg-gray);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 헤더 섹션 */
+        .header {
+            background: linear-gradient(rgba(10, 25, 49, 0.8), rgba(10, 25, 49, 0.8)), 
+                        url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-white);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+        .header p { font-size: 1.1rem; color: var(--accent-gold); margin-top: 10px; font-weight: bold; }
+
+        .container { max-width: 600px; margin: -40px auto 40px; padding: 0 20px; }
+
+        /* 카드 공통 스타일 */
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 10px;
+        }
+
+        /* 코칭스태프 & 비용 */
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .info-item { background: #f8f9fa; padding: 15px; border-radius: 10px; text-align: center; }
+        .info-item .label { font-size: 0.8rem; color: #777; display: block; }
+        .info-item .value { font-weight: bold; font-size: 1rem; color: #222; }
+        .free-tag { color: #e63946; font-weight: 800; }
+
+        /* 훈련 내용 */
+        .program-list { padding: 0; list-style: none; }
+        .program-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            align-items: flex-start;
+        }
+        .program-list li::before { content: '✓'; color: var(--accent-gold); margin-right: 10px; font-weight: bold; }
+
+        /* 스케줄 탭 스타일 */
+        .schedule-box { background: var(--primary-blue); color: white; padding: 20px; border-radius: 15px; }
+        .location-group { margin-bottom: 15px; }
+        .location-title { font-weight: bold; color: var(--accent-gold); font-size: 0.9rem; margin-bottom: 5px; }
+        .time-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+        .tag { background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 5px; font-size: 0.8rem; }
+
+        /* 감독의 한마디 */
+        .quote { font-style: italic; color: #555; position: relative; padding: 10px 0; }
+        .quote::before { content: '"'; font-size: 3rem; color: #ddd; position: absolute; top: -20px; left: -10px; z-index: -1; }
+
+        /* 하단 고정 버튼 */
+        .apply-btn {
+            background: var(--primary-blue);
+            color: var(--accent-gold);
+            text-align: center;
+            padding: 18px;
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(10, 25, 49, 0.3);
+            display: block;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .caution { font-size: 0.8rem; color: #888; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>TOTAL FOOTBALL</h1>
+        <p>단단한 팀을 위한 진지한 도전</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="section-title">코칭스태프 및 회비</div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">감독</span>
+                    <span class="value">박희철</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">수석코치</span>
+                    <span class="value">김승용</span>
+                </div>
+                
+            </div>
+            <p style="font-size:0.75rem; color:#888; margin-top:10px;">* 선수 특성 파악 후 최적의 전술로 변경 가능</p>
+        </div>
+
+        <div class="card">
+            <div class="section-title">우리의 목표</div>
+            <p class="quote">
+                "소속팀에서 느끼지 못한 소속감을 선사합니다. <br>
+                축구장 안에서 만큼은 누구보다 진지한 팀이 되는 것, 그것이 토탈풋볼의 목표입니다."
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="section-title">훈련 및 분석</div>
+            <ul class="program-list">
+                <li>프로 기반의 아마추어 최적화 프로그램 연구</li>
+                <li>기본기 향상 및 1:1 능력 집중 트레이닝</li>
+                <li>각 포지션 별 역할 및 패턴 훈련</li>
+                <li>훈련/경기 촬영 후 컨텐츠 제공 및 분석 방송</li>
+            </ul>
+            <small style="color:#ee6c4d">** 운영진 사정상 촬영이 불가능할 수 있음</small>
+        </div>
+
+        <div class="schedule-box">
+            <div class="section-title" style="color:var(--accent-gold); border-left-color:white;">훈련 장소 및 시간</div>
+            
+            <div class="location-group">
+                <div class="location-title"> 지역  </div>
+                <div class="time-tags">
+                    <span class="tag">서울 서부권</span> 
+                </div>
+            </div>
+
+            <div class="location-group">
+                <div class="location-title"> 시간대</div>
+                <div class="time-tags">
+                    <span class="tag">월요일 20시 이후</span> 
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 20px;">
+            <div class="section-title">감독의 한마디</div>
+            <p style="font-size: 0.9rem; color: #444; white-space: pre-wrap;">
+은퇴 후 아마추어 현장에서 이들에게 가장 필요한 것이 무엇인지 고민한 끝에 나온 결론은 '팀 창단'이었습니다. 
+어느 팀보다 단단한 팀을 만들 자신 있습니다. 
+전국 최고 수준의 교육과 지원을 약속드립니다.
+
+진지하게 도전할 아마추어 축구인들을 모십니다.
+            </p>
+        </div>
+
+        <div class="caution">
+            • 경쟁을 통해 최종 10인이 자체 리그 참가<br>
+            • 비용 입금 후 미참여 시 1주일 내 전액 환불 가능<br>
+            • 일정 시작 후 취소 시 잔여 횟수 비용의 50% 환불
+        </div>
+
+        <a href="#" class="apply-btn">팀 합류하기</a>
+    </div>
+
+</body>
+</html>
