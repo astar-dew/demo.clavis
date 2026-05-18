@@ -10,7 +10,7 @@
 
   var LAYOUT_KEY = "clavis-layout";
   var savedLayout = localStorage.getItem(LAYOUT_KEY);
-  var layout = savedLayout === "layout2" || savedLayout === "layout3" ? savedLayout : "layout1";
+  var layout = savedLayout === "layout2" || savedLayout === "layout3" ? savedLayout : "layout3";
   localStorage.setItem(LAYOUT_KEY, layout);
 
   function ensureLayoutStyles() {

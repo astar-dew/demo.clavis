@@ -310,6 +310,148 @@ h4 {
   text-align: center;
 }
 
+.ancient-panel {
+  margin-bottom: 34px;
+  border: 1px solid #11253f;
+  background: linear-gradient(135deg, #051634 0%, #0a1f4a 45%, #0e2d64 100%);
+  color: #dbe9ff;
+  padding: 50px;
+}
+
+.ancient-wrap {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 44px;
+  align-items: start;
+}
+
+.ancient-timeline {
+  position: relative;
+  display: grid;
+  gap: 30px;
+  padding-left: 42px;
+}
+
+.ancient-timeline::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, #15d2ff 0%, #0e79d8 100%);
+}
+
+.ancient-timeline article {
+  position: relative;
+}
+
+.ancient-timeline article::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #12d8ff;
+  box-shadow: 0 0 0 5px rgba(18, 216, 255, 0.14);
+}
+
+.ancient-timeline .era {
+  margin: 0 0 8px;
+  color: #14d0ff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.ancient-timeline h3 {
+  margin: 0 0 10px;
+  font-size: 36px;
+  line-height: 1.22;
+  color: #ffffff;
+}
+
+.ancient-timeline p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #d7e6ff;
+}
+
+.ancient-card {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(17, 43, 85, 0.84) 0%, rgba(9, 24, 53, 0.92) 100%);
+  padding: 26px 24px;
+}
+
+.card-eyebrow {
+  margin: 0 0 14px;
+  color: #d3b278;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+}
+
+.card-photo {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: #071a3b;
+}
+
+.card-photo img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.ancient-card h3 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.ancient-card > p {
+  margin: 0 0 16px;
+  color: #d8e6fd;
+  font-size: 19px;
+  line-height: 1.74;
+}
+
+.modern-box {
+  border: 1px solid rgba(0, 197, 255, 0.36);
+  border-radius: 12px;
+  background: rgba(13, 44, 90, 0.55);
+  padding: 14px;
+}
+
+.modern-box .modern-title {
+  margin: 0 0 8px;
+  color: #20d8ff;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.modern-box p {
+  margin: 0;
+  color: #cde2ff;
+  font-size: 16px;
+  line-height: 1.74;
+}
+
+.ancient-footnote {
+  margin: 14px 0 0;
+  color: rgba(207, 221, 247, 0.78);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .crisis-chart {
   height: 420px;
   border: 1px solid var(--line);
@@ -653,6 +795,10 @@ h4 {
     grid-template-columns: 1fr;
   }
 
+  .ancient-wrap {
+    grid-template-columns: 1fr;
+  }
+
   .order-cards {
     grid-template-columns: 1fr;
   }
@@ -734,6 +880,36 @@ h4 {
 
   .effect-grid {
     grid-template-columns: 1fr;
+  }
+
+  .ancient-panel {
+    padding: 28px 18px;
+  }
+
+  .ancient-timeline {
+    gap: 24px;
+    padding-left: 32px;
+  }
+
+  .ancient-timeline article::before {
+    left: -28px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .ancient-timeline h3,
+  .ancient-card h3 {
+    font-size: 32px;
+  }
+
+  .ancient-timeline p,
+  .ancient-card > p,
+  .modern-box p {
+    font-size: 16px;
+  }
+
+  .card-photo img {
+    height: 220px;
   }
 
   .issue-grid {
