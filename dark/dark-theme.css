@@ -289,6 +289,55 @@ h5,
   background: #151a22 !important;
 }
 
+.geomagnetic-environment {
+  background:
+    linear-gradient(rgba(17, 19, 24, 0.86), rgba(17, 19, 24, 0.94)),
+    url("../asset/backdata/neodium.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.geomagnetic-environment h2 {
+  color: #eef2f9 !important;
+}
+
+.geomagnetic-environment > p:not(.eyebrow) {
+  color: #b7c0cf !important;
+}
+
+.geomagnetic-note {
+  background: rgba(24, 29, 39, 0.9) !important;
+  border-color: var(--line) !important;
+  color: #b7c0cf !important;
+}
+
+.geomagnetic-context-grid article {
+  background: rgba(24, 29, 39, 0.9) !important;
+  border-color: var(--line) !important;
+}
+
+.geomagnetic-reference-grid article {
+  background: rgba(24, 29, 39, 0.9) !important;
+  border-color: var(--line) !important;
+}
+
+.geomagnetic-context-grid h3 {
+  color: #eef2f9 !important;
+}
+
+.geomagnetic-reference-grid h3 {
+  color: #eef2f9 !important;
+}
+
+.geomagnetic-context-grid p {
+  color: #b7c0cf !important;
+}
+
+.geomagnetic-reference-grid p,
+.geomagnetic-unit {
+  color: #b7c0cf !important;
+}
+
 .translation-steps article,
 .neodymium-grid article {
   background: #181d27 !important;
@@ -364,8 +413,55 @@ h5,
 
 .brand-signature,
 .brand-problem,
-.brand-values {
+.brand-values,
+.brand-v2-flow,
+.brand-v2-history,
+.brand-v2-collection,
+.brand-v2-roadmap {
   border-color: var(--line) !important;
+}
+
+.brand-v2-hero {
+  background:
+    linear-gradient(rgba(17, 19, 24, 0.82), rgba(17, 19, 24, 0.92)),
+    url("../asset/banner/main/banner1.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.brand-v2-hero h2,
+.brand-v2-section-head h2,
+.brand-v2-story-step h3,
+.brand-v2-flow h3 {
+  color: #eef2f9 !important;
+}
+
+.brand-v2-hero p:not(.eyebrow),
+.brand-v2-flow p:not(.eyebrow),
+.brand-v2-section-head p:not(.eyebrow),
+.brand-v2-collection-note,
+.brand-v2-story-step p,
+.brand-v2-history-list p,
+.brand-values p:not(.core-num) {
+  color: #b7c0cf !important;
+}
+
+.brand-v2-flow article,
+.brand-v2-history-list,
+.brand-v2-history-list li,
+.brand-v2-story-flow,
+.brand-v2-story-step,
+.brand-v2-collection-note {
+  border-color: var(--line) !important;
+}
+
+.brand-v2-story-step {
+  background: #111318 !important;
+}
+
+.brand-v2-story-step:hover,
+.brand-v2-collection-note {
+  background: #171b23 !important;
 }
 
 .medi-tab-list {

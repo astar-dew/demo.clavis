@@ -3,46 +3,11 @@
   var rightMenu = document.querySelector(".topbar .menu.right");
   if (!rightMenu) return;
 
-  function isDarkPath(pathname) {
-    return pathname.indexOf("/dark/") !== -1;
-  }
-
-  function swapThemePath(pathname, toDark) {
-    if (toDark) return pathname.replace("/white/", "/dark/");
-    return pathname.replace("/dark/", "/white/");
-  }
-
-  var url = new URL(window.location.href);
-  var currentIsDark = isDarkPath(url.pathname);
+  var currentIsDark = window.location.pathname.indexOf("/dark/") !== -1;
   localStorage.setItem(STORAGE_KEY, currentIsDark ? "dark" : "light");
 
-  var targetLabel = currentIsDark ? "LIGHT" : "DARK";
-  var btn = rightMenu.querySelector(".theme-toggle-btn");
-  if (!btn) {
-    btn = document.createElement("button");
-    btn.className = "icon-btn theme-toggle-btn";
-    btn.type = "button";
+  var existingBtn = rightMenu.querySelector(".theme-toggle-btn");
+  if (existingBtn) {
+    existingBtn.remove();
   }
-
-  var cartBtn = rightMenu.querySelector(".icon-cart");
-  if (cartBtn && cartBtn.nextSibling) {
-    rightMenu.insertBefore(btn, cartBtn.nextSibling);
-  } else if (cartBtn) {
-    rightMenu.appendChild(btn);
-  } else {
-    rightMenu.appendChild(btn);
-  }
-
-  btn.textContent = targetLabel;
-  btn.setAttribute("aria-label", targetLabel + " 모드로 전환");
-
-  btn.addEventListener("click", function () {
-    var now = new URL(window.location.href);
-    var nowIsDark = isDarkPath(now.pathname);
-    var nextIsDark = !nowIsDark;
-    localStorage.setItem(STORAGE_KEY, nextIsDark ? "dark" : "light");
-
-    var nextPath = swapThemePath(now.pathname, nextIsDark);
-    window.location.href = nextPath + now.search + now.hash;
-  });
 })();

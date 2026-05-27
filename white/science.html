@@ -22,21 +22,21 @@
         <div class="science-tab-list" role="tablist" aria-label="Science page composition">
         <button
           id="science-tab-existing"
-          class="active"
           type="button"
           role="tab"
           data-science-view-button="existing"
-          aria-selected="true"
+          aria-selected="false"
           aria-controls="science-panel-existing"
         >
           기존 구성
         </button>
         <button
           id="science-tab-recommended"
+          class="active"
           type="button"
           role="tab"
           data-science-view-button="recommended"
-          aria-selected="false"
+          aria-selected="true"
           aria-controls="science-panel-recommended"
         >
           추천 구성
@@ -46,10 +46,11 @@
 
       <div
         id="science-panel-existing"
-        class="science-composition is-active"
+        class="science-composition"
         data-science-view="existing"
         role="tabpanel"
         aria-labelledby="science-tab-existing"
+        hidden
       >
 
       <section class="panel magnetic-intro">
@@ -362,33 +363,11 @@
 
       <div
         id="science-panel-recommended"
-        class="science-composition"
+        class="science-composition is-active"
         data-science-view="recommended"
         role="tabpanel"
         aria-labelledby="science-tab-recommended"
-        hidden
       >
-        <section class="panel center">
-          <p class="eyebrow">URBAN LIFESTYLE</p>
-          <h2>도심 속에서 멀어진 자연의 리듬</h2>
-          <div class="crisis-grid">
-            <div class="crisis-chart">MAGNETIC SHIELDED ZONE</div>
-            <div>
-              <p>
-                현대인은 대부분의 시간을 건물과 실내 환경 안에서 보냅니다.
-                클라비스는 이런 생활 환경 속에서 부족해지기 쉬운 자연과의 접점을
-                웨어러블 방식으로 보완하는 데 집중합니다.
-              </p>
-              <div class="issue-grid">
-                <article><h4>실내 중심 생활</h4><p>자연 환경과의 접점 감소</p></article>
-                <article><h4>불규칙한 루틴</h4><p>몸과 마음의 리듬 변화</p></article>
-                <article><h4>높은 피로감</h4><p>반복되는 일상 컨디션 저하</p></article>
-                <article><h4>회복의 필요</h4><p>편안한 휴식 환경에 대한 니즈</p></article>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section class="panel magnetic-intro">
           <div class="magnetic-grid">
             <div class="image-stage">
@@ -406,6 +385,55 @@
                 기술로 해석합니다.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section class="panel center">
+          <p class="eyebrow">URBAN LIFESTYLE</p>
+          <h2>도심의 하루는<br />자연 자기장과 멀어져 있습니다</h2>
+          <div class="crisis-grid">
+            <div class="crisis-chart">MAGNETIC SHIELDED ZONE</div>
+            <div>
+              <p>
+                현대인은 대부분의 시간을 건물과 실내 환경 안에서 보냅니다.
+                클라비스는 이런 생활 환경 속에서 줄어들기 쉬운 자연 자기장과의
+                접점을 제품 안의 자기장 코어로 다시 해석합니다.
+              </p>
+              <div class="issue-grid">
+                <article><h4>실내 중심 생활</h4><p>자연 자기장과의 접점 감소</p></article>
+                <article><h4>차단된 환경</h4><p>건물과 도심 구조 안에서 약해지는 자연 신호</p></article>
+                <article><h4>반복되는 루틴</h4><p>몸 가까운 균형 케어에 대한 필요</p></article>
+                <article><h4>웨어러블 해석</h4><p>자기장 코어로 다시 연결하는 일상 접점</p></article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel center geomagnetic-environment bama-context">
+          <p class="eyebrow">BAMA GEOMAGNETIC VILLAGE</p>
+          <h2>보이지 않는 자기장 환경은<br />장소에 따라 다르게 관찰됩니다</h2>
+          <p>
+            중국 광시성 마바현(Bama County)은 장수 지역으로 알려지며, 자연환경과
+            지자기장 조건이 함께 언급되는 사례입니다.
+          </p>
+          <div class="geomagnetic-reference-grid">
+            <article>
+              <h3>일반 도시 실내 환경</h3>
+              <strong>약 0.25 Gauss</strong>
+              <p>건축물 내부와 실내 생활 환경에서는 자기장 조건이 다르게 관찰될 수 있습니다.</p>
+            </article>
+            <article>
+              <h3>바마현 자연환경 사례</h3>
+              <strong>약 0.58 Gauss</strong>
+              <p>바마현은 자연환경과 함께 지자기장 조건이 자주 언급되는 장수 지역 사례입니다.</p>
+            </article>
+          </div>
+          <p class="geomagnetic-unit">
+            Gauss(G)는 자기장 세기를 나타내는 단위이며, 수치가 높을수록 자기장의 강도가 큽니다.
+          </p>
+          <div class="geomagnetic-note">
+            위 수치는 환경 조건을 이해하기 위한 참고 정보입니다. 지자기장이 장수나
+            건강 효과의 직접 원인이라고 해석하지 않습니다.
           </div>
         </section>
 

@@ -23,21 +23,21 @@
         <div class="tt-tab-list" role="tablist" aria-label="Tech and Trust page composition">
           <button
             id="tt-tab-existing"
-            class="active"
             type="button"
             role="tab"
             data-tt-view-button="existing"
-            aria-selected="true"
+            aria-selected="false"
             aria-controls="tt-panel-existing"
           >
             기존 구성
           </button>
           <button
             id="tt-tab-recommended"
+            class="active"
             type="button"
             role="tab"
             data-tt-view-button="recommended"
-            aria-selected="false"
+            aria-selected="true"
             aria-controls="tt-panel-recommended"
           >
             추천 구성
@@ -47,10 +47,11 @@
 
       <div
         id="tt-panel-existing"
-        class="tt-composition is-active"
+        class="tt-composition"
         data-tt-view="existing"
         role="tabpanel"
         aria-labelledby="tt-tab-existing"
+        hidden
       >
 
       <section class="safety-dark">
@@ -179,11 +180,10 @@
 
       <div
         id="tt-panel-recommended"
-        class="tt-composition"
+        class="tt-composition is-active"
         data-tt-view="recommended"
         role="tabpanel"
         aria-labelledby="tt-tab-recommended"
-        hidden
       >
         <section class="safety-dark">
           <p class="eyebrow">01 — WHY TRUST MATTERS</p>
@@ -255,58 +255,31 @@
         <section class="journey center">
           <p class="eyebrow">04 — QUALITY SYSTEM</p>
           <img class="safety-data-image" src="../asset/backdata/tech_1.png" alt="국가 인증 안전성 백데이터" />
-          <h2>좋은 소재를<br />완성도 높은 제품으로 만드는 과정</h2>
+          <h2>매일 믿고 쓰는<br />제품으로 완성합니다</h2>
           <div class="journey-grid">
             <article>
               <span class="step">01</span>
               <img src="../asset/backdata/neodium.png" alt="Neodium" />
               <h3>Material<br />소재 기준</h3>
-              <p>네오디뮴 소재의 특성과 안정성을 고려해 제품 목적에 맞는 자력 구조를 설계합니다.</p>
+              <p>네오디뮴의 특성을 이해하고, 제품 안에서 안정적으로 작동할 수 있는 구조를 먼저 설계합니다.</p>
             </article>
             <article>
               <span class="step">02</span>
               <img src="../asset/backdata/manufact.png" alt="Manufact" />
               <h3>Manufacturing<br />제조 공정</h3>
-              <p>일관된 품질을 유지하기 위해 제조 환경과 공정 기준을 체계적으로 관리합니다.</p>
+              <p>설계한 기준이 제품마다 흔들리지 않도록 제조 환경과 조립 과정을 세심하게 관리합니다.</p>
             </article>
             <article>
               <span class="step">03</span>
               <img src="../asset/backdata/inspect.png" alt="Inspect" />
               <h3>Inspection<br />출고 전 검수</h3>
-              <p>자력, 마감, 착용 품질을 확인해 고객에게 전달되는 마지막 기준을 완성합니다.</p>
+              <p>자력, 마감, 착용감을 한 번 더 확인해 고객에게 전달되는 제품의 마지막 완성도를 점검합니다.</p>
             </article>
           </div>
           <div class="journey-foot">
             <div><strong>MATERIAL</strong><span>네오디뮴 기반 자기장 설계</span></div>
             <div><strong>PROCESS</strong><span>GMP 기반 제조 품질 관리</span></div>
             <div><strong>INSPECTION</strong><span>출고 전 품질 검수</span></div>
-          </div>
-        </section>
-
-        <section class="inspection-process center">
-          <p class="eyebrow">05 — FINAL INSPECTION</p>
-          <h2>출고 전,<br />한 번 더 확인합니다</h2>
-          <div class="inspection-grid">
-            <article>
-              <span>01</span>
-              <h3>Magnetic Check</h3>
-              <p>제품 목적에 맞는 자력 기준을 확인합니다.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Surface Check</h3>
-              <p>마감, 스크래치, 표면 상태를 점검합니다.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Wear Check</h3>
-              <p>착용 구조와 제품 형태의 안정성을 확인합니다.</p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>Package Check</h3>
-              <p>구성품과 출고 상태를 마지막으로 확인합니다.</p>
-            </article>
           </div>
         </section>
 
@@ -326,7 +299,7 @@
         </section>
 
         <section class="trust-bridge center">
-          <p class="eyebrow">06 — PROVEN CHOICE</p>
+          <p class="eyebrow">05 — PROVEN CHOICE</p>
           <h2>기준이 쌓이면<br />선택이 됩니다</h2>
           <p>
             인증, 소재, 제조, 검수의 기준은 하나의 신뢰 경험으로 이어집니다.

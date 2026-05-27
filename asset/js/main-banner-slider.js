@@ -2,12 +2,24 @@
   var hero = document.querySelector(".hero");
   if (!hero) return;
 
-  var banners = ["../asset/banner/main/banner1.png", "../asset/banner/main/banner2.png", "../asset/banner/main/banner3.png"];
-  var categories = ["medi", "active", "living"];
+  var banners = [
+    "../asset/banner/main/banner1.png",
+    "../asset/banner/main/banner2.png",
+    "../asset/banner/main/banner3.png",
+    "../asset/backdata/neodium.png"
+  ];
+  var destinations = [
+    "./shop.html?cat=medi",
+    "./shop.html?cat=active",
+    "./shop.html?cat=living",
+    "./science.html"
+  ];
+  var eyebrows = ["MEDI JEWELRY", "ACTIVE LIFESTYLE", "LIVING & HEALTH", "NEODYMIUM SCIENCE"];
   var captions = [
-    "THE MOST ELEGANT WAY TO GAIN ENEGY",
-    "INVISIBLE POWER CLAVIS",
-    "provides energy closely integrated into daily life"
+    "Wear the Natural Balance",
+    "Move with Magnetic Balance",
+    "Wellness, Close to Your Life",
+    "Neodymium Core, Natural Balance"
   ];
   var current = 0;
   var autoTimer = null;
@@ -109,8 +121,8 @@
       overlayTitle.textContent = captions[current] || captions[0];
     }
     if (overlayEyebrow) {
-      overlayEyebrow.style.display = "none";
-      overlayEyebrow.textContent = "";
+      overlayEyebrow.style.display = "";
+      overlayEyebrow.textContent = eyebrows[current] || eyebrows[0];
     }
     updateIndicator();
   }
@@ -219,8 +231,7 @@
 
   hero.addEventListener("click", function () {
     if (dragMoved) return;
-    var cat = categories[current] || categories[0];
-    window.location.href = "./shop.html?cat=" + encodeURIComponent(cat);
+    window.location.href = destinations[current] || destinations[0];
   });
 
   updateTrack(false);
