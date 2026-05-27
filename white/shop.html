@@ -9,36 +9,7 @@
     <link rel="stylesheet" href="./shop.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="topbar-inner">
-        <nav class="menu left">
-          <div class="menu-item has-submenu">
-            <a href="./brand.html">ABOUT</a>
-            <div class="submenu">
-              <a href="./brand.html">BRAND</a>
-              <a href="./science.html">SCIENCE</a>
-              <a href="./techtrust.html">TECH &amp; TRUST</a>
-            </div>
-          </div>
-          <div class="menu-item has-submenu">
-            <a href="./medi-jewelry.html">COLLECTION</a>
-            <div class="submenu">
-              <a href="./medi-jewelry.html">MEDI JEWELRY</a>
-              <a href="./active-lifestyle.html">ACTIVE LIFESTYLE</a>
-              <a href="./living-health.html">LIVING &amp; HEALTH</a>
-            </div>
-          </div>
-        </nav>
-        <a class="logo" href="./index.html">ClaviS</a>
-        <nav class="menu right">
-          <a href="./shop.html">SHOP</a>
-          <button aria-label="검색" class="icon-btn icon-search"><span aria-hidden="true"></span></button>
-          <button aria-label="로그인" class="icon-btn icon-user"><span aria-hidden="true"></span></button>
-          <button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>
-        </nav>
-      </div>
-      <!-- <div class="subpage-title">클라비스 샵: 웰니스 주얼리와 라이프케어 컬렉션</div> -->
-    </header>
+    <div id="gnb-root"></div>
 
     <main class="shop-page">
       <section class="shop-hero">
@@ -75,26 +46,36 @@
             <h3>Medi &amp; Jewelry</h3>
             <div class="product-grid">
               <article id="bracelet" class="item" data-major="medi" data-sub="bracelet">
-                <img src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=900&q=80" alt="Bracelet" />
-                <h4>Ares Bracelet</h4>
-                <p>프리미엄 네오디움 코어 브레이슬릿</p>
+                <img src="../asset/product/jewelry/pro1.png" alt="Ares Bracelet 의료기기" />
+                <p class="product-standard">의료기기 기준</p>
+                <h4>Ares Bracelet_의료기기</h4>
+                <p>검증 기준과 사용 안내를 함께 보여주는 메디컬 브레이슬릿</p>
                 <span>₩89,000</span>
+                <a class="detail-link" href="./product-ares.html">상세 보기</a>
+              </article>
+              <article id="bracelet-consumer" class="item" data-major="medi" data-sub="bracelet">
+                <img src="../asset/product/jewelry/pro3.png" alt="Astra Bracelet 공산품" />
+                <p class="product-standard">공산품 기준</p>
+                <h4>Astra Bracelet_공산품</h4>
+                <p>스타일과 착용감을 중심으로 구성한 데일리 웰니스 팔찌</p>
+                <span>₩99,000</span>
+                <a class="detail-link" href="./product-astra.html">상세 보기</a>
               </article>
               <article id="necklace" class="item" data-major="medi" data-sub="necklace">
                 <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80" alt="Necklace" />
-                <h4>Nova Necklace</h4>
+                <h4>Nova Necklace_공산품</h4>
                 <p>목선 밸런스를 고려한 웰니스 넥 라인</p>
                 <span>₩119,000</span>
               </article>
               <article id="anklet" class="item" data-major="medi" data-sub="anklet">
                 <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80" alt="Anklet" />
-                <h4>Flow Anklet</h4>
+                <h4>Flow Anklet_공산품</h4>
                 <p>가벼운 착용감의 데일리 앵클릿</p>
                 <span>₩79,000</span>
               </article>
               <article id="set" class="item" data-major="medi" data-sub="set">
                 <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80" alt="Bracelet + Necklace" />
-                <h4>Balance Set</h4>
+                <h4>Balance Set_공산품</h4>
                 <p>브레이슬릿+넥클리스 구성 스페셜 세트</p>
                 <span>₩179,000</span>
               </article>
@@ -106,19 +87,19 @@
             <div class="product-grid">
               <article id="energetic-ring" class="item" data-major="active" data-sub="energetic-ring">
                 <img src="https://images.unsplash.com/photo-1586878341523-7f50f4b7ad0f?auto=format&fit=crop&w=900&q=80" alt="Energetic ring" />
-                <h4>Energetic Ring</h4>
+                <h4>Energetic Ring_공산품</h4>
                 <p>운동 시 집중력을 높여주는 액티브 링</p>
                 <span>₩69,000</span>
               </article>
               <article id="reju-ring" class="item" data-major="active" data-sub="reju-ring">
                 <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=900&q=80" alt="Reju ring" />
-                <h4>Reju Ring</h4>
+                <h4>Reju Ring_공산품</h4>
                 <p>리커버리 루틴을 위한 경량 웰니스 링</p>
                 <span>₩72,000</span>
               </article>
               <article id="power-belt" class="item" data-major="active" data-sub="power-belt">
                 <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Power belt" />
-                <h4>Power Belt</h4>
+                <h4>Power Belt_공산품</h4>
                 <p>코어 밸런스를 보조하는 파워 벨트</p>
                 <span>₩149,000</span>
               </article>
@@ -130,19 +111,19 @@
             <div class="product-grid">
               <article id="magnetic-pillow" class="item" data-major="living" data-sub="magnetic-pillow">
                 <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Magnetic pillow" />
-                <h4>Magnetic Pillow</h4>
+                <h4>Magnetic Pillow_공산품</h4>
                 <p>숙면을 위한 자기장 밸런스 필로우</p>
                 <span>₩169,000</span>
               </article>
               <article id="magnetic-blanket" class="item" data-major="living" data-sub="magnetic-blanket">
                 <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=80" alt="Magnetic blanket" />
-                <h4>Magnetic Blanket</h4>
+                <h4>Magnetic Blanket_공산품</h4>
                 <p>체온 유지와 편안함을 위한 리커버리 블랭킷</p>
                 <span>₩199,000</span>
               </article>
               <article id="etc" class="item" data-major="living" data-sub="etc">
                 <img src="https://images.unsplash.com/photo-1611843467160-25afb8df1074?auto=format&fit=crop&w=900&q=80" alt="Supports and massager" />
-                <h4>Etc Care Line</h4>
+                <h4>Etc Care Line_공산품</h4>
                 <p>보호대, 안마기 등 일상 케어 액세서리</p>
                 <span>₩49,000 ~</span>
               </article>
@@ -256,7 +237,8 @@
         syncFromUrl();
       })();
     </script>
+      <script src="./gnb.js"></script>
       <script src="./mobile-nav.js"></script>
-      <script src="./theme-toggle.js"></script>
+      <script src="./theme-toggle.js?v=20260408"></script>
   </body>
 </html>

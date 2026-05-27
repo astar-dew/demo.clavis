@@ -400,13 +400,16 @@ a {
   width: 100%;
   margin-top: 52px;
   display: grid;
-  gap: 28px;
+  gap: 0;
   grid-template-columns: 1fr;
 }
 
-[data-clavis-layout="layout3"] .main-tail-label,
-[data-clavis-layout="layout3"] .main-tail-visual h2 {
+[data-clavis-layout="layout3"] .main-tail-label {
   display: none;
+}
+
+[data-clavis-layout="layout3"] .main-tail-visual h2 {
+  margin-bottom: 42px;
 }
 
 [data-clavis-layout="layout3"] .main-tail-gallery {
@@ -806,7 +809,7 @@ a {
   [data-clavis-layout="layout2"] .main-tail-gallery ,
 [data-clavis-layout="layout3"] .main-tail-gallery  {
     margin-top: 42px;
-    gap: 16px;
+    gap: 0;
   }
 
   [data-clavis-layout="layout2"] .main-tail-card img ,

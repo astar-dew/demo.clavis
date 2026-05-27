@@ -68,6 +68,7 @@
   var activeMedi = collectionMenuKey === "medi" ? "active" : "";
   var activeActive = collectionMenuKey === "active" ? "active" : "";
   var activeLiving = collectionMenuKey === "living" ? "active" : "";
+  var activeShop = file === "shop.html" ? "active" : "";
 
   var leftMenuLayout1 =
     '<nav class="menu left">' +
@@ -131,7 +132,9 @@
 
   var rightMenuLayout1 =
     '<nav class="menu right">' +
-    '<a href="./shop.html">SHOP</a>' +
+    '<a class="' +
+    activeShop +
+    '" href="./shop.html">SHOP</a>' +
     '<button aria-label="검색" class="icon-btn icon-search"><span aria-hidden="true"></span></button>' +
     '<button aria-label="로그인" class="icon-btn icon-user"><span aria-hidden="true"></span></button>' +
     '<button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>' +
@@ -139,7 +142,9 @@
 
   var rightMenuLayout2 =
     '<nav class="menu right">' +
-    '<a href="./shop.html">SHOP</a>' +
+    '<a class="' +
+    activeShop +
+    '" href="./shop.html">SHOP</a>' +
     '<button aria-label="검색" class="icon-btn icon-search"><span aria-hidden="true"></span></button>' +
     '<a href="#" class="mypage-link">MYPAGE</a>' +
     '<button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>' +
