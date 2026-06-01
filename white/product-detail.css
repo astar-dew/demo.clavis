@@ -126,6 +126,29 @@
   letter-spacing: 0.12em;
 }
 
+.detail-image-guide {
+  grid-template-columns: 0.72fr 1fr 1.35fr;
+}
+
+.detail-image-guide p {
+  color: #d4b27a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.detail-image-guide strong {
+  color: #fff;
+  font-size: clamp(20px, 3vw, 30px);
+  line-height: 1.25;
+}
+
+.detail-image-guide span {
+  max-width: 520px;
+  line-height: 1.65;
+  letter-spacing: 0;
+}
+
 .premium-signature strong {
   font-size: clamp(22px, 3.2vw, 34px);
 }

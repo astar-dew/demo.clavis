@@ -1,0 +1,1191 @@
+:root {
+  --detail-bg: #ffffff;
+  --detail-ink: #1b1c1f;
+  --detail-muted: #6f6f72;
+  --detail-line: #e6e1d8;
+  --detail-gold: #b99a5f;
+  --detail-soft: #f7f6f2;
+  --detail-charcoal: #171717;
+}
+
+.medical-detail-page,
+.consumer-detail-page,
+.patch-detail-page,
+.bracelet-detail-page {
+  background: var(--detail-bg);
+  color: var(--detail-ink);
+}
+
+.medical-detail-page main,
+.consumer-detail-page main,
+.patch-detail-page main,
+.bracelet-detail-page main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.detail-hero {
+  position: relative;
+  min-height: 640px;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  background: #111;
+}
+
+.detail-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.74) 100%);
+}
+
+.consumer-hero::after {
+  background:
+    radial-gradient(circle at 72% 32%, rgba(185, 154, 95, 0.2), transparent 26%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.76) 100%);
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  width: min(1040px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 0 0 76px;
+  color: #fff;
+}
+
+.section-kicker,
+.hero-copy p {
+  margin: 0 0 14px;
+  color: var(--detail-gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.hero-copy h1 {
+  margin: 0 0 22px;
+  font-size: 64px;
+  line-height: 1.12;
+  font-weight: 600;
+}
+
+.hero-copy span {
+  display: block;
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.consumer-hero .hero-copy {
+  padding-bottom: 92px;
+}
+
+.consumer-hero .hero-copy p {
+  color: #d0b577;
+  letter-spacing: 0.34em;
+}
+
+.consumer-hero .hero-copy h1 {
+  max-width: 980px;
+  font-size: clamp(56px, 7vw, 104px);
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+
+.consumer-hero .hero-copy span {
+  max-width: 720px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 17px;
+  letter-spacing: 0.02em;
+}
+
+.patch-hero {
+  width: min(1180px, calc(100% - 40px));
+  min-height: 720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.patch-hero-copy p {
+  margin: 0 0 16px;
+  color: var(--detail-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.32em;
+}
+
+.patch-hero-copy h1 {
+  margin: 0 0 24px;
+  font-size: clamp(58px, 7vw, 106px);
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.patch-hero-copy span {
+  display: block;
+  max-width: 560px;
+  color: var(--detail-muted);
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.patch-hero-visual,
+.patch-product-visual {
+  position: relative;
+  min-height: 540px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 32%, rgba(218, 188, 150, 0.28), transparent 28%),
+    linear-gradient(180deg, #f9f6ee 0%, #fff 100%);
+  border: 1px solid var(--detail-line);
+}
+
+.patch-hero-visual::before,
+.patch-product-visual::before {
+  content: "";
+  position: absolute;
+  inset: 38px;
+  border: 1px solid rgba(185, 154, 95, 0.22);
+}
+
+.patch-pouch {
+  position: relative;
+  z-index: 2;
+  width: min(58%, 380px);
+  height: 138px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 146px;
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(180deg, #777 0%, #a8a8a6 24%, #7f7f7c 100%);
+  box-shadow: 0 28px 46px rgba(0, 0, 0, 0.16);
+  color: #201915;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.patch-pouch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background: rgba(40, 40, 40, 0.38);
+}
+
+.patch-pouch.large {
+  width: min(62%, 420px);
+}
+
+.patch-set {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 78px;
+  transform: translateX(-50%);
+  width: min(86%, 500px);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px 16px;
+}
+
+.patch-set span {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 18%, rgba(190, 136, 79, 0.55) 19% 23%, transparent 24% 33%, rgba(190, 136, 79, 0.34) 34% 38%, transparent 39%),
+    radial-gradient(circle at 42% 36%, #fff3e7 0%, #f1d2b8 62%, #dba77d 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(176, 116, 68, 0.18),
+    0 8px 16px rgba(131, 83, 48, 0.16);
+}
+
+.patch-set.large {
+  width: min(80%, 480px);
+  bottom: 88px;
+}
+
+.patch-statement {
+  width: min(960px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 42px 0 120px;
+  text-align: center;
+}
+
+.patch-statement h2 {
+  margin: 0;
+  font-size: clamp(42px, 5vw, 78px);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.patch-statement p:not(.section-kicker) {
+  max-width: 700px;
+  margin: 24px auto 0;
+  color: var(--detail-muted);
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.patch-product-section,
+.patch-spec-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.patch-dark-band {
+  min-height: 560px;
+  display: grid;
+  align-items: center;
+  background:
+    radial-gradient(circle at 78% 28%, rgba(185, 154, 95, 0.2), transparent 24%),
+    linear-gradient(135deg, #121212 0%, #28231d 100%);
+  color: #fff;
+}
+
+.patch-dark-band > div {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.patch-dark-band h2 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(42px, 5vw, 76px);
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+}
+
+.patch-dark-band p:not(.section-kicker) {
+  max-width: 660px;
+  margin: 28px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.patch-mini-visual {
+  overflow: hidden;
+}
+
+.patch-set.spec {
+  position: relative;
+  inset: auto;
+  transform: none;
+  width: min(78%, 430px);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.patch-final-cta {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(185, 154, 95, 0.25), transparent 36%),
+    var(--detail-charcoal);
+}
+
+.bracelet-hero {
+  width: min(1180px, calc(100% - 40px));
+  min-height: 720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.bracelet-hero-copy p {
+  margin: 0 0 16px;
+  color: var(--detail-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.32em;
+}
+
+.bracelet-hero-copy h1 {
+  margin: 0 0 24px;
+  font-size: clamp(62px, 7.4vw, 112px);
+  line-height: 0.96;
+  font-weight: 700;
+  letter-spacing: -0.07em;
+}
+
+.bracelet-hero-copy span {
+  display: block;
+  max-width: 590px;
+  color: var(--detail-muted);
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.bracelet-hero-visual {
+  position: relative;
+  min-height: 560px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(210, 176, 145, 0.42), transparent 30%),
+    linear-gradient(140deg, #f6f0e8 0%, #ffffff 62%, #f8f6f2 100%);
+  border: 1px solid var(--detail-line);
+}
+
+.bracelet-hero-visual::before {
+  content: "";
+  position: absolute;
+  width: 74%;
+  height: 38%;
+  border: 1px solid rgba(185, 154, 95, 0.38);
+  border-radius: 999px;
+  transform: rotate(-18deg);
+}
+
+.bracelet-hero-visual::after {
+  content: "ROSE GOLD PLATE";
+  position: absolute;
+  right: 36px;
+  bottom: 32px;
+  color: rgba(27, 28, 31, 0.32);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.26em;
+}
+
+.bracelet-hero-visual img {
+  position: relative;
+  z-index: 2;
+  width: min(82%, 480px);
+  filter: drop-shadow(0 36px 44px rgba(40, 30, 24, 0.22));
+}
+
+.bracelet-statement-section h2 {
+  max-width: 860px;
+}
+
+.bracelet-product-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.bracelet-product-visual {
+  background:
+    radial-gradient(circle at 52% 45%, rgba(211, 176, 146, 0.28), transparent 30%),
+    var(--detail-soft);
+}
+
+.bracelet-product-visual img,
+.bracelet-mini-visual img {
+  transform: scale(1.08);
+}
+
+.bracelet-lifestyle-section::after {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.1) 72%);
+}
+
+.bracelet-final-cta {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(214, 178, 148, 0.24), transparent 34%),
+    var(--detail-charcoal);
+}
+
+.detail-section {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.detail-section h2,
+.final-cta h2,
+.lifestyle-copy h2 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.detail-section p,
+.lifestyle-copy p {
+  color: var(--detail-muted);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.consumer-statement-section {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 130px 0 100px;
+  text-align: center;
+}
+
+.consumer-statement-section h2 {
+  margin: 0 auto 56px;
+  max-width: 760px;
+  font-size: clamp(42px, 6vw, 86px);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.statement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--detail-line);
+  border-bottom: 1px solid var(--detail-line);
+}
+
+.statement-grid article {
+  min-height: 230px;
+  padding: 42px 30px;
+  border-right: 1px solid var(--detail-line);
+  text-align: left;
+}
+
+.statement-grid article:last-child {
+  border-right: 0;
+}
+
+.statement-grid span {
+  display: block;
+  margin-bottom: 42px;
+  color: var(--detail-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.statement-grid strong {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.statement-grid p {
+  margin: 0;
+  color: var(--detail-muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.model-editorial-section {
+  display: grid;
+  grid-template-columns: 0.88fr 1.12fr;
+  gap: 72px;
+  align-items: center;
+  padding-top: 140px;
+}
+
+.model-editorial-copy h2 {
+  max-width: 680px;
+}
+
+.model-editorial-copy p:not(.section-kicker) {
+  max-width: 620px;
+  margin: 24px 0 0;
+}
+
+.model-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.model-points span {
+  border: 1px solid var(--detail-line);
+  background: #fff;
+  padding: 10px 14px;
+  color: #6d604a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.model-editorial-visual {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 24%, rgba(185, 154, 95, 0.26), transparent 25%),
+    linear-gradient(135deg, #101114 0%, #24201b 48%, #0e0f12 100%);
+  color: #fff;
+}
+
+.model-editorial-visual::before {
+  content: "";
+  position: absolute;
+  inset: 9%;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.model-editorial-visual::after {
+  content: "";
+  position: absolute;
+  right: 12%;
+  bottom: 16%;
+  width: 58%;
+  height: 34%;
+  border: 1px solid rgba(185, 154, 95, 0.38);
+  border-radius: 999px;
+  transform: rotate(-16deg);
+  opacity: 0.72;
+}
+
+.model-light {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08), transparent 36%),
+    linear-gradient(180deg, transparent 52%, rgba(0, 0, 0, 0.36));
+}
+
+.model-card {
+  position: absolute;
+  left: 52px;
+  top: 48px;
+  z-index: 1;
+}
+
+.model-card span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--detail-gold);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+}
+
+.model-card strong {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 38px;
+  line-height: 1.05;
+  letter-spacing: 0.08em;
+}
+
+.model-editorial-visual img {
+  position: relative;
+  z-index: 2;
+  width: min(74%, 460px);
+  filter: drop-shadow(0 36px 44px rgba(0, 0, 0, 0.45));
+  transform: rotate(-11deg) translateY(28px);
+}
+
+.model-editorial-visual p {
+  position: absolute;
+  right: 44px;
+  bottom: 40px;
+  z-index: 2;
+  max-width: 240px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.consumer-editorial-visual {
+  background:
+    radial-gradient(circle at 50% 24%, rgba(207, 188, 152, 0.26), transparent 25%),
+    linear-gradient(135deg, #151310 0%, #2a241d 48%, #111214 100%);
+}
+
+.center {
+  text-align: center;
+}
+
+.section-head {
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.section-head p:last-child {
+  margin: 16px 0 0;
+}
+
+.intro-section > h2 {
+  max-width: 840px;
+  margin-bottom: 48px;
+}
+
+.intro-grid,
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.intro-grid article,
+.guide-grid article {
+  border: 1px solid var(--detail-line);
+  background: #fff;
+  padding: 34px 30px;
+}
+
+.intro-grid strong {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--detail-gold);
+  font-size: 13px;
+  letter-spacing: 0.18em;
+}
+
+.intro-grid h3,
+.guide-grid h3 {
+  margin: 0 0 14px;
+  font-size: 24px;
+}
+
+.intro-grid p,
+.guide-grid p {
+  margin: 0;
+}
+
+.product-section,
+.material-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.product-copy p:not(.section-kicker),
+.material-copy p {
+  margin: 22px 0 0;
+}
+
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.product-tags span {
+  border: 1px solid var(--detail-line);
+  padding: 9px 13px;
+  color: #6d604a;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.product-visual,
+.material-visual {
+  background: var(--detail-soft);
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  padding: 44px;
+}
+
+.product-visual img,
+.material-visual img {
+  max-width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.proof-section,
+.process-section,
+.design-section,
+.guide-section,
+.option-section,
+.styling-section,
+.care-section,
+.patch-point-section,
+.patch-usage-section,
+.patch-spec-section,
+.bracelet-point-section {
+  border-top: 1px solid var(--detail-line);
+}
+
+.proof-grid,
+.process-grid,
+.design-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.proof-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.proof-grid article,
+.design-grid article {
+  border: 1px solid var(--detail-line);
+  background: var(--detail-soft);
+  padding: 30px;
+}
+
+.proof-grid img {
+  display: block;
+  width: min(260px, 100%);
+  height: 340px;
+  object-fit: contain;
+  margin: 0 auto 24px;
+  filter: drop-shadow(0 20px 24px rgba(0, 0, 0, 0.12));
+}
+
+.proof-grid h3,
+.design-grid h3,
+.process-grid h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.proof-grid p,
+.design-grid p,
+.process-grid p {
+  margin: 0;
+}
+
+.material-copy ul {
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.material-copy li {
+  border-bottom: 1px solid var(--detail-line);
+  padding: 0 0 12px;
+  color: #464646;
+  font-size: 16px;
+}
+
+.process-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.process-grid article {
+  display: grid;
+  grid-template-rows: 260px auto;
+  border: 1px solid var(--detail-line);
+  background: #fff;
+}
+
+.process-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.process-grid div {
+  padding: 28px;
+}
+
+.process-grid small {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--detail-gold);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.design-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.design-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+
+.lifestyle-section {
+  position: relative;
+  min-height: 560px;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  background: #111;
+}
+
+.lifestyle-section img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lifestyle-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.72));
+}
+
+.consumer-lifestyle-section::after {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.74) 0%, rgba(0, 0, 0, 0.12) 72%);
+}
+
+.lifestyle-copy {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 0 0 72px;
+  color: #fff;
+}
+
+.lifestyle-copy p:not(.section-kicker) {
+  max-width: 640px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.final-cta {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto 120px;
+  padding: 88px 40px;
+  text-align: center;
+  background: var(--detail-charcoal);
+  color: #fff;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.cta-actions a {
+  min-width: 190px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 14px 22px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.cta-actions a:first-child {
+  background: #fff;
+  color: #171717;
+}
+
+.legal-note {
+  max-width: 760px;
+  margin: 34px auto 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.styling-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.styling-grid article {
+  min-height: 260px;
+  border: 1px solid var(--detail-line);
+  background: linear-gradient(180deg, #fff, var(--detail-soft));
+  padding: 34px 30px;
+}
+
+.styling-grid span {
+  display: block;
+  margin-bottom: 46px;
+  color: var(--detail-gold);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.styling-grid h3 {
+  margin: 0 0 14px;
+  font-size: 24px;
+}
+
+.styling-grid p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .detail-hero {
+    min-height: 560px;
+  }
+
+  .hero-copy h1 {
+    font-size: 42px;
+  }
+
+  .consumer-hero .hero-copy h1 {
+    font-size: 52px;
+  }
+
+  .detail-section {
+    padding: 80px 0;
+  }
+
+  .consumer-statement-section {
+    padding: 90px 0 70px;
+  }
+
+  .detail-section h2,
+  .final-cta h2,
+  .lifestyle-copy h2 {
+    font-size: 30px;
+  }
+
+  .patch-hero,
+  .patch-product-section,
+  .patch-spec-section,
+  .bracelet-hero,
+  .bracelet-product-section {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .patch-hero-visual,
+  .patch-product-visual,
+  .bracelet-hero-visual {
+    min-height: 460px;
+  }
+
+  .patch-statement {
+    padding-bottom: 80px;
+  }
+
+  .intro-grid,
+  .statement-grid,
+  .model-editorial-section,
+  .product-section,
+  .proof-grid,
+  .material-section,
+  .process-grid,
+  .design-grid,
+  .guide-grid,
+  .styling-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .statement-grid article {
+    border-right: 0;
+    border-bottom: 1px solid var(--detail-line);
+  }
+
+  .statement-grid article:last-child {
+    border-bottom: 0;
+  }
+
+  .product-visual,
+  .material-visual {
+    min-height: 300px;
+  }
+
+  .model-editorial-section {
+    gap: 40px;
+    padding-top: 90px;
+  }
+
+  .model-editorial-visual {
+    min-height: 460px;
+  }
+
+  .design-grid img {
+    height: 180px;
+  }
+
+  .lifestyle-section {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-copy,
+  .consumer-statement-section,
+  .detail-section,
+  .lifestyle-copy,
+  .final-cta {
+    width: calc(100% - 28px);
+  }
+
+  .hero-copy {
+    padding-bottom: 52px;
+  }
+
+  .hero-copy h1 {
+    font-size: 34px;
+  }
+
+  .patch-hero {
+    width: calc(100% - 28px);
+    gap: 38px;
+    padding: 64px 0;
+  }
+
+  .bracelet-hero {
+    width: calc(100% - 28px);
+    gap: 38px;
+    padding: 64px 0;
+  }
+
+  .patch-hero-copy h1 {
+    font-size: 42px;
+  }
+
+  .bracelet-hero-copy h1 {
+    font-size: 44px;
+  }
+
+  .patch-hero-copy span,
+  .bracelet-hero-copy span {
+    font-size: 15px;
+  }
+
+  .patch-hero-visual,
+  .patch-product-visual,
+  .bracelet-hero-visual {
+    min-height: 360px;
+  }
+
+  .bracelet-hero-visual img {
+    width: 88%;
+  }
+
+  .patch-pouch {
+    width: min(66%, 260px);
+    height: 96px;
+    margin-bottom: 118px;
+    font-size: 34px;
+  }
+
+  .patch-set {
+    bottom: 58px;
+    width: min(88%, 340px);
+    gap: 8px 10px;
+  }
+
+  .patch-statement {
+    width: calc(100% - 28px);
+    padding: 20px 0 64px;
+  }
+
+  .patch-dark-band {
+    min-height: 480px;
+  }
+
+  .patch-dark-band > div {
+    width: calc(100% - 28px);
+  }
+
+  .consumer-hero .hero-copy h1 {
+    font-size: 40px;
+  }
+
+  .consumer-hero .hero-copy p {
+    letter-spacing: 0.18em;
+  }
+
+  .detail-section {
+    padding: 64px 0;
+  }
+
+  .consumer-statement-section {
+    padding: 72px 0 58px;
+  }
+
+  .consumer-statement-section h2 {
+    margin-bottom: 38px;
+    font-size: 40px;
+  }
+
+  .statement-grid article {
+    min-height: auto;
+    padding: 30px 22px;
+  }
+
+  .statement-grid span {
+    margin-bottom: 28px;
+  }
+
+  .statement-grid strong {
+    font-size: 26px;
+  }
+
+  .model-editorial-section {
+    padding-top: 72px;
+  }
+
+  .model-editorial-visual {
+    min-height: 420px;
+  }
+
+  .model-card {
+    left: 28px;
+    top: 30px;
+  }
+
+  .model-card strong {
+    font-size: 30px;
+  }
+
+  .model-editorial-visual img {
+    width: 82%;
+  }
+
+  .model-editorial-visual p {
+    right: 24px;
+    bottom: 26px;
+    max-width: 190px;
+    font-size: 10px;
+  }
+
+  .intro-grid article,
+  .guide-grid article,
+  .styling-grid article,
+  .proof-grid article,
+  .design-grid article {
+    padding: 24px 20px;
+  }
+
+  .process-grid article {
+    grid-template-rows: 210px auto;
+  }
+
+  .process-grid img {
+    height: 210px;
+  }
+
+  .final-cta {
+    margin-bottom: 72px;
+    padding: 62px 20px;
+  }
+}

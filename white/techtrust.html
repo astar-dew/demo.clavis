@@ -12,11 +12,11 @@
     <div id="gnb-root"></div>
 
 <main class="tt-page">
-      <section class="intro center">
-        <p class="eyebrow">WELCOME TO CLAVIS</p>
-        <h1>Trust You Can Verify</h1>
-        <span class="line"></span>
-        <p class="subtitle">식약처 인증, GMP 제조, 전수 검수까지.<br />클라비스는 보이지 않는 기술을 확인 가능한 기준으로 증명합니다.</p>
+      <section class="intro center page-main-hero">
+        <p class="eyebrow">TECH &amp; TRUST STANDARD</p>
+        <h1>Made to Be Trusted</h1>
+        <span class="line page-main-hero-line"></span>
+        <p class="subtitle page-main-hero-copy">소재 기준, GMP 제조, 전수 검수까지.<br />클라비스는 보이지 않는 기술을 확인 가능한 기준으로 증명합니다.</p>
       </section>
 
       <div class="tt-version-tabs" aria-label="Tech and Trust page composition tabs">
@@ -33,14 +33,54 @@
           </button>
           <button
             id="tt-tab-recommended"
-            class="active"
             type="button"
             role="tab"
             data-tt-view-button="recommended"
-            aria-selected="true"
+            aria-selected="false"
             aria-controls="tt-panel-recommended"
           >
             추천 구성
+          </button>
+          <button
+            id="tt-tab-recommended2"
+            type="button"
+            role="tab"
+            data-tt-view-button="recommended2"
+            aria-selected="false"
+            aria-controls="tt-panel-recommended2"
+          >
+            추천 구성2
+          </button>
+          <button
+            id="tt-tab-proof"
+            type="button"
+            role="tab"
+            data-tt-view-button="proof"
+            aria-selected="false"
+            aria-controls="tt-panel-proof"
+          >
+            기술 증명 구성
+          </button>
+          <button
+            id="tt-tab-flow"
+            class="active"
+            type="button"
+            role="tab"
+            data-tt-view-button="flow"
+            aria-selected="true"
+            aria-controls="tt-panel-flow"
+          >
+            추천 흐름
+          </button>
+          <button
+            id="tt-tab-impact"
+            type="button"
+            role="tab"
+            data-tt-view-button="impact"
+            aria-selected="false"
+            aria-controls="tt-panel-impact"
+          >
+            임팩트 구성
           </button>
         </div>
       </div>
@@ -56,17 +96,22 @@
 
       <section class="safety-dark">
         <p class="eyebrow">SAFETY CERTIFIED</p>
-        <h2>국가가 보증하는<br />안전한 테라피</h2>
-        <div class="safety-grid">
+        <h2>클라비스는<br />보이지 않는 기술을 확인 가능한 기준으로 만듭니다</h2>
+        <div class="cert-grid cert-grid-two">
           <article>
-            <span class="ring">MFDS</span>
-            <h3>식약처 의료기기 인증</h3>
-            <p>공식 의료기기 등록을 통해<br />효능과 안전성을 입증했습니다.</p>
+            <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.48.png" alt="ISO 13485 의료기기 품질경영시스템 인증서" />
+            <p>ISO 13485 품질경영 인증</p>
           </article>
+          <article>
+            <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.58.png" alt="의료기기 제조 및 품질관리 기준 적합 인증서" />
+            <p>의료기기 GMP 제조 인증</p>
+          </article>
+        </div>
+        <div class="safety-grid">
           <article>
             <span class="ring">GMP</span>
             <h3>제조품질관리 준수</h3>
-            <p>의료기기 제조 및 품질관리<br />적합 인증(GMP) 시설에서 생산됩니다.</p>
+            <p>의료기기 제조 및 품질관리<br />GMP 기준을 따르는 시설에서 생산됩니다.</p>
           </article>
           <article>
             <span class="ring">ZERO</span>
@@ -78,28 +123,17 @@
             <h3>저자극 테스트 완료</h3>
             <p>민감한 피부도 안심하고 착용할 수 있는<br />피부 자극 테스트를 완료했습니다.</p>
           </article>
-        </div>
-      </section>
-
-      <section class="authority center">
-        <p class="eyebrow">AUTHORITY &amp; PROOF</p>
-        <h2>가장 투명한 지표가<br />가장 강력한 확신이 됩니다</h2>
-        <div class="cert-grid">
           <article>
-            <img src="../asset/backdata/cert_1.png" alt="의료기기 제조 인증서" />
-            <p>✓ 식약처 인증 의료기기</p>
-          </article>
-          <article>
-            <img src="../asset/backdata/cert_2.png" alt="GMP 인증" />
-            <p>🏛️ 식약처 인증 GMP 공정</p>
+            <span class="ring">DATA</span>
+            <h3>제품 기준 자료</h3>
+            <p>제조와 안전성 기준 뒤에<br />제품 기준 자료로 신뢰를 한 번 더 확인합니다.</p>
           </article>
         </div>
       </section>
 
       <section class="journey center">
         <p class="eyebrow">UNCOMPROMISING QUALITY</p>
-        <img class="safety-data-image" src="../asset/backdata/tech_1.png" alt="국가 인증 안전성 백데이터" />
-        <h2>타협하지 않는 정밀 공학</h2>
+        <h2>클라비스는 매일 믿고 쓰는<br />제품으로 완성합니다</h2>
         <div class="journey-grid">
           <article>
             <span class="step">01</span>
@@ -120,23 +154,19 @@
             <p>전 제품을 검수하며 1% 오차도 허용하지 않는 품질 관리를 수행합니다.</p>
           </article>
         </div>
-        <div class="journey-foot">
-          <div><strong>CERTIFICATION</strong><span>의료기기 제조 및 품질관리기준(GMP) 적합</span></div>
-          <div><strong>GUARANTEE</strong><span>3,200 Gauss 정밀 자력 보증</span></div>
-          <div><strong>ORIGIN</strong><span>정밀 자기공학 기반 원천 기술</span></div>
-        </div>
+        <img class="safety-data-image journey-cert-image" src="../asset/cert/스크린샷 2026-06-01 오전 11.37.38.png" alt="기업부설연구소 인정서" />
       </section>
 
       <section class="proof-box">
         <div class="proof-left">
-          <p>• 식약처 안전성 및 유효성 심사 통과</p>
+          <p>• 제품 기준 자료와 안전성 확인 데이터</p>
           <p>• 의료기기 제조 및 품질관리 (GMP) 적합 시설</p>
           <p>• 물리학적 데이터 기반의 자력 정밀 설계</p>
         </div>
         <div class="proof-right">
           <div class="circle">
             <strong>국내 유일</strong>
-            <span>패션 의료 기기<br />인증 브랜드</span>
+            <span>패션 웰니스<br />신뢰 브랜드</span>
           </div>
           <p>CLAVIS는 오직 검증된<br />과학적 가치만을 전달합니다.</p>
         </div>
@@ -180,18 +210,19 @@
 
       <div
         id="tt-panel-recommended"
-        class="tt-composition is-active"
+        class="tt-composition"
         data-tt-view="recommended"
         role="tabpanel"
         aria-labelledby="tt-tab-recommended"
+        hidden
       >
         <section class="safety-dark">
           <p class="eyebrow">01 — WHY TRUST MATTERS</p>
           <h2>보이지 않는 기술일수록<br />신뢰는 눈에 보여야 합니다</h2>
           <div class="safety-grid">
             <article>
-              <span class="ring">MFDS</span>
-              <h3>공식 인증</h3>
+              <span class="ring">DATA</span>
+              <h3>공식 자료</h3>
               <p>제품의 기준을 말로 설명하는 데서 멈추지 않고 공식 자료로 확인합니다.</p>
             </article>
             <article>
@@ -214,15 +245,19 @@
 
         <section class="authority center">
           <p class="eyebrow">02 — VERIFIED PROOF</p>
-          <h2>신뢰를 뒷받침하는<br />공식 인증과 근거</h2>
+          <h2>신뢰를 뒷받침하는<br />공식 자료와 근거</h2>
           <div class="cert-grid">
             <article>
-              <img src="../asset/backdata/cert_1.png" alt="의료기기 제조 인증서" />
-              <p>공식 인증으로 확인한 제품 기준</p>
+              <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.38.png" alt="제품 기준 인증서 자료" />
+              <p>자료로 확인한 제품 기준</p>
             </article>
             <article>
-              <img src="../asset/backdata/cert_2.png" alt="GMP 인증" />
-              <p>제조 품질을 관리하는 GMP 기준</p>
+              <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.48.png" alt="제조 품질 인증서 자료" />
+              <p>제조 품질 확인 자료</p>
+            </article>
+            <article>
+              <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.58.png" alt="안전성 인증서 자료" />
+              <p>안전성 확인 자료</p>
             </article>
           </div>
         </section>
@@ -231,15 +266,16 @@
           <p class="eyebrow">03 — PRODUCT SIGNATURE</p>
           <h2>클라비스의 기준은<br />제품 안에 각인됩니다</h2>
           <div class="product-imprint-grid">
-            <div class="product-mark">
-              <span>ClaviS</span>
-              <strong>3,200G</strong>
-              <small>NEODYMIUM MAGNETIC CORE</small>
+            <div class="product-mark tech-image-guide">
+              <span>IMAGE DIRECTION</span>
+              <strong>기술 구조 이미지</strong>
+              <p>제품 안의 코어 구조, 소재 단면, 착용 구조가 신뢰의 기준으로 보이도록 구성한 이미지</p>
+              <small>CORE DETAIL · MATERIAL STRUCTURE · TRUST STANDARD</small>
             </div>
             <div class="product-imprint-copy">
               <h3>보이지 않는 자력까지<br />제품의 언어로 설계합니다</h3>
               <p>
-                클라비스는 인증과 제조 기준을 문서에만 남기지 않습니다.
+                클라비스는 자료와 제조 기준을 문서에만 남기지 않습니다.
                 네오디뮴 코어, 착용 구조, 마감 품질까지 고객이 매일 착용하는
                 제품 안에 신뢰의 기준을 담습니다.
               </p>
@@ -254,7 +290,7 @@
 
         <section class="journey center">
           <p class="eyebrow">04 — QUALITY SYSTEM</p>
-          <img class="safety-data-image" src="../asset/backdata/tech_1.png" alt="국가 인증 안전성 백데이터" />
+          <img class="safety-data-image" src="../asset/backdata/tech_1.png" alt="제품 안전성 백데이터" />
           <h2>매일 믿고 쓰는<br />제품으로 완성합니다</h2>
           <div class="journey-grid">
             <article>
@@ -285,7 +321,7 @@
 
         <section class="proof-box">
           <div class="proof-left">
-            <p>• 인증 자료로 확인 가능한 제품 기준</p>
+            <p>• 자료로 확인 가능한 제품 기준</p>
             <p>• 소재, 제조, 검수로 이어지는 품질 관리 체계</p>
             <p>• 고객에게 전달되기 전 반복 확인하는 출고 기준</p>
           </div>
@@ -302,7 +338,7 @@
           <p class="eyebrow">05 — PROVEN CHOICE</p>
           <h2>기준이 쌓이면<br />선택이 됩니다</h2>
           <p>
-            인증, 소재, 제조, 검수의 기준은 하나의 신뢰 경험으로 이어집니다.
+            소재, 제조, 검수의 기준은 하나의 신뢰 경험으로 이어집니다.
             그리고 그 신뢰는 고객과 유통 채널의 반복된 선택으로 증명됩니다.
           </p>
         </section>
@@ -310,7 +346,7 @@
         <section class="market center">
           <p class="eyebrow">TRUST IN THE MARKET</p>
           <h2>결국 신뢰는<br />고객의 선택으로 증명됩니다</h2>
-          <p class="market-sub">인증과 제조 기준, 그리고 판매 이력은 클라비스가 시장에서 쌓아온 신뢰를 보여주는 현실적인 지표입니다.</p>
+          <p class="market-sub">제조 기준과 판매 이력은 클라비스가 시장에서 쌓아온 신뢰를 보여주는 현실적인 지표입니다.</p>
           <div class="channel-grid">
             <div>• 현대홈쇼핑</div>
             <div>• 롯데홈쇼핑</div>
@@ -339,6 +375,563 @@
             <h3>지속된 선택</h3>
             <p>시간이 쌓아 올린<br />브랜드 검증의 기록</p>
           </article>
+        </section>
+      </div>
+
+      <div
+        id="tt-panel-recommended2"
+        class="tt-composition"
+        data-tt-view="recommended2"
+        role="tabpanel"
+        aria-labelledby="tt-tab-recommended2"
+        hidden
+      >
+        <div class="composition-flow-group" aria-labelledby="tt-r2-group-1">
+          <div class="composition-flow-label">
+            <span>01</span>
+            <h3 id="tt-r2-group-1">확인 가능한 기준</h3>
+            <p>보이지 않는 기술을 소재, 제조, 안전성 기준으로 먼저 정리합니다.</p>
+          </div>
+
+        <section class="safety-dark">
+          <p class="eyebrow">CLAVIS TRUST</p>
+          <h2>클라비스는<br />보이지 않는 기술을 확인 가능한 기준으로 만듭니다</h2>
+          <div class="safety-grid">
+            <article>
+              <span class="ring">CORE</span>
+              <h3>자기장 코어</h3>
+              <p>클라비스는 제품의 중심에 네오디뮴 자기장 코어를 두고 기술의 기준을 설명합니다.</p>
+            </article>
+            <article>
+              <span class="ring">GMP</span>
+              <h3>제조 품질</h3>
+              <p>일관된 품질을 위해 제조 환경과 공정 흐름을 기준에 맞춰 관리합니다.</p>
+            </article>
+            <article>
+              <span class="ring">TEST</span>
+              <h3>안전성 확인</h3>
+              <p>피부에 닿고 매일 착용되는 제품에 필요한 소재와 안전성 기준을 확인합니다.</p>
+            </article>
+            <article>
+              <span class="ring">FIT</span>
+              <h3>착용 완성도</h3>
+              <p>자력, 마감, 착용감이 함께 완성될 때 클라비스다운 신뢰가 만들어집니다.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="authority center">
+          <p class="eyebrow">CLAVIS STANDARD</p>
+          <h2>클라비스는<br />신뢰를 말보다 기준으로 보여줍니다</h2>
+          <div class="cert-grid">
+            <article>
+              <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.38.png" alt="제품 기준 인증서 자료" />
+              <p>제품 기준 확인 자료</p>
+            </article>
+            <article>
+              <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.48.png" alt="제조 품질 인증서 자료" />
+              <p>제조 품질 확인 자료</p>
+            </article>
+            <article>
+              <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.58.png" alt="안전성 인증서 자료" />
+              <p>안전성 확인 자료</p>
+            </article>
+          </div>
+        </section>
+
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="tt-r2-group-2">
+          <div class="composition-flow-label">
+            <span>02</span>
+            <h3 id="tt-r2-group-2">제품으로 완성되는 신뢰</h3>
+            <p>기준이 코어, 구조, 마감, 완성도 점검으로 이어지는 영역입니다.</p>
+          </div>
+
+        <section class="product-imprint center">
+          <p class="eyebrow">CLAVIS PRODUCT MEMORY</p>
+          <h2>클라비스는<br />신뢰를 제품 안에 각인합니다</h2>
+          <div class="product-imprint-grid">
+            <div class="product-mark tech-image-guide">
+              <span>IMAGE DIRECTION</span>
+              <strong>제품 각인 이미지</strong>
+              <p>클라비스 제품의 코어, 마감, 착용 구조가 하나의 신뢰 이미지로 보이게 하는 제품 디테일 컷</p>
+              <small>PRODUCT DETAIL · FINISH CHECK · WEARABLE TRUST</small>
+            </div>
+            <div class="product-imprint-copy">
+              <h3>Made to be trusted.</h3>
+              <p>
+                클라비스의 신뢰는 문서에서 끝나지 않습니다. 3,200G 네오디뮴
+                자기장 코어, 몸 가까운 착용 구조, 주얼리 감성의 마감이 함께
+                작동할 때 제품으로 기억되는 신뢰가 완성됩니다.
+              </p>
+              <ul>
+                <li><strong>Core</strong> 클라비스는 자기장 코어를 중심에 둡니다</li>
+                <li><strong>Structure</strong> 클라비스는 몸 가까운 착용 구조를 설계합니다</li>
+                <li><strong>Finish</strong> 클라비스는 기능을 프리미엄 마감으로 완성합니다</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="journey center">
+          <p class="eyebrow">CLAVIS QUALITY FLOW</p>
+          <img class="safety-data-image" src="../asset/backdata/tech_1.png" alt="제품 안전성 백데이터" />
+          <h2>클라비스는<br />좋은 구조를 매일 믿고 쓰는 제품으로 완성합니다</h2>
+          <div class="journey-grid">
+            <article>
+              <span class="step">01</span>
+              <img src="../asset/backdata/neodium.png" alt="Neodium" />
+              <h3>Material<br />소재 기준</h3>
+              <p>네오디뮴 코어의 특성을 제품 안에서 안정적으로 구현할 수 있도록 소재와 구조를 먼저 정리합니다.</p>
+            </article>
+            <article>
+              <span class="step">02</span>
+              <img src="../asset/backdata/manufact.png" alt="Manufact" />
+              <h3>Process<br />제조 흐름</h3>
+              <p>설계한 기준이 제품마다 흔들리지 않도록 조립, 마감, 생산 흐름을 체계적으로 관리합니다.</p>
+            </article>
+            <article>
+              <span class="step">03</span>
+              <img src="../asset/backdata/inspect.png" alt="Inspect" />
+              <h3>Detail<br />완성도 점검</h3>
+              <p>고객이 착용하는 순간의 인상을 위해 자력, 표면, 착용감의 완성도를 마지막까지 확인합니다.</p>
+            </article>
+          </div>
+          <div class="journey-foot">
+            <div><strong>MATERIAL</strong><span>네오디뮴 기반 자기장 코어</span></div>
+            <div><strong>PROCESS</strong><span>GMP 기반 제조 품질 관리</span></div>
+            <div><strong>DETAIL</strong><span>자력과 마감 완성도 점검</span></div>
+          </div>
+        </section>
+
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="tt-r2-group-3">
+          <div class="composition-flow-label">
+            <span>03</span>
+            <h3 id="tt-r2-group-3">시장 검증</h3>
+            <p>제품 기준이 고객과 유통 채널의 반복된 선택으로 이어지는 영역입니다.</p>
+          </div>
+
+        <section class="trust-bridge center">
+          <p class="eyebrow">CLAVIS TO MARKET</p>
+          <h2>클라비스는<br />기준이 선택으로 이어지는 브랜드입니다</h2>
+          <p>
+            소재, 제조, 검수, 제품 완성도의 기준은 하나의 신뢰 경험으로 이어집니다.
+            그 신뢰가 쌓일 때 고객과 유통 채널의 반복된 선택이 만들어집니다.
+          </p>
+        </section>
+
+        <section class="market center">
+          <p class="eyebrow">MARKET TRUST</p>
+          <h2>클라비스는<br />시장에서 반복된 선택으로 검증됩니다</h2>
+          <p class="market-sub">판매 이력과 누적 선택은 클라비스가 제품으로 쌓아온 신뢰를 보여주는 현실적인 지표입니다.</p>
+          <div class="channel-grid">
+            <div>• 현대홈쇼핑</div>
+            <div>• 롯데홈쇼핑</div>
+            <div>• CJ온스타일</div>
+            <div>• 홈앤쇼핑</div>
+            <div>• 쇼핑엔티</div>
+            <div>• 신세계쇼핑</div>
+            <div>• SK스토아</div>
+            <div>• NS홈쇼핑</div>
+          </div>
+        </section>
+
+        <section class="stats-grid">
+          <article>
+            <strong>525억</strong>
+            <h3>누적 매출액</h3>
+            <p>클라비스가 시장에서 쌓아온<br />신뢰의 규모</p>
+          </article>
+          <article>
+            <strong>25만개</strong>
+            <h3>누적 판매량</h3>
+            <p>고객이 직접 선택한<br />제품 경험의 기록</p>
+          </article>
+          <article>
+            <strong>9년</strong>
+            <h3>지속된 선택</h3>
+            <p>시간이 쌓아 올린<br />브랜드 신뢰의 증거</p>
+          </article>
+        </section>
+        </div>
+      </div>
+
+      <div
+        id="tt-panel-proof"
+        class="tt-composition"
+        data-tt-view="proof"
+        role="tabpanel"
+        aria-labelledby="tt-tab-proof"
+        hidden
+      >
+        <div class="composition-flow-group" aria-labelledby="tt-proof-group-1">
+          <div class="composition-flow-label">
+            <span>01</span>
+            <h3 id="tt-proof-group-1">기술의 기준</h3>
+            <p>클라비스 제품의 중심에 있는 코어, 소재, 구조를 먼저 기술력으로 각인합니다.</p>
+          </div>
+
+          <section class="tt-proof-hero panel">
+            <div>
+              <p class="eyebrow">TECH ARCHITECTURE</p>
+              <h2>클라비스의 신뢰는<br />제품 안의 기술 구조에서 시작됩니다</h2>
+              <p>
+                클라비스는 좋은 말보다 먼저 제품 안의 구조를 정리합니다. 3,200G
+                네오디뮴 코어, 몸 가까운 착용 거리, 반복 생산 가능한 설계 기준이
+                하나로 맞물릴 때 기술은 신뢰할 수 있는 제품 경험이 됩니다.
+              </p>
+            </div>
+            <div class="tt-proof-core tech-image-guide" aria-label="ClaviS technical image direction">
+              <span>IMAGE DIRECTION</span>
+              <strong>테크 코어 이미지</strong>
+              <p>네오디뮴 코어, 제품 내부 구조, 검수 기준이 기술력 있게 보이는 정밀한 이미지</p>
+              <small>TECH CORE · PRECISION CHECK · VERIFIED STANDARD</small>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="tt-proof-group-2">
+          <div class="composition-flow-label">
+            <span>02</span>
+            <h3 id="tt-proof-group-2">제조와 완성도 관리</h3>
+            <p>기술이 제품마다 같은 완성도로 이어지도록 소재, 제조, 검수 흐름을 보여줍니다.</p>
+          </div>
+
+          <section class="tt-proof-process panel">
+            <p class="eyebrow">QUALITY ENGINEERING</p>
+            <h2>기술력은 설계에서 끝나지 않고<br />제조와 검수에서 완성됩니다</h2>
+            <div class="tt-proof-process-grid">
+              <article>
+                <span>01</span>
+                <h3>Material</h3>
+                <p>네오디뮴 코어의 특성과 제품 구조를 먼저 맞춰 기술의 기준점을 만듭니다.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Process</h3>
+                <p>GMP 기반 제조 품질 흐름으로 제품마다 흔들리지 않는 완성도를 관리합니다.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Inspection</h3>
+                <p>자력, 표면, 착용감의 마지막 인상을 확인해 고객에게 전달되는 품질을 점검합니다.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="tt-proof-group-3">
+          <div class="composition-flow-label">
+            <span>03</span>
+            <h3 id="tt-proof-group-3">인증서로 보이는 신뢰</h3>
+            <p>보이지 않는 기준을 실제 인증서와 자료 이미지로 확인할 수 있게 보여줍니다.</p>
+          </div>
+
+          <section class="tt-proof-cert panel">
+            <div class="tt-proof-section-head">
+              <p class="eyebrow">CERTIFICATE EVIDENCE</p>
+              <h2>클라비스는<br />확인 가능한 자료로 기술 신뢰를 보여줍니다</h2>
+              <p>
+                인증과 기준 자료는 페이지의 장식이 아니라 신뢰를 구체화하는 증거입니다.
+                클라비스는 제품 기준, 제조 품질, 안전성 확인 자료를 함께 제시해
+                기술의 완성도를 설명합니다.
+              </p>
+            </div>
+            <div class="tt-proof-cert-grid">
+              <article>
+                <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.38.png" alt="클라비스 인증서 자료 1" />
+                <p>제품 기준 확인 자료</p>
+              </article>
+              <article>
+                <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.48.png" alt="클라비스 인증서 자료 2" />
+                <p>제조 품질 확인 자료</p>
+              </article>
+              <article>
+                <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.58.png" alt="클라비스 인증서 자료 3" />
+                <p>안전성 확인 자료</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="tt-proof-group-4">
+          <div class="composition-flow-label">
+            <span>04</span>
+            <h3 id="tt-proof-group-4">시장에서 검증된 신뢰</h3>
+            <p>기술과 인증이 고객 선택, 판매 기록, 유통 채널 신뢰로 이어지는 마무리 영역입니다.</p>
+          </div>
+
+          <section class="tt-proof-market panel">
+            <div>
+              <p class="eyebrow">MARKET VALIDATION</p>
+              <h2>기술은 기준으로 증명되고<br />신뢰는 선택으로 확인됩니다</h2>
+              <p>
+                클라비스의 Tech &amp; Trust는 실험실의 언어에 머물지 않습니다.
+                제품 기준과 인증 자료, 제조 품질을 거친 제품이 시장에서 반복 선택될 때
+                브랜드의 신뢰는 더 선명해집니다.
+              </p>
+            </div>
+            <div class="tt-proof-stats">
+              <article><strong>525억</strong><span>누적 매출로 확인된 시장 반응</span></article>
+              <article><strong>25만개</strong><span>고객 선택으로 축적된 제품 경험</span></article>
+              <article><strong>9년</strong><span>시간이 쌓아 올린 브랜드 신뢰</span></article>
+            </div>
+          </section>
+
+          <section class="tt-proof-channel panel">
+            <p class="eyebrow">TRUSTED CHANNELS</p>
+            <h2>검증된 기준은<br />유통 채널의 반복 선택으로 이어집니다</h2>
+            <div class="channel-grid">
+              <div>• 현대홈쇼핑</div>
+              <div>• 롯데홈쇼핑</div>
+              <div>• CJ온스타일</div>
+              <div>• 홈앤쇼핑</div>
+              <div>• 쇼핑엔티</div>
+              <div>• 신세계쇼핑</div>
+              <div>• SK스토아</div>
+              <div>• NS홈쇼핑</div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div
+        id="tt-panel-flow"
+        class="tt-composition is-active"
+        data-tt-view="flow"
+        role="tabpanel"
+        aria-labelledby="tt-tab-flow"
+      >
+        <div class="composition-flow-group" aria-labelledby="tt-flow-group-1">
+          <div class="composition-flow-label">
+            <span>01</span>
+            <h3 id="tt-flow-group-1">신뢰 선언</h3>
+            <p>보이지 않는 기술을 확인 가능한 기준으로 바꾼다는 페이지의 출발점입니다.</p>
+          </div>
+          <section class="tt-flow-hero panel">
+            <p class="eyebrow">TECH TO TRUST</p>
+            <h2>클라비스는<br />보이지 않는 기술을 확인 가능한 기준으로 만듭니다</h2>
+            <p>
+              자기장 기술은 눈으로 바로 확인하기 어렵습니다. 그래서 클라비스는 기술을
+              감각적인 표현으로만 말하지 않고, 제품 구조와 제조 기준, 인증 자료와
+              시장의 선택으로 이어지는 흐름 안에서 신뢰를 설명합니다.
+            </p>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="tt-flow-group-2">
+          <div class="composition-flow-label">
+            <span>02</span>
+            <h3 id="tt-flow-group-2">제품 완성 과정</h3>
+            <p>R&amp;D, 소재, 검수 과정을 통해 기술이 매일 쓰는 제품으로 완성되는 흐름입니다.</p>
+          </div>
+          <section class="tt-flow-process panel">
+            <p class="eyebrow">PRODUCT PROCESS</p>
+            <h2>클라비스는 매일 믿고 쓰는<br />제품으로 완성합니다</h2>
+            <div class="journey-grid">
+              <article>
+                <span class="step">01</span>
+                <img src="../asset/backdata/manufact.png" alt="Manufact" />
+                <h3>Precision R&amp;D<br />연구소</h3>
+                <p>정밀 자기공학 원천 기술을 바탕으로, 신체에 가장 유익한 지속 밀도와 파동을 연구합니다.</p>
+              </article>
+              <article>
+                <span class="step">02</span>
+                <img src="../asset/backdata/neodium.png" alt="Neodium" />
+                <h3>High-Purity Alloy<br />고순도 네오디뮴</h3>
+                <p>고순도 희토류를 사용해 자력 손실을 방지하고 외부 자극으로부터 에너지를 보존합니다.</p>
+              </article>
+              <article>
+                <span class="step">03</span>
+                <img src="../asset/backdata/inspect.png" alt="Inspect" />
+                <h3>Zero Tolerance<br />엄격한 검수</h3>
+                <p>전 제품을 검수하며 1% 오차도 허용하지 않는 품질 관리를 수행합니다.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="tt-flow-group-3">
+          <div class="composition-flow-label">
+            <span>03</span>
+            <h3 id="tt-flow-group-3">연구 기반 증명</h3>
+            <p>앞에서 설명한 R&amp;D 기반이 실제 연구소 인정 자료로 이어지는 구간입니다.</p>
+          </div>
+          <section class="tt-flow-lab panel">
+            <div>
+              <p class="eyebrow">R&amp;D PROOF</p>
+              <h2>기술력은<br />연구 기반 위에서 시작됩니다</h2>
+              <p>
+                정밀 자기공학을 제품 언어로 바꾸기 위해서는 소재와 구조를 해석하는
+                연구 기반이 필요합니다. 기업부설연구소 인정 자료는 클라비스가 기술을
+                제품으로 연결하는 출발점을 보여줍니다.
+              </p>
+            </div>
+            <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.38.png" alt="기업부설연구소 인정서" />
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="tt-flow-group-4">
+          <div class="composition-flow-label">
+            <span>04</span>
+            <h3 id="tt-flow-group-4">제조와 품질 인증</h3>
+            <p>연구 기반 다음에는 실제 제조와 품질관리 기준을 인증 자료로 확인합니다.</p>
+          </div>
+          <section class="tt-flow-cert panel">
+            <div class="tt-proof-section-head">
+              <p class="eyebrow">CERTIFIED STANDARD</p>
+              <h2>좋은 제품은<br />좋은 제조 기준 위에서 완성됩니다</h2>
+              <p>
+                ISO 13485와 의료기기 GMP 인증은 클라비스의 제품이 어떤 품질관리
+                체계와 제조 기준 안에서 만들어지는지 보여주는 핵심 자료입니다.
+              </p>
+            </div>
+            <div class="cert-grid cert-grid-two">
+              <article>
+                <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.48.png" alt="ISO 13485 의료기기 품질경영시스템 인증서" />
+                <p>ISO 13485 품질경영 인증</p>
+              </article>
+              <article>
+                <img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.58.png" alt="의료기기 제조 및 품질관리 기준 적합 인증서" />
+                <p>의료기기 GMP 제조 인증</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="tt-flow-group-5">
+          <div class="composition-flow-label">
+            <span>05</span>
+            <h3 id="tt-flow-group-5">제품 기준과 안전성</h3>
+            <p>인증 이후에는 고객이 실제로 착용할 때 확인하고 싶은 기준을 정리합니다.</p>
+          </div>
+          <section class="tt-flow-safety panel">
+            <p class="eyebrow">WEARABLE SAFETY</p>
+            <h2>매일 닿는 제품일수록<br />기준은 더 분명해야 합니다</h2>
+            <div class="safety-grid">
+              <article>
+                <span class="ring">DATA</span>
+                <h3>제품 기준 자료</h3>
+                <p>제품 구조와 기준을 설명하는 자료로 신뢰를 한 번 더 확인합니다.</p>
+              </article>
+              <article>
+                <span class="ring">ZERO</span>
+                <h3>유해물질 불검출</h3>
+                <p>라돈, 중금속 등 인체 위해 성분 불검출 테스트를 기준으로 제시합니다.</p>
+              </article>
+              <article>
+                <span class="ring">AL-FREE</span>
+                <h3>저자극 테스트 완료</h3>
+                <p>피부에 닿는 착용 제품으로서 필요한 안전성 기준을 확인합니다.</p>
+              </article>
+              <article>
+                <span class="ring">CHECK</span>
+                <h3>완성도 점검</h3>
+                <p>소재, 마감, 착용감을 함께 확인해 매일 쓰는 제품의 완성도를 높입니다.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="tt-flow-group-6">
+          <div class="composition-flow-label">
+            <span>06</span>
+            <h3 id="tt-flow-group-6">시장에서 검증된 신뢰</h3>
+            <p>기술과 인증, 제품 기준이 실제 고객 선택으로 이어졌다는 결론입니다.</p>
+          </div>
+          <section class="tt-flow-market panel">
+            <p class="eyebrow">MARKET TRUST</p>
+            <h2>기준을 갖춘 제품은<br />시장에서 반복 선택됩니다</h2>
+            <div class="tt-proof-stats">
+              <article><strong>525억</strong><span>누적 매출액</span></article>
+              <article><strong>25만개</strong><span>누적 판매량</span></article>
+              <article><strong>9년</strong><span>지속 판매 기록</span></article>
+            </div>
+            <div class="channel-grid">
+              <div>• 현대홈쇼핑</div>
+              <div>• 롯데홈쇼핑</div>
+              <div>• CJ온스타일</div>
+              <div>• 홈앤쇼핑</div>
+              <div>• 쇼핑엔티</div>
+              <div>• 신세계쇼핑</div>
+              <div>• SK스토아</div>
+              <div>• NS홈쇼핑</div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div
+        id="tt-panel-impact"
+        class="tt-composition"
+        data-tt-view="impact"
+        role="tabpanel"
+        aria-labelledby="tt-tab-impact"
+        hidden
+      >
+        <section class="impact-hero impact-trust-hero">
+          <div class="impact-copy">
+            <p class="eyebrow">IMPACT TRUST FLOW</p>
+            <h2>클라비스의 신뢰는 주장보다<br />제품 안의 기준으로 남습니다.</h2>
+            <p>
+              테크 페이지는 인증 단어를 앞세우기보다, 소재와 제조 흐름, 완성도 점검이
+              실제 제품 안에서 어떻게 신뢰로 바뀌는지 보여줘야 합니다.
+            </p>
+          </div>
+          <div class="impact-visual" aria-label="Trust product standard">
+            <span>STANDARD</span>
+            <strong>3 STEP</strong>
+            <small>MATERIAL · PROCESS · DETAIL</small>
+          </div>
+        </section>
+
+        <section class="impact-steps" aria-label="Trust impact story">
+          <article>
+            <span>01</span>
+            <h3>소재 기준</h3>
+            <p>네오디뮴 코어의 특성과 제품 구조를 먼저 정리해 기술의 기준점을 만듭니다.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>제조 흐름</h3>
+            <p>제품마다 같은 완성도가 유지되도록 생산, 조립, 마감 흐름을 관리합니다.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>완성도 점검</h3>
+            <p>자력, 표면, 착용감을 확인해 고객에게 전달되는 마지막 인상을 관리합니다.</p>
+          </article>
+        </section>
+
+        <section class="impact-band">
+          <p class="eyebrow">MADE TO BE TRUSTED</p>
+          <h2>클라비스는<br />믿을 수 있게 만들어지는 제품입니다</h2>
+          <p>
+            신뢰는 한 줄의 문구가 아니라 반복되는 기준의 결과입니다. 클라비스는 기준을
+            제품 안에 남기고, 그 제품이 고객의 선택으로 이어지게 만듭니다.
+          </p>
+        </section>
+
+        <section class="impact-split">
+          <div>
+            <p class="eyebrow">PROOF LADDER</p>
+            <h2>기준이 쌓이고<br />선택으로 검증됩니다</h2>
+          </div>
+          <ul>
+            <li><strong>525억</strong><span>누적 매출로 확인된 시장 반응</span></li>
+            <li><strong>25만개</strong><span>고객 선택으로 축적된 제품 경험</span></li>
+            <li><strong>9년</strong><span>시간이 쌓아 올린 브랜드 신뢰</span></li>
+          </ul>
+        </section>
+
+        <section class="impact-cta">
+          <p class="eyebrow">TRUST CLOSE</p>
+          <h2>클라비스의 기술은<br />제품과 선택으로 증명됩니다</h2>
+          <p>소재, 제조, 점검, 시장 선택까지 하나의 흐름으로 연결될 때 Tech &amp; Trust가 완성됩니다.</p>
+          <a href="./brand.html">VIEW BRAND STORY</a>
         </section>
       </div>
     </main>

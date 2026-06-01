@@ -12,14 +12,14 @@
     <div id="gnb-root"></div>
 
 <main class="brand-page">
-      <section class="intro panel center">
+      <section class="intro panel center page-main-hero">
         <p class="eyebrow">BRAND IDENTITY</p>
         <h1>CLAVIS, 열쇠가 되다</h1>
-        <span class="intro-line" aria-hidden="true"></span>
-        <p class="intro-subtitle">
+        <span class="intro-line page-main-hero-line" aria-hidden="true"></span>
+        <p class="intro-subtitle page-main-hero-copy">
           클라비스는 건강한 일상으로 이어지는 웰니스 자기장의 시작점을 만드는
-          브랜드입니다. 
-          <br>자기장과 소재 연구, 제품 설계와 디자인의 균형을 통해
+          브랜드입니다.
+          <br />자기장과 소재 연구, 제품 설계와 디자인의 균형을 통해
           프리미엄 라이프 케어를 제안합니다.
         </p>
       </section>
@@ -38,11 +38,10 @@
           </button>
           <button
             id="brand-tab-recommended"
-            class="active"
             type="button"
             role="tab"
             data-brand-view-button="recommended"
-            aria-selected="true"
+            aria-selected="false"
             aria-controls="brand-panel-recommended"
           >
             추천 구성
@@ -56,6 +55,27 @@
             aria-controls="brand-panel-recommended2"
           >
             추천 구성2
+          </button>
+          <button
+            id="brand-tab-emotion"
+            class="active"
+            type="button"
+            role="tab"
+            data-brand-view-button="emotion"
+            aria-selected="true"
+            aria-controls="brand-panel-emotion"
+          >
+            감성 구성
+          </button>
+          <button
+            id="brand-tab-impact"
+            type="button"
+            role="tab"
+            data-brand-view-button="impact"
+            aria-selected="false"
+            aria-controls="brand-panel-impact"
+          >
+            임팩트 구성
           </button>
         </div>
       </section>
@@ -220,195 +240,230 @@
 
       <div
         id="brand-panel-recommended"
-        class="brand-composition is-active"
+        class="brand-composition"
         data-brand-view="recommended"
         role="tabpanel"
         aria-labelledby="brand-tab-recommended"
+        hidden
       >
-        <section class="brand-problem panel center">
-          <p class="eyebrow">WHY CLAVIS</p>
-          <h2>도심의 일상에<br />자연의 균형이 필요합니다</h2>
-          <p>
-            현대인은 실내 중심의 생활과 빠른 루틴 속에서 몸의 균형을 돌볼
-            자연스러운 접점을 잃어가고 있습니다. 클라비스는 매일 착용하는
-            웰니스 제품으로 그 접점을 다시 제안합니다.
-          </p>
-        </section>
-
-        <section class="brand-signature panel">
-          <div class="brand-signature-mark">
-            <span>ClaviS</span>
-            <strong>3,200G</strong>
-            <small>NEODYMIUM MAGNETIC CORE</small>
+        <div class="composition-flow-group" aria-labelledby="brand-r1-group-1">
+          <div class="composition-flow-label">
+            <span>01</span>
+            <h3 id="brand-r1-group-1">브랜드가 필요한 이유</h3>
+            <p>도심의 생활 리듬 안에서 클라비스가 제안하는 균형의 필요성을 먼저 보여줍니다.</p>
           </div>
-          <div class="brand-signature-copy">
-            <p class="eyebrow">PRODUCT SIGNATURE</p>
-            <h2>클라비스는<br />자기장 웨어러블 브랜드입니다</h2>
+
+          <section class="brand-problem panel center">
+            <p class="eyebrow">WHY CLAVIS</p>
+            <h2>도심의 일상에<br />자연의 균형이 필요합니다</h2>
             <p>
-              네오디뮴 자기장 코어, 몸에 가까운 착용 구조, 프리미엄 디자인을
-              하나의 제품 경험으로 결합합니다.
+              현대인은 실내 중심의 생활과 빠른 루틴 속에서 몸의 균형을 돌볼
+              자연스러운 접점을 잃어가고 있습니다. 클라비스는 매일 착용하는
+              웰니스 제품으로 그 접점을 다시 제안합니다.
             </p>
-            <ul>
-              <li><strong>Science</strong> 자연 자기장 원리 기반의 설계</li>
-              <li><strong>Design</strong> 일상에 어울리는 웨어러블 감성</li>
-              <li><strong>Trust</strong> 인증과 제조 기준으로 완성하는 신뢰</li>
-            </ul>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="brand-r1-group-2">
+          <div class="composition-flow-label">
+            <span>02</span>
+            <h3 id="brand-r1-group-2">제품 시그니처</h3>
+            <p>브랜드의 균형 철학이 손목 위의 감각과 프리미엄 디자인으로 기억되는 구간입니다.</p>
           </div>
-        </section>
 
-        <section class="brand-values panel">
-          <article>
-            <p class="core-num">01. SCIENCE</p>
-            <h3>보이지 않는 에너지를<br />제품의 기준으로</h3>
-            <p>자기장과 소재 연구를 바탕으로 일상 가까이 닿는 웰니스 경험을 설계합니다.</p>
-          </article>
-          <article>
-            <p class="core-num">02. DESIGN</p>
-            <h3>건강한 기능을<br />아름답게 착용하도록</h3>
-            <p>주얼리 감성과 착용감을 함께 고려해 매일 손이 가는 제품을 만듭니다.</p>
-          </article>
-          <article>
-            <p class="core-num">03. TRUST</p>
-            <h3>브랜드의 약속을<br />확인 가능한 기준으로</h3>
-            <p>인증, 제조, 검수 기준으로 클라비스 제품의 신뢰를 설명합니다.</p>
-          </article>
-        </section>
-
-        <section class="history panel">
-          <h2>성장 히스토리</h2>
-          <ul>
-            <li><span>2016</span> 웰니스 액세서리 프로젝트 시작</li>
-            <li><span>2017</span> 시그니처 자기장 코어 설계 완료</li>
-            <li><span>2019</span> 클라비스 1세대 컬렉션 런칭</li>
-            <li><span>2021</span> 프리미엄 로즈골드 라인 확장</li>
-            <li><span>2023</span> 글로벌 파트너십 및 공급망 고도화</li>
-            <li><span>2025+</span> 캡슐형 웰니스 디바이스 R&amp;D</li>
-          </ul>
-        </section>
-
-        <section class="brand-v2-collection panel">
-          <div class="brand-v2-section-head">
-            <p class="eyebrow">COLLECTION STORY</p>
-            <h2>하나의 제품에서 시작된 균형은<br />하루의 장면으로 확장됩니다</h2>
-            <p>
-              성장의 다음 단계는 단순한 제품군 추가가 아닙니다. 클라비스가 쌓아온
-              자기장 코어와 착용 경험은 손목 가까이에서 시작해, 움직이는 시간과
-              머무는 공간으로 자연스럽게 이어집니다.
-            </p>
-          </div>
-          <div class="brand-v2-story-flow">
-            <a class="brand-v2-story-step" href="./medi-jewelry.html">
-              <span class="brand-v2-step-num">01</span>
-              <img src="../asset/banner/main/banner1.png" alt="Medi jewelry collection" />
-              <div>
-                <span>WEAR · 몸 가까이 착용하는 균형</span>
-                <h3>MEDI JEWELRY</h3>
-                <p>
-                  클라비스의 시작은 매일 착용할 수 있는 주얼리형 웰니스 제품입니다.
-                  기능을 크게 드러내기보다, 손목 가까이 자연 자기장 기반의 밸런스
-                  경험을 담아 브랜드의 첫 기억을 만듭니다.
-                </p>
-              </div>
-            </a>
-            <a class="brand-v2-story-step" href="./active-lifestyle.html">
-              <span class="brand-v2-step-num">02</span>
-              <img src="../asset/banner/main/banner2.png" alt="Active lifestyle collection" />
-              <div>
-                <span>MOVE · 움직임 속에서도 이어지는 균형</span>
-                <h3>ACTIVE LIFESTYLE</h3>
-                <p>
-                  착용 경험은 움직이는 시간으로 확장됩니다. 운동, 이동, 야외 활동처럼
-                  몸의 리듬이 커지는 순간에도 클라비스의 균형 철학이 자연스럽게 이어집니다.
-                </p>
-              </div>
-            </a>
-            <a class="brand-v2-story-step" href="./living-health.html">
-              <span class="brand-v2-step-num">03</span>
-              <img src="../asset/banner/main/banner3.png" alt="Living health collection" />
-              <div>
-                <span>LIVE · 생활 공간으로 확장되는 균형</span>
-                <h3>LIVING &amp; HEALTH</h3>
-                <p>
-                  클라비스의 웰니스는 착용에서 끝나지 않습니다. 휴식하고 머무는 공간까지
-                  확장되며, 일상 전체를 더 가까운 밸런스 케어 경험으로 연결합니다.
-                </p>
-              </div>
-            </a>
-          </div>
-          <p class="brand-v2-collection-note">
-            그래서 컬렉션은 세 개의 분리된 카테고리가 아니라, 클라비스가 성장해온
-            방향이 제품으로 이어지는 순서입니다. 이 흐름은 다음 혁신으로 자연스럽게 이어집니다.
-          </p>
-        </section>
-
-        <section class="future panel">
-          <p class="eyebrow">NEXT VISION</p>
-          <h2>다음 혁신,<br /><em>Premium Wellness Capsule</em></h2>
-          <div class="future-grid">
-            <div class="capsule-shape"></div>
-            <div>
-              <h3>착용 경험을 넘어 생활 케어로 확장합니다</h3>
+          <section class="brand-signature panel">
+            <div class="brand-signature-mark brand-image-guide">
+              <span>IMAGE DIRECTION</span>
+              <strong>제품 클로즈업</strong>
+              <p>팔찌의 곡선, 소재감, 마감 디테일이 잘 보이도록 가까이 촬영한 이미지. 기능보다 먼저 프리미엄 제품의 인상이 느껴져야 합니다.</p>
+              <small>PRODUCT CLOSE-UP · MATERIAL TEXTURE · SIGNATURE DETAIL</small>
+            </div>
+            <div class="brand-signature-copy">
+              <p class="eyebrow">PRODUCT SIGNATURE</p>
+              <h2>클라비스는<br />균형을 아름답게 남기는 브랜드입니다</h2>
               <p>
-                클라비스는 웨어러블 제품에서 시작해 수면, 회복, 일상 컨디션까지
-                이어지는 프리미엄 웰니스 경험을 준비합니다.
+                클라비스는 보이지 않는 원리를 기능으로만 말하지 않습니다.
+                매일 손이 가는 디자인과 몸 가까운 착용감으로, 일상 속 균형을
+                하나의 취향처럼 경험하게 합니다.
               </p>
               <ul>
-                <li>모듈형 자석 설계</li>
-                <li>개인화 데이터 기반 가이드</li>
-                <li>생활 밀착형 디자인</li>
+                <li><strong>Balance</strong> 일상 가까이 균형의 감각을 제안합니다</li>
+                <li><strong>Wear</strong> 매일 자연스럽게 손이 가는 착용 경험을 만듭니다</li>
+                <li><strong>Signature</strong> 기능을 드러내기보다 오래 남는 인상으로 완성합니다</li>
               </ul>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="roadmap panel">
-          <h2>2030 GLOBAL ROADMAP</h2>
-          <div class="roadmap-grid">
+          <section class="brand-values panel">
             <article>
-              <h4>Phase 1</h4>
-              <p class="period">2016 - 2020</p>
-              <h5>국내 시장 개척</h5>
-              <ul class="roadmap-list">
-                <li>자기장 웨어러블 카테고리 창조</li>
-                <li>국내 1위 달성</li>
-                <li>핵심 특허 취득</li>
-              </ul>
-              <span class="roadmap-status done">DONE</span>
+              <p class="core-num">01. ORIGIN</p>
+              <h3>하나의 제품을 만든 원리가<br />브랜드의 출발점이 됩니다</h3>
+              <p>자연 자기장에 대한 해석은 메디 주얼리의 코어가 되었고, 클라비스가 균형을 말하는 첫 기준이 되었습니다.</p>
             </article>
             <article>
-              <h4>Phase 2</h4>
-              <p class="period">2021 - 2024</p>
-              <h5>아시아 확장</h5>
-              <ul class="roadmap-list">
-                <li>FDA 인증 획득</li>
-                <li>B2B 채널 확대</li>
-              </ul>
-              <span class="roadmap-status done">DONE</span>
-            </article>
-            <article class="active">
-              <h4>Phase 3</h4>
-              <p class="period">2025 - 2028</p>
-              <h5>글로벌 &amp; 프리미엄</h5>
-              <ul class="roadmap-list">
-                <li>CLAVIS 캡슐 개발</li>
-                <li>북미 본격 진출</li>
-                <li>IPO 상장 추진</li>
-              </ul>
-              <span class="roadmap-status progress">IN PROGRESS</span>
+              <p class="core-num">02. WEAR</p>
+              <h3>기능을 착용하고 싶은<br />일상의 형태로 바꿉니다</h3>
+              <p>기술이 주얼리처럼 자연스럽게 착용될 때, 제품은 건강 기능을 넘어 매일의 루틴으로 이어집니다.</p>
             </article>
             <article>
-              <h4>Phase 4</h4>
-              <p class="period">2029 - 2030</p>
-              <h5>글로벌 TOP 10</h5>
-              <ul class="roadmap-list">
-                <li>30개국 유통망 구축</li>
-                <li>웰니스 플랫폼 상장</li>
-                <li>글로벌 매출 5,000억 목표</li>
-              </ul>
-              <span class="roadmap-status todo">TO DO</span>
+              <p class="core-num">03. EXPAND</p>
+              <h3>반복되는 선택이<br />다음 컬렉션을 만듭니다</h3>
+              <p>제품 안의 기준과 착용 경험이 쌓이면서, 클라비스는 메디 주얼리에서 액티브와 리빙헬스로 확장됩니다.</p>
             </article>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="brand-r1-group-3">
+          <div class="composition-flow-label">
+            <span>03</span>
+            <h3 id="brand-r1-group-3">성장과 컬렉션 확장</h3>
+            <p>하나의 제품 경험이 컬렉션으로 확장되는 방향을 먼저 보여주고, 그 흐름을 히스토리로 뒷받침합니다.</p>
           </div>
-        </section>
+
+          <section class="brand-v2-collection panel">
+            <div class="brand-v2-section-head">
+              <p class="eyebrow">COLLECTION STORY</p>
+              <h2>손목 위에서 시작된 균형은<br />움직임과 생활의 장면으로 이어집니다</h2>
+              <p>
+                성장의 다음 단계는 단순한 제품군 추가가 아닙니다. 클라비스가 쌓아온
+                자기장 코어와 착용 경험은 손목 가까이에서 시작해, 움직이는 시간과
+                머무는 공간으로 자연스럽게 이어집니다.
+              </p>
+            </div>
+            <div class="brand-v2-story-flow">
+              <a class="brand-v2-story-step" href="./medi-jewelry.html">
+                <span class="brand-v2-step-num">01</span>
+                <img src="../asset/banner/main/banner1.png" alt="Medi jewelry collection" />
+                <div>
+                  <span>WEAR · 몸 가까이 착용하는 균형</span>
+                  <h3>MEDI JEWELRY</h3>
+                  <p>
+                    클라비스의 시작은 매일 착용할 수 있는 주얼리형 웰니스 제품입니다.
+                    기능을 크게 드러내기보다, 손목 가까이 자연 자기장 기반의 밸런스
+                    경험을 담아 브랜드의 첫 기억을 만듭니다.
+                  </p>
+                </div>
+              </a>
+              <a class="brand-v2-story-step" href="./active-lifestyle.html">
+                <span class="brand-v2-step-num">02</span>
+                <img src="../asset/banner/main/banner2.png" alt="Active lifestyle collection" />
+                <div>
+                  <span>MOVE · 움직임 속에서도 이어지는 균형</span>
+                  <h3>ACTIVE LIFESTYLE</h3>
+                  <p>
+                    착용 경험은 움직이는 시간으로 확장됩니다. 운동, 이동, 야외 활동처럼
+                    몸의 리듬이 커지는 순간에도 클라비스의 균형 철학이 자연스럽게 이어집니다.
+                  </p>
+                </div>
+              </a>
+              <a class="brand-v2-story-step" href="./living-health.html">
+                <span class="brand-v2-step-num">03</span>
+                <img src="../asset/banner/main/banner3.png" alt="Living health collection" />
+                <div>
+                  <span>LIVE · 생활 공간으로 확장되는 균형</span>
+                  <h3>LIVING &amp; HEALTH</h3>
+                  <p>
+                    클라비스의 웰니스는 착용에서 끝나지 않습니다. 휴식하고 머무는 공간까지
+                    확장되며, 일상 전체를 더 가까운 밸런스 케어 경험으로 연결합니다.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <p class="brand-v2-collection-note">
+              그래서 컬렉션은 세 개의 분리된 카테고리가 아니라, 클라비스가 성장해온
+              방향이 제품으로 이어지는 순서입니다. 이 흐름은 다음 혁신으로 자연스럽게 이어집니다.
+            </p>
+          </section>
+
+          <section class="history panel">
+            <h2>성장 히스토리</h2>
+            <ul>
+              <li><span>2016</span> 웰니스 액세서리 프로젝트 시작</li>
+              <li><span>2017</span> 시그니처 자기장 코어 설계 완료</li>
+              <li><span>2019</span> 클라비스 1세대 컬렉션 런칭</li>
+              <li><span>2021</span> 프리미엄 로즈골드 라인 확장</li>
+              <li><span>2023</span> 글로벌 파트너십 및 공급망 고도화</li>
+              <li><span>2025+</span> 캡슐형 웰니스 디바이스 R&amp;D</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="brand-r1-group-4">
+          <div class="composition-flow-label">
+            <span>04</span>
+            <h3 id="brand-r1-group-4">다음 혁신과 글로벌 로드맵</h3>
+            <p>현재 제품 경험이 프리미엄 웰니스 캡슐과 글로벌 확장 비전으로 이어지는 마무리 영역입니다.</p>
+          </div>
+
+          <section class="future panel">
+            <p class="eyebrow">NEXT VISION</p>
+            <h2>다음 혁신,<br /><em>Premium Wellness Capsule</em></h2>
+            <div class="future-grid">
+              <div class="capsule-shape"></div>
+              <div>
+                <h3>착용 경험을 넘어 생활 케어로 확장합니다</h3>
+                <p>
+                  클라비스는 웨어러블 제품에서 시작해 수면, 회복, 일상 컨디션까지
+                  이어지는 프리미엄 웰니스 경험을 준비합니다.
+                </p>
+                <ul>
+                  <li>모듈형 자석 설계</li>
+                  <li>개인화 데이터 기반 가이드</li>
+                  <li>생활 밀착형 디자인</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="roadmap panel">
+            <h2>2030 GLOBAL ROADMAP</h2>
+            <div class="roadmap-grid">
+              <article>
+                <h4>Phase 1</h4>
+                <p class="period">2016 - 2020</p>
+                <h5>국내 시장 개척</h5>
+                <ul class="roadmap-list">
+                  <li>자기장 웨어러블 카테고리 창조</li>
+                  <li>국내 1위 달성</li>
+                  <li>핵심 특허 취득</li>
+                </ul>
+                <span class="roadmap-status done">DONE</span>
+              </article>
+              <article>
+                <h4>Phase 2</h4>
+                <p class="period">2021 - 2024</p>
+                <h5>아시아 확장</h5>
+                <ul class="roadmap-list">
+                  <li>FDA 인증 획득</li>
+                  <li>B2B 채널 확대</li>
+                </ul>
+                <span class="roadmap-status done">DONE</span>
+              </article>
+              <article class="active">
+                <h4>Phase 3</h4>
+                <p class="period">2025 - 2028</p>
+                <h5>글로벌 &amp; 프리미엄</h5>
+                <ul class="roadmap-list">
+                  <li>CLAVIS 캡슐 개발</li>
+                  <li>북미 본격 진출</li>
+                  <li>IPO 상장 추진</li>
+                </ul>
+                <span class="roadmap-status progress">IN PROGRESS</span>
+              </article>
+              <article>
+                <h4>Phase 4</h4>
+                <p class="period">2029 - 2030</p>
+                <h5>글로벌 TOP 10</h5>
+                <ul class="roadmap-list">
+                  <li>30개국 유통망 구축</li>
+                  <li>웰니스 플랫폼 상장</li>
+                  <li>글로벌 매출 5,000억 목표</li>
+                </ul>
+                <span class="roadmap-status todo">TO DO</span>
+              </article>
+            </div>
+          </section>
+        </div>
 
       </div>
 
@@ -420,196 +475,455 @@
         aria-labelledby="brand-tab-recommended2"
         hidden
       >
-        <section class="brand-v2-hero panel center">
-          <p class="eyebrow">BRAND STRATEGY</p>
-          <h2>CLAVIS,<br />Balance You Can Wear</h2>
-          <p>
-            클라비스는 자연의 균형을 몸 가까이 착용하게 만드는 프리미엄
-            웰니스 브랜드입니다. 보이지 않는 자기장 원리를 제품 경험으로
-            해석해 건강한 일상을 더 아름답게 제안합니다.
-          </p>
+        <div class="composition-flow-group" aria-labelledby="brand-r2-group-1">
+          <div class="composition-flow-label">
+            <span>01</span>
+            <h3 id="brand-r2-group-1">브랜드 선언</h3>
+            <p>클라비스가 어떤 브랜드인지 먼저 선명하게 각인합니다.</p>
+          </div>
+
+          <section class="brand-v2-hero panel center">
+            <p class="eyebrow">CLAVIS STATEMENT</p>
+            <h2>클라비스는<br />일상에 균형의 감각을 더하는 브랜드입니다</h2>
+            <p>
+              클라비스는 자연 자기장 원리를 세련된 제품 경험으로 해석합니다.
+              몸 가까이 머무는 작은 디테일 안에 보이지 않는 균형을 담아,
+              매일의 순간을 더 품격 있는 웰니스 루틴으로 완성합니다.
+            </p>
+          </section>
+
+          <section class="brand-v2-flow panel">
+            <article>
+              <span>01</span>
+              <p class="eyebrow">CLAVIS IS SCIENCE</p>
+              <h3>클라비스는 보이지 않는 원리를<br />제품 구조로 해석합니다</h3>
+              <p>자연 자기장, 네오디뮴 코어, 착용 거리를 하나의 설계 언어로 연결합니다.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <p class="eyebrow">CLAVIS IS WEARABLE</p>
+              <h3>클라비스는 매일 착용되는<br />순간을 설계합니다</h3>
+              <p>기능만 앞세우지 않고, 주얼리처럼 손이 가는 형태와 착용감을 함께 만듭니다.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <p class="eyebrow">CLAVIS IS TRUST</p>
+              <h3>클라비스는 확인 가능한 기준으로<br />신뢰를 쌓습니다</h3>
+              <p>소재, 제조, 검수 기준을 제품 안에 담아 브랜드의 약속을 구체화합니다.</p>
+            </article>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="brand-r2-group-2">
+          <div class="composition-flow-label">
+            <span>02</span>
+            <h3 id="brand-r2-group-2">제품으로 기억되는 클라비스</h3>
+            <p>클라비스의 균형 철학이 손목 위의 감각과 프리미엄 인상으로 남는 구간입니다.</p>
+          </div>
+
+          <section class="brand-signature panel brand-v2-signature">
+            <div class="brand-signature-mark brand-image-guide">
+              <span>IMAGE DIRECTION</span>
+              <strong>제품 착용 이미지</strong>
+              <p>손목 위에 자연스럽게 착용된 팔찌를 중심으로, 피부에 닿는 착용감과 주얼리처럼 고급스러운 마감이 함께 보이는 이미지</p>
+              <small>MODEL WEAR · WRIST CLOSE-UP · PREMIUM DETAIL</small>
+            </div>
+            <div class="brand-signature-copy">
+              <p class="eyebrow">PRODUCT MEMORY</p>
+              <h2>클라비스는<br />손목 위의 감각으로 기억되는 브랜드입니다</h2>
+              <p>
+                클라비스는 설명보다 먼저 착용하는 순간의 인상으로 기억됩니다.
+                균형의 철학을 세련된 형태와 편안한 착용감 안에 담아,
+                매일의 루틴을 더 품격 있게 만듭니다.
+              </p>
+              <ul>
+                <li><strong>BALANCE</strong> 클라비스는 균형을 하나의 취향으로 제안합니다</li>
+                <li><strong>WEAR</strong> 클라비스는 매일 손이 가는 착용 경험을 만듭니다</li>
+                <li><strong>SIGNATURE</strong> 클라비스는 기능보다 오래 남는 인상을 설계합니다</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="brand-values panel brand-v2-values">
+            <article>
+              <p class="core-num">01. SCIENCE</p>
+              <h3>클라비스는<br />과학을 일상 언어로 바꿉니다</h3>
+              <p>복잡한 원리를 어렵게 설명하기보다, 제품 구조와 착용 경험으로 이해시킵니다.</p>
+            </article>
+            <article>
+              <p class="core-num">02. DESIGN</p>
+              <h3>클라비스는<br />건강한 기능을 아름답게 만듭니다</h3>
+              <p>웰니스 제품도 매일 착용하고 싶은 디자인이어야 한다는 기준을 세웁니다.</p>
+            </article>
+            <article>
+              <p class="core-num">03. TRUST</p>
+              <h3>클라비스는<br />신뢰를 기준으로 남깁니다</h3>
+              <p>좋은 말보다 확인 가능한 소재, 공정, 검수 기준으로 브랜드를 설명합니다.</p>
+            </article>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="brand-r2-group-3">
+          <div class="composition-flow-label">
+            <span>03</span>
+            <h3 id="brand-r2-group-3">경험 확장</h3>
+            <p>하나의 제품 경험이 컬렉션과 미래 방향으로 넓어지는 구간입니다.</p>
+          </div>
+
+          <section class="brand-v2-collection panel">
+            <div class="brand-v2-section-head">
+              <p class="eyebrow">CLAVIS COLLECTION</p>
+              <h2>클라비스는<br />메디 주얼리에서 리빙헬스까지 확장됩니다</h2>
+              <p>
+                클라비스는 하나의 제품군에 머물지 않습니다. 몸 가까이 착용하는
+                메디 주얼리에서 시작해, 움직이는 시간과 머무는 공간까지
+                균형의 경험을 넓혀갑니다.
+              </p>
+            </div>
+            <div class="brand-v2-story-flow">
+              <a class="brand-v2-story-step" href="./medi-jewelry.html">
+                <span class="brand-v2-step-num">01</span>
+                <img src="../asset/banner/main/banner1.png" alt="Medi jewelry collection" />
+                <div>
+                  <span>WEAR · MEDI JEWELRY</span>
+                  <h3>클라비스는 착용하는 균형에서 시작합니다</h3>
+                  <p>메디 주얼리는 클라비스의 첫 인상입니다. 매일 착용하는 주얼리 안에 자기장 코어와 프리미엄 감성을 담습니다.</p>
+                </div>
+              </a>
+              <a class="brand-v2-story-step" href="./active-lifestyle.html">
+                <span class="brand-v2-step-num">02</span>
+                <img src="../asset/banner/main/banner2.png" alt="Active lifestyle collection" />
+                <div>
+                  <span>MOVE · ACTIVE LIFESTYLE</span>
+                  <h3>클라비스는 움직이는 시간까지 이어집니다</h3>
+                  <p>액티브 라이프스타일은 운동과 이동, 반복되는 루틴 속에서도 균형의 경험이 이어지도록 설계됩니다.</p>
+                </div>
+              </a>
+              <a class="brand-v2-story-step" href="./living-health.html">
+                <span class="brand-v2-step-num">03</span>
+                <img src="../asset/banner/main/banner3.png" alt="Living health collection" />
+                <div>
+                  <span>LIVE · LIVING &amp; HEALTH</span>
+                  <h3>클라비스는 생활 공간으로 확장됩니다</h3>
+                  <p>리빙헬스는 착용을 넘어 휴식과 생활 환경까지 이어지는 클라비스의 웰니스 방향을 보여줍니다.</p>
+                </div>
+              </a>
+            </div>
+            <p class="brand-v2-collection-note">
+              클라비스는 제품을 나열하지 않습니다. 착용, 움직임, 생활 공간으로 이어지는
+              하나의 브랜드 경험을 설계합니다.
+            </p>
+          </section>
+
+          <section class="roadmap panel brand-v2-roadmap">
+            <p class="eyebrow">CLAVIS NEXT</p>
+            <h2>클라비스는<br />프리미엄 웰니스 브랜드로 확장됩니다</h2>
+            <div class="roadmap-grid">
+              <article>
+                <h4>Step 1</h4>
+                <p class="period">WEAR</p>
+                <h5>착용 경험 구축</h5>
+                <ul class="roadmap-list">
+                  <li>메디 주얼리 라인 강화</li>
+                  <li>자기장 코어 시그니처화</li>
+                </ul>
+                <span class="roadmap-status done">DONE</span>
+              </article>
+              <article>
+                <h4>Step 2</h4>
+                <p class="period">MOVE</p>
+                <h5>활동 영역 확장</h5>
+                <ul class="roadmap-list">
+                  <li>액티브 제품군 확장</li>
+                  <li>착용 루틴 다양화</li>
+                </ul>
+                <span class="roadmap-status progress">IN PROGRESS</span>
+              </article>
+              <article class="active">
+                <h4>Step 3</h4>
+                <p class="period">LIVE</p>
+                <h5>생활 케어 확장</h5>
+                <ul class="roadmap-list">
+                  <li>리빙헬스 제품군 강화</li>
+                  <li>프리미엄 웰니스 캡슐 R&amp;D</li>
+                </ul>
+                <span class="roadmap-status progress">IN PROGRESS</span>
+              </article>
+              <article>
+                <h4>Step 4</h4>
+                <p class="period">GLOBAL</p>
+                <h5>글로벌 브랜드화</h5>
+                <ul class="roadmap-list">
+                  <li>글로벌 유통망 확대</li>
+                  <li>웰니스 플랫폼 확장</li>
+                </ul>
+                <span class="roadmap-status todo">TO DO</span>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div
+        id="brand-panel-emotion"
+        class="brand-composition is-active"
+        data-brand-view="emotion"
+        role="tabpanel"
+        aria-labelledby="brand-tab-emotion"
+      >
+        <div class="composition-flow-group" aria-labelledby="brand-emotion-group-1">
+          <div class="composition-flow-label">
+            <span>01</span>
+            <h3 id="brand-emotion-group-1">감성으로 시작하는 브랜드 선언</h3>
+            <p>기술보다 먼저, 클라비스가 일상에 남기는 분위기와 감각을 보여줍니다.</p>
+          </div>
+
+          <section class="brand-emotion-hero panel">
+            <div>
+              <p class="eyebrow">EMOTIONAL BRAND FLOW</p>
+              <h2>클라비스는<br />하루의 균형을 조용히 바꿉니다</h2>
+              <p>
+                좋은 웰니스는 크게 드러나지 않아도 몸에 남습니다. 클라비스는
+                손목 위에 자연스럽게 머물며, 바쁜 하루의 리듬을 조금 더 단정하고
+                고요하게 만들어주는 브랜드입니다.
+              </p>
+            </div>
+            <div class="brand-emotion-quote" aria-label="ClaviS emotional message">
+              <span>CLAVIS MOMENT</span>
+              <strong>Balance,<br />worn quietly.</strong>
+              <p>균형은 설명보다 먼저, 착용하는 순간의 감각으로 기억됩니다.</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="brand-emotion-group-2">
+          <div class="composition-flow-label">
+            <span>02</span>
+            <h3 id="brand-emotion-group-2">하루의 장면으로 확장되는 감각</h3>
+            <p>클라비스가 특정 기능이 아니라 매일의 루틴 속 브랜드 경험으로 느껴지게 합니다.</p>
+          </div>
+
+          <section class="brand-emotion-moments panel">
+            <article>
+              <span>MORNING</span>
+              <h3>하루를 시작할 때<br />손목 위에 남는 차분함</h3>
+              <p>출근 전, 외출 전, 손목에 닿는 작은 무게감이 오늘의 균형을 준비하게 합니다.</p>
+            </article>
+            <article>
+              <span>DAY</span>
+              <h3>움직이는 시간에도<br />흐트러지지 않는 인상</h3>
+              <p>업무와 이동, 운동처럼 리듬이 빨라지는 순간에도 클라비스는 자연스럽게 함께합니다.</p>
+            </article>
+            <article>
+              <span>NIGHT</span>
+              <h3>하루가 끝난 뒤에도<br />이어지는 웰니스 루틴</h3>
+              <p>착용에서 시작된 균형의 감각은 휴식과 생활 공간까지 이어지는 브랜드 경험이 됩니다.</p>
+            </article>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="brand-emotion-group-3">
+          <div class="composition-flow-label">
+            <span>03</span>
+            <h3 id="brand-emotion-group-3">제품으로 각인되는 브랜드</h3>
+            <p>감성적인 첫인상이 실제 제품의 코어, 착용감, 프리미엄 마감으로 연결됩니다.</p>
+          </div>
+
+          <section class="brand-emotion-signature panel">
+            <div class="brand-emotion-product">
+              <span>IMAGE DIRECTION</span>
+              <strong>모델 착용 컷</strong>
+              <p>손목 위에 자연스럽게 착용된 제품을 중심으로, 주얼리처럼 고급스러운 마감과 일상 속 균형감을 보여주는 이미지</p>
+              <small>WRIST CLOSE-UP · PREMIUM FINISH · DAILY WELLNESS</small>
+            </div>
+            <div>
+              <p class="eyebrow">PRODUCT IMPRESSION</p>
+              <h2>기술은 안쪽에,<br />인상은 오래 남게</h2>
+              <p>
+                클라비스는 자기장 코어를 전면에 과시하지 않습니다. 기술은 제품 안에
+                정교하게 담고, 바깥으로는 주얼리처럼 세련된 형태와 편안한 착용감을
+                남깁니다.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="brand-emotion-group-4">
+          <div class="composition-flow-label">
+            <span>04</span>
+            <h3 id="brand-emotion-group-4">감성을 지탱하는 조용한 기준</h3>
+            <p>기술은 브랜드를 앞지르지 않고, 감성적인 경험을 믿을 수 있게 받쳐주는 역할로 제시합니다.</p>
+          </div>
+
+          <section class="brand-emotion-proof panel">
+            <div>
+              <h2>좋은 감각은<br />확인 가능한 기준 위에서 완성됩니다</h2>
+            </div>
+            <div class="brand-emotion-proof-grid">
+              <article>
+                <strong>자연 자기장 원리</strong>
+                <p>클라비스의 균형감은 자연에 존재하는 보이지 않는 에너지에 대한 해석에서 출발합니다.</p>
+              </article>
+              <article>
+                <strong>네오디뮴 코어</strong>
+                <p>제품 안쪽에는 몸 가까이 머무는 착용 경험을 위한 자기장 코어 구조를 담습니다.</p>
+              </article>
+              <article>
+                <strong>제조와 검수 기준</strong>
+                <p>프리미엄 제품답게 소재, 마감, 착용감이 일정하게 유지되도록 기준을 관리합니다.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="brand-emotion-cta panel">
+            <p class="eyebrow">BRAND TO SCIENCE</p>
+            <h2>느낌으로 시작한 브랜드는<br />기준으로 오래 남습니다</h2>
+            <p>클라비스의 감성은 제품 안의 구조와 확인 가능한 기준을 만날 때 더 선명한 신뢰가 됩니다.</p>
+            <a href="./science.html">VIEW SCIENCE</a>
+          </section>
+        </div>
+      </div>
+
+      <div
+        id="brand-panel-impact"
+        class="brand-composition"
+        data-brand-view="impact"
+        role="tabpanel"
+        aria-labelledby="brand-tab-impact"
+        hidden
+      >
+        <section class="impact-hero impact-brand-hero">
+          <div class="impact-copy">
+            <p class="eyebrow">IMPACT BRAND FLOW</p>
+            <h2>좋은 균형은<br />크게 말하지 않아도 오래 남습니다</h2>
+            <p>
+              클라비스는 자연 자기장 원리를 어렵게 설명하는 브랜드가 아닙니다.
+              보이지 않는 균형을 손목 가까이에 두고, 매일의 움직임과 휴식 속에서
+              조용히 느껴지는 프리미엄 웰니스 경험으로 바꿉니다. 제품은 작지만,
+              그 안에 담긴 기준과 감각은 하루의 분위기를 단정하게 바꾸는 브랜드의
+              첫 인상이 됩니다.
+            </p>
+          </div>
+          <div class="impact-visual impact-image-guide" aria-label="ClaviS product image direction">
+            <span>IMAGE DIRECTION</span>
+            <strong>브랜드 제품 컷</strong>
+            <small>손목 위 제품과 고급스러운 일상 무드가 함께 보이는 이미지</small>
+          </div>
         </section>
 
-        <section class="brand-v2-flow panel">
+        <section class="impact-steps" aria-label="Brand impact story">
           <article>
             <span>01</span>
-            <p class="eyebrow">WHY CLAVIS</p>
-            <h3>빠른 일상 속,<br />균형을 다시 설계합니다</h3>
-            <p>실내 중심의 생활과 바쁜 루틴 속에서 멀어진 자연의 리듬을 일상 가까이 되돌립니다.</p>
+            <h3>도심의 하루</h3>
+            <p>실내와 이동이 반복되는 도심의 하루 속에서, 클라비스는 자연의 균형을 다시 가까이 두는 작은 접점을 만듭니다.</p>
           </article>
           <article>
             <span>02</span>
-            <p class="eyebrow">PHILOSOPHY</p>
-            <h3>Nature · Balance ·<br />Wearable Wellness</h3>
-            <p>자연의 균형 원리를 몸 가까이 착용하는 웰니스 경험으로 바꿉니다.</p>
+            <h3>손목 위의 코어</h3>
+            <p>네오디뮴 코어는 기능으로만 머물지 않고, 주얼리처럼 자연스럽게 착용되는 제품 구조 안에 조용히 담깁니다.</p>
           </article>
           <article>
             <span>03</span>
-            <p class="eyebrow">PRODUCT SIGNATURE</p>
-            <h3>브랜드는 제품으로<br />기억됩니다</h3>
-            <p>클라비스의 핵심 메시지는 자기장 코어, 착용 구조, 프리미엄 디자인에서 선명해집니다.</p>
+            <h3>브랜드로 남는 순간</h3>
+            <p>매일 손이 가는 착용 경험은 클라비스를 기억하게 만들고, 메디 주얼리에서 액티브와 리빙헬스로 확장되는 출발점이 됩니다.</p>
           </article>
         </section>
 
-        <section class="brand-signature panel brand-v2-signature">
-          <div class="brand-signature-mark">
-            <span>ClaviS</span>
-            <strong>3,200G</strong>
-            <small>NEODYMIUM MAGNETIC CORE</small>
-          </div>
-          <div class="brand-signature-copy">
-            <p class="eyebrow">PRODUCT SIGNATURE</p>
-            <h2>자연의 균형을<br />착용 가능한 제품으로</h2>
+        <section class="impact-narrative">
+          <div>
+            <p class="eyebrow">BRAND IMPRESSION</p>
+            <h2>클라비스는<br />제품보다 먼저 감각으로 기억됩니다</h2>
             <p>
-              클라비스는 기능을 크게 드러내기보다, 매일 착용하고 싶은 형태
-              안에 자기장 코어와 프리미엄 마감을 담습니다.
+              좋은 브랜드는 기능을 설명하기 전에 사용자의 생활 안에 자연스럽게
+              들어갑니다. 클라비스는 건강 기능을 크게 드러내기보다, 손목 위의
+              고급스러운 인상과 편안한 착용감으로 먼저 기억되는 방식을 선택합니다.
             </p>
-            <ul>
-              <li><strong>CORE</strong> 네오디뮴 자기장 코어</li>
-              <li><strong>WEAR</strong> 몸 가까운 착용 구조</li>
-              <li><strong>STYLE</strong> 주얼리처럼 완성한 웰니스 제품</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="brand-values panel brand-v2-values">
-          <article>
-            <p class="core-num">01. SCIENCE</p>
-            <h3>Science Meets Design</h3>
-            <p>자연 자기장 원리를 제품 구조 안에 안정적으로 해석합니다.</p>
-          </article>
-          <article>
-            <p class="core-num">02. EXPERIENCE</p>
-            <h3>Everyday Wear</h3>
-            <p>기능이 먼저 보이지 않아도 매일 착용하고 싶은 디자인을 만듭니다.</p>
-          </article>
-          <article>
-            <p class="core-num">03. TRUST</p>
-            <h3>Trust Standard</h3>
-            <p>소재, 설계, 제조, 검수 기준으로 브랜드의 신뢰를 완성합니다.</p>
-          </article>
-        </section>
-
-        <section class="brand-v2-history panel">
-          <div class="brand-v2-section-head">
-            <p class="eyebrow">GROWTH STORY</p>
-            <h2>성장 히스토리</h2>
             <p>
-              클라비스는 하나의 제품에서 시작해, 몸 가까이 착용하는 웰니스와
-              생활 전반의 케어 경험으로 브랜드의 영역을 넓혀왔습니다.
+              그래서 임팩트 구성의 핵심은 명확합니다. 과학은 제품 안쪽에 정교하게
+              담고, 바깥으로는 매일 착용하고 싶은 디자인과 균형의 감각을 남기는 것.
+              이 경험이 쌓일 때 클라비스는 단순한 제품명이 아니라 하나의 웰니스
+              루틴으로 인식됩니다.
             </p>
           </div>
-          <ol class="brand-v2-history-list">
-            <li><span>2016</span><p>자기장 웨어러블 카테고리를 위한 첫 제품 기획</p></li>
-            <li><span>2019</span><p>매일 착용할 수 있는 메디 주얼리 컬렉션 런칭</p></li>
-            <li><span>2023</span><p>액티브와 리빙 영역으로 확장 가능한 브랜드 기반 구축</p></li>
-            <li><span>2025+</span><p>프리미엄 웰니스 캡슐과 생활 케어 솔루션으로 확장 준비</p></li>
-          </ol>
+          <div class="impact-narrative-points">
+            <article>
+              <span>FEEL</span>
+              <strong>먼저 느껴지는 브랜드</strong>
+              <p>기능보다 착용 순간의 인상과 분위기로 브랜드를 각인합니다.</p>
+            </article>
+            <article>
+              <span>FORM</span>
+              <strong>일상에 어울리는 형태</strong>
+              <p>주얼리 감성과 웰니스 기능이 하나의 제품 경험으로 만납니다.</p>
+            </article>
+            <article>
+              <span>FLOW</span>
+              <strong>확장되는 균형 경험</strong>
+              <p>손목 위의 경험이 움직임과 생활 공간으로 자연스럽게 이어집니다.</p>
+            </article>
+          </div>
         </section>
 
-        <section class="brand-v2-collection panel">
-          <div class="brand-v2-section-head">
-            <p class="eyebrow">COLLECTION STORY</p>
-            <h2>하나의 제품에서 시작된 균형은<br />하루의 장면으로 확장됩니다</h2>
-            <p>
-              성장의 다음 단계는 단순한 제품군 추가가 아닙니다. 클라비스가 쌓아온
-              자기장 코어와 착용 경험은 손목 가까이에서 시작해, 움직이는 시간과
-              머무는 공간으로 자연스럽게 이어집니다.
-            </p>
-          </div>
-          <div class="brand-v2-story-flow">
-            <a class="brand-v2-story-step" href="./medi-jewelry.html">
-              <span class="brand-v2-step-num">01</span>
-              <img src="../asset/banner/main/banner1.png" alt="Medi jewelry collection" />
-              <div>
-                <span>WEAR · 몸 가까이 착용하는 균형</span>
-                <h3>MEDI JEWELRY</h3>
-                <p>
-                  클라비스의 시작은 매일 착용할 수 있는 주얼리형 웰니스 제품입니다.
-                  기능을 크게 드러내기보다, 손목 가까이 자연 자기장 기반의 밸런스
-                  경험을 담아 브랜드의 첫 기억을 만듭니다.
-                </p>
-              </div>
-            </a>
-            <a class="brand-v2-story-step" href="./active-lifestyle.html">
-              <span class="brand-v2-step-num">02</span>
-              <img src="../asset/banner/main/banner2.png" alt="Active lifestyle collection" />
-              <div>
-                <span>MOVE · 움직임 속에서도 이어지는 균형</span>
-                <h3>ACTIVE LIFESTYLE</h3>
-                <p>
-                  착용 경험은 움직이는 시간으로 확장됩니다. 운동, 이동, 야외 활동처럼
-                  몸의 리듬이 커지는 순간에도 클라비스의 균형 철학이 자연스럽게 이어집니다.
-                </p>
-              </div>
-            </a>
-            <a class="brand-v2-story-step" href="./living-health.html">
-              <span class="brand-v2-step-num">03</span>
-              <img src="../asset/banner/main/banner3.png" alt="Living health collection" />
-              <div>
-                <span>LIVE · 생활 공간으로 확장되는 균형</span>
-                <h3>LIVING &amp; HEALTH</h3>
-                <p>
-                  클라비스의 웰니스는 착용에서 끝나지 않습니다. 휴식하고 머무는 공간까지
-                  확장되며, 일상 전체를 더 가까운 밸런스 케어 경험으로 연결합니다.
-                </p>
-              </div>
-            </a>
-          </div>
-          <p class="brand-v2-collection-note">
-            그래서 컬렉션은 세 개의 분리된 카테고리가 아니라, 클라비스가 성장해온
-            방향이 제품으로 이어지는 순서입니다. 이 흐름은 다음 단계인 글로벌 로드맵으로
-            자연스럽게 이어집니다.
+        <section class="impact-band">
+          <p class="eyebrow">ONE MESSAGE</p>
+          <h2>자연의 균형을<br />가장 가까운 프리미엄 루틴으로</h2>
+          <p>
+            결국 클라비스가 말하는 건 하나입니다. 보이지 않는 자연의 균형을
+            가장 가까운 곳에 두고, 매일의 일상을 더 세련된 웰니스 루틴으로
+            완성하는 것. 이 메시지는 제품 하나에서 끝나지 않고 착용, 움직임,
+            생활 공간으로 이어지는 브랜드의 방향이 됩니다.
           </p>
         </section>
 
-        <section class="roadmap panel brand-v2-roadmap">
-          <p class="eyebrow">FUTURE DIRECTION</p>
-          <h2>2030 GLOBAL ROADMAP</h2>
-          <div class="roadmap-grid">
-            <article>
-              <h4>Phase 1</h4>
-              <p class="period">2016 - 2020</p>
-              <h5>브랜드 기반 구축</h5>
-              <ul class="roadmap-list">
-                <li>자기장 웨어러블 카테고리 개척</li>
-                <li>시그니처 코어 설계</li>
-              </ul>
-              <span class="roadmap-status done">DONE</span>
-            </article>
-            <article>
-              <h4>Phase 2</h4>
-              <p class="period">2021 - 2024</p>
-              <h5>프리미엄 라인 확장</h5>
-              <ul class="roadmap-list">
-                <li>메디 주얼리 라인 강화</li>
-                <li>제조 및 검수 기준 고도화</li>
-              </ul>
-              <span class="roadmap-status done">DONE</span>
-            </article>
-            <article class="active">
-              <h4>Phase 3</h4>
-              <p class="period">2025 - 2028</p>
-              <h5>라이프 케어 확장</h5>
-              <ul class="roadmap-list">
-                <li>액티브와 리빙 제품군 강화</li>
-                <li>프리미엄 웰니스 캡슐 R&amp;D</li>
-              </ul>
-              <span class="roadmap-status progress">IN PROGRESS</span>
-            </article>
-            <article>
-              <h4>Phase 4</h4>
-              <p class="period">2029 - 2030</p>
-              <h5>글로벌 웰니스 브랜드</h5>
-              <ul class="roadmap-list">
-                <li>글로벌 유통망 확대</li>
-                <li>생활 전반의 웰니스 플랫폼화</li>
-              </ul>
-              <span class="roadmap-status todo">TO DO</span>
-            </article>
+        <section class="impact-proof">
+          <div>
+            <p class="eyebrow">TRUST PROOF</p>
+            <h2>고급스러운 경험은<br />확인 가능한 기준에서 시작됩니다</h2>
+          </div>
+          <div class="impact-proof-grid">
+            <article><strong>제품 기준 자료</strong><span>클라비스가 말하는 균형의 경험이 어떤 제품 구조와 기준 위에서 설계되는지 문서로 확인합니다.</span></article>
+            <article><strong>GMP 제조 품질</strong><span>제품마다 같은 완성도가 유지되도록 제조 환경과 생산 흐름을 일관된 기준으로 관리합니다.</span></article>
+            <article><strong>안전성 확인 데이터</strong><span>피부에 닿고 매일 착용되는 제품이기 때문에 소재와 착용 안전성에 필요한 기본 기준을 확인합니다.</span></article>
           </div>
         </section>
+
+        <section class="impact-expansion">
+          <p class="eyebrow">FROM WEAR TO LIFE</p>
+          <h2>손목 위에서 시작된 균형은<br />하루의 여러 장면으로 확장됩니다</h2>
+          <p>
+            클라비스의 컬렉션은 제품을 나열하는 방식이 아닙니다. 메디 주얼리는
+            몸 가까이 착용되는 첫 경험을 만들고, 액티브 라이프스타일은 움직임 속에서도
+            이어지는 균형을 제안하며, 리빙 &amp; 헬스는 머무는 공간까지 브랜드의
+            웰니스 감각을 확장합니다.
+          </p>
+        </section>
+
+        <section class="impact-route">
+          <a href="./medi-jewelry.html">
+            <span>WEAR</span>
+            <strong>메디 주얼리</strong>
+            <p>몸 가까이 착용하는 균형 경험이 클라비스의 첫 인상이 됩니다.</p>
+          </a>
+          <a href="./active-lifestyle.html">
+            <span>MOVE</span>
+            <strong>액티브 라이프스타일</strong>
+            <p>운동과 이동, 반복되는 루틴 속에서도 브랜드의 균형감이 이어집니다.</p>
+          </a>
+          <a href="./living-health.html">
+            <span>LIVE</span>
+            <strong>리빙 &amp; 헬스</strong>
+            <p>착용을 넘어 휴식과 생활 공간까지 프리미엄 웰니스가 확장됩니다.</p>
+          </a>
+        </section>
+
+        <section class="impact-cta">
+          <p class="eyebrow">NEXT</p>
+          <h2>다음은 이 균형이<br />왜 과학이 되는지 보여줄 차례입니다</h2>
+          <p>브랜드의 인상은 자연 자기장 원리와 제품 기준을 만날 때 더 선명해집니다.</p>
+          <a href="./science.html">VIEW SCIENCE</a>
+        </section>
       </div>
+
     </main>
 
     <footer class="footer">

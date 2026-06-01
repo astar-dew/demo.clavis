@@ -265,19 +265,47 @@ a {
   font-size: 15px;
 }
 
+.intro.panel.page-main-hero {
+  border: 1px solid var(--line);
+  background: #faf8f4;
+  padding: 72px 28px;
+  margin-bottom: 38px;
+}
+
+.page-main-hero h1 {
+  font-size: 46px;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
+}
+
+.page-main-hero-line {
+  display: block;
+  width: 66px;
+  height: 2px;
+  margin: 22px auto 24px;
+  background: #ccb389;
+}
+
+.page-main-hero-copy {
+  max-width: 720px;
+  color: #6f6a63;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
 .brand-version-tabs {
-  margin: -160px auto 64px;
+  margin: 38px auto 64px;
   display: flex;
   justify-content: center;
 }
 
 .brand-tab-list {
   padding: 6px;
-  width: min(620px, 100%);
+  width: min(900px, 100%);
   border: 1px solid var(--line);
   background: #fff;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 6px;
 }
 
@@ -604,6 +632,36 @@ a {
   letter-spacing: 0.18em;
 }
 
+.brand-image-guide {
+  align-content: stretch;
+  justify-items: start;
+  text-align: left;
+  padding: 38px 34px;
+}
+
+.brand-image-guide span {
+  color: #d1b279;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.brand-image-guide strong {
+  max-width: 260px;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1.22;
+  font-weight: 500;
+}
+
+.brand-image-guide p {
+  max-width: 280px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
 .brand-signature-copy h2 {
   margin: 0 0 24px;
   font-size: 40px;
@@ -869,6 +927,220 @@ a {
   text-align: center;
 }
 
+.brand-emotion-hero {
+  min-height: 620px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 54px;
+  align-items: end;
+  padding: 76px 64px;
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.72) 48%, rgba(248, 244, 236, 0.92) 100%),
+    url("../asset/banner/main/banner1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.brand-emotion-hero h2,
+.brand-emotion-signature h2,
+.brand-emotion-proof h2,
+.brand-emotion-cta h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 46px;
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.brand-emotion-hero p:not(.eyebrow),
+.brand-emotion-signature p:not(.eyebrow),
+.brand-emotion-cta p:not(.eyebrow) {
+  max-width: 660px;
+  margin: 24px 0 0;
+  color: #5f5a54;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.brand-emotion-quote {
+  min-height: 300px;
+  padding: 34px;
+  border: 1px solid rgba(184, 158, 120, 0.46);
+  background: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(10px);
+}
+
+.brand-emotion-quote span,
+.brand-emotion-moments span,
+.brand-emotion-product span {
+  display: block;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.brand-emotion-quote strong {
+  display: block;
+  margin-top: 74px;
+  color: #26221d;
+  font-size: 34px;
+  line-height: 1.16;
+  font-weight: 500;
+}
+
+.brand-emotion-quote p {
+  margin: 22px 0 0;
+  color: #6d6862;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.brand-emotion-moments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+}
+
+.brand-emotion-moments article {
+  min-height: 380px;
+  padding: 56px 40px;
+  border-right: 1px solid var(--line);
+  background: #fff;
+}
+
+.brand-emotion-moments article:last-child {
+  border-right: 0;
+}
+
+.brand-emotion-moments h3 {
+  margin: 64px 0 18px;
+  color: #26221d;
+  font-size: 28px;
+  line-height: 1.32;
+  font-weight: 500;
+}
+
+.brand-emotion-moments p {
+  margin: 0;
+  color: #6d6862;
+  font-size: 15px;
+  line-height: 1.78;
+}
+
+.brand-emotion-signature {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 64px;
+  align-items: center;
+  padding: 64px;
+}
+
+.brand-emotion-product {
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 38px 34px;
+  border: 1px solid rgba(184, 158, 120, 0.46);
+  background:
+    linear-gradient(160deg, rgba(38, 34, 29, 0.94), rgba(108, 93, 72, 0.9)),
+    radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.2), transparent 34%);
+  color: #fff;
+}
+
+.brand-emotion-product strong {
+  color: #fff;
+  font-size: 38px;
+  line-height: 1.22;
+  font-weight: 500;
+}
+
+.brand-emotion-product p {
+  max-width: 250px;
+  margin: 24px 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.brand-emotion-product small {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+}
+
+.brand-emotion-proof {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 48px;
+  align-items: start;
+  padding: 58px;
+}
+
+.brand-emotion-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--line);
+}
+
+.brand-emotion-proof-grid article {
+  min-height: 210px;
+  padding: 30px 26px;
+  border-right: 1px solid var(--line);
+  background: #faf8f4;
+}
+
+.brand-emotion-proof-grid article:last-child {
+  border-right: 0;
+}
+
+.brand-emotion-proof-grid strong {
+  display: block;
+  color: #26221d;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.brand-emotion-proof-grid p {
+  margin: 18px 0 0;
+  color: #6d6862;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.brand-emotion-cta {
+  padding: 64px;
+  text-align: center;
+  background: #1f1f1f;
+}
+
+.brand-emotion-cta h2 {
+  color: #fff;
+}
+
+.brand-emotion-cta p:not(.eyebrow) {
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.brand-emotion-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 172px;
+  height: 48px;
+  margin-top: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
 .closeout {
   text-align: center;
 }
@@ -967,18 +1239,27 @@ a {
   .brand-signature,
   .brand-values,
   .brand-v2-flow,
-  .brand-v2-story-step {
+  .brand-v2-story-step,
+  .brand-emotion-hero,
+  .brand-emotion-moments,
+  .brand-emotion-signature,
+  .brand-emotion-proof,
+  .brand-emotion-proof-grid {
     grid-template-columns: 1fr;
   }
 
   .brand-values article,
-  .brand-v2-flow article {
+  .brand-v2-flow article,
+  .brand-emotion-moments article,
+  .brand-emotion-proof-grid article {
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
 
   .brand-values article:last-child,
-  .brand-v2-flow article:last-child {
+  .brand-v2-flow article:last-child,
+  .brand-emotion-moments article:last-child,
+  .brand-emotion-proof-grid article:last-child {
     border-bottom: 0;
   }
 
@@ -1012,8 +1293,8 @@ a {
     line-height: 1.2;
   }
 
-  .intro-line {
-    margin: 14px auto 12px;
+  .page-main-hero-line {
+    margin: 16px auto 18px;
   }
 
   .intro-subtitle {
@@ -1021,12 +1302,13 @@ a {
     line-height: 1.65;
   }
 
-  .intro.panel {
-    margin-bottom: 80px;
+  .intro.panel.page-main-hero {
+    padding: 54px 20px;
+    margin-bottom: 28px;
   }
 
   .brand-version-tabs {
-    margin: -46px auto 34px;
+    margin: 28px auto 34px;
   }
 
   .brand-tab-list button {
@@ -1042,6 +1324,50 @@ a {
 
   .brand-v2-hero h2 {
     font-size: 38px;
+  }
+
+  .brand-emotion-hero,
+  .brand-emotion-signature,
+  .brand-emotion-proof,
+  .brand-emotion-cta {
+    padding: 42px 28px;
+  }
+
+  .brand-emotion-hero {
+    min-height: auto;
+    gap: 34px;
+  }
+
+  .brand-emotion-hero h2,
+  .brand-emotion-signature h2,
+  .brand-emotion-proof h2,
+  .brand-emotion-cta h2 {
+    font-size: 32px;
+  }
+
+  .brand-emotion-quote,
+  .brand-emotion-product {
+    min-height: 260px;
+  }
+
+  .brand-emotion-quote strong {
+    margin-top: 46px;
+    font-size: 28px;
+  }
+
+  .brand-emotion-moments article,
+  .brand-emotion-proof-grid article {
+    min-height: auto;
+    padding: 42px 28px;
+  }
+
+  .brand-emotion-moments h3 {
+    margin-top: 42px;
+    font-size: 25px;
+  }
+
+  .brand-emotion-product strong {
+    font-size: 52px;
   }
 
   .brand-v2-flow article,
@@ -1075,6 +1401,11 @@ a {
 
   .brand-signature-mark strong {
     font-size: 56px;
+  }
+
+  .brand-signature-mark.brand-image-guide strong {
+    font-size: 30px;
+    line-height: 1.24;
   }
 
   .brand-values article {
