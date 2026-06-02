@@ -39,10 +39,11 @@
           </button>
           <button
             id="brand-tab-recommended"
+            class="active"
             type="button"
             role="tab"
             data-brand-view-button="recommended"
-            aria-selected="false"
+            aria-selected="true"
             aria-controls="brand-panel-recommended"
           >
             추천 구성
@@ -59,11 +60,10 @@
           </button>
           <button
             id="brand-tab-emotion"
-            class="active"
             type="button"
             role="tab"
             data-brand-view-button="emotion"
-            aria-selected="true"
+            aria-selected="false"
             aria-controls="brand-panel-emotion"
           >
             감성 구성
@@ -241,11 +241,10 @@
 
       <div
         id="brand-panel-recommended"
-        class="brand-composition"
+        class="brand-composition is-active"
         data-brand-view="recommended"
         role="tabpanel"
         aria-labelledby="brand-tab-recommended"
-        hidden
       >
         <div class="composition-flow-group" aria-labelledby="brand-r1-group-1">
           <div class="composition-flow-label">
@@ -296,6 +295,11 @@
           </section>
 
           <section class="brand-values panel">
+            <div class="brand-values-head">
+              <p class="eyebrow">BRAND PRINCIPLES</p>
+              <h2>제품 하나에 담긴 기준이<br />브랜드의 확장 방향이 됩니다</h2>
+              <p>클라비스는 균형의 원리, 착용 경험, 컬렉션 확장을 하나의 브랜드 흐름으로 연결합니다.</p>
+            </div>
             <article>
               <p class="core-num">01. ORIGIN</p>
               <h3>하나의 제품을 만든 원리가<br />브랜드의 출발점이 됩니다</h3>
@@ -377,6 +381,7 @@
           </section>
 
           <section class="history panel">
+            <p class="eyebrow">GROWTH HISTORY</p>
             <h2>성장 히스토리</h2>
             <ul>
               <li><span>2016</span> 웰니스 액세서리 프로젝트 시작</li>
@@ -417,6 +422,7 @@
           </section>
 
           <section class="roadmap panel">
+            <p class="eyebrow">GLOBAL ROADMAP</p>
             <h2>2030 GLOBAL ROADMAP</h2>
             <div class="roadmap-grid">
               <article>
@@ -667,10 +673,11 @@
 
       <div
         id="brand-panel-emotion"
-        class="brand-composition is-active"
+        class="brand-composition"
         data-brand-view="emotion"
         role="tabpanel"
         aria-labelledby="brand-tab-emotion"
+        hidden
       >
         <div class="composition-flow-group" aria-labelledby="brand-emotion-group-1">
           <div class="composition-flow-label">

@@ -23,10 +23,11 @@
         <div class="tt-tab-list" role="tablist" aria-label="Tech and Trust page composition">
           <button
             id="tt-tab-existing"
+            class="active"
             type="button"
             role="tab"
             data-tt-view-button="existing"
-            aria-selected="false"
+            aria-selected="true"
             aria-controls="tt-panel-existing"
           >
             기존 구성
@@ -63,11 +64,10 @@
           </button>
           <button
             id="tt-tab-flow"
-            class="active"
             type="button"
             role="tab"
             data-tt-view-button="flow"
-            aria-selected="true"
+            aria-selected="false"
             aria-controls="tt-panel-flow"
           >
             추천 흐름
@@ -87,11 +87,10 @@
 
       <div
         id="tt-panel-existing"
-        class="tt-composition"
+        class="tt-composition is-active"
         data-tt-view="existing"
         role="tabpanel"
         aria-labelledby="tt-tab-existing"
-        hidden
       >
 
       <section class="safety-dark">
@@ -700,10 +699,11 @@
 
       <div
         id="tt-panel-flow"
-        class="tt-composition is-active"
+        class="tt-composition"
         data-tt-view="flow"
         role="tabpanel"
         aria-labelledby="tt-tab-flow"
+        hidden
       >
         <div class="composition-flow-group" aria-labelledby="tt-flow-group-1">
           <div class="composition-flow-label">

@@ -705,6 +705,28 @@ a {
   padding: 0;
 }
 
+.brand-values-head {
+  grid-column: 1 / -1;
+  padding: 56px 42px 36px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-values-head h2 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.28;
+  color: var(--text);
+}
+
+.brand-values-head p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: #6d6862;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
 .brand-values article {
   padding: 64px 42px;
   border-right: 1px solid var(--line);
@@ -1261,6 +1283,10 @@ a {
   .brand-emotion-moments article:last-child,
   .brand-emotion-proof-grid article:last-child {
     border-bottom: 0;
+  }
+
+  .brand-values-head {
+    padding: 42px 28px 30px;
   }
 
   .roadmap-grid {

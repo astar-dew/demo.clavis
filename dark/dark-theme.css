@@ -577,6 +577,7 @@ h5,
 .brand-v2-section-head h2,
 .brand-v2-story-step h3,
 .brand-v2-flow h3,
+.brand-values-head h2,
 .brand-emotion-hero h2,
 .brand-emotion-moments h3,
 .brand-emotion-signature h2,
@@ -608,10 +609,15 @@ h5,
 .brand-v2-story-flow,
 .brand-v2-story-step,
 .brand-v2-collection-note,
+.brand-values-head,
 .brand-emotion-moments article,
 .brand-emotion-proof-grid,
 .brand-emotion-proof-grid article {
   border-color: var(--line) !important;
+}
+
+.brand-values-head .eyebrow {
+  color: #d4b27a !important;
 }
 
 .brand-v2-story-step,
