@@ -163,11 +163,11 @@ h4 {
 
 .science-tab-list {
   padding: 6px;
-  width: min(900px, 100%);
+  width: min(1040px, 100%);
   border: 1px solid var(--line);
   background: #fff;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 6px;
 }
 
@@ -1462,6 +1462,34 @@ h4 {
   line-height: 1.75;
 }
 
+.science-emphasis-highlight {
+  margin-top: 24px;
+  padding: 64px;
+  text-align: center;
+  border: 1px solid rgba(184, 158, 120, 0.42);
+  background:
+    linear-gradient(135deg, #111111, #2b2419),
+    radial-gradient(circle at 82% 16%, rgba(184, 158, 120, 0.28), transparent 34%);
+  color: #fff;
+}
+
+.science-emphasis-highlight h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: 0;
+}
+
+.science-emphasis-highlight p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 24px auto 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
 .science-origin-cta {
   padding: 64px;
   text-align: center;
@@ -1625,6 +1653,10 @@ h4 {
     margin: 28px auto 24px;
   }
 
+  .science-tab-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .science-tab-list button {
     height: 42px;
     font-size: 11px;
@@ -1635,6 +1667,7 @@ h4 {
   .science-origin-translation,
   .science-origin-product,
   .science-origin-conclusion,
+  .science-emphasis-highlight,
   .science-origin-cta {
     padding: 42px 24px;
   }
@@ -1649,6 +1682,7 @@ h4 {
   .science-origin-translation h2,
   .science-origin-product h2,
   .science-origin-conclusion h2,
+  .science-emphasis-highlight h2,
   .science-origin-cta h2 {
     font-size: 30px;
   }

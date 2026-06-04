@@ -38,21 +38,21 @@
           </button>
           <button
             id="brand-tab-recommended"
-            class="active"
             type="button"
             role="tab"
             data-brand-view-button="recommended"
-            aria-selected="true"
+            aria-selected="false"
             aria-controls="brand-panel-recommended"
           >
             추천 구성
           </button>
           <button
             id="brand-tab-recommended2"
+            class="active"
             type="button"
             role="tab"
             data-brand-view-button="recommended2"
-            aria-selected="false"
+            aria-selected="true"
             aria-controls="brand-panel-recommended2"
           >
             추천 구성2
@@ -240,10 +240,11 @@
 
       <div
         id="brand-panel-recommended"
-        class="brand-composition is-active"
+        class="brand-composition"
         data-brand-view="recommended"
         role="tabpanel"
         aria-labelledby="brand-tab-recommended"
+        hidden
       >
         <div class="composition-flow-group" aria-labelledby="brand-r1-group-1">
           <div class="composition-flow-label">
@@ -475,11 +476,10 @@
 
       <div
         id="brand-panel-recommended2"
-        class="brand-composition"
+        class="brand-composition is-active"
         data-brand-view="recommended2"
         role="tabpanel"
         aria-labelledby="brand-tab-recommended2"
-        hidden
       >
         <div class="composition-flow-group" aria-labelledby="brand-r2-group-1">
           <div class="composition-flow-label">
@@ -543,9 +543,9 @@
                 매일의 루틴을 더 품격 있게 만듭니다.
               </p>
               <ul>
-                <li><strong>BALANCE</strong> 클라비스는 균형을 하나의 취향으로 제안합니다</li>
-                <li><strong>WEAR</strong> 클라비스는 매일 손이 가는 착용 경험을 만듭니다</li>
-                <li><strong>SIGNATURE</strong> 클라비스는 기능보다 오래 남는 인상을 설계합니다</li>
+                <li><strong>BALANCE</strong> 균형을 하나의 취향으로 제안합니다</li>
+                <li><strong>WEAR</strong> 매일 손이 가는 착용 경험을 만듭니다</li>
+                <li><strong>SIGNATURE</strong> 기능보다 오래 남는 인상을 설계합니다</li>
               </ul>
             </div>
           </section>
@@ -592,7 +592,7 @@
                 <img src="../asset/banner/main/banner1.png" alt="Medi jewelry collection" />
                 <div>
                   <span>WEAR · MEDI JEWELRY</span>
-                  <h3>클라비스는 착용하는 균형에서 시작합니다</h3>
+                  <h3>착용하는 균형에서 시작합니다</h3>
                   <p>메디 주얼리는 클라비스의 첫 인상입니다. 매일 착용하는 주얼리 안에 자기장 코어와 프리미엄 감성을 담습니다.</p>
                 </div>
               </a>
@@ -601,7 +601,7 @@
                 <img src="../asset/banner/main/banner2.png" alt="Active lifestyle collection" />
                 <div>
                   <span>MOVE · ACTIVE LIFESTYLE</span>
-                  <h3>클라비스는 움직이는 시간까지 이어집니다</h3>
+                  <h3>움직이는 시간까지 이어집니다</h3>
                   <p>액티브 라이프스타일은 운동과 이동, 반복되는 루틴 속에서도 균형의 경험이 이어지도록 설계됩니다.</p>
                 </div>
               </a>
@@ -610,7 +610,7 @@
                 <img src="../asset/banner/main/banner3.png" alt="Living health collection" />
                 <div>
                   <span>LIVE · LIVING &amp; HEALTH</span>
-                  <h3>클라비스는 생활 공간으로 확장됩니다</h3>
+                  <h3>생활 공간으로 확장됩니다</h3>
                   <p>리빙헬스는 착용을 넘어 휴식과 생활 환경까지 이어지는 클라비스의 웰니스 방향을 보여줍니다.</p>
                 </div>
               </a>

@@ -300,6 +300,7 @@ h5,
 .science-origin-split,
 .science-origin-translation,
 .science-origin-conclusion,
+.science-emphasis-highlight,
 .science-origin-product {
   background: #151a22 !important;
   border-color: var(--line) !important;
@@ -341,6 +342,7 @@ h5,
 .science-origin-split h2,
 .science-origin-translation h2,
 .science-origin-conclusion h2,
+.science-emphasis-highlight h2,
 .science-origin-product h2,
 .science-origin-cta h2,
 .science-origin-card strong,
@@ -356,6 +358,7 @@ h5,
 .science-origin-split p:not(.eyebrow),
 .science-origin-product p:not(.eyebrow),
 .science-origin-conclusion p:not(.eyebrow),
+.science-emphasis-highlight p:not(.eyebrow),
 .science-origin-cta p:not(.eyebrow),
 .science-origin-card p,
 .science-origin-meter p,
@@ -486,7 +489,12 @@ h5,
 .tt-flow-lab,
 .tt-flow-cert,
 .tt-flow-safety,
-.tt-flow-market {
+.tt-flow-market,
+.tt-sales-hero,
+.tt-sales-channel,
+.tt-sales-bridge,
+.tt-sales-cert,
+.tt-sales-tech {
   background: #151a22 !important;
   border-color: var(--line) !important;
 }
@@ -497,6 +505,11 @@ h5,
 
 .tt-proof-core,
 .tt-flow-lab img,
+.tt-sales-stats,
+.tt-sales-stats article,
+.tt-sales-bridge-grid,
+.tt-sales-bridge-grid article,
+.tt-sales-cert-grid article,
 .tt-proof-process-grid,
 .tt-proof-process-grid article,
 .tt-proof-cert-grid article,
@@ -511,6 +524,11 @@ h5,
   border-color: rgba(212, 178, 122, 0.28) !important;
 }
 
+.tt-sales-cert-grid img {
+  background: #f8f6f1 !important;
+  border-color: rgba(212, 178, 122, 0.28) !important;
+}
+
 .tt-proof-process h2,
 .tt-proof-cert h2,
 .tt-proof-market h2,
@@ -521,6 +539,13 @@ h5,
 .tt-flow-cert h2,
 .tt-flow-safety h2,
 .tt-flow-market h2,
+.tt-sales-hero h2,
+.tt-sales-channel h2,
+.tt-sales-bridge h2,
+.tt-sales-cert h2,
+.tt-sales-tech h2,
+.tt-sales-bridge-grid strong,
+.tt-sales-cert-grid p,
 .tt-proof-process-grid h3,
 .tt-proof-cert-grid p {
   color: #eef2f9 !important;
@@ -530,6 +555,10 @@ h5,
 .tt-flow-hero p:not(.eyebrow),
 .tt-flow-lab p:not(.eyebrow),
 .tt-flow-cert .tt-proof-section-head p,
+.tt-sales-hero p:not(.eyebrow),
+.tt-sales-bridge p:not(.eyebrow),
+.tt-sales-cert .tt-proof-section-head p,
+.tt-sales-bridge-grid p,
 .tt-proof-market p:not(.eyebrow),
 .tt-proof-process-grid p,
 .tt-proof-stats span {

@@ -168,11 +168,11 @@ h4 {
 
 .tt-tab-list {
   padding: 6px;
-  width: min(1080px, 100%);
+  width: min(1240px, 100%);
   border: 1px solid var(--line);
   background: #fff;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 6px;
 }
 
@@ -1071,6 +1071,242 @@ blockquote em {
   margin-top: 32px;
 }
 
+.tt-sales-hero,
+.tt-sales-channel,
+.tt-sales-bridge,
+.tt-sales-cert,
+.tt-sales-tech,
+.tt-sales-conclusion {
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.tt-sales-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
+  gap: 56px;
+  align-items: center;
+  min-height: 560px;
+  padding: 76px 64px;
+  background:
+    linear-gradient(135deg, rgba(16, 16, 16, 0.94), rgba(34, 30, 24, 0.92)),
+    radial-gradient(circle at 86% 16%, rgba(209, 178, 121, 0.28), transparent 36%);
+  color: #fff;
+}
+
+.tt-sales-hero h2,
+.tt-sales-channel h2,
+.tt-sales-bridge h2,
+.tt-sales-cert h2,
+.tt-sales-tech h2,
+.tt-sales-conclusion h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+.tt-sales-hero h2 {
+  color: #fff;
+}
+
+.tt-sales-hero p:not(.eyebrow),
+.tt-sales-bridge p:not(.eyebrow),
+.tt-sales-cert .tt-proof-section-head p {
+  max-width: 720px;
+  margin: 24px 0 0;
+  color: #5f5a54;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.tt-sales-hero p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.tt-sales-stats {
+  display: grid;
+  border: 1px solid rgba(209, 178, 121, 0.38);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tt-sales-stats article {
+  min-height: 132px;
+  padding: 28px;
+  border-bottom: 1px solid rgba(209, 178, 121, 0.28);
+}
+
+.tt-sales-stats article:last-child {
+  border-bottom: 0;
+}
+
+.tt-sales-stats strong {
+  display: block;
+  color: #d1b279;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.tt-sales-stats span {
+  display: block;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.tt-sales-channel,
+.tt-sales-bridge,
+.tt-sales-cert,
+.tt-sales-tech {
+  padding: 64px;
+}
+
+.tt-sales-channel h2,
+.tt-sales-tech h2 {
+  margin-bottom: 44px;
+}
+
+.tt-sales-bridge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 42px;
+  border: 1px solid var(--line);
+}
+
+.tt-sales-bridge-grid article {
+  min-height: 220px;
+  padding: 30px 28px;
+  border-right: 1px solid var(--line);
+  background: #faf8f4;
+}
+
+.tt-sales-bridge-grid article:last-child {
+  border-right: 0;
+}
+
+.tt-sales-bridge-grid span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.tt-sales-bridge-grid strong {
+  display: block;
+  margin-top: 30px;
+  color: var(--text);
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.tt-sales-bridge-grid p {
+  margin: 16px 0 0;
+  color: #6d6862;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.tt-sales-cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 44px;
+}
+
+.tt-sales-cert-grid article {
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: #faf8f4;
+  text-align: center;
+}
+
+.tt-sales-cert-grid img {
+  width: 100%;
+  height: 430px;
+  object-fit: contain;
+  display: block;
+  border: 1px solid #ded6c9;
+  background: #fff;
+}
+
+.tt-sales-cert-grid p {
+  margin: 18px 0 0;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.tt-sales-conclusion {
+  margin-top: 28px;
+  padding: 64px;
+  text-align: center;
+  background:
+    linear-gradient(135deg, rgba(16, 16, 16, 0.94), rgba(34, 30, 24, 0.92)),
+    radial-gradient(circle at 86% 16%, rgba(209, 178, 121, 0.28), transparent 36%);
+  color: #fff;
+}
+
+.tt-sales-conclusion h2 {
+  color: #fff;
+  line-height: 1.22;
+}
+
+.tt-sales-conclusion > p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 24px auto 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.tt-sales-conclusion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 42px;
+  border: 1px solid rgba(209, 178, 121, 0.34);
+  text-align: left;
+}
+
+.tt-sales-conclusion-grid article {
+  min-height: 220px;
+  padding: 30px 28px;
+  border-right: 1px solid rgba(209, 178, 121, 0.24);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tt-sales-conclusion-grid article:last-child {
+  border-right: 0;
+}
+
+.tt-sales-conclusion-grid span {
+  color: #d1b279;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.tt-sales-conclusion-grid strong {
+  display: block;
+  margin-top: 28px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.tt-sales-conclusion-grid p {
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
 @media (max-width: 1024px) {
   .tt-page > section + section {
     margin-top: 110px;
@@ -1090,6 +1326,10 @@ blockquote em {
   .inspection-grid,
   .tt-proof-hero,
   .tt-flow-lab,
+  .tt-sales-hero,
+  .tt-sales-bridge-grid,
+  .tt-sales-cert-grid,
+  .tt-sales-conclusion-grid,
   .tt-proof-process-grid,
   .tt-proof-cert-grid,
   .tt-proof-market {
@@ -1194,12 +1434,19 @@ blockquote em {
   .tt-flow-lab,
   .tt-flow-cert,
   .tt-flow-safety,
-  .tt-flow-market {
+  .tt-flow-market,
+  .tt-sales-hero,
+  .tt-sales-channel,
+  .tt-sales-bridge,
+  .tt-sales-cert,
+  .tt-sales-tech,
+  .tt-sales-conclusion {
     padding: 42px 24px;
   }
 
   .tt-proof-hero,
-  .tt-proof-market {
+  .tt-proof-market,
+  .tt-sales-hero {
     grid-template-columns: 1fr;
     min-height: auto;
     gap: 34px;
@@ -1215,8 +1462,32 @@ blockquote em {
   .tt-flow-lab h2,
   .tt-flow-cert h2,
   .tt-flow-safety h2,
-  .tt-flow-market h2 {
+  .tt-flow-market h2,
+  .tt-sales-hero h2,
+  .tt-sales-channel h2,
+  .tt-sales-bridge h2,
+  .tt-sales-cert h2,
+  .tt-sales-tech h2,
+  .tt-sales-conclusion h2 {
     font-size: 30px;
+  }
+
+  .tt-sales-bridge-grid,
+  .tt-sales-cert-grid,
+  .tt-sales-conclusion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tt-sales-bridge-grid article,
+  .tt-sales-conclusion-grid article {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tt-sales-bridge-grid article:last-child,
+  .tt-sales-conclusion-grid article:last-child {
+    border-bottom: 0;
   }
 
   .tt-proof-core {
@@ -1248,6 +1519,11 @@ blockquote em {
   }
 
   .tt-proof-cert-grid img {
+    height: auto;
+    max-height: 520px;
+  }
+
+  .tt-sales-cert-grid img {
     height: auto;
     max-height: 520px;
   }

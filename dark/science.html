@@ -54,14 +54,24 @@
         </button>
         <button
           id="science-tab-origin"
-          class="active"
           type="button"
           role="tab"
           data-science-view-button="origin"
-          aria-selected="true"
+          aria-selected="false"
           aria-controls="science-panel-origin"
         >
           착안 구성
+        </button>
+        <button
+          id="science-tab-emphasis"
+          class="active"
+          type="button"
+          role="tab"
+          data-science-view-button="emphasis"
+          aria-selected="true"
+          aria-controls="science-panel-emphasis"
+        >
+          내용 강조
         </button>
         <button
           id="science-tab-impact"
@@ -830,10 +840,11 @@
 
       <div
         id="science-panel-origin"
-        class="science-composition is-active"
+        class="science-composition"
         data-science-view="origin"
         role="tabpanel"
         aria-labelledby="science-tab-origin"
+        hidden
       >
         <div class="composition-flow-group" aria-labelledby="science-origin-group-1">
           <div class="composition-flow-label">
@@ -988,6 +999,149 @@
           <section class="science-origin-cta panel">
             <p class="eyebrow">SCIENCE TO TRUST</p>
             <h2>과학이 제품이 되었다면,<br />다음은 믿을 수 있는 기준입니다</h2>
+            <p>클라비스의 과학은 소재, 제조, 검수 기준으로 이어질 때 브랜드의 신뢰가 됩니다.</p>
+            <a href="./techtrust.html">VIEW TECH &amp; TRUST</a>
+          </section>
+        </div>
+      </div>
+
+      <div
+        id="science-panel-emphasis"
+        class="science-composition is-active"
+        data-science-view="emphasis"
+        role="tabpanel"
+        aria-labelledby="science-tab-emphasis"
+      >
+        <div class="composition-flow-group" aria-labelledby="science-emphasis-group-1">
+          <div class="composition-flow-label">
+            <span>01</span>
+            <h3 id="science-emphasis-group-1">자연에서 시작된 질문</h3>
+            <p>착안 구성의 핵심을 더 선명하게 보여주며, 자연 자기장과 제품의 연결점을 먼저 각인합니다.</p>
+          </div>
+
+          <section class="science-origin-hero panel">
+            <div>
+              <p class="eyebrow">SCIENCE EMPHASIS</p>
+              <h2>클라비스는<br />보이지 않는 자연의 조건을 제품 가까이 가져옵니다</h2>
+              <p>
+                자연환경에는 눈에 보이지 않지만 오래전부터 인간의 생활 리듬과 함께해온
+                자기장 조건이 있습니다. 클라비스는 이 조건을 단순한 배경 지식으로 두지 않고,
+                매일 착용할 수 있는 제품 구조로 해석합니다.
+              </p>
+            </div>
+            <div class="science-origin-card" aria-label="Natural magnetic field concept">
+              <span>NATURE FIELD</span>
+              <strong>Natural<br />Resonance</strong>
+              <p>자연의 보이지 않는 흐름을 착용 가능한 균형 경험으로 바꿉니다.</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="science-emphasis-group-2">
+          <div class="composition-flow-label">
+            <span>02</span>
+            <h3 id="science-emphasis-group-2">도심과 자연의 차이</h3>
+            <p>자기장 수치를 효능으로 단정하지 않고, 환경 차이를 이해하는 참고 맥락으로 보여줍니다.</p>
+          </div>
+
+          <section class="science-origin-split panel">
+            <div>
+              <p class="eyebrow">ENVIRONMENT GAP</p>
+              <h2>도심의 하루는<br />자연 자기장과 멀어져 있습니다</h2>
+              <p>
+                실내 생활과 이동이 반복되는 환경에서는 자연과의 접점이 줄어듭니다.
+                클라비스는 도시와 자연환경에서 다르게 관찰되는 자기장 조건을 제품 착안의
+                출발점으로 삼고, 그 접점을 몸 가까운 경험으로 다시 설계합니다.
+              </p>
+            </div>
+            <div class="science-origin-meter">
+              <article>
+                <span>URBAN INDOOR</span>
+                <strong>0.25G</strong>
+                <p>일반 도시의 건축물 내부 차폐 환경 참고 수치</p>
+              </article>
+              <article>
+                <span>NATURAL CASE</span>
+                <strong>0.58G</strong>
+                <p>바마현 등 자연환경 사례에서 언급되는 참고 수치</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="science-emphasis-group-3">
+          <div class="composition-flow-label">
+            <span>03</span>
+            <h3 id="science-emphasis-group-3">희토류 네오디뮴 코어</h3>
+            <p>자연의 조건이 희토류 기반 네오디뮴 코어와 착용형 구조로 번역되는 핵심 구간입니다.</p>
+          </div>
+
+          <section class="science-origin-translation panel">
+            <p class="eyebrow">RARE EARTH CORE</p>
+            <h2>희토류 네오디뮴 코어가<br />클라비스 과학의 중심이 됩니다</h2>
+            <div class="science-origin-steps">
+              <article>
+                <span>01</span>
+                <h3>Observe</h3>
+                <p>자연환경의 자기장 조건을 관찰하고, 일상에서 멀어진 균형의 접점을 읽습니다.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Rare Earth</h3>
+                <p>희토류 계열의 네오디뮴은 작은 크기에서도 강한 자성을 구현할 수 있는 핵심 소재입니다.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Wearable</h3>
+                <p>클라비스는 이 소재를 몸 가까이 머무는 착용 구조와 프리미엄 제품 형태로 완성합니다.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="science-emphasis-group-4">
+          <div class="composition-flow-label">
+            <span>04</span>
+            <h3 id="science-emphasis-group-4">제품으로 완성되는 과학</h3>
+            <p>희토류 네오디뮴 코어가 제품 안에서 어떤 브랜드 경험으로 남는지 결론을 강조합니다.</p>
+          </div>
+
+          <section class="science-origin-product panel">
+            <div class="science-origin-core science-image-guide">
+              <span>IMAGE DIRECTION</span>
+              <strong>희토류 네오디뮴 코어</strong>
+              <p>네오디뮴 코어와 제품 내부 구조가 정밀하게 보이는 이미지</p>
+              <small>RARE EARTH · NEODYMIUM CORE · WEARABLE STRUCTURE</small>
+            </div>
+            <div>
+              <p class="eyebrow">PRODUCT SCIENCE</p>
+              <h2>자연에서 착안한 과학은<br />희토류 네오디뮴 코어로 제품 안에 남습니다</h2>
+              <p>
+                클라비스의 과학은 자연 자기장 원리를 설명하는 데서 끝나지 않습니다.
+                희토류 기반 네오디뮴 코어를 제품 안에 담고, 몸 가까운 착용 구조와
+                안정적인 마감 기준을 함께 설계해 매일 경험 가능한 웰니스 제품으로 완성합니다.
+              </p>
+              <div class="science-origin-proof">
+                <article><strong>자연 자기장 원리</strong><span>브랜드가 출발한 과학적 관점</span></article>
+                <article><strong>희토류 네오디뮴</strong><span>작은 구조 안에 담기는 핵심 자성 소재</span></article>
+                <article><strong>착용형 설계</strong><span>일상 가까이 완성되는 균형 경험</span></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="science-emphasis-highlight panel">
+            <p class="eyebrow">KEY MESSAGE</p>
+            <h2>클라비스가 강조하는 과학은<br />자연에서 출발해 희토류 네오디뮴 코어로 완성됩니다</h2>
+            <p>
+              자연 자기장이라는 보이지 않는 조건, 희토류 네오디뮴이라는 핵심 소재,
+              그리고 몸 가까운 착용 구조. 이 세 가지가 만나 클라비스의 과학은
+              설명이 아니라 제품으로 기억됩니다.
+            </p>
+          </section>
+
+          <section class="science-origin-cta panel">
+            <p class="eyebrow">SCIENCE TO TRUST</p>
+            <h2>강조된 과학은<br />확인 가능한 기준으로 이어집니다</h2>
             <p>클라비스의 과학은 소재, 제조, 검수 기준으로 이어질 때 브랜드의 신뢰가 됩니다.</p>
             <a href="./techtrust.html">VIEW TECH &amp; TRUST</a>
           </section>
