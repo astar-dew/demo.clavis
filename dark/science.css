@@ -163,11 +163,11 @@ h4 {
 
 .science-tab-list {
   padding: 6px;
-  width: min(1040px, 100%);
+  width: min(1180px, 100%);
   border: 1px solid var(--line);
   background: #fff;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 6px;
 }
 
@@ -1178,6 +1178,7 @@ h4 {
 .science-origin-split,
 .science-origin-translation,
 .science-origin-product,
+.science-user-image-band,
 .science-origin-conclusion,
 .science-origin-cta {
   border: 1px solid var(--line);
@@ -1202,6 +1203,7 @@ h4 {
 .science-origin-split h2,
 .science-origin-translation h2,
 .science-origin-product h2,
+.science-user-image-band h2,
 .science-origin-conclusion h2,
 .science-origin-cta h2 {
   margin: 0;
@@ -1215,6 +1217,7 @@ h4 {
 .science-origin-hero p:not(.eyebrow),
 .science-origin-split p:not(.eyebrow),
 .science-origin-product p:not(.eyebrow),
+.science-user-image-band p:not(.eyebrow),
 .science-origin-conclusion p:not(.eyebrow),
 .science-origin-cta p:not(.eyebrow) {
   max-width: 680px;
@@ -1222,6 +1225,18 @@ h4 {
   color: #5f5a54;
   font-size: 16px;
   line-height: 1.9;
+}
+
+.science-origin-hero .science-hero-image-note {
+  display: inline-block;
+  max-width: 680px;
+  margin-top: 28px;
+  padding: 12px 18px;
+  border: 1px solid rgba(157, 129, 94, 0.28);
+  background: rgba(255, 255, 255, 0.72);
+  color: #7a6650;
+  font-size: 13px;
+  line-height: 1.65;
 }
 
 .science-origin-card {
@@ -1343,6 +1358,16 @@ h4 {
   gap: 58px;
   align-items: center;
   padding: 64px;
+}
+
+.science-user-image-band {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 58px;
+  align-items: center;
+  margin-top: 28px;
+  padding: 64px;
+  background: #fbf8f1;
 }
 
 .science-origin-core {
@@ -1533,6 +1558,7 @@ h4 {
   .science-origin-split,
   .science-origin-steps,
   .science-origin-product,
+  .science-user-image-band,
   .science-origin-conclusion,
   .science-origin-proof {
     grid-template-columns: 1fr;
@@ -1666,6 +1692,7 @@ h4 {
   .science-origin-split,
   .science-origin-translation,
   .science-origin-product,
+  .science-user-image-band,
   .science-origin-conclusion,
   .science-emphasis-highlight,
   .science-origin-cta {
@@ -1681,6 +1708,7 @@ h4 {
   .science-origin-split h2,
   .science-origin-translation h2,
   .science-origin-product h2,
+  .science-user-image-band h2,
   .science-origin-conclusion h2,
   .science-emphasis-highlight h2,
   .science-origin-cta h2 {

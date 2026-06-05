@@ -43,10 +43,11 @@
         </button>
         <button
           id="science-tab-recommended2"
+          class="active"
           type="button"
           role="tab"
           data-science-view-button="recommended2"
-          aria-selected="false"
+          aria-selected="true"
           aria-controls="science-panel-recommended2"
         >
           추천 구성2
@@ -63,14 +64,23 @@
         </button>
         <button
           id="science-tab-emphasis"
-          class="active"
           type="button"
           role="tab"
           data-science-view-button="emphasis"
-          aria-selected="true"
+          aria-selected="false"
           aria-controls="science-panel-emphasis"
         >
           내용 강조
+        </button>
+        <button
+          id="science-tab-user-flow"
+          type="button"
+          role="tab"
+          data-science-view-button="user-flow"
+          aria-selected="false"
+          aria-controls="science-panel-user-flow"
+        >
+          사용자 이해
         </button>
         <button
           id="science-tab-impact"
@@ -608,11 +618,10 @@
 
       <div
         id="science-panel-recommended2"
-        class="science-composition"
+        class="science-composition is-active"
         data-science-view="recommended2"
         role="tabpanel"
         aria-labelledby="science-tab-recommended2"
-        hidden
       >
         <div class="composition-flow-group" aria-labelledby="science-r2-group-1">
           <div class="composition-flow-label">
@@ -1006,10 +1015,11 @@
 
       <div
         id="science-panel-emphasis"
-        class="science-composition is-active"
+        class="science-composition"
         data-science-view="emphasis"
         role="tabpanel"
         aria-labelledby="science-tab-emphasis"
+        hidden
       >
         <div class="composition-flow-group" aria-labelledby="science-emphasis-group-1">
           <div class="composition-flow-label">
@@ -1026,6 +1036,9 @@
                 자연환경에는 눈에 보이지 않지만 오래전부터 인간의 생활 리듬과 함께해온
                 자기장 조건이 있습니다. 클라비스는 이 조건을 단순한 배경 지식으로 두지 않고,
                 매일 착용할 수 있는 제품 구조로 해석합니다.
+              </p>
+              <p class="science-hero-image-note">
+                (이미지) 도심 실내와 자연 풍경이 부드럽게 연결되고, 보이지 않는 자기장 흐름이 은은하게 표현된 이미지
               </p>
             </div>
             <div class="science-origin-card" aria-label="Natural magnetic field concept">
@@ -1142,6 +1155,163 @@
             <p class="eyebrow">SCIENCE TO TRUST</p>
             <h2>강조된 과학은<br />확인 가능한 기준으로 이어집니다</h2>
             <p>클라비스의 과학은 소재, 제조, 검수 기준으로 이어질 때 브랜드의 신뢰가 됩니다.</p>
+            <a href="./techtrust.html">VIEW TECH &amp; TRUST</a>
+          </section>
+        </div>
+      </div>
+
+      <div
+        id="science-panel-user-flow"
+        class="science-composition"
+        data-science-view="user-flow"
+        role="tabpanel"
+        aria-labelledby="science-tab-user-flow"
+        hidden
+      >
+        <div class="composition-flow-group" aria-labelledby="science-user-flow-group-1">
+          <div class="composition-flow-label">
+            <span>01</span>
+            <h3 id="science-user-flow-group-1">사용자가 느끼는 거리감</h3>
+            <p>과학적 설명보다 먼저, 도심의 일상에서 자연과 멀어진 감각을 쉽게 이해시키는 시작점입니다.</p>
+          </div>
+
+          <section class="science-origin-hero panel">
+            <div>
+              <p class="eyebrow">WHY IT MATTERS</p>
+              <h2>도심의 하루에는<br />자연의 접점이 줄어듭니다</h2>
+              <p>
+                우리는 대부분의 시간을 실내, 이동, 반복되는 루틴 안에서 보냅니다.
+                클라비스는 이 일상 속에서 자연의 보이지 않는 조건을 다시 가까이 두는
+                방법을 고민합니다.
+              </p>
+            </div>
+            <div class="science-origin-card science-image-guide" aria-label="Everyday nature gap image direction">
+              <span>IMAGE DIRECTION</span>
+              <strong>도심의 실내 루틴</strong>
+              <p>창가 빛이 들어오는 사무실, 이동 중인 도시 장면, 실내 중심의 하루를 보여주는 실제 사진 느낌의 이미지</p>
+              <small>URBAN ROUTINE · INDOOR LIFE · LESS NATURE</small>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="science-user-flow-group-2">
+          <div class="composition-flow-label">
+            <span>02</span>
+            <h3 id="science-user-flow-group-2">자연 자기장이라는 관점</h3>
+            <p>도심과 자연의 차이를 효능으로 말하지 않고, 제품 착안의 참고 맥락으로 보여줍니다.</p>
+          </div>
+
+          <section class="science-origin-split panel">
+            <div>
+              <p class="eyebrow">NATURAL FIELD</p>
+              <h2>클라비스는 그 차이를<br />자연 자기장이라는 관점에서 바라봅니다</h2>
+              <p>
+                자연환경과 도심 환경은 서로 다른 조건을 가집니다. 클라비스는 이 차이를
+                특정 효능으로 단정하지 않고, 자연의 보이지 않는 조건을 이해하는
+                하나의 참고 관점으로 사용합니다.
+              </p>
+            </div>
+            <div class="science-origin-meter">
+              <article>
+                <span>URBAN INDOOR</span>
+                <strong>0.25G</strong>
+                <p>일반 도시의 건축물 내부 차폐 환경 참고 수치</p>
+              </article>
+              <article>
+                <span>NATURAL CASE</span>
+                <strong>0.58G</strong>
+                <p>바마현 등 자연환경 사례에서 언급되는 참고 수치</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="science-user-image-band panel">
+            <div class="science-image-guide">
+              <span>IMAGE DIRECTION</span>
+              <strong>도심과 자연의 조건 비교</strong>
+              <p>왼쪽은 건축물과 실내 차폐 환경, 오른쪽은 산과 물, 자연광이 있는 풍경으로 구성해 환경 차이가 직관적으로 보이게 합니다.</p>
+              <small>URBAN INDOOR · NATURAL FIELD · COMPARISON</small>
+            </div>
+            <div>
+              <p class="eyebrow">VISUAL CONTEXT</p>
+              <h2>수치보다 먼저<br />환경의 차이를 보여줍니다</h2>
+              <p>
+                일반 사용자는 수치보다 장면을 먼저 이해합니다. 도심과 자연의 대비 이미지는
+                자연 자기장 관점이 왜 등장하는지 더 쉽게 받아들이게 만드는 보조 장치가 됩니다.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="science-user-flow-group-3">
+          <div class="composition-flow-label">
+            <span>03</span>
+            <h3 id="science-user-flow-group-3">소재와 구조로 해석</h3>
+            <p>자연에서 출발한 관점이 희토류 네오디뮴 코어와 몸 가까운 착용 구조로 이어지는 구간입니다.</p>
+          </div>
+
+          <section class="science-origin-translation panel">
+            <p class="eyebrow">FROM NATURE TO CORE</p>
+            <h2>그 원리는<br />희토류 네오디뮴 코어와 착용 구조로 해석됩니다</h2>
+            <div class="science-origin-steps">
+              <article>
+                <span>01</span>
+                <h3>Observe</h3>
+                <p>도심과 자연환경의 차이를 관찰하고, 브랜드가 주목해야 할 균형의 접점을 찾습니다.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Translate</h3>
+                <p>희토류 네오디뮴 코어를 통해 보이지 않는 자기장 원리를 제품 안의 구조로 해석합니다.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Wear</h3>
+                <p>몸 가까이 머무는 착용 거리와 형태를 설계해 일상에서 자연스럽게 경험하게 합니다.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="science-origin-product panel">
+            <div class="science-origin-core science-image-guide">
+              <span>IMAGE DIRECTION</span>
+              <strong>네오디뮴 코어와 착용 구조</strong>
+              <p>제품 내부의 네오디뮴 코어, 피부 가까이 놓이는 착용 거리, 프리미엄 마감이 함께 보이는 반실사 제품 구조 이미지</p>
+              <small>NEODYMIUM CORE · WEARABLE DISTANCE · PRODUCT STRUCTURE</small>
+            </div>
+            <div>
+              <p class="eyebrow">PRODUCT TRANSLATION</p>
+              <h2>보이지 않는 원리는<br />제품 안의 구조로 이해됩니다</h2>
+              <p>
+                자연 자기장의 관점은 추상적인 설명으로 끝나지 않습니다. 희토류 네오디뮴 코어와
+                착용 구조를 함께 보여줄 때, 사용자는 과학이 실제 제품 경험으로 이어진다는 점을
+                더 쉽게 이해할 수 있습니다.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <div class="composition-flow-group" aria-labelledby="science-user-flow-group-4">
+          <div class="composition-flow-label">
+            <span>04</span>
+            <h3 id="science-user-flow-group-4">일상 경험으로 정리</h3>
+            <p>사용자가 마지막에 이해해야 할 결론을 기능보다 경험 중심으로 정리합니다.</p>
+          </div>
+
+          <section class="science-emphasis-highlight panel">
+            <p class="eyebrow">USER TAKEAWAY</p>
+            <h2>그래서 클라비스의 과학은<br />매일 몸 가까이 균형의 감각을 경험하게 하는 것입니다</h2>
+            <p>
+              자연 자기장이라는 관점, 희토류 네오디뮴이라는 소재, 몸 가까운 착용 구조는
+              따로 떨어진 설명이 아닙니다. 사용자가 이해해야 할 결론은 하나입니다.
+              클라비스는 자연에서 발견한 균형의 원리를 일상 가까운 웰니스 경험으로 바꿉니다.
+            </p>
+          </section>
+
+          <section class="science-origin-cta panel">
+            <p class="eyebrow">SCIENCE TO TRUST</p>
+            <h2>사용자가 이해한 과학은<br />확인 가능한 기준으로 이어집니다</h2>
+            <p>소재, 제조, 검수 기준을 확인할 때 클라비스의 과학은 브랜드의 신뢰로 연결됩니다.</p>
             <a href="./techtrust.html">VIEW TECH &amp; TRUST</a>
           </section>
         </div>
