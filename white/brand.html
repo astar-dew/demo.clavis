@@ -25,68 +25,72 @@
       </section>
 
       <section class="brand-version-tabs" aria-label="Brand page composition tabs">
-        <div class="brand-tab-list" role="tablist" aria-label="Brand page composition">
-          <button
-            id="brand-tab-existing"
-            type="button"
-            role="tab"
-            data-brand-view-button="existing"
-            aria-selected="false"
-            aria-controls="brand-panel-existing"
-          >
-            기존 구성
-          </button>
-          <button
-            id="brand-tab-recommended"
-            type="button"
-            role="tab"
-            data-brand-view-button="recommended"
-            aria-selected="false"
-            aria-controls="brand-panel-recommended"
-          >
-            추천 구성
-          </button>
-          <button
-            id="brand-tab-recommended2"
-            class="active"
-            type="button"
-            role="tab"
-            data-brand-view-button="recommended2"
-            aria-selected="true"
-            aria-controls="brand-panel-recommended2"
-          >
-            추천 구성2
-          </button>
-          <button
-            id="brand-tab-emotion"
-            type="button"
-            role="tab"
-            data-brand-view-button="emotion"
-            aria-selected="false"
-            aria-controls="brand-panel-emotion"
-          >
-            감성 구성
-          </button>
-          <button
-            id="brand-tab-impact"
-            type="button"
-            role="tab"
-            data-brand-view-button="impact"
-            aria-selected="false"
-            aria-controls="brand-panel-impact"
-          >
-            임팩트 구성
-          </button>
-          <button
-            id="brand-tab-guide"
-            type="button"
-            role="tab"
-            data-brand-view-button="guide"
-            aria-selected="false"
-            aria-controls="brand-panel-guide"
-          >
-            Guide
-          </button>
+        <div class="brand-tab-shell" role="tablist" aria-label="Brand page composition">
+          <div class="brand-tab-list">
+            <button
+              id="brand-tab-existing"
+              type="button"
+              role="tab"
+              data-brand-view-button="existing"
+              aria-selected="false"
+              aria-controls="brand-panel-existing"
+            >
+              기존 구성
+            </button>
+            <button
+              id="brand-tab-recommended"
+              type="button"
+              role="tab"
+              data-brand-view-button="recommended"
+              aria-selected="false"
+              aria-controls="brand-panel-recommended"
+            >
+              추천 구성
+            </button>
+            <button
+              id="brand-tab-recommended2"
+              class="active"
+              type="button"
+              role="tab"
+              data-brand-view-button="recommended2"
+              aria-selected="true"
+              aria-controls="brand-panel-recommended2"
+            >
+              추천 구성2
+            </button>
+            <button
+              id="brand-tab-emotion"
+              type="button"
+              role="tab"
+              data-brand-view-button="emotion"
+              aria-selected="false"
+              aria-controls="brand-panel-emotion"
+            >
+              감성 구성
+            </button>
+            <button
+              id="brand-tab-impact"
+              type="button"
+              role="tab"
+              data-brand-view-button="impact"
+              aria-selected="false"
+              aria-controls="brand-panel-impact"
+            >
+              임팩트 구성
+            </button>
+          </div>
+          <div class="brand-guide-tab">
+            <button
+              id="brand-tab-guide"
+              type="button"
+              role="tab"
+              data-brand-view-button="guide"
+              aria-selected="false"
+              aria-controls="brand-panel-guide"
+            >
+              Guide
+            </button>
+          </div>
         </div>
       </section>
 
@@ -411,26 +415,6 @@
             <p>현재 제품 경험이 프리미엄 웰니스 캡슐과 글로벌 확장 비전으로 이어지는 마무리 영역입니다.</p>
           </div>
 
-          <section class="future panel">
-            <p class="eyebrow">NEXT VISION</p>
-            <h2>다음 혁신,<br /><em>Premium Wellness Capsule</em></h2>
-            <div class="future-grid">
-              <div class="capsule-shape"></div>
-              <div>
-                <h3>착용 경험을 넘어 생활 케어로 확장합니다</h3>
-                <p>
-                  클라비스는 웨어러블 제품에서 시작해 수면, 회복, 일상 컨디션까지
-                  이어지는 프리미엄 웰니스 경험을 준비합니다.
-                </p>
-                <ul>
-                  <li>모듈형 자석 설계</li>
-                  <li>개인화 데이터 기반 가이드</li>
-                  <li>생활 밀착형 디자인</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
           <section class="roadmap panel">
             <p class="eyebrow">GLOBAL ROADMAP</p>
             <h2>2030 GLOBAL ROADMAP</h2>
@@ -478,6 +462,26 @@
                 </ul>
                 <span class="roadmap-status todo">TO DO</span>
               </article>
+            </div>
+          </section>
+
+          <section class="future panel">
+            <p class="eyebrow">NEXT VISION</p>
+            <h2>다음 혁신,<br /><em>Premium Wellness Capsule</em></h2>
+            <div class="future-grid">
+              <div class="capsule-shape"></div>
+              <div>
+                <h3>착용 경험을 넘어 생활 케어로 확장합니다</h3>
+                <p>
+                  클라비스는 웨어러블 제품에서 시작해 수면, 회복, 일상 컨디션까지
+                  이어지는 프리미엄 웰니스 경험을 준비합니다.
+                </p>
+                <ul>
+                  <li>모듈형 자석 설계</li>
+                  <li>개인화 데이터 기반 가이드</li>
+                  <li>생활 밀착형 디자인</li>
+                </ul>
+              </div>
             </div>
           </section>
         </div>
@@ -539,29 +543,6 @@
             </div>
           </section>
 
-          <section class="brand-v2-flow panel">
-            <article>
-              <span>01</span>
-              <p class="eyebrow">CLAVIS IS SCIENCE</p>
-              <h3>보이지 않는 원리를<br />제품 구조로 해석합니다</h3>
-              <p>자연 자기장, 네오디뮴 코어, 착용 거리를 하나의 설계 언어로 연결합니다.</p>
-              <p class="brand-inline-image-note">(이미지) 자연 자기장 라인과 제품 내부 코어 구조가 함께 보이는 설명형 이미지</p>
-            </article>
-            <article>
-              <span>02</span>
-              <p class="eyebrow">CLAVIS IS WEARABLE</p>
-              <h3>매일 손이 가는<br />착용감을 만듭니다</h3>
-              <p>기능만 앞세우지 않고, 주얼리처럼 손이 가는 형태와 착용감을 함께 만듭니다.</p>
-              <p class="brand-inline-image-note">(이미지) 모델이 일상복에 제품을 자연스럽게 착용한 반신 또는 손목 컷</p>
-            </article>
-            <article>
-              <span>03</span>
-              <p class="eyebrow">CLAVIS IS TRUST</p>
-              <h3>확인 가능한 기준으로<br />신뢰를 쌓습니다</h3>
-              <p>소재, 제조, 검수 기준을 제품 안에 담아 브랜드의 약속을 구체화합니다.</p>
-              <p class="brand-inline-image-note">(이미지) 검수 장면, 소재 샘플, 인증 자료 일부가 정돈된 테이블 이미지</p>
-            </article>
-          </section>
         </div>
 
         <div class="composition-flow-group" aria-labelledby="brand-r2-group-2">

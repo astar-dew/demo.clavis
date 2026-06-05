@@ -299,17 +299,32 @@ a {
   justify-content: center;
 }
 
+.brand-tab-shell {
+  width: min(1040px, 100%);
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
 .brand-tab-list {
   padding: 6px;
-  width: min(980px, 100%);
+  flex: 1 1 auto;
   border: 1px solid var(--line);
   background: #fff;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 6px;
 }
 
-.brand-tab-list button {
+.brand-guide-tab {
+  flex: 0 0 124px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  background: #fff;
+  display: flex;
+}
+
+.brand-tab-shell button {
   height: 46px;
   border: 0;
   background: transparent;
@@ -320,7 +335,11 @@ a {
   cursor: pointer;
 }
 
-.brand-tab-list button.active {
+.brand-guide-tab button {
+  width: 100%;
+}
+
+.brand-tab-shell button.active {
   background: #1f1f1f;
   color: #fff;
 }
@@ -787,7 +806,7 @@ a {
 
 .brand-v2-flow {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0;
   padding: 0;
 }
@@ -1489,11 +1508,20 @@ a {
     margin: 28px auto 34px;
   }
 
-  .brand-tab-list {
-    grid-template-columns: repeat(3, 1fr);
+  .brand-tab-shell {
+    flex-direction: column;
+    gap: 8px;
   }
 
-  .brand-tab-list button {
+  .brand-tab-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brand-guide-tab {
+    flex-basis: auto;
+  }
+
+  .brand-tab-shell button {
     height: 42px;
     font-size: 11px;
   }

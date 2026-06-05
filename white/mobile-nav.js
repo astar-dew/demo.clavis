@@ -40,8 +40,8 @@
         "<span>COLLECTION</span><span class=\"chev\"></span></button>" +
         '<div class="mobile-nav-links">' +
         '<a href="./medi-jewelry.html">- medi-jewelry</a>' +
-        '<a href="./science.html">- science</a>' +
-        '<a href="./techtrust.html">- tech&amp;trust</a>' +
+        '<a href="./active-lifestyle.html">- active lifestyle</a>' +
+        '<a href="./living-health.html">- living &amp; health</a>' +
         "</div></section>";
     } else {
       var leftGroups = Array.from(document.querySelectorAll(".menu.left .menu-item.has-submenu"));
@@ -97,6 +97,52 @@
   var closeBtn = overlay.querySelector(".mobile-menu-close");
   var toggles = Array.from(overlay.querySelectorAll(".mobile-nav-toggle"));
   var overlayLinks = Array.from(overlay.querySelectorAll("a"));
+
+  function getFileName(value) {
+    return (value || "").split("?")[0].split("#")[0].split("/").pop();
+  }
+
+  function getCurrentMenuFile() {
+    var file = getFileName(window.location.pathname) || "index.html";
+    var hash = (window.location.hash || "").replace("#", "");
+
+    if (file === "product-ares.html" || file === "product-astra.html") return "medi-jewelry.html";
+    if (file === "product-bach.html") return "active-lifestyle.html";
+    if (file === "product-circle.html") return "living-health.html";
+    if (file === "collection.html") {
+      if (hash === "active-lifestyle") return "active-lifestyle.html";
+      if (hash === "living-health") return "living-health.html";
+      return "medi-jewelry.html";
+    }
+    if (file === "consumer.html" || file === "medical.html" || file === "magnetic-patch.html" || file === "astra-rose.html") {
+      return "shop.html";
+    }
+
+    return file;
+  }
+
+  function markActiveLinks() {
+    var currentFile = getCurrentMenuFile();
+
+    overlayLinks.forEach(function (a) {
+      var targetFile = getFileName(a.getAttribute("href"));
+      var isActive = targetFile === currentFile;
+      a.classList.toggle("active", isActive);
+      if (isActive) {
+        a.setAttribute("aria-current", "page");
+        var group = a.closest(".mobile-nav-group");
+        var toggle = group ? group.querySelector(".mobile-nav-toggle") : null;
+        if (group && toggle) {
+          group.classList.add("open");
+          toggle.setAttribute("aria-expanded", "true");
+        }
+      } else {
+        a.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  markActiveLinks();
 
   function openMenu() {
     overlay.classList.add("is-open");

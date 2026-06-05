@@ -29,6 +29,11 @@
       ".topbar.layout-3 .menu.left{gap:22px;flex-wrap:nowrap;justify-content:center;min-width:0;}" +
       ".topbar.layout-3 .menu.right{gap:12px;flex-wrap:nowrap;justify-content:flex-end;min-width:0;}" +
       ".topbar.layout-3 .menu.right > a{font-weight:600;letter-spacing:0.1em;}" +
+      ".topbar .menu a{position:relative;transition:color .18s ease;}" +
+      ".topbar .menu a.active{color:var(--accent,#d4b27a);font-weight:700;}" +
+      ".topbar .menu a.active::after{content:\"\";position:absolute;left:0;right:0;bottom:-9px;height:2px;background:currentColor;}" +
+      ".topbar .submenu a.active::after{display:none;}" +
+      ".mobile-nav-direct.active,.mobile-nav-links a.active{color:var(--accent,#d4b27a);font-weight:700;background:rgba(212,178,122,.14);}" +
       "@media (max-width:720px){.footer-inner{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 16px;padding:56px 20px;}.footer-inner>div:first-child{grid-column:1/-1;}.footer-inner>div:last-child{grid-column:1/-1;border-top:1px solid var(--line);padding-top:16px;}.footer-logo{font-size:56px;}.footer-inner h5{font-size:14px;line-height:1.2;margin:0 0 10px;}.footer-inner a,.footer-inner p{font-size:13px;line-height:1.6;margin:4px 0;}.footer .contact{font-size:13px;line-height:1.7;}}" +
       "@media (max-width:760px){.topbar.layout-2 .topbar-inner,.topbar.layout-3 .topbar-inner{display:flex;height:56px;}}";
     document.head.appendChild(style);
@@ -68,7 +73,8 @@
   var activeMedi = collectionMenuKey === "medi" ? "active" : "";
   var activeActive = collectionMenuKey === "active" ? "active" : "";
   var activeLiving = collectionMenuKey === "living" ? "active" : "";
-  var activeShop = file === "shop.html" ? "active" : "";
+  var shopFiles = ["shop.html", "consumer.html", "medical.html", "magnetic-patch.html", "astra-rose.html"];
+  var activeShop = shopFiles.indexOf(file) !== -1 ? "active" : "";
 
   var leftMenuLayout1 =
     '<nav class="menu left">' +
@@ -162,6 +168,10 @@
     '<div class="topbar-inner">' +
     inner +
     "</div></header>";
+
+  Array.from(root.querySelectorAll("a.active")).forEach(function (link) {
+    link.setAttribute("aria-current", "page");
+  });
 
   function syncFooterByLayout() {
     if (layout !== "layout2" && layout !== "layout3") return;

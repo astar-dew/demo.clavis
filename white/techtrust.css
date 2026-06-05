@@ -1325,6 +1325,39 @@ blockquote em {
   line-height: 1.75;
 }
 
+.tt-sales-product-memory {
+  margin-top: 24px;
+  padding: 28px 32px;
+  border: 1px solid rgba(209, 178, 121, 0.38);
+  background: rgba(255, 255, 255, 0.07);
+  text-align: left;
+}
+
+.tt-sales-product-memory span {
+  display: block;
+  color: #d1b279;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.tt-sales-product-memory strong {
+  display: block;
+  margin-top: 14px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.tt-sales-product-memory p {
+  max-width: 860px;
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
 @media (max-width: 1024px) {
   .tt-page > section + section {
     margin-top: 110px;
@@ -1506,6 +1539,14 @@ blockquote em {
   .tt-sales-bridge-grid article:last-child,
   .tt-sales-conclusion-grid article:last-child {
     border-bottom: 0;
+  }
+
+  .tt-sales-product-memory {
+    padding: 24px 22px;
+  }
+
+  .tt-sales-product-memory strong {
+    font-size: 20px;
   }
 
   .tt-proof-core {

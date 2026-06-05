@@ -580,16 +580,17 @@ h5,
   color: #d9c7a7 !important;
 }
 
-.brand-tab-list {
+.brand-tab-list,
+.brand-guide-tab {
   background: #171b23 !important;
   border-color: var(--line) !important;
 }
 
-.brand-tab-list button {
+.brand-tab-shell button {
   color: #b1b9c8 !important;
 }
 
-.brand-tab-list button.active {
+.brand-tab-shell button.active {
   background: #d4b27a !important;
   color: #111318 !important;
 }
