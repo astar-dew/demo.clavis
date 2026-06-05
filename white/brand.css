@@ -301,11 +301,11 @@ a {
 
 .brand-tab-list {
   padding: 6px;
-  width: min(900px, 100%);
+  width: min(980px, 100%);
   border: 1px solid var(--line);
   background: #fff;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 6px;
 }
 
@@ -1487,6 +1487,10 @@ a {
 
   .brand-version-tabs {
     margin: 28px auto 34px;
+  }
+
+  .brand-tab-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .brand-tab-list button {
