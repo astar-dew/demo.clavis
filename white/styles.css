@@ -45,12 +45,28 @@ a {
 }
 
 .composition-flow-label {
-  display: grid;
+  display: none;
   grid-template-columns: auto 1fr;
   gap: 8px 18px;
   align-items: baseline;
   max-width: 760px;
   margin-bottom: 30px;
+}
+
+.brand-version-tabs[hidden],
+.science-version-tabs[hidden],
+.tt-version-tabs[hidden] {
+  display: none !important;
+}
+
+.brand-page .page-main-hero,
+.science-page .page-main-hero,
+.tt-page .page-main-hero {
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .composition-flow-label span {
@@ -555,6 +571,12 @@ a {
 
   .composition-flow-label p {
     grid-column: auto;
+  }
+
+  .brand-page .page-main-hero,
+  .science-page .page-main-hero,
+  .tt-page .page-main-hero {
+    min-height: 300px;
   }
 
   .impact-hero,
