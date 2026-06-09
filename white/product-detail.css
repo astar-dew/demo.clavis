@@ -405,6 +405,322 @@
   line-height: 1.8;
 }
 
+.purchase-landing {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+  margin-top: 0;
+  background: #171717;
+  color: #fff;
+}
+
+.purchase-landing h2 {
+  color: #fff;
+}
+
+.purchase-landing p:not(.section-kicker) {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.smartstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 28px;
+  border: 1px solid #d4b27a;
+  background: #d4b27a;
+  color: #1c1c1c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.medical-main-visual {
+  position: relative;
+  min-height: 620px;
+  margin-top: 24px;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  border: 1px solid var(--detail-border);
+  background: #101010;
+}
+
+.medical-main-visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.medical-main-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.34) 55%, rgba(0, 0, 0, 0.62));
+}
+
+.medical-main-visual > div {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  padding: 58px;
+}
+
+.medical-main-visual h1 {
+  margin: 0;
+  color: #fff;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.medical-main-visual p:not(.section-kicker) {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(17px, 2.5vw, 24px);
+  line-height: 1.6;
+}
+
+.consumer-main-visual {
+  position: relative;
+  min-height: 620px;
+  margin-top: 24px;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  border: 1px solid var(--detail-border);
+  background: #111;
+}
+
+.consumer-main-visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.consumer-main-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.24) 55%, rgba(0, 0, 0, 0.66));
+}
+
+.consumer-main-visual > div {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 58px;
+}
+
+.consumer-main-visual h1 {
+  margin: 0;
+  color: #fff;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.consumer-main-visual p:not(.section-kicker) {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(17px, 2.5vw, 24px);
+  line-height: 1.6;
+}
+
+.medical-product-hero {
+  margin-top: 24px;
+}
+
+.consumer-product-hero {
+  margin-top: 24px;
+}
+
+.consumer-proof,
+.gauss-section {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.consumer-proof {
+  background: #fbf7ef;
+}
+
+.consumer-proof h2,
+.gauss-section h2 {
+  margin-bottom: 18px;
+}
+
+.consumer-proof-note {
+  color: #8a6f45;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.consumer-proof-card,
+.gauss-card {
+  min-height: 230px;
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  padding: 34px;
+  border: 1px solid #d4b27a;
+  background: #171717;
+  color: #fff;
+}
+
+.consumer-proof-card span,
+.gauss-card span {
+  color: #d4b27a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.consumer-proof-card strong,
+.gauss-card strong {
+  color: #fff;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: clamp(32px, 5vw, 58px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.consumer-proof-card p,
+.gauss-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.product-image-board .section-headline p:not(.section-kicker) {
+  margin-bottom: 0;
+}
+
+.product-image-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.9fr;
+  gap: 12px;
+}
+
+.product-image-grid img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--detail-soft);
+}
+
+.medical-benefit .feature-grid article {
+  min-height: 172px;
+}
+
+.medical-certified {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 28px;
+  align-items: center;
+  background: #fbf7ef;
+}
+
+.medical-certified h2 {
+  margin-bottom: 18px;
+}
+
+.medical-cert-card {
+  min-height: 220px;
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  padding: 34px;
+  border: 1px solid #d4b27a;
+  background: #171717;
+  color: #fff;
+}
+
+.medical-cert-card span {
+  color: #d4b27a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.medical-cert-card strong {
+  color: #fff;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.medical-cert-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.certificate-grid article {
+  border: 1px solid var(--detail-border);
+  background: var(--detail-soft);
+  padding: 14px;
+}
+
+.certificate-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #fff;
+  border: 1px solid var(--detail-border);
+}
+
+.certificate-grid p {
+  margin: 10px 0 0;
+  color: var(--detail-ink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.shipping-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.shipping-grid article {
+  border: 1px solid var(--detail-border);
+  background: var(--detail-soft);
+  padding: 22px 20px;
+}
+
+.shipping-grid h3 {
+  margin: 0 0 10px;
+  color: var(--detail-ink);
+  font-size: 17px;
+}
+
+.shipping-grid p {
+  margin: 0;
+  color: var(--detail-muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
 .info-grid {
   margin-top: 24px;
   display: grid;
@@ -488,8 +804,15 @@
   .related-grid,
   .feature-grid,
   .routine-steps,
+  .certificate-grid,
+  .product-image-grid,
+  .shipping-grid,
   .story-split,
   .spec-panel,
+  .purchase-landing,
+  .consumer-proof,
+  .gauss-section,
+  .medical-certified,
   .model-wear-cut,
   .function-layout,
   .brand-signature {
@@ -501,8 +824,19 @@
   }
 
   .premium-image-cut > div,
+  .medical-main-visual > div,
+  .consumer-main-visual > div,
   .model-copy {
     padding: 32px 24px;
+  }
+
+  .medical-main-visual,
+  .consumer-main-visual {
+    min-height: 520px;
+  }
+
+  .smartstore-button {
+    width: 100%;
   }
 
   .model-wear-cut > img,
