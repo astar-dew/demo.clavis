@@ -43,6 +43,7 @@
         '<a href="./active-lifestyle.html">- active lifestyle</a>' +
         '<a href="./living-health.html">- living &amp; health</a>' +
         "</div></section>";
+      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./shop.html">SHOP</a></section>';
     } else {
       var leftGroups = Array.from(document.querySelectorAll(".menu.left .menu-item.has-submenu"));
       leftGroups.forEach(function (group, index) {
@@ -69,14 +70,7 @@
           linkHtml +
           "</div></section>";
       });
-    }
-
-    var shopAnchor = rightMenu.querySelector('a[href*="shop"]');
-    if (shopAnchor) {
-      groupsHtml +=
-        '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="' +
-        shopAnchor.getAttribute("href") +
-        '">SHOP</a></section>';
+      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./shop.html">SHOP</a></section>';
     }
 
     overlay.innerHTML =

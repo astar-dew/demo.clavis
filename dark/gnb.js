@@ -104,6 +104,9 @@
     activeLiving +
     '" href="./living-health.html">LIVING &amp; HEALTH</a>' +
     "</div></div>" +
+    '<a class="' +
+    activeShop +
+    '" href="./shop.html">SHOP</a>' +
     "</nav>";
 
   var leftMenuLayout2 =
@@ -132,15 +135,15 @@
     activeLiving +
     '" href="./living-health.html">LIVING &amp; HEALTH</a>' +
     "</div></div>" +
+    '<a class="' +
+    activeShop +
+    '" href="./shop.html">SHOP</a>' +
     "</nav>";
 
   var logo = '<a class="logo" href="./index.html"><img class="logo-submark" src="../asset/etc/darklogo.svg" alt="ClaviS" /><span class="sr-only">ClaviS</span></a>';
 
   var rightMenuLayout1 =
     '<nav class="menu right">' +
-    '<a class="' +
-    activeShop +
-    '" href="./shop.html">SHOP</a>' +
     '<button aria-label="검색" class="icon-btn icon-search"><span aria-hidden="true"></span></button>' +
     '<button aria-label="로그인" class="icon-btn icon-user"><span aria-hidden="true"></span></button>' +
     '<button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>' +
@@ -148,9 +151,6 @@
 
   var rightMenuLayout2 =
     '<nav class="menu right">' +
-    '<a class="' +
-    activeShop +
-    '" href="./shop.html">SHOP</a>' +
     '<button aria-label="검색" class="icon-btn icon-search"><span aria-hidden="true"></span></button>' +
     '<a href="#" class="mypage-link">MYPAGE</a>' +
     '<button aria-label="장바구니" class="icon-btn icon-cart"><span aria-hidden="true"></span><span class="cart-count" aria-hidden="true">0</span></button>' +
