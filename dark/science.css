@@ -120,6 +120,12 @@ a {
   font-size: 13px;
 }
 
+.science-kicker {
+  color: #d4b27a;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
 .eyebrow.dark {
   color: #222;
 }

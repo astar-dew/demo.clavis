@@ -33,7 +33,7 @@
     if (layout === "layout2" || layout === "layout3") {
       groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./brand.html">BRAND</a></section>';
       groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./science.html">SCIENCE</a></section>';
-      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./techtrust.html">TECH &amp; TRUST</a></section>';
+      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./techtrust.html">TRUST</a></section>';
       groupsHtml +=
         '<section class="mobile-nav-group open">' +
         '<button class="mobile-nav-toggle" type="button" aria-expanded="true">' +

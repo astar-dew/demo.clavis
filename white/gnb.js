@@ -89,7 +89,7 @@
     '" href="./science.html">SCIENCE</a>' +
     '<a class="' +
     activeTechtrust +
-    '" href="./techtrust.html">TECH &amp; TRUST</a>' +
+    '" href="./techtrust.html">TRUST</a>' +
     "</div></div>" +
     '<div class="menu-item has-submenu">' +
     '<a href="./medi-jewelry.html">COLLECTION</a>' +
@@ -116,7 +116,7 @@
     '" href="./science.html">SCIENCE</a>' +
     '<a class="' +
     activeTechtrust +
-    '" href="./techtrust.html">TECH &amp; TRUST</a>' +
+    '" href="./techtrust.html">TRUST</a>' +
     '<div class="menu-item has-submenu">' +
     '<a class="' +
     (collectionMenuKey ? "active" : "") +
