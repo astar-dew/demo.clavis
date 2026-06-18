@@ -919,8 +919,199 @@ h4 {
   line-height: 1.8;
 }
 
+.science-legacy-story,
+.science-modern-story {
+  background: #fff;
+  border-color: rgba(209, 178, 121, 0.22);
+}
+
+.science-legacy-head {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 48px;
+}
+
+.science-legacy-head span {
+  width: 6px;
+  height: 46px;
+  background: var(--accent);
+}
+
+.science-legacy-head h2 {
+  margin: 0;
+  color: var(--black);
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.08;
+  letter-spacing: 0.08em;
+}
+
+.science-legacy-grid,
+.science-modern-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.95fr);
+  gap: 58px;
+  align-items: center;
+}
+
+.science-modern-grid {
+  grid-template-columns: minmax(300px, 0.95fr) minmax(0, 1fr);
+}
+
+.science-legacy-copy h3,
+.science-modern-copy h3 {
+  margin: 0 0 24px;
+  color: var(--accent);
+  font-size: 34px;
+  line-height: 1.35;
+}
+
+.science-modern-copy h3 {
+  color: var(--black);
+  font-size: 24px;
+}
+
+.science-legacy-copy p,
+.science-modern-copy p,
+.science-modern-copy li {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.science-legacy-copy strong {
+  color: var(--black);
+}
+
+.science-modern-copy ul {
+  margin: 26px 0 0;
+  padding-left: 22px;
+}
+
+.science-modern-copy li + li {
+  margin-top: 8px;
+}
+
+.science-legacy-visual,
+.science-modern-visual {
+  min-height: 340px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid rgba(209, 178, 121, 0.24);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(10, 15, 26, 0.78)),
+    radial-gradient(circle at 50% 36%, rgba(209, 178, 121, 0.34), transparent 38%),
+    #121824;
+  color: #fff;
+  box-shadow: 0 24px 60px rgba(16, 24, 40, 0.12);
+}
+
+.science-modern-visual {
+  background:
+    radial-gradient(circle at 58% 44%, rgba(0, 214, 232, 0.32), transparent 28%),
+    linear-gradient(135deg, #1f2937, #0d1421);
+}
+
+.science-legacy-visual span,
+.science-modern-visual span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.science-legacy-visual strong,
+.science-modern-visual strong {
+  display: block;
+  margin-top: 22px;
+  color: #fff;
+  font-size: 34px;
+  line-height: 1.15;
+}
+
+.science-legacy-visual p,
+.science-modern-visual p {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .neodymium-focus {
   background: #faf8f4;
+}
+
+.science-tech-proof {
+  text-align: center;
+  background: #111827;
+  color: #fff;
+}
+
+.science-tech-proof h2 {
+  color: #fff;
+}
+
+.science-tech-proof p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 0 auto 46px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.science-tech-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  max-width: 1120px;
+  margin: 0 auto 48px;
+  border: 1px solid rgba(212, 178, 122, 0.22);
+  text-align: left;
+}
+
+.science-tech-proof-grid article {
+  padding: 30px 28px;
+  border-right: 1px solid rgba(212, 178, 122, 0.22);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.science-tech-proof-grid article:last-child {
+  border-right: 0;
+}
+
+.science-tech-proof-grid span {
+  display: block;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  margin-bottom: 18px;
+}
+
+.science-tech-proof-grid h3 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+
+.science-tech-proof-grid p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.science-tech-proof img {
+  width: 100%;
+  max-width: 1120px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgba(212, 178, 122, 0.22);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.24);
 }
 
 .source-box {
@@ -1763,9 +1954,21 @@ h4 {
 
   .translation-steps,
   .neodymium-grid,
+  .science-legacy-grid,
+  .science-modern-grid,
+  .science-tech-proof-grid,
   .geomagnetic-reference-grid,
   .geomagnetic-context-grid {
     grid-template-columns: 1fr;
+  }
+
+  .science-tech-proof-grid article {
+    border-right: 0;
+    border-bottom: 1px solid rgba(212, 178, 122, 0.22);
+  }
+
+  .science-tech-proof-grid article:last-child {
+    border-bottom: 0;
   }
 
   .science-origin-steps article,

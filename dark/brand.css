@@ -988,6 +988,15 @@ a {
   background: #fbf8f2;
 }
 
+.brand-v2-static-collection .brand-v2-story-step {
+  cursor: text;
+  user-select: text;
+}
+
+.brand-v2-static-collection .brand-v2-story-step:hover {
+  background: #fff;
+}
+
 .brand-v2-step-num {
   color: var(--accent);
   font-size: 42px;

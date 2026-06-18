@@ -302,7 +302,9 @@ h5,
 .science-origin-conclusion,
 .science-emphasis-highlight,
 .science-origin-product,
-.science-user-image-band {
+.science-user-image-band,
+.science-legacy-story,
+.science-modern-story {
   background: #151a22 !important;
   border-color: var(--line) !important;
 }
@@ -351,7 +353,10 @@ h5,
 .science-origin-meter strong,
 .science-origin-steps h3,
 .science-origin-conclusion-grid strong,
-.science-origin-proof strong {
+.science-origin-proof strong,
+.science-legacy-head h2,
+.science-modern-copy h3,
+.science-legacy-copy strong {
   color: #eef2f9 !important;
 }
 
@@ -367,7 +372,10 @@ h5,
 .science-origin-meter p,
 .science-origin-steps p,
 .science-origin-conclusion-grid p,
-.science-origin-proof span {
+.science-origin-proof span,
+.science-legacy-copy p,
+.science-modern-copy p,
+.science-modern-copy li {
   color: #b7c0cf !important;
 }
 
@@ -708,6 +716,10 @@ h5,
 .brand-v2-collection-note,
 .brand-emotion-quote {
   background: #171b23 !important;
+}
+
+.brand-v2-static-collection .brand-v2-story-step:hover {
+  background: #111318 !important;
 }
 
 .brand-emotion-quote,
