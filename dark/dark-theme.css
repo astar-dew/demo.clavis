@@ -441,6 +441,10 @@ h5,
   color: #eef2f9 !important;
 }
 
+.neodymium-grid h3::first-line {
+  color: var(--accent) !important;
+}
+
 .translation-steps p,
 .neodymium-grid p {
   color: #b7c0cf !important;

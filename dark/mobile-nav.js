@@ -30,6 +30,8 @@
 
     var groupsHtml = "";
     var layout = document.documentElement.getAttribute("data-clavis-layout");
+    var shopLink = document.querySelector('.topbar .menu a[href*="shop"]');
+    var shopHref = shopLink ? shopLink.getAttribute("href") : "./shop.html";
     if (layout === "layout2" || layout === "layout3") {
       groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./brand.html">BRAND</a></section>';
       groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./science.html">SCIENCE</a></section>';
@@ -43,7 +45,7 @@
         '<a href="./active-lifestyle.html">- active lifestyle</a>' +
         '<a href="./living-health.html">- living &amp; health</a>' +
         "</div></section>";
-      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./shop.html">SHOP</a></section>';
+      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="' + shopHref + '">SHOP</a></section>';
     } else {
       var leftGroups = Array.from(document.querySelectorAll(".menu.left .menu-item.has-submenu"));
       leftGroups.forEach(function (group, index) {
@@ -70,7 +72,7 @@
           linkHtml +
           "</div></section>";
       });
-      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="./shop.html">SHOP</a></section>';
+      groupsHtml += '<section class="mobile-nav-group"><a class="mobile-nav-direct" href="' + shopHref + '">SHOP</a></section>';
     }
 
     overlay.innerHTML =
