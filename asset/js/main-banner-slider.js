@@ -27,18 +27,8 @@
   var dragStartX = 0;
   var dragDeltaX = 0;
   var dragMoved = false;
-  var isDark = window.location.pathname.indexOf("/dark/") !== -1;
 
   function backgroundFor(src) {
-    if (isDark) {
-      return (
-        "linear-gradient(to bottom, rgba(16, 20, 28, 0.72), rgba(16, 20, 28, 0.8)), " +
-        'url("' +
-        src +
-        '")'
-      );
-    }
-
     return 'url("' + src + '")';
   }
 

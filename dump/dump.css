@@ -1,0 +1,28 @@
+.dump-page .hero {
+  background-image: url("./asset/banner/main/banner1.png");
+}
+
+.dump-page .brand-v2-hero {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.92)),
+    url("./asset/banner/main/banner1.png");
+}
+
+.dump-page .geomagnetic-environment {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.96)),
+    url("./asset/backdata/neodium.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.dump-page .science-origin-hero {
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.94), rgba(247, 243, 236, 0.86)),
+    url("./asset/backdata/science-natural-energy.png");
+}
+
+.dump-page#dump-science .science-page .hero.page-main-hero {
+  background-image: none;
+  background: #faf8f4;
+}

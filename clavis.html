@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLAVIS PAGE OVERVIEW</title>
+    <style>
+      :root {
+        --bg: #0b0f18;
+        --panel: #131a26;
+        --line: #2a3345;
+        --text: #f1f4fa;
+        --muted: #9fa9bc;
+        --accent: #bfa067;
+        --muted-strong: #ffffff;
+        --chip: #1c2434;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Noto Sans KR", "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #0a0f16;
+        color: var(--text);
+      }
+
+      body {
+        line-height: 1.45;
+      }
+
+      .wrap {
+        width: min(1440px, 100% - 40px);
+        margin: 0 auto;
+        padding: 22px 0 60px;
+      }
+
+      .top {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: linear-gradient(to bottom, rgba(10, 15, 22, 0.98), rgba(10, 15, 22, 0.85) 60%, rgba(10, 15, 22, 0));
+        padding-bottom: 16px;
+        margin-bottom: 28px;
+      }
+
+      .title-wrap {
+        border: 1px solid var(--line);
+        padding: 16px 18px;
+        background: rgba(19, 26, 38, 0.9);
+        backdrop-filter: blur(1px);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 26px;
+        letter-spacing: 0.05em;
+      }
+
+      p {
+        margin: 6px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .index-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .index-item {
+        border: 1px solid var(--line);
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.03);
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 13px;
+      }
+
+      .preview-stack {
+        display: grid;
+        gap: 28px;
+      }
+
+      .page {
+        border: 1px solid var(--line);
+        background: linear-gradient(180deg, #111828 0%, #0d131e 100%);
+      }
+
+      .page-head {
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 16px;
+      }
+
+      .page-head .badge {
+        font-size: 12px;
+        color: var(--muted);
+        border: 1px solid var(--line);
+        padding: 4px 8px;
+        border-radius: 999px;
+      }
+
+      .page-head h2 {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: 0.08em;
+      }
+
+      .canvas {
+        padding: 18px;
+        display: grid;
+        gap: 14px;
+        min-height: 560px;
+      }
+
+      .canvas .card {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.02);
+        padding: 16px;
+        border-radius: 8px;
+      }
+
+      .canvas h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+        color: var(--muted-strong);
+      }
+
+      .canvas .sub {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 180px;
+        background: linear-gradient(135deg, #1a2536 0%, #111a28 35%, #172131 100%);
+        display: grid;
+        align-items: end;
+        padding: 16px;
+      }
+
+      .hero h3 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .chips span {
+        border: 1px solid var(--line);
+        color: #d3d9e5;
+        padding: 5px 9px;
+        border-radius: 999px;
+        font-size: 12px;
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .tile {
+        background: #151f2d;
+        border: 1px solid var(--line);
+        min-height: 120px;
+        border-radius: 10px;
+        padding: 12px;
+      }
+
+      .timeline {
+        display: grid;
+        gap: 10px;
+      }
+
+      .timeline-item {
+        border-left: 2px solid var(--accent);
+        padding: 6px 10px 6px 14px;
+        background: #111829;
+      }
+
+      .timeline-item b {
+        color: #e0d6c2;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .metric {
+        display: grid;
+        gap: 8px;
+      }
+
+      .metric .num {
+        font-size: 30px;
+        color: #f4d29a;
+        font-weight: 600;
+      }
+
+      .img-guide {
+        height: 120px;
+        border-radius: 10px;
+        border: 1px dashed var(--line);
+        background: linear-gradient(145deg, #202a3b, #172131);
+        display: grid;
+        place-items: center;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .collection-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .collection-grid .col-card {
+        background: #1a2333;
+        border: 1px solid var(--line);
+        min-height: 140px;
+        border-radius: 10px;
+        padding: 12px;
+      }
+
+      .shop-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .shop-list .item {
+        background: #161f2f;
+        border: 1px solid var(--line);
+        min-height: 100px;
+        border-radius: 10px;
+        padding: 12px;
+      }
+
+      .cta {
+        display: inline-block;
+        margin-top: 12px;
+        border: 1px solid #d4b27a;
+        color: #f3ecdd;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+      }
+
+      @media (max-width: 1080px) {
+        .grid-3,
+        .split,
+        .collection-grid,
+        .shop-list {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .grid-3,
+        .split,
+        .collection-grid,
+        .shop-list {
+          grid-template-columns: 1fr;
+        }
+
+        .top {
+          position: static;
+        }
+
+        h1 {
+          font-size: 22px;
+        }
+
+        .page-head h2 {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <div class="title-wrap">
+          <h1>CLAVIS PAGE OVERVIEW</h1>
+          <p>메인 페이지부터 샵까지 한 페이지 안에서 스크롤로 확인할 수 있는 통합 미리보기</p>
+          <div class="index-row">
+            <span class="index-item">main - main페이지html</span>
+            <span class="index-item">brand - brand 페이지 html</span>
+            <span class="index-item">science - science 페이지 html</span>
+            <span class="index-item">trust - tech&trust 페이지 html</span>
+            <span class="index-item">collection - collection 페이지 html</span>
+            <span class="index-item">shop - shop 페이지 html</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="preview-stack">
+        <section class="page">
+          <header class="page-head">
+            <h2>main</h2>
+            <span class="badge">main페이지html</span>
+          </header>
+          <div class="canvas">
+            <section class="card">
+              <div class="hero">
+                <div>
+                  <h3>CLAVIS. by your side, for life.</h3>
+                  <div class="chips">
+                    <span>브랜드 히어로</span>
+                    <span>도심 루틴 강조</span>
+                    <span>고급스러운 톤</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="card">
+              <h3>메인 배너 3단 구성</h3>
+              <div class="grid-3">
+                <article class="tile">
+                  <h4>일상에 밀착되는 감각</h4>
+                  <p class="sub">브랜딩 메시지 블록과 조용한 CTA</p>
+                </article>
+                <article class="tile">
+                  <h4>프리미엄 소재 체감</h4>
+                  <p class="sub">텍스처 컷 + 제품 디테일 설명</p>
+                </article>
+                <article class="tile">
+                  <h4>생활 속 확장성</h4>
+                  <p class="sub">액티브/웰니스/리빙 연동</p>
+                </article>
+              </div>
+            </section>
+            <section class="card">
+              <h3>맨 아래 3개 배너 영역</h3>
+              <p class="sub">고정 카피 + 이미지 블록으로 구성, 영역 간 간격 축소로 연결감 강화</p>
+              <div class="grid-3">
+                <div class="tile img-guide">이미지 안내 영역 A</div>
+                <div class="tile img-guide">이미지 안내 영역 B</div>
+                <div class="tile img-guide">이미지 안내 영역 C</div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="page">
+          <header class="page-head">
+            <h2>brand</h2>
+            <span class="badge">brand 페이지 html</span>
+          </header>
+          <div class="canvas">
+            <section class="card">
+              <div class="split">
+                <div>
+                  <h3>브랜드 선언</h3>
+                  <p class="sub">브랜드가 필요한 이유, 일상의 균형을 만드는 이유, 감각의 정체성</p>
+                </div>
+                <div class="img-guide">브랜드 키비주얼 영역</div>
+              </div>
+            </section>
+            <section class="card">
+              <h3>01. PRODUCT MEMORY</h3>
+              <p class="sub">브랜드가 일상에서 각인되는 순간과 체감 포인트 정리</p>
+            </section>
+            <section class="card">
+              <div class="split">
+                <article class="timeline">
+                  <div class="timeline-item">
+                    <b>Step 1</b> - 일상 접점 설계
+                  </div>
+                  <div class="timeline-item">
+                    <b>Step 2</b> - 컬렉션의 실사용 연계
+                  </div>
+                  <div class="timeline-item">
+                    <b>Step 3</b> - 생활 공간까지 확장되는 루틴
+                  </div>
+                </article>
+                <article class="timeline">
+                  <div class="timeline-item"><b>01. BRAND IDENTITY</b> 정체성 중심 문구 정리</div>
+                  <div class="timeline-item"><b>02. COLLECTION STORY</b> 메디/액티브/리빙 확장</div>
+                  <div class="timeline-item"><b>03. HISTORY</b> 성장 프레임</div>
+                </article>
+              </div>
+            </section>
+            <section class="card">
+              <h3>추천 구성 미리보기</h3>
+              <div class="grid-3">
+                <div class="tile">모델 착용 컷 배치</div>
+                <div class="tile">제품 실루엣 디테일 배치</div>
+                <div class="tile">감성 컷 + 기술 밸런스 설명</div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="page">
+          <header class="page-head">
+            <h2>science</h2>
+            <span class="badge">science 페이지 html</span>
+          </header>
+          <div class="canvas">
+            <section class="card">
+              <div class="hero">
+                <div>
+                  <h3>자연에서 출발한 과학, 몸 가까운 제품 구조</h3>
+                  <p class="sub">과학을 이해 가능한 언어로 옮긴 섹션 구성</p>
+                </div>
+              </div>
+            </section>
+            <section class="card split">
+              <div>
+                <h3>FROM HISTORY TO SCIENCE</h3>
+                <p class="sub">초기 철학 → 자성 원리 → 오늘의 디테일로 자연스러운 이어짐</p>
+                <div class="img-guide" style="margin-top:12px;height:92px;">역사/연결성 그래픽 안내</div>
+              </div>
+              <div>
+                <h3>NATURE TO FORM</h3>
+                <p class="sub">보이지 않는 조건을 제품 형태로 번역</p>
+              </div>
+            </section>
+            <section class="card">
+              <div class="grid-3">
+                <article class="tile">
+                  <h4>01. Neodymium</h4>
+                  <p class="sub">희토류 네오디뮴 설명 블록</p>
+                </article>
+                <article class="tile">
+                  <h4>02. Precision Form</h4>
+                  <p class="sub">작은 구조의 자기장 코어 안정화</p>
+                </article>
+                <article class="tile">
+                  <h4>03. Science to Trust</h4>
+                  <p class="sub">실험, 기준, 반복 검증으로 마무리</p>
+                </article>
+              </div>
+            </section>
+            <section class="card">
+              <h3>Tech image slot</h3>
+              <div class="img-guide">tech_1.png 위치 가이드 / 과학적 다이어그램 대체 블록</div>
+            </section>
+          </div>
+        </section>
+
+        <section class="page">
+          <header class="page-head">
+            <h2>trust</h2>
+            <span class="badge">tech&trust 페이지 html</span>
+          </header>
+          <div class="canvas">
+            <section class="card split">
+              <div>
+                <h3>PROVEN TRUST</h3>
+                <p class="sub">매출·판매량·채널 신뢰를 확인된 기준 위로 정렬</p>
+                <div class="metric">
+                  <div class="num">98%</div>
+                  <p class="sub">재구매/재구매성 검증으로 흐름 정리 영역</p>
+                </div>
+              </div>
+              <div class="img-guide">판매 데이터를 보여주는 톤형 가이드</div>
+            </section>
+            <section class="card">
+              <div class="split">
+                <article class="tile">
+                  <h4>Product Standard</h4>
+                  <p class="sub">재료-공정-검수의 연속으로 신뢰를 제품에 박음</p>
+                </article>
+                <article class="tile">
+                  <h4>CERTIFICATE</h4>
+                  <p class="sub">인증 이미지 및 기준 보완 위치</p>
+                </article>
+              </div>
+            </section>
+            <section class="card">
+              <h3>마무리 문장 블록</h3>
+              <p class="sub">확인 가능한 신뢰, 매일 믿고 쓰는 선택으로 마무리되도록 구성</p>
+            </section>
+          </div>
+        </section>
+
+        <section class="page">
+          <header class="page-head">
+            <h2>collection</h2>
+            <span class="badge">collection 페이지 html</span>
+          </header>
+          <div class="canvas">
+            <section class="card">
+              <h3>카테고리 구조</h3>
+              <div class="chips">
+                <span>Medi Jewelry</span>
+                <span>Active</span>
+                <span>Living & Health</span>
+              </div>
+              <p class="sub">카테고리 전환형 섹션과 카드형 구성의 정적 통합 레이아웃</p>
+            </section>
+            <section class="collection-grid">
+              <article class="col-card">
+                <h4>Medi Jewelry</h4>
+                <p class="sub">사용 맥락, 착용감, 정렬 포인트</p>
+              </article>
+              <article class="col-card">
+                <h4>Active</h4>
+                <p class="sub">일상-운동-회복 확장 스토리</p>
+              </article>
+              <article class="col-card">
+                <h4>Living & Health</h4>
+                <p class="sub">생활 밀착형 사용 습관과 연계</p>
+              </article>
+            </section>
+            <section class="card">
+              <h3>하단 리뷰 블록</h3>
+              <p class="sub">2줄 배치로 감성 + 기능 리뷰 정리 예정</p>
+            </section>
+          </div>
+        </section>
+
+        <section class="page">
+          <header class="page-head">
+            <h2>shop</h2>
+            <span class="badge">shop 페이지 html</span>
+          </header>
+          <div class="canvas">
+            <section class="card">
+              <h3>상품 진입 영역</h3>
+              <p class="sub">기존 “쇼핑몰형”에서 벗어나 제품 각인 포인트 중심의 상단 구성</p>
+            </section>
+            <section class="shop-list">
+              <article class="item">
+                <h4>메디 쥬얼리</h4>
+                <p class="sub">6개 기준 구성, 제품 상세로 바로 연결되는 정보 순서 설계</p>
+                <span class="cta">구매 정보 노출 영역</span>
+              </article>
+              <article class="item">
+                <h4>액티브 라인</h4>
+                <p class="sub">제품 감성+운동 루틴 연결</p>
+              </article>
+              <article class="item">
+                <h4>리빙&헬스 라인</h4>
+                <p class="sub">공간 제약/활동 패턴별 추천</p>
+              </article>
+              <article class="item">
+                <h4>상세 CTA</h4>
+                <p class="sub">장바구니/구매 버튼은 각 제품 하위에 배치</p>
+              </article>
+            </section>
+            <section class="card">
+              <h3>배송·교환 및 운영 정보</h3>
+              <p class="sub">규정과 공지 블록을 별도 영역에서 정리한 구조</p>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

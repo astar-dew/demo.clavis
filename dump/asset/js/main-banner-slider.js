@@ -1,0 +1,230 @@
+(function () {
+  var hero = document.querySelector(".hero");
+  if (!hero) return;
+
+  var banners = [
+    "./asset/banner/main/banner1.png",
+    "./asset/banner/main/banner2.png",
+    "./asset/banner/main/banner3.png",
+    "./asset/backdata/neodium.png"
+  ];
+  var destinations = [
+    "#dump-shop",
+    "#dump-shop",
+    "#dump-shop",
+    "#dump-science"
+  ];
+  var eyebrows = ["MEDI JEWELRY", "ACTIVE LIFESTYLE", "LIVING & HEALTH", "NEODYMIUM SCIENCE"];
+  var captions = [
+    "Wear the Natural Balance",
+    "Move with Magnetic Balance",
+    "Wellness, Close to Your Life",
+    "Neodymium Core, Natural Balance"
+  ];
+  var current = 0;
+  var autoTimer = null;
+  var isDragging = false;
+  var dragStartX = 0;
+  var dragDeltaX = 0;
+  var dragMoved = false;
+
+  function backgroundFor(src) {
+    return 'url("' + src + '")';
+  }
+
+  hero.style.position = "relative";
+  hero.style.overflow = "hidden";
+  hero.style.backgroundImage = "none";
+  hero.style.cursor = "grab";
+  hero.style.touchAction = "pan-y";
+
+  var track = document.createElement("div");
+  track.className = "main-banner-track";
+  track.style.position = "absolute";
+  track.style.left = "0";
+  track.style.top = "0";
+  track.style.width = banners.length * 100 + "%";
+  track.style.height = "100%";
+  track.style.display = "flex";
+  track.style.transform = "translate3d(0, 0, 0)";
+  track.style.transition = "transform 560ms ease";
+  track.style.willChange = "transform";
+  track.style.zIndex = "0";
+
+  banners.forEach(function (src) {
+    var slide = document.createElement("div");
+    slide.className = "main-banner-slide";
+    slide.style.flex = "0 0 " + 100 / banners.length + "%";
+    slide.style.height = "100%";
+    slide.style.backgroundImage = backgroundFor(src);
+    slide.style.backgroundPosition = "center";
+    slide.style.backgroundSize = "cover";
+    slide.style.backgroundRepeat = "no-repeat";
+    track.appendChild(slide);
+  });
+
+  hero.insertBefore(track, hero.firstChild);
+
+  var indicator = document.createElement("div");
+  indicator.className = "main-banner-indicator";
+  indicator.style.position = "absolute";
+  indicator.style.left = "50%";
+  indicator.style.bottom = "22px";
+  indicator.style.transform = "translateX(-50%)";
+  indicator.style.display = "flex";
+  indicator.style.gap = "8px";
+  indicator.style.zIndex = "2";
+
+  var dots = banners.map(function (_src, index) {
+    var dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "main-banner-dot";
+    dot.setAttribute("aria-label", "배너 " + (index + 1));
+    dot.style.width = "8px";
+    dot.style.height = "8px";
+    dot.style.borderRadius = "999px";
+    dot.style.border = "0";
+    dot.style.padding = "0";
+    dot.style.cursor = "pointer";
+    dot.style.background = "rgba(255,255,255,0.45)";
+    dot.style.transition = "all 180ms ease";
+    dot.addEventListener("click", function (event) {
+      event.stopPropagation();
+      goTo(index);
+      startAuto();
+    });
+    indicator.appendChild(dot);
+    return dot;
+  });
+  hero.appendChild(indicator);
+
+  var overlay = hero.querySelector(".hero-overlay");
+  var overlayTitle = hero.querySelector(".hero-overlay h1");
+  var overlayEyebrow = hero.querySelector(".hero-overlay p");
+  if (overlay) {
+    overlay.style.position = "relative";
+    overlay.style.zIndex = "1";
+  }
+
+  function updateCaption() {
+    if (overlayTitle) {
+      overlayTitle.textContent = captions[current] || captions[0];
+    }
+    if (overlayEyebrow) {
+      overlayEyebrow.style.display = "";
+      overlayEyebrow.textContent = eyebrows[current] || eyebrows[0];
+    }
+    updateIndicator();
+  }
+
+  function updateIndicator() {
+    dots.forEach(function (dot, index) {
+      var active = index === current;
+      dot.style.width = active ? "20px" : "8px";
+      dot.style.background = active ? "#ffffff" : "rgba(255,255,255,0.45)";
+      dot.style.opacity = active ? "1" : "0.88";
+    });
+  }
+
+  function updateTrack(withAnimation) {
+    var width = hero.clientWidth || 1;
+    var baseX = -current * width;
+    track.style.transition = withAnimation ? "transform 560ms ease" : "none";
+    track.style.transform = "translate3d(" + (baseX + dragDeltaX) + "px, 0, 0)";
+  }
+
+  function goTo(index) {
+    if (index < 0) index = banners.length - 1;
+    if (index >= banners.length) index = 0;
+    current = index;
+    dragDeltaX = 0;
+    updateTrack(true);
+    updateCaption();
+  }
+
+  function startAuto() {
+    stopAuto();
+    autoTimer = setInterval(function () {
+      goTo(current + 1);
+    }, 3000);
+  }
+
+  function stopAuto() {
+    if (autoTimer) {
+      clearInterval(autoTimer);
+      autoTimer = null;
+    }
+  }
+
+  function onPointerDown(event) {
+    isDragging = true;
+    dragStartX = event.clientX;
+    dragDeltaX = 0;
+    dragMoved = false;
+    hero.style.cursor = "grabbing";
+    stopAuto();
+    if (hero.setPointerCapture) {
+      try {
+        hero.setPointerCapture(event.pointerId);
+      } catch (_e) {}
+    }
+  }
+
+  function onPointerMove(event) {
+    if (!isDragging) return;
+    dragDeltaX = event.clientX - dragStartX;
+    if (Math.abs(dragDeltaX) > 8) {
+      dragMoved = true;
+    }
+    updateTrack(false);
+  }
+
+  function onPointerUp(event) {
+    if (!isDragging) return;
+    isDragging = false;
+    hero.style.cursor = "grab";
+
+    var width = hero.clientWidth || 1;
+    var threshold = width * 0.15;
+    var moved = event.clientX - dragStartX;
+
+    if (moved <= -threshold) {
+      goTo(current + 1);
+    } else if (moved >= threshold) {
+      goTo(current - 1);
+    } else {
+      dragDeltaX = 0;
+      updateTrack(true);
+    }
+
+    startAuto();
+  }
+
+  hero.addEventListener("pointerdown", onPointerDown);
+  hero.addEventListener("pointermove", onPointerMove);
+  hero.addEventListener("pointerup", onPointerUp);
+  hero.addEventListener("pointercancel", onPointerUp);
+  hero.addEventListener("mouseleave", function () {
+    if (isDragging) {
+      isDragging = false;
+      dragDeltaX = 0;
+      hero.style.cursor = "grab";
+      updateTrack(true);
+      startAuto();
+    }
+  });
+
+  window.addEventListener("resize", function () {
+    dragDeltaX = 0;
+    updateTrack(false);
+  });
+
+  hero.addEventListener("click", function () {
+    if (dragMoved) return;
+    window.location.href = destinations[current] || destinations[0];
+  });
+
+  updateTrack(false);
+  updateCaption();
+  startAuto();
+})();

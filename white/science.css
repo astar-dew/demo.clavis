@@ -919,10 +919,22 @@ h4 {
   line-height: 1.8;
 }
 
+.science-history-science,
 .science-legacy-story,
 .science-modern-story {
   background: #fff;
   border-color: rgba(209, 178, 121, 0.22);
+}
+
+.science-history-science-stack {
+  display: grid;
+  gap: 54px;
+}
+
+.science-history-science .science-legacy-story,
+.science-history-science .science-modern-story {
+  padding: 0;
+  border: 0;
 }
 
 .science-legacy-head {
