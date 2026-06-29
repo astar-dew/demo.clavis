@@ -71,6 +71,51 @@
   padding-bottom: 8px;
 }
 
+.standard-shortcuts {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #e5dfd6;
+}
+
+.standard-shortcuts h3 {
+  margin: 0 0 12px;
+  color: #8a6f48;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.standard-shortcuts details {
+  border: 1px solid #e5dfd6;
+  background: #fff;
+}
+
+.standard-shortcuts details + details {
+  margin-top: 8px;
+}
+
+.standard-shortcuts summary {
+  cursor: pointer;
+  padding: 11px 12px;
+  color: #2e2e2e;
+  font-size: 13px;
+  font-weight: 700;
+  list-style-position: inside;
+}
+
+.standard-shortcuts a {
+  display: block;
+  padding: 8px 12px 8px 28px;
+  border-top: 1px solid #f2eee8;
+  color: #645f59;
+  font-size: 12px;
+}
+
+.standard-shortcuts a:hover,
+.standard-shortcuts a:focus-visible {
+  color: var(--accent);
+}
+
 .shop-content {
   display: grid;
   gap: 16px;
@@ -99,6 +144,19 @@
   border: 1px solid #e5dfd6;
   background: var(--bg-soft);
   padding: 10px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.item:hover,
+.item:focus-visible {
+  border-color: #c8b294;
+  box-shadow: 0 12px 28px rgba(67, 54, 36, 0.08);
+  transform: translateY(-2px);
+  outline: none;
 }
 
 .item img {
@@ -110,9 +168,36 @@
 }
 
 .item h4 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   margin: 0 0 5px;
   font-size: 14px;
   overflow-wrap: anywhere;
+}
+
+.product-type-label {
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.product-type-label.is-medical {
+  border: 1px solid #b89e78;
+  background: #f7f3ee;
+  color: #7a5b2e;
+}
+
+.product-type-label.is-consumer {
+  border: 1px solid #d8d3cb;
+  background: #fff;
+  color: #6d6862;
 }
 
 .item p {
@@ -126,6 +211,19 @@
   display: block;
   font-size: 12px;
   color: #5b4e39;
+}
+
+.item::after {
+  content: "상세 보기";
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  margin-top: 10px;
+  padding: 0 10px;
+  border: 1px solid #d8c7ad;
+  color: #6d5a40;
+  font-size: 11px;
+  letter-spacing: 0.04em;
 }
 
 .product-standard {

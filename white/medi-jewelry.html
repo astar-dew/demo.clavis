@@ -109,19 +109,75 @@
         <h2>review</h2>
         <div class="review-grid">
           <article>
-            <img src="../asset/review/review1.png" alt="Medi jewelry review image 1" />
+            <button
+              class="review-image-button"
+              type="button"
+              data-review-title="디자인 좋아요"
+              data-review-metric="착용 만족도 95%"
+              data-review-name="김O준 님"
+              data-review-profile="40대, IT 개발자"
+              data-review-img="../asset/review/review1.png"
+              data-review-copy="메디 주얼리라는 이름처럼 제품이 기능성 제품처럼 보이지 않고, 평소 옷차림에도 자연스럽게 어울립니다. 매일 착용하기 좋고 손목에 닿는 느낌도 부담이 적어 만족스럽습니다."
+              aria-label="메디 주얼리 첫 번째 상세 후기 보기"
+            >
+              <img src="../asset/review/review1.png" alt="Medi jewelry review image 1" />
+            </button>
             <div><strong>디자인 좋아요</strong><p>매일 착용하기 좋습니다.</p></div>
           </article>
           <article>
-            <img src="../asset/review/review2.png" alt="Medi jewelry review image 2" />
+            <button
+              class="review-image-button"
+              type="button"
+              data-review-title="세련된 스타일"
+              data-review-metric="스타일 만족도 4.8/5.0"
+              data-review-name="이O영 님"
+              data-review-profile="50대, 주부"
+              data-review-img="../asset/review/review2.png"
+              data-review-copy="박스와 제품 마감이 깔끔해서 선물용으로도 좋아 보였습니다. 포멀한 룩에도 튀지 않고, 제품 자체가 고급스러운 인상을 줘서 외출할 때도 자연스럽게 착용하게 됩니다."
+              aria-label="메디 주얼리 두 번째 상세 후기 보기"
+            >
+              <img src="../asset/review/review2.png" alt="Medi jewelry review image 2" />
+            </button>
             <div><strong>세련된 스타일</strong><p>포멀 룩과도 잘 맞아요.</p></div>
           </article>
           <article>
-            <img src="../asset/review/review3.png" alt="Medi jewelry review image 3" />
+            <button
+              class="review-image-button"
+              type="button"
+              data-review-title="착용감 만족"
+              data-review-metric="재착용 의사 100%"
+              data-review-name="박O호 님"
+              data-review-profile="60대, 자영업"
+              data-review-img="../asset/review/review3.png"
+              data-review-copy="처음에는 액세서리처럼 보여서 선택했는데, 오래 착용해도 무겁지 않고 손목에 안정적으로 자리 잡는 점이 좋았습니다. 생활 속에서 자연스럽게 함께하는 제품이라는 느낌이 큽니다."
+              aria-label="메디 주얼리 세 번째 상세 후기 보기"
+            >
+              <img src="../asset/review/review3.png" alt="Medi jewelry review image 3" />
+            </button>
             <div><strong>착용감 만족</strong><p>무겁지 않고 편안합니다.</p></div>
           </article>
         </div>
       </section>
+
+      <div class="review-modal" data-review-modal hidden>
+        <div class="review-modal-backdrop" data-review-close></div>
+        <section class="review-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
+          <button class="review-modal-close" type="button" data-review-close aria-label="후기 모달 닫기">×</button>
+          <div class="review-modal-image">
+            <img data-review-modal-img src="" alt="" />
+          </div>
+          <div class="review-modal-copy">
+            <p class="review-modal-eyebrow" data-review-modal-metric></p>
+            <h2 id="review-modal-title"></h2>
+            <p data-review-modal-copy></p>
+            <div class="review-modal-profile">
+              <strong data-review-modal-name></strong>
+              <span data-review-modal-profile></span>
+            </div>
+            <small>개인 사용 경험을 바탕으로 한 후기이며, 제품 경험은 사용자에 따라 다를 수 있습니다.</small>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer alt-footer">
@@ -152,5 +208,6 @@
       <script src="./gnb.js"></script>
       <script src="./mobile-nav.js"></script>
       <script src="./theme-toggle.js?v=20260408"></script>
+      <script src="./review-modal.js"></script>
   </body>
 </html>

@@ -1318,6 +1318,274 @@ h4 {
   font-size: 14px;
 }
 
+.science-patent-proof {
+  background: #f8fbff;
+  border: 1px solid #dfe7f2;
+}
+
+.science-patent-head {
+  margin-bottom: 28px;
+}
+
+.science-patent-head h2 {
+  margin: 0 0 14px;
+  color: #1d5fd4;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.24;
+}
+
+.science-patent-head p:not(.eyebrow) {
+  max-width: 1120px;
+  margin: 0;
+  color: #627087;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.85;
+}
+
+.science-patent-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.science-patent-card {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  min-height: 260px;
+  border: 1px solid #dbe4f0;
+  background: #fff;
+}
+
+.science-patent-card.is-wide {
+  grid-column: 1 / -1;
+  grid-template-columns: 0.55fr 1fr;
+}
+
+.science-patent-image {
+  display: grid;
+  place-items: center;
+  min-height: 240px;
+  border-right: 1px solid #e5ebf3;
+  background: #fff;
+}
+
+.science-patent-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 340px;
+  object-fit: contain;
+  padding: 18px;
+}
+
+.magnet-array-visual {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  padding: 10px;
+  background: #f8fbff;
+}
+
+.magnet-array-panel {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  min-height: 160px;
+  border: 1px solid #e4ebf4;
+  background:
+    radial-gradient(circle at 50% 58%, rgba(37, 99, 235, 0.08) 0 18%, transparent 19% 29%, rgba(37, 99, 235, 0.06) 30% 42%, transparent 43%),
+    linear-gradient(180deg, #fff, #f2f7fd);
+}
+
+.magnet-array-panel + .magnet-array-panel {
+  margin-top: 8px;
+}
+
+.magnet-array-panel p {
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: #2e3a4f;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(36, 68, 154, 0.08);
+}
+
+.magnet-array-panel p strong {
+  color: #16233a;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.magnet-array-panel span {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  z-index: 3;
+  margin: 0;
+  color: #73829a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.magnet-array-panel .product-label {
+  position: absolute;
+  z-index: 4;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #111827;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.magnet-field {
+  position: absolute;
+  inset: 16px 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  box-shadow:
+    0 0 0 22px rgba(37, 99, 235, 0.035),
+    0 0 0 46px rgba(37, 99, 235, 0.025);
+}
+
+.necklace .silicone-line {
+  position: absolute;
+  top: -34px;
+  width: 78%;
+  height: 92px;
+  border: 7px solid #111827;
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.pendant-core {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  z-index: 2;
+  width: 36px;
+  height: 46px;
+  transform: translateX(-50%);
+  border: 4px solid #c99a78;
+  border-radius: 50% 50% 44% 44%;
+  background: radial-gradient(circle, #f8fbff 0 34%, #d9c0aa 35% 47%, #9f6c52 48% 100%);
+}
+
+.bracelet-band {
+  position: absolute;
+  left: 9%;
+  right: 9%;
+  top: 52%;
+  height: 18px;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: #111827;
+}
+
+.bracelet-core {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  z-index: 2;
+  width: 54px;
+  height: 42px;
+  transform: translate(-50%, -50%);
+  border: 5px solid #c99a78;
+  border-radius: 999px;
+  background: radial-gradient(circle, #111827 0 38%, #d9c0aa 39% 100%);
+}
+
+.bracelet .product-label {
+  top: 22px;
+  left: 24%;
+}
+
+.science-patent-card > div:last-child {
+  display: grid;
+  align-content: center;
+  padding: 32px;
+}
+
+.science-patent-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.science-patent-card h3 {
+  margin: 0 0 10px;
+  color: #16233a;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.science-patent-card p {
+  margin: 0;
+  color: #627087;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.science-patent-card small {
+  display: block;
+  margin-top: 14px;
+  color: #8a96a8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.science-patent-card .magnet-array-panel p {
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: #2e3a4f;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(36, 68, 154, 0.08);
+}
+
+.science-patent-card .magnet-array-panel p strong {
+  color: #16233a;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.science-patent-card .magnet-array-panel span {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  z-index: 3;
+  display: block;
+  margin: 0;
+  color: #73829a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
 .science-link-btn {
   margin-top: 20px;
   display: inline-flex;
@@ -2029,6 +2297,50 @@ h4 {
 
   .science-core-signature {
     padding: 48px 22px;
+  }
+
+  .science-patent-proof {
+    padding: 34px 18px;
+  }
+
+  .science-patent-head h2 {
+    font-size: 30px;
+  }
+
+  .science-patent-head p:not(.eyebrow) {
+    font-size: 14px;
+  }
+
+  .science-patent-grid,
+  .science-patent-card,
+  .science-patent-card.is-wide {
+    grid-template-columns: 1fr;
+  }
+
+  .science-patent-card.is-wide {
+    grid-column: auto;
+  }
+
+  .science-patent-image {
+    min-height: 220px;
+    border-right: 0;
+    border-bottom: 1px solid #e5ebf3;
+  }
+
+  .magnet-array-visual {
+    min-height: 300px;
+  }
+
+  .magnet-array-panel {
+    min-height: 142px;
+  }
+
+  .science-patent-card > div:last-child {
+    padding: 24px;
+  }
+
+  .science-patent-card h3 {
+    font-size: 21px;
   }
 
   .science-trust-cta {

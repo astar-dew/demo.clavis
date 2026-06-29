@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/@sun-typeface/suit@2.0.5/fonts/variable/woff2/SUIT-Variable.min.css" rel="stylesheet" />
+    <title>ClaviS - Standard Detail</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./product-detail.css" />
+  </head>
+  <body>
+    <div id="gnb-root"></div>
+
+    <main class="detail-page shop-standard-detail">
+      <nav id="standard-concept-tabs" class="standard-concept-tabs" aria-label="의료기기 팔찌 시안 선택">
+        <button type="button" class="active" data-concept-tab="concept-1">시안1</button>
+        <button type="button" data-concept-tab="concept-2">시안2</button>
+      </nav>
+
+      <div id="concept-1" data-concept-panel>
+      <section id="standard-hero" class="product-hero standard-medical shop-detail-hero">
+        <img id="standard-image" src="../asset/product/shop-main/hera-bracelet.jpg" alt="" />
+        <div class="product-meta">
+          <p id="standard-kicker" class="eyebrow gold">의료기기 · 팔찌</p>
+          <h1 id="standard-title">Hera Bracelet 외 8종</h1>
+          <p id="standard-subtitle" class="price">일상의 품격 있는 솔루션</p>
+          <p id="standard-intent" class="desc"></p>
+          <div class="detail-tags" id="standard-tags"></div>
+          <div class="actions">
+            <a id="standard-shop-link" class="btn-outline" href="./shop.html">구매하러가기</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="standard-lifestyle-section" class="standard-image-story">
+        <div class="standard-image-copy">
+          <p id="standard-lifestyle-kicker" class="section-kicker">WEARING SCENE</p>
+          <h2 id="standard-lifestyle-title">손목 위에 자연스럽게<br />머무는 의료기기 주얼리</h2>
+          <p id="standard-lifestyle-copy">모델 착용 컷 또는 손목 착용 클로즈업을 배치해, 의료기기 팔찌가 일상 스타일 안에서 어떻게 보이는지 먼저 보여줍니다.</p>
+        </div>
+        <div class="standard-lifestyle-visual">
+          <img id="standard-lifestyle-image" src="../asset/product/shop-main/hera.jpg" alt="의료기기 팔찌 착용 예시 이미지" />
+        </div>
+      </section>
+
+      <section class="detail-section standard-message-section">
+        <div class="section-headline">
+          <p id="standard-benefit-kicker" class="section-kicker">MEDICAL JEWELRY</p>
+          <h2 id="standard-main-copy">예쁜 팔찌가 아니라<br />확인 가능한 기준을 가진 의료기기입니다</h2>
+          <p id="standard-message"></p>
+        </div>
+        <div class="bracelet-intent-grid" id="standard-point-grid"></div>
+      </section>
+
+      <section id="standard-detail-cuts-section" class="detail-section standard-detail-cuts">
+        <div class="section-headline">
+          <p id="standard-detail-cuts-kicker" class="section-kicker">PRODUCT DETAIL</p>
+          <h2 id="standard-detail-cuts-title">가까이 볼수록<br />제품의 기준이 보입니다</h2>
+          <p id="standard-detail-cuts-copy">금속 마감, 실리콘 밴드, 제품 실루엣을 나누어 보여주면 의료기기 기준과 주얼리 완성도가 함께 전달됩니다.</p>
+        </div>
+        <div class="standard-detail-cut-grid">
+          <figure><img id="standard-detail-image-1" src="../asset/product/shop-main/hera-bracelet.jpg" alt="팔찌 제품 디테일 컷" /><figcaption id="standard-detail-caption-1">Hera Bracelet</figcaption></figure>
+          <figure><img id="standard-detail-image-2" src="../asset/product/shop-main/tera-bracelet.jpg" alt="팔찌 제품 디테일 컷" /><figcaption id="standard-detail-caption-2">Tera Bracelet</figcaption></figure>
+          <figure><img id="standard-detail-image-3" src="../asset/product/shop-main/spica-bracelet.jpg" alt="팔찌 제품 디테일 컷" /><figcaption id="standard-detail-caption-3">Spica Bracelet</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="detail-section standard-product-section">
+        <div class="section-headline">
+          <p id="standard-line-kicker" class="section-kicker">CLAVIS BRACELET LINE</p>
+          <h2 id="standard-line-title">이 품목에 포함되는<br />제품을 확인합니다</h2>
+          <p id="standard-line-copy">착용감과 디자인 취향에 따라 선택할 수 있는 클라비스 의료기기 팔찌 라인입니다.</p>
+        </div>
+        <div class="standard-product-list" id="standard-product-list"></div>
+      </section>
+
+      <section id="standard-cert-section" class="detail-section medical-certified">
+        <div class="section-headline">
+          <p class="section-kicker">MEDICAL DEVICE</p>
+          <h2>인증받은 기준으로<br />안심하고 선택합니다</h2>
+          <p>의료기기 팔찌는 디자인만으로 선택하는 제품이 아닙니다. 사용 목적, 인증 기준, 제품 정보를 함께 확인할 때 더 신뢰할 수 있습니다.</p>
+        </div>
+        <div class="medical-cert-card">
+          <span>CERTIFIED STANDARD</span>
+          <strong>2등급 의료기기<br />의료용 자기발생기</strong>
+          <p>근육통 완화 목적의 의료기기 기준을 바탕으로 제품 정보를 확인해 주세요.</p>
+        </div>
+      </section>
+
+      <section id="standard-certificate-images" class="detail-section">
+        <div class="section-headline">
+          <p class="section-kicker">CERTIFICATE</p>
+          <h2>구매 전 확인하는<br />인증 자료</h2>
+          <p>제품별 상세 구매 전 인증서와 표시 정보를 함께 확인할 수 있도록 구성합니다.</p>
+        </div>
+        <div class="certificate-grid">
+          <article><img src="../asset/backdata/cert_1.png" alt="의료기기 인증 자료" /><p>의료기기 관련 인증 자료</p></article>
+          <article><img src="../asset/backdata/cert_2.png" alt="품질 기준 자료" /><p>품질 기준 확인 자료</p></article>
+          <article><img src="../asset/cert/스크린샷 2026-06-01 오전 11.37.38.png" alt="인증서 이미지" /><p>인증서 이미지</p></article>
+        </div>
+      </section>
+
+      <section class="detail-section routine-section">
+        <div class="section-headline">
+          <p id="standard-routine-kicker" class="section-kicker">HOW TO USE</p>
+          <h2 id="standard-routine-title">매일 착용하는 제품일수록<br />사용법은 간단해야 합니다</h2>
+          <p id="standard-next-copy"></p>
+        </div>
+        <div class="routine-steps" id="standard-routine-steps"></div>
+      </section>
+      </div>
+
+      <div id="concept-2" data-concept-panel hidden>
+        <section class="product-hero standard-medical shop-detail-hero">
+          <img src="../asset/product/shop-main/hera-bracelet.jpg" alt="Hera Bracelet 제품 이미지" />
+          <div class="product-meta">
+            <p class="eyebrow gold">의료기기 · 팔찌</p>
+            <h1>Hera Bracelet 외 8종</h1>
+            <p class="price">일상의 품격 있는 솔루션</p>
+            <p class="desc">손목 위에 오래 머무는 의료기기 팔찌 라인입니다. 의료기기 기준과 주얼리의 완성도를 함께 담아 매일의 착용을 더 자연스럽게 만듭니다.</p>
+            <div class="detail-tags">
+              <span>2등급 의료기기</span>
+              <span>의료용 자기발생기</span>
+              <span>근육통 완화 목적</span>
+            </div>
+            <div class="actions">
+              <a class="btn-outline" href="./shop.html?cat=medi&amp;sub=bracelet">구매하러가기</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="standard-concept-two-model">
+          <div class="standard-concept-two-image">
+            <img src="../asset/product/generated/medical-bracelet-golf-model.png" alt="골프를 치는 사람이 의료기기 팔찌를 착용한 모델 컷" />
+          </div>
+          <div class="standard-concept-two-copy">
+            <p class="section-kicker">GOLF WEARING SCENE</p>
+            <h2>일상의 품격 있는 솔루션</h2>
+            <p>골프처럼 손목의 움직임이 자연스럽게 드러나는 장면에서 팔찌의 존재감을 강조합니다. 기능을 과장하지 않고, 프리미엄 착용 제품으로서의 인상을 먼저 전달합니다.</p>
+          </div>
+        </section>
+
+        <section class="standard-checkpoint-section">
+          <div class="standard-checkpoint-head">
+            <p class="section-kicker">CHECK POINT</p>
+            <h2>네오디뮴 메디컬 주얼리<br />CHECK POINT</h2>
+            <p>16개의 연구자석 1개당 <strong>3,200G 자기장 발생</strong></p>
+          </div>
+          <div class="standard-checkpoint-board">
+            <div class="checkpoint-product">
+              <img src="../asset/product/shop-main/hera-bracelet.jpg" alt="네오디뮴 메디컬 주얼리 팔찌 이미지" />
+            </div>
+            <article class="checkpoint-item top">
+              <span>MAGNET</span>
+              <h3>강력한 자기장 기술</h3>
+              <p>1개당 3,200G 자기장 발생</p>
+            </article>
+            <article class="checkpoint-item left">
+              <span>DESIGN</span>
+              <h3>주얼리 디자인</h3>
+              <p>모던하고 세련된 디자인으로 일상 속 스타일 완성</p>
+            </article>
+            <article class="checkpoint-item right">
+              <span>MATERIAL</span>
+              <h3>프리미엄 소재</h3>
+              <p>티타늄 & 골드도금으로 고급스러움과 내구성 강화</p>
+            </article>
+            <article class="checkpoint-item bottom-left">
+              <span>MEDICAL</span>
+              <h3>메디컬 & 주얼리의 조화</h3>
+              <p>의료기기의 기능성과 주얼리의 아름다움을 하나로</p>
+            </article>
+            <article class="checkpoint-item bottom-right">
+              <span>COMFORT</span>
+              <h3>편안한 착용감</h3>
+              <p>가벼운 무게와 인체공학적 설계로 하루 종일 편안하게</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="standard-grade-section">
+          <div>
+            <p class="section-kicker">MEDICAL DEVICE CLASS II</p>
+            <h2>2등급 의료기기<br />의료용 자기발생기</h2>
+            <p>클라비스 의료기기 팔찌는 근육통 완화 목적의 의료용 자기발생기 기준을 바탕으로 제품 정보를 확인할 수 있도록 구성합니다.</p>
+          </div>
+          <div class="standard-grade-card">
+            <span>CHECK BEFORE USE</span>
+            <strong>사용 전 제품별 표시사항과<br />주의사항을 확인해 주세요</strong>
+            <p>의료기기 제품은 허가된 사용 목적과 사용 방법을 기준으로 안내되어야 하며, 질환 치료나 효과를 단정하는 표현은 사용하지 않습니다.</p>
+          </div>
+        </section>
+
+        <section class="standard-medical-label-section">
+          <div class="standard-medical-label-head">
+            <p class="section-kicker">MEDICAL DEVICE LABEL</p>
+            <h2>의료기기 표시사항</h2>
+            <p>구매 전 제품명, 품목명, 모델명, 사용목적 등 의료기기 표시 정보를 확인해 주세요.</p>
+          </div>
+          <div class="standard-medical-label-table">
+            <dl>
+              <div><dt>제품명</dt><dd>Clavis Energetic Bach Bracelet</dd></div>
+              <div><dt>품목명</dt><dd>의료용자기발생기</dd></div>
+              <div><dt>모델명</dt><dd>CV-114M / CV-114F / CV-114R / CV-114B</dd></div>
+              <div><dt>사용목적</dt><dd>근육통의 완화 등을 목적으로 영구자석의 자계를 이용하는 기구</dd></div>
+              <div><dt>색상</dt><dd>블랙-화이트골드(CV-114M), 블랙-로즈골드(CV-114B), 화이트-화이트골드(CV-114F), 화이트-로즈골드(CV-114R)</dd></div>
+              <div><dt>재질</dt><dd>중앙, 날개, 조절, 마감 장식: 황동(화이트골드, 로즈골드 도금)<br />밴드: 실리콘 / 영구자석: 네오디뮴</dd></div>
+              <div><dt>제품 사이즈</dt><dd>블랙실리콘: 215.6mm / 두께 5mm<br />화이트실리콘: 195.6mm / 두께 5mm</dd></div>
+              <div><dt>영구자석침</dt><dd>2.5mm X 12ea (3600 ± 20%)</dd></div>
+              <div><dt>제조업허가번호</dt><dd>제 8620호</dd></div>
+              <div><dt>제조인증번호</dt><dd>제인 21-4732호</dd></div>
+              <div><dt>제조사</dt><dd>주식회사 아이코닉스헬스케어(대한민국)</dd></div>
+              <div><dt>구성</dt><dd>본품, 케이스, 품질보증서</dd></div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="standard-howto-section">
+          <div class="standard-howto-head">
+            <p class="section-kicker">HOW TO</p>
+            <h2>제품 사용법</h2>
+            <p>손목에 맞게 실리콘 줄을 조절한 뒤, 고리에 고정해 편안하게 착용합니다.</p>
+          </div>
+          <div class="standard-howto-grid">
+            <article>
+              <div class="standard-howto-visual">
+                <img src="../asset/product/shop-main/hera-bracelet.jpg" alt="후크를 실리콘 구멍에 끼워 조절하는 사용법" />
+              </div>
+              <div class="standard-howto-copy">
+                <span>1</span>
+                <h3>후크를 실리콘 구멍에 끼워 조절</h3>
+                <p>손목 둘레에 맞는 구멍을 선택해 후크 위치를 맞춰 주세요.</p>
+              </div>
+            </article>
+            <article>
+              <div class="standard-howto-visual">
+                <img src="../asset/product/shop-main/hera.jpg" alt="고리에 실리콘 줄을 넣어 고정하는 사용법" />
+              </div>
+              <div class="standard-howto-copy">
+                <span>2</span>
+                <h3>고리에 실리콘 줄을 넣어 고정</h3>
+                <p>착용 후 남는 줄을 고리에 넣어 움직임 중에도 편안하게 고정합니다.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="standard-concept-image-band">
+          <img src="../asset/product/generated/medical-bracelet-luxury-space.png" alt="고급스러운 공간에 놓인 의료기기 팔찌 이미지" />
+          <div>
+            <p class="section-kicker">PREMIUM OBJECT</p>
+            <h2>좋은 제품은<br />공간 안에서도 다르게 보입니다</h2>
+            <p>고급스러운 소재감과 차분한 공간 연출을 통해 의료기기 팔찌가 단순한 기능 제품이 아니라 매일 가까이 두고 싶은 프리미엄 오브제로 보이게 구성합니다.</p>
+          </div>
+        </section>
+
+        <section class="standard-concept-image-band reverse">
+          <img src="../asset/product/generated/medical-bracelet-relief-mood.png" alt="근육통 완화 목적을 고급스럽게 표현한 착용 이미지" />
+          <div>
+            <p class="section-kicker">RELIEF IN ROUTINE</p>
+            <h2>근육통 완화 목적을<br />일상의 편안함으로 전합니다</h2>
+            <p>통증을 과장해서 보여주기보다, 손목에 자연스럽게 머무는 착용 장면과 편안한 자세로 의료기기 사용 목적을 차분하고 고급스럽게 전달합니다.</p>
+          </div>
+        </section>
+
+        <section class="standard-policy-section">
+          <div class="standard-policy-head">
+            <strong>ClaviS</strong>
+            <h2>배송/반품 규정</h2>
+          </div>
+          <div class="standard-policy-card">
+            <article>
+              <h3>교환/반품 안내</h3>
+              <p>본 제품은 타사 제품과 호환하여 사용하실 수 없으며, 임의로 제품을 변형하여 사용하실 경우 생기는 문제에 대해 책임지지 않습니다.</p>
+              <p>단순 변심 및 사용자 과실로 인한 경우에는 반품이 어려울 수 있습니다.</p>
+              <p>상품 배송일로부터 7일 이내 사용하지 않은 제품에 한해서 교환 및 반품이 가능하며, 왕복 택배비 6,000원은 고객 부담입니다.</p>
+            </article>
+            <article>
+              <h3>배송안내</h3>
+              <p>평일 오후 4시 이전 결제 시 당일 출고 됩니다.</p>
+              <p>제주 도서 산간 지역은 추가 배송 비용이 발생됩니다.</p>
+              <p>날씨 및 주문 물량에 따라 배송이 지연될 수 있습니다.</p>
+            </article>
+            <article>
+              <h3>A/S 안내</h3>
+              <p>본 제품은 구매 후 1년간 품질을 보장합니다.</p>
+              <p>단, 고객 부주의로 인한 파손 발생 시 유상으로 A/S 처리 됩니다.</p>
+              <p>무상, 유상 A/S 처리 시 왕복 택배비 6,000원은 고객 부담입니다.</p>
+            </article>
+            <article class="standard-policy-contact">
+              <h3>고객 문의센터</h3>
+              <p>02-3785-3725</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      window.CLAVIS_TYPE_PAGES = [
+        {
+                "id": "medical-bracelet",
+                "standard": "의료기기",
+                "type": "팔찌",
+                "title": "의료기기 팔찌 상세페이지",
+                "subtitle": "일상의 품격 있는 솔루션",
+                "heroImage": "../asset/product/shop-main/hera-bracelet.jpg",
+                "intent": "당신의 하루에 자연스럽게 스며드는 클라비스 의료기기 팔찌 라인입니다. 손목 위에 오래 머무는 제품이기에 의료기기 기준과 주얼리의 완성도를 함께 담았습니다.",
+                "benefitKicker": "MEDICAL JEWELRY",
+                "mainCopy": "매일 착용하는 팔찌에\n의료기기의 기준을 더했습니다",
+                "message": "2등급 의료기기 의료용 자기발생기 기준을 바탕으로 근육통 완화 목적을 명확히 전달하고, 프리미엄 소재와 편안한 착용감으로 일상 속 웰니스 루틴을 완성합니다.",
+                "lifestyleKicker": "WEARING SCENE",
+                "lifestyleTitle": "손목 위에 자연스럽게\n머무는 의료기기 주얼리",
+                "lifestyleCopy": "모델 착용 컷 또는 손목 착용 클로즈업을 배치해, 의료기기 팔찌가 일상 스타일 안에서 어떻게 보이는지 먼저 보여줍니다.",
+                "lifestyleImage": "../asset/product/shop-main/hera.jpg",
+                "detailCutsKicker": "PRODUCT DETAIL",
+                "detailCutsTitle": "가까이 볼수록\n제품의 기준이 보입니다",
+                "detailCutsCopy": "금속 마감, 실리콘 밴드, 제품 실루엣을 나누어 보여주면 의료기기 기준과 주얼리 완성도가 함께 전달됩니다.",
+                "detailImages": [
+                        [
+                                "../asset/product/shop-main/hera-bracelet.jpg",
+                                "Hera Bracelet"
+                        ],
+                        [
+                                "../asset/product/shop-main/tera-bracelet.jpg",
+                                "Tera Bracelet"
+                        ],
+                        [
+                                "../asset/product/shop-main/spica-bracelet.jpg",
+                                "Spica Bracelet"
+                        ]
+                ],
+                "lineKicker": "CLAVIS BRACELET LINE",
+                "lineTitle": "취향과 착용감에 따라\n선택하는 의료기기 팔찌",
+                "lineCopy": "Hera, Tera, Dona, Perse 등 다양한 디자인 라인으로 구성되어 일상복부터 외출 룩까지 자연스럽게 어울립니다.",
+                "routineKicker": "CERTIFIED DAILY USE",
+                "routineTitle": "인증받은 기준을\n매일의 착용으로 경험합니다",
+                "nextCopy": "본 제품은 식약처 산하 한국의료기기안전정보원 기준의 의료용 자기발생기입니다. 구매 전 제품별 모델명, 색상, 사용상 주의사항을 확인해 주세요.",
+                "points": [
+                        [
+                                "2등급 의료기기",
+                                "의료용 자기발생기 기준으로 관리되는 제품군입니다."
+                        ],
+                        [
+                                "근육통 완화 목적",
+                                "인증받은 사용 목적을 중심으로 과장 없이 안내합니다."
+                        ],
+                        [
+                                "메디컬 & 주얼리",
+                                "의료기기 기준에 세련된 디자인과 편안한 착용감을 더했습니다."
+                        ]
+                ],
+                "steps": [
+                        [
+                                "01",
+                                "착용 위치",
+                                "손목에 제품이 편안하게 닿도록 착용하고, 과도하게 조이지 않게 맞춰 주세요."
+                        ],
+                        [
+                                "02",
+                                "일상 사용",
+                                "출근, 외출, 가벼운 활동 등 매일의 루틴 속에서 자연스럽게 착용할 수 있습니다."
+                        ],
+                        [
+                                "03",
+                                "사용 전 확인",
+                                "피부 이상이나 의료기기 사용 제한 사항이 있는 경우 사용 전 전문가와 상담해 주세요."
+                        ]
+                ],
+                "products": [
+                        "Hera Bracelet",
+                        "Tera Bracelet",
+                        "Dona Bracelet",
+                        "Perse Bracelet",
+                        "Hero Bracelet",
+                        "Astra Bracelet",
+                        "Vita Bracelet",
+                        "Bach Bracelet",
+                        "Spica Bracelet"
+                ],
+                "cta": "./shop.html?cat=medi&sub=bracelet"
+        },
+        {
+                "id": "medical-necklace",
+                "standard": "의료기기",
+                "type": "목걸이",
+                "title": "의료기기 목걸이 상세페이지",
+                "subtitle": "목선 가까이 착용하는 의료기기 제품군을 확인합니다",
+                "heroImage": "../asset/product/shop-main/hera-necklace.jpg",
+                "intent": "의료기기 목걸이는 목선 가까이에 머무는 착용 제품입니다. 제품 이미지와 착용 위치, 사용 목적, 인증 기준을 차분하게 연결해야 합니다.",
+                "mainCopy": "목선 가까이에 머무는 기준을\n의료기기 정보로 설명합니다",
+                "points": [
+                        [
+                                "착용 위치",
+                                "목걸이형 제품이 몸 가까이에 어떻게 착용되는지 먼저 보여줍니다."
+                        ],
+                        [
+                                "사용 목적",
+                                "근육통 완화 목적과 의료용 자기발생기 구조를 과장 없이 설명합니다."
+                        ],
+                        [
+                                "제품 정보",
+                                "색상, 모델명, 가격, 주의사항을 구매 전 확인 정보로 정리합니다."
+                        ]
+                ],
+                "products": [
+                        "Hera Necklace",
+                        "Tera Necklace",
+                        "Dona Necklace",
+                        "Perse Necklace",
+                        "Hero Necklace",
+                        "Astra Necklace",
+                        "Vita Necklace",
+                        "Bach Necklace",
+                        "Spica Necklace"
+                ],
+                "cta": "./shop.html?cat=medi&sub=necklace"
+        },
+        {
+                "id": "medical-anklet",
+                "standard": "의료기기",
+                "type": "발찌",
+                "title": "의료기기 발찌 상세페이지",
+                "subtitle": "발목 가까이 착용하는 Power ring 제품 기준을 확인합니다",
+                "heroImage": "../asset/product/shop-main/power-ring.jpg",
+                "intent": "의료기기 발찌는 착용 위치가 손목이 아닌 발목이라는 점이 먼저 이해되어야 합니다. 발목 전용 구조와 사용법을 명확하게 보여줍니다.",
+                "mainCopy": "발목 가까이 착용하는 기준을\n제품 구조로 확인합니다",
+                "points": [
+                        [
+                                "발찌 전용",
+                                "Power ring은 발찌 전용 제품이므로 착용 위치를 명확하게 안내합니다."
+                        ],
+                        [
+                                "의료기기 기준",
+                                "의료기기 라벨과 사용 목적을 제품 정보 안에서 분명히 보여줍니다."
+                        ],
+                        [
+                                "사이즈 확인",
+                                "발목 착용 제품은 사이즈 선택과 착용감 안내가 중요합니다."
+                        ]
+                ],
+                "products": [
+                        "Power ring"
+                ],
+                "cta": "./shop.html?cat=medi&sub=anklet"
+        },
+        {
+                "id": "medical-belt",
+                "standard": "의료기기",
+                "type": "벨트",
+                "title": "의료기기 벨트 상세페이지",
+                "subtitle": "허리와 코어 가까이 착용하는 Power Belt 기준을 확인합니다",
+                "heroImage": "../asset/product/shop-main/power-belt-man.jpg",
+                "intent": "의료기기 벨트는 착용 부위와 사이즈 선택이 구매 판단의 핵심입니다. 남성/여성 구분, 착용 위치, 사용 목적을 먼저 보여줍니다.",
+                "mainCopy": "허리 가까이에 착용하는 제품은\n기준과 사용법이 먼저 보여야 합니다",
+                "points": [
+                        [
+                                "Man / Woman",
+                                "남성용과 여성용 구분을 구매 전 바로 확인할 수 있게 합니다."
+                        ],
+                        [
+                                "착용 위치",
+                                "허리 또는 코어 부위 착용 기준을 이미지와 함께 설명합니다."
+                        ],
+                        [
+                                "사용 안내",
+                                "착용 전 확인, 착용 시간, 보관 방법을 단계별로 정리합니다."
+                        ]
+                ],
+                "products": [
+                        "Power Belt Man",
+                        "Power Belt Woman"
+                ],
+                "cta": "./shop.html?cat=active&sub=power-belt"
+        },
+        {
+                "id": "medical-ring",
+                "standard": "의료기기",
+                "type": "링",
+                "title": "의료기기 링 상세페이지",
+                "subtitle": "다양한 착용 방식과 컬러 옵션을 확인합니다",
+                "heroImage": "../asset/product/shop-main/reju-ring-black.jpg",
+                "intent": "링 제품군은 팔찌, 발찌, 목걸이 등 착용 방식이 다양합니다. 제품별 착용 가능 범위와 컬러 옵션을 먼저 정리해야 합니다.",
+                "mainCopy": "작은 링 제품은\n착용 방식과 옵션 이해가 중요합니다",
+                "points": [
+                        [
+                                "착용 방식",
+                                "Bracelet / Anklet / Necklace 등 가능한 착용 방식을 분리해 보여줍니다."
+                        ],
+                        [
+                                "컬러 옵션",
+                                "다양한 색상 구성이 구매 이유가 되도록 보기 쉽게 정리합니다."
+                        ],
+                        [
+                                "의료기기 기준",
+                                "작은 제품이라도 의료기기 기준을 가진 제품임을 명확하게 전달합니다."
+                        ]
+                ],
+                "products": [
+                        "Reju ring",
+                        "Energetic ring"
+                ],
+                "cta": "./shop.html?cat=active"
+        },
+        {
+                "id": "medical-pillow",
+                "standard": "의료기기",
+                "type": "베개",
+                "title": "의료기기 베개 상세페이지",
+                "subtitle": "수면 환경 가까이 사용하는 리빙 의료기기 제품입니다",
+                "heroImage": "../asset/product/living/ice.png",
+                "intent": "베개형 제품은 착용보다 생활 환경에서 사용하는 제품입니다. 수면 공간, 제품 크기, 사용 위치, 의료기기 기준을 함께 보여줘야 합니다.",
+                "mainCopy": "수면 환경 가까이 두는 제품은\n사용 위치가 먼저 이해되어야 합니다",
+                "points": [
+                        [
+                                "수면 환경",
+                                "침실과 베개 사용 장면을 중심으로 제품의 쓰임을 보여줍니다."
+                        ],
+                        [
+                                "의료기기 기준",
+                                "리빙 제품이어도 의료기기 기준을 가진 제품임을 명확히 표시합니다."
+                        ],
+                        [
+                                "관리 방법",
+                                "커버, 보관, 사용 전 확인 사항을 구매 전 정보로 정리합니다."
+                        ]
+                ],
+                "products": [
+                        "Magnetic pillow"
+                ],
+                "cta": "./shop.html?cat=living&sub=rest-sleep"
+        },
+        {
+                "id": "medical-blanket",
+                "standard": "의료기기",
+                "type": "자기요",
+                "title": "의료기기 자기요 상세페이지",
+                "subtitle": "생활 공간에서 사용하는 수면형 의료기기 제품입니다",
+                "heroImage": "../asset/product/living/ice.png",
+                "intent": "자기요는 크기 옵션과 사용 공간이 중요합니다. Super Single과 Queen Size 구분, 색상, 사용법, 관리법을 먼저 보여줍니다.",
+                "mainCopy": "생활 공간에 놓이는 제품은\n사이즈와 사용 기준이 중요합니다",
+                "points": [
+                        [
+                                "사이즈 옵션",
+                                "Super Single / Queen Size 옵션을 명확하게 분리합니다."
+                        ],
+                        [
+                                "사용 환경",
+                                "침대, 수면 공간, 보관 방식을 함께 설명합니다."
+                        ],
+                        [
+                                "의료기기 정보",
+                                "사용 목적과 주의사항을 리빙 제품 맥락에 맞춰 보여줍니다."
+                        ]
+                ],
+                "products": [
+                        "Magnetic blanket"
+                ],
+                "cta": "./shop.html?cat=living&sub=rest-sleep"
+        },
+        {
+                "id": "medical-patch",
+                "standard": "의료기기",
+                "type": "패치",
+                "title": "의료기기 패치 상세페이지",
+                "subtitle": "국소 부위에 사용하는 Coin Patch 제품 기준을 확인합니다",
+                "heroImage": "../asset/product/shop-main/coin-patch.jpg",
+                "intent": "패치 제품은 부착 위치와 사용 방법이 구매 판단의 핵심입니다. 간단한 사용법과 의료기기 기준을 함께 보여줍니다.",
+                "mainCopy": "작은 패치 제품은\n사용 위치와 기준이 명확해야 합니다",
+                "points": [
+                        [
+                                "부착 방식",
+                                "어떤 형태로 사용하는 제품인지 먼저 설명합니다."
+                        ],
+                        [
+                                "의료기기 기준",
+                                "작은 제품이어도 의료기기 기준을 가진 제품임을 보여줍니다."
+                        ],
+                        [
+                                "사용 전 확인",
+                                "피부 접점, 사용 시간, 보관 방법을 안내합니다."
+                        ]
+                ],
+                "products": [
+                        "Coin Patch"
+                ],
+                "cta": "./shop.html?cat=living&sub=daily-care"
+        },
+        {
+                "id": "consumer-bracelet",
+                "standard": "공산품",
+                "type": "팔찌",
+                "title": "공산품 팔찌 상세페이지",
+                "subtitle": "손목 위의 디자인과 착용 경험을 중심으로 보여줍니다",
+                "heroImage": "../asset/product/shop-main/janus-bracelet.jpg",
+                "intent": "공산품 팔찌는 의료 효능보다 제품의 첫인상, 착용감, 스타일링 활용도가 구매 이유가 됩니다.",
+                "mainCopy": "손목 위에 남는 인상이\n구매 이유가 됩니다",
+                "points": [
+                        [
+                                "디자인 인상",
+                                "손목 위에서 보이는 실루엣과 금속 마감의 첫인상을 강조합니다."
+                        ],
+                        [
+                                "착용 경험",
+                                "데일리, 외출, 골프 등 실제 착용 장면을 중심으로 구성합니다."
+                        ],
+                        [
+                                "소재 설명",
+                                "네오디뮴 소재는 보조 설명으로 두고 제품 경험을 중심에 둡니다."
+                        ]
+                ],
+                "products": [
+                        "Janus Bracelet",
+                        "Ares Bracelet"
+                ],
+                "cta": "./shop.html?cat=medi&sub=bracelet"
+        },
+        {
+                "id": "consumer-necklace",
+                "standard": "공산품",
+                "type": "목걸이",
+                "title": "공산품 목걸이 상세페이지",
+                "subtitle": "목선 가까이 남는 스타일 경험을 보여줍니다",
+                "heroImage": "../asset/product/shop-main/janus-necklace.jpg",
+                "intent": "공산품 목걸이는 기능보다 스타일링과 선물 가치가 먼저 보여야 합니다. 착용 컷과 제품 디테일 컷이 중요합니다.",
+                "mainCopy": "목선 가까이에 남는 디테일을\n프리미엄 경험으로 보여줍니다",
+                "points": [
+                        [
+                                "착용 무드",
+                                "셔츠, 니트, 외출복에 어울리는 목걸이 착용 장면을 보여줍니다."
+                        ],
+                        [
+                                "제품 디테일",
+                                "컬러와 마감, 체결부, 제품 라인을 가까이 보여줍니다."
+                        ],
+                        [
+                                "선물 가치",
+                                "공산품 목걸이는 선물 구매 명분을 만들기 좋은 제품군입니다."
+                        ]
+                ],
+                "products": [
+                        "Janus Necklace",
+                        "Ares Necklace"
+                ],
+                "cta": "./shop.html?cat=medi&sub=necklace"
+        },
+        {
+                "id": "consumer-lumbar",
+                "standard": "공산품",
+                "type": "허리보호대",
+                "title": "공산품 허리보호대 상세페이지",
+                "subtitle": "착용감과 일상 사용성을 중심으로 설명합니다",
+                "heroImage": "../asset/product/shop-main/lumbar-support-belt.jpg",
+                "intent": "허리보호대는 기능성 이미지가 강하지만 공산품 기준으로 표현해야 합니다. 착용감, 형태, 사이즈, 생활 사용성을 중심으로 설득합니다.",
+                "mainCopy": "허리 가까이에 쓰는 제품은\n착용감과 안정감이 먼저입니다",
+                "points": [
+                        [
+                                "Slim / Basic",
+                                "두 가지 타입 차이를 구매 전 바로 이해하게 합니다."
+                        ],
+                        [
+                                "착용감",
+                                "일상 중 착용했을 때의 편안함과 밀착감을 보여줍니다."
+                        ],
+                        [
+                                "관리법",
+                                "세탁, 보관, 사용 후 관리 정보를 명확하게 제공합니다."
+                        ]
+                ],
+                "products": [
+                        "Magnetic Lumbar Support Belt"
+                ],
+                "cta": "./shop.html?cat=living&sub=body-support"
+        },
+        {
+                "id": "consumer-knee",
+                "standard": "공산품",
+                "type": "무릎보호대",
+                "title": "공산품 무릎보호대 상세페이지",
+                "subtitle": "활동 중 착용하는 보호대 경험을 보여줍니다",
+                "heroImage": "../asset/product/shop-main/knee-brace.jpg",
+                "intent": "무릎보호대는 착용 타입과 활동 장면이 중요합니다. 밴드형과 오픈형 차이를 명확히 보여줘야 합니다.",
+                "mainCopy": "움직이는 순간에 쓰는 제품은\n타입 구분이 먼저 보여야 합니다",
+                "points": [
+                        [
+                                "타입 구분",
+                                "밴드형과 오픈형을 분리해 보여줍니다."
+                        ],
+                        [
+                                "활동 장면",
+                                "운동, 산책, 일상 사용 장면을 중심으로 구성합니다."
+                        ],
+                        [
+                                "착용 방법",
+                                "착용 위치와 조임 정도, 보관 방법을 안내합니다."
+                        ]
+                ],
+                "products": [
+                        "Magnetic Knee Brace"
+                ],
+                "cta": "./shop.html?cat=living&sub=body-support"
+        },
+        {
+                "id": "consumer-massager",
+                "standard": "공산품",
+                "type": "마사지기",
+                "title": "공산품 마사지기 상세페이지",
+                "subtitle": "간편한 데일리 케어 제품 경험을 보여줍니다",
+                "heroImage": "../asset/product/shop-main/ten-head-massager.jpg",
+                "intent": "마사지기는 사용 장면이 직관적으로 보여야 합니다. 손에 쥐는 형태, 사용 부위, 보관성을 중심으로 설명합니다.",
+                "mainCopy": "간편한 케어 제품은\n사용 장면이 바로 보여야 합니다",
+                "points": [
+                        [
+                                "사용 장면",
+                                "집, 사무실, 휴식 시간에 사용하는 장면을 보여줍니다."
+                        ],
+                        [
+                                "제품 형태",
+                                "텐헤드 구조와 손에 잡히는 크기를 명확하게 보여줍니다."
+                        ],
+                        [
+                                "관리법",
+                                "사용 후 관리와 보관법을 간단하게 정리합니다."
+                        ]
+                ],
+                "products": [
+                        "Ten Head Massager"
+                ],
+                "cta": "./shop.html?cat=living&sub=daily-care"
+        }
+];
+      (function () {
+        var pages = window.CLAVIS_TYPE_PAGES || [];
+        var params = new URLSearchParams(window.location.search);
+        var page = pages.find(function (item) { return item.id === params.get('type'); }) || pages[0];
+        var isMedical = page.standard === '의료기기';
+        var isMedicalBracelet = page.id === 'medical-bracelet';
+        document.title = 'ClaviS - ' + page.title;
+        document.getElementById('standard-hero').classList.toggle('standard-medical', isMedical);
+        document.getElementById('standard-hero').classList.toggle('standard-consumer', !isMedical);
+        document.getElementById('standard-image').src = page.heroImage;
+        document.getElementById('standard-image').alt = page.title + ' 대표 이미지';
+        document.getElementById('standard-kicker').textContent = page.standard + ' · ' + page.type;
+        var productTitle = page.products[0] + (page.products.length > 1 ? ' 외 ' + (page.products.length - 1) + '종' : '');
+                document.getElementById('standard-title').textContent = productTitle;
+        document.getElementById('standard-subtitle').textContent = page.subtitle;
+        document.getElementById('standard-intent').textContent = page.intent;
+        document.getElementById('standard-tags').innerHTML = [page.standard, page.type, isMedical ? '신뢰 기준' : '제품 경험'].map(function (tag) { return '<span>' + tag + '</span>'; }).join('');
+        document.getElementById('standard-shop-link').href = page.cta;
+        document.getElementById('standard-cert-section').classList.toggle('hidden', !isMedical);
+        document.getElementById('standard-certificate-images').classList.toggle('hidden', !isMedical);
+        document.getElementById('standard-lifestyle-section').classList.toggle('hidden', !page.lifestyleImage);
+        document.getElementById('standard-detail-cuts-section').classList.toggle('hidden', !page.detailImages);
+        document.getElementById('standard-lifestyle-kicker').textContent = page.lifestyleKicker || 'WEARING SCENE';
+        document.getElementById('standard-lifestyle-title').innerHTML = (page.lifestyleTitle || '제품이 놓이는\n일상의 장면').replace(/\n/g, '<br />');
+        document.getElementById('standard-lifestyle-copy').textContent = page.lifestyleCopy || '제품의 실제 사용 장면을 보여주는 이미지 영역입니다.';
+        document.getElementById('standard-lifestyle-image').src = page.lifestyleImage || page.heroImage;
+        document.getElementById('standard-lifestyle-image').alt = productTitle + ' 착용 예시 이미지';
+        document.getElementById('standard-detail-cuts-kicker').textContent = page.detailCutsKicker || 'PRODUCT DETAIL';
+        document.getElementById('standard-detail-cuts-title').innerHTML = (page.detailCutsTitle || '가까이 볼수록\n제품의 기준이 보입니다').replace(/\n/g, '<br />');
+        document.getElementById('standard-detail-cuts-copy').textContent = page.detailCutsCopy || '제품 디테일을 가까이 보여주는 이미지 영역입니다.';
+        (page.detailImages || []).forEach(function (image, index) {
+          var img = document.getElementById('standard-detail-image-' + (index + 1));
+          var caption = document.getElementById('standard-detail-caption-' + (index + 1));
+          if (img && caption) {
+            img.src = image[0];
+            img.alt = image[1] + ' 제품 디테일 이미지';
+            caption.textContent = image[1];
+          }
+        });
+        document.getElementById('standard-benefit-kicker').textContent = page.benefitKicker || (isMedical ? 'MEDICAL JEWELRY' : 'PRODUCT EXPERIENCE');
+        document.getElementById('standard-main-copy').innerHTML = page.mainCopy.replace(/\n/g, '<br />');
+        document.getElementById('standard-message').textContent = page.message || page.intent;
+        document.getElementById('standard-point-grid').innerHTML = page.points.map(function (point, index) {
+          return '<article><span>' + String(index + 1).padStart(2, '0') + '</span><h3>' + point[0] + '</h3><p>' + point[1] + '</p></article>';
+        }).join('');
+        document.getElementById('standard-line-kicker').textContent = page.lineKicker || 'PRODUCT LINE';
+        document.getElementById('standard-line-title').innerHTML = (page.lineTitle || '이 품목에 포함되는\n제품을 확인합니다').replace(/\n/g, '<br />');
+        document.getElementById('standard-line-copy').textContent = page.lineCopy || '이 품목에 속하는 클라비스 제품 라인입니다.';
+        document.getElementById('standard-product-list').innerHTML = page.products.map(function (product) {
+          return '<article><strong>' + product + '</strong><span>' + page.standard + ' · ' + page.type + '</span></article>';
+        }).join('');
+        document.getElementById('standard-routine-kicker').textContent = page.routineKicker || 'HOW TO USE';
+        document.getElementById('standard-routine-title').innerHTML = (page.routineTitle || '매일 사용하는 제품일수록\n사용법은 간단해야 합니다').replace(/\n/g, '<br />');
+        document.getElementById('standard-next-copy').textContent = page.nextCopy || '제품별 모델명, 색상, 사용 방법과 주의사항을 확인한 뒤 구매해 주세요.';
+        document.getElementById('standard-routine-steps').innerHTML = (page.steps || [
+          ['01', '제품 선택', '원하는 제품과 색상, 사이즈를 확인합니다.'],
+          ['02', '일상 사용', '제품별 사용 위치에 맞게 편안하게 착용하거나 배치합니다.'],
+          ['03', '사용 전 확인', '사용 방법과 주의사항을 확인한 뒤 사용해 주세요.']
+        ]).map(function (step) {
+          return '<article><span>' + step[0] + '</span><h3>' + step[1] + '</h3><p>' + step[2] + '</p></article>';
+        }).join('');
+
+        var conceptTabs = document.getElementById('standard-concept-tabs');
+        var conceptButtons = Array.from(document.querySelectorAll('[data-concept-tab]'));
+        var conceptPanels = Array.from(document.querySelectorAll('[data-concept-panel]'));
+        conceptTabs.hidden = !isMedicalBracelet;
+        if (!isMedicalBracelet) {
+          conceptPanels.forEach(function (panel) {
+            panel.hidden = panel.id !== 'concept-1';
+          });
+          return;
+        }
+        conceptButtons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            var target = button.dataset.conceptTab;
+            conceptButtons.forEach(function (item) {
+              item.classList.toggle('active', item === button);
+            });
+            conceptPanels.forEach(function (panel) {
+              panel.hidden = panel.id !== target;
+            });
+          });
+        });
+      })();
+    </script>
+    <script src="./gnb.js"></script>
+    <script src="./mobile-nav.js"></script>
+    <script src="./theme-toggle.js?v=20260408"></script>
+  </body>
+</html>

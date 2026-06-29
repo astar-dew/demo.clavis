@@ -109,19 +109,75 @@
         <h2>review</h2>
         <div class="review-grid">
           <article>
-            <img src="../asset/review/review1.png" alt="Active lifestyle review image 1" />
+            <button
+              class="review-image-button"
+              type="button"
+              data-review-title="디자인 좋아요"
+              data-review-metric="활동 만족도 95%"
+              data-review-name="김O준 님"
+              data-review-profile="40대, IT 개발자"
+              data-review-img="../asset/review/review1.png"
+              data-review-copy="운동복이나 캐주얼 룩에 자연스럽게 어울리고, 착용감도 가벼워서 만족합니다. 활동할 때 과하게 튀지 않으면서도 손목에 포인트가 생기는 느낌이 좋습니다."
+              aria-label="액티브 라이프스타일 첫 번째 상세 후기 보기"
+            >
+              <img src="../asset/review/review1.png" alt="Active lifestyle review image 1" />
+            </button>
             <div><strong>디자인 좋아요</strong><p>착용감도 가벼워서 만족합니다.</p></div>
           </article>
           <article>
-            <img src="../asset/review/review2.png" alt="Active lifestyle review image 2" />
+            <button
+              class="review-image-button"
+              type="button"
+              data-review-title="데일리로 딱"
+              data-review-metric="데일리 착용 만족도 4.8/5.0"
+              data-review-name="이O영 님"
+              data-review-profile="50대, 주부"
+              data-review-img="../asset/review/review2.png"
+              data-review-copy="매일 착용해도 부담이 없고, 집 안팎에서 자연스럽게 쓰기 좋습니다. 제품이 주는 안정적인 인상과 깔끔한 마감 때문에 자주 손이 갑니다."
+              aria-label="액티브 라이프스타일 두 번째 상세 후기 보기"
+            >
+              <img src="../asset/review/review2.png" alt="Active lifestyle review image 2" />
+            </button>
             <div><strong>데일리로 딱</strong><p>매일 착용해도 부담이 없습니다.</p></div>
           </article>
           <article>
-            <img src="../asset/review/review3.png" alt="Active lifestyle review image 3" />
+            <button
+              class="review-image-button"
+              type="button"
+              data-review-title="ACTIVE LIFESTYLE"
+              data-review-metric="루틴 만족도 100%"
+              data-review-name="박O호 님"
+              data-review-profile="60대, 자영업"
+              data-review-img="../asset/review/review3.png"
+              data-review-copy="운동 후 회복 루틴에 잘 맞고, 휴식 시간에도 자연스럽게 착용하게 됩니다. 액티브한 하루와 차분한 휴식 사이에서 부담 없이 이어지는 제품입니다."
+              aria-label="액티브 라이프스타일 세 번째 상세 후기 보기"
+            >
+              <img src="../asset/review/review3.png" alt="Active lifestyle review image 3" />
+            </button>
             <div><strong>ACTIVE LIFESTYLE</strong><p>운동 후 회복 루틴에 잘 맞아요.</p></div>
           </article>
         </div>
       </section>
+
+      <div class="review-modal" data-review-modal hidden>
+        <div class="review-modal-backdrop" data-review-close></div>
+        <section class="review-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
+          <button class="review-modal-close" type="button" data-review-close aria-label="후기 모달 닫기">×</button>
+          <div class="review-modal-image">
+            <img data-review-modal-img src="" alt="" />
+          </div>
+          <div class="review-modal-copy">
+            <p class="review-modal-eyebrow" data-review-modal-metric></p>
+            <h2 id="review-modal-title"></h2>
+            <p data-review-modal-copy></p>
+            <div class="review-modal-profile">
+              <strong data-review-modal-name></strong>
+              <span data-review-modal-profile></span>
+            </div>
+            <small>개인 사용 경험을 바탕으로 한 후기이며, 제품 경험은 사용자에 따라 다를 수 있습니다.</small>
+          </div>
+        </section>
+      </div>
 
     </main>
 
@@ -153,5 +209,6 @@
       <script src="./gnb.js"></script>
       <script src="./mobile-nav.js"></script>
       <script src="./theme-toggle.js?v=20260408"></script>
+      <script src="./review-modal.js"></script>
   </body>
 </html>
