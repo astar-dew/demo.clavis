@@ -2868,6 +2868,361 @@
   color: rgba(255, 255, 255, 0.72);
 }
 
+.concept3-page {
+  display: grid;
+  gap: 18px;
+}
+
+.concept3-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+  min-height: 680px;
+  border: 1px solid var(--detail-border);
+  background: #151515;
+  color: #fff;
+}
+
+.concept3-hero-visual {
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+  background: #efebe3;
+}
+
+.concept3-hero-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 680px;
+  object-fit: cover;
+}
+
+.concept3-hero-visual.product-contain img {
+  object-fit: contain;
+  padding: 52px;
+}
+
+.concept3-floating-product {
+  position: absolute;
+  right: 34px;
+  bottom: 34px;
+  width: min(34%, 240px);
+  padding: 16px;
+  border: 1px solid rgba(212, 178, 122, 0.38);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.2);
+}
+
+.concept3-floating-product img {
+  min-height: 0;
+  object-fit: contain;
+  padding: 0;
+}
+
+.concept3-hero-copy {
+  display: grid;
+  align-content: center;
+  gap: 24px;
+  padding: 58px 48px;
+}
+
+.concept3-hero-copy h1 {
+  margin: 0;
+  color: #fff;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: clamp(44px, 6vw, 82px);
+  font-weight: 500;
+  line-height: 1.04;
+}
+
+.concept3-hero-copy p:not(.section-kicker) {
+  max-width: 500px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.concept3-hero-badges,
+.concept3-product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.concept3-hero-badges span,
+.concept3-product-tags span {
+  padding: 8px 11px;
+  border: 1px solid rgba(212, 178, 122, 0.46);
+  color: #d4b27a;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.concept3-section {
+  padding: 54px 42px;
+  border: 1px solid var(--detail-border);
+  background: #fff;
+}
+
+.concept3-section.dark {
+  background: #171717;
+  color: #fff;
+}
+
+.concept3-section.soft {
+  background: #fbf8f1;
+}
+
+.concept3-heading {
+  max-width: 820px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.concept3-heading h2 {
+  margin: 0 0 16px;
+  color: var(--detail-ink);
+  font-family: "SUIT Variable", sans-serif;
+  font-size: clamp(34px, 5vw, 62px);
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.concept3-section.dark .concept3-heading h2,
+.concept3-section.dark .section-kicker {
+  color: #fff;
+}
+
+.concept3-heading p:not(.section-kicker) {
+  margin: 0;
+  color: var(--detail-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.concept3-section.dark .concept3-heading p:not(.section-kicker) {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.concept3-scene-grid,
+.concept3-proof-grid,
+.concept3-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.concept3-scene-card,
+.concept3-proof-card,
+.concept3-detail-card {
+  overflow: hidden;
+  border: 1px solid var(--detail-border);
+  background: #fff;
+}
+
+.concept3-scene-card img,
+.concept3-detail-card img {
+  width: 100%;
+  aspect-ratio: 1 / 0.9;
+  object-fit: cover;
+  background: var(--detail-soft);
+}
+
+.concept3-detail-card img {
+  object-fit: contain;
+  padding: 24px;
+}
+
+.concept3-scene-card div,
+.concept3-detail-card div,
+.concept3-proof-card {
+  padding: 24px;
+}
+
+.concept3-scene-card h3,
+.concept3-detail-card h3,
+.concept3-proof-card h3 {
+  margin: 0 0 10px;
+  color: var(--detail-ink);
+  font-size: 22px;
+  line-height: 1.32;
+}
+
+.concept3-scene-card p,
+.concept3-detail-card p,
+.concept3-proof-card p {
+  margin: 0;
+  color: var(--detail-muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.concept3-proof-card {
+  min-height: 230px;
+  background: var(--detail-soft);
+}
+
+.concept3-proof-card span {
+  display: block;
+  margin-bottom: 34px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.concept3-product-focus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.concept3-product-focus figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--detail-border);
+  background: #f8f5ef;
+}
+
+.concept3-product-focus img {
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  object-fit: cover;
+}
+
+.concept3-product-copy {
+  display: grid;
+  align-content: center;
+  padding: 44px;
+  border: 1px solid rgba(212, 178, 122, 0.32);
+  background: #171717;
+}
+
+.concept3-product-copy h2 {
+  margin: 0 0 18px;
+  color: #fff;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: clamp(34px, 5vw, 64px);
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.concept3-product-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.concept3-product-tags {
+  margin-top: 28px;
+}
+
+.concept3-flow-list {
+  display: grid;
+  gap: 12px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.concept3-flow-list article {
+  display: grid;
+  grid-template-columns: 86px 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 26px;
+  border: 1px solid var(--detail-border);
+  background: #fff;
+}
+
+.concept3-flow-list span {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #171717;
+  color: #d4b27a;
+  font-weight: 900;
+}
+
+.concept3-flow-list h3 {
+  margin: 0 0 8px;
+  color: var(--detail-ink);
+  font-size: 24px;
+}
+
+.concept3-flow-list p {
+  margin: 0;
+  color: var(--detail-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.concept3-purchase-summary {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 54px 42px;
+  border: 1px solid var(--detail-border);
+  background: #171717;
+}
+
+.concept3-purchase-summary img {
+  width: 100%;
+  aspect-ratio: 1 / 0.9;
+  object-fit: contain;
+  padding: 34px;
+  background: #f8f5ef;
+}
+
+.concept3-purchase-summary h2 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-family: "SUIT Variable", sans-serif;
+  font-size: clamp(36px, 5vw, 66px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.concept3-purchase-summary p {
+  max-width: 580px;
+  margin: 0 0 24px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.concept3-purchase-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.concept3-purchase-actions a {
+  min-width: 170px;
+  padding: 15px 20px;
+  border: 1px solid rgba(212, 178, 122, 0.42);
+  background: #d4b27a;
+  color: #171717;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+}
+
+.concept3-purchase-actions a.secondary {
+  background: transparent;
+  color: #fff;
+}
+
 .bracelet-intent-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -3068,7 +3423,14 @@
   .standard-concept-image-band.reverse,
   .standard-grade-section,
   .standard-howto-grid article,
-  .bracelet-experience-section {
+  .bracelet-experience-section,
+  .concept3-hero,
+  .concept3-scene-grid,
+  .concept3-proof-grid,
+  .concept3-detail-grid,
+  .concept3-product-focus,
+  .concept3-purchase-summary,
+  .concept3-flow-list article {
     grid-template-columns: 1fr;
   }
 
@@ -3200,8 +3562,26 @@
   .consumer-c2-faq,
   .consumer-c2-review,
   .consumer-c2-cta,
-  .consumer-c2-neodymium {
+  .consumer-c2-neodymium,
+  .concept3-hero-copy,
+  .concept3-section,
+  .concept3-purchase-summary {
     padding: 28px 20px;
+  }
+
+  .concept3-hero-visual,
+  .concept3-hero-visual img {
+    min-height: 420px;
+  }
+
+  .concept3-floating-product {
+    right: 18px;
+    bottom: 18px;
+    width: min(42%, 180px);
+  }
+
+  .concept3-product-focus img {
+    min-height: 360px;
   }
 
   .consumer-c2-size-table div {
