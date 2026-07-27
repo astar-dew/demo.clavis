@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 모바일 확대/축소 허용 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+  <title>상세페이지 이미지 확대</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .product-detail {
+      max-width: 480px;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    /* 기본 이미지 스타일 */
+    .detail-image {
+      width: 100%;
+      display: block;
+      cursor: zoom-in;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* === 전체 화면 확대 오버레이 === */
+    .zoom-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.95);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+      touch-action: pan-x pan-y; /* 두 손가락 확대 허용 */
+    }
+
+    .zoom-overlay.active {
+      display: flex;
+    }
+
+    .zoom-overlay img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      transform-origin: center;
+      transition: transform 0.2s ease;
+    }
+
+    .zoom-close {
+      position: fixed;
+      top: 15px; right: 15px;
+      color: #fff;
+      font-size: 28px;
+      z-index: 10000;
+      cursor: pointer;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-detail">
+    <!-- 상세 이미지들 -->
+    <img src="https://picsum.photos/200/300" class="detail-image" alt="상세1" onclick="openZoom(this)">
+    <img src="https://picsum.photos/200/300" class="detail-image" alt="상세2" onclick="openZoom(this)">
+    <img src="https://picsum.photos/200/300" class="detail-image" alt="상세3" onclick="openZoom(this)">
+  </div>
+
+  <!-- 확대 오버레이 -->
+  <div class="zoom-overlay" id="zoomOverlay" onclick="closeZoom()">
+    <span class="zoom-close">✕</span>
+    <img src="" id="zoomImg" alt="확대 이미지">
+  </div>
+
+  <script>
+    const overlay = document.getElementById('zoomOverlay');
+    const zoomImg = document.getElementById('zoomImg');
+
+    function openZoom(img) {
+      zoomImg.src = img.src;
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden'; // 배경 스크롤 막기
+    }
+
+    function closeZoom() {
+      overlay.classList.remove('active');
+      zoomImg.style.transform = 'scale(1)';
+      document.body.style.overflow = '';
+    }
+
+    // === 핀치 줌 (두 손가락 확대) ===
+    let initialDistance = 0;
+    let currentScale = 1;
+
+    overlay.addEventListener('touchstart', function(e) {
+      if (e.touches.length === 2) {
+        initialDistance = Math.hypot(
+          e.touches[0].pageX - e.touches[1].pageX,
+          e.touches[0].pageY - e.touches[1].pageY
+        );
+      }
+    });
+
+    overlay.addEventListener('touchmove', function(e) {
+      if (e.touches.length === 2) {
+        e.preventDefault();
+        const distance = Math.hypot(
+          e.touches[0].pageX - e.touches[1].pageX,
+          e.touches[0].pageY - e.touches[1].pageY
+        );
+        currentScale = Math.min(Math.max(distance / initialDistance, 1), 4);
+        zoomImg.style.transform = `scale(${currentScale})`;
+      }
+    });
+
+    overlay.addEventListener('touchend', function(e) {
+      if (e.touches.length < 2) {
+        // 손을 떼면 원래대로 돌아가게 하려면:
+        // currentScale = 1;
+        // zoomImg.style.transform = 'scale(1)';
+      }
+    });
+  </script>
+
+</body>
+</html>
