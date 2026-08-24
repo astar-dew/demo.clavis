@@ -8,19 +8,21 @@
             <div class="inner">
 
                 <div class="story_text">
-                    <h3>새로운 상품을 소개합니다</h3>
+                    <h3 style="color:#96815E">당신을 깨우는 에너지,<br>아름다운 첫 시작</h3>
 
-                    <p>
-                        이곳에는 상품이나 서비스에 대한 소개 문구를 작성해 주세요.<br>
-                        쇼핑몰의 특징과 장점을 간결하게 전달할 수 있습니다.<br>
-                        문구의 길이와 줄바꿈은 디자인에 맞게 조절해 주세요.
+                    <p style="color:#644D37">
+                        메디 주얼리는 클라비스의 핵심 라인입니다.<br>
+                        일상 속에서 자연스럽게 어울리는 디자인과 웰니스 감성을 결합해<br>
+                        세련된 자기장 케어 경험을 선사합니다.
                     </p>
 
-                    <a href="/" class="story_btn">바로가기</a>
+                    <a href="/" class="story_btn"  style='background-color: #ddd2b9; color: #644D37; 
+															background: linear-gradient(90deg,#d7c5a4 0%,#e9dcc2 20%,#f8eedc 50%,#e9dcc2 80%,#d7c5a4 100%); font-weight: bold;
+                                                             border-radius: 4px; ' >COLLECTION VIEW</a>
                 </div>
 
                 <div class="story_img">
-                    <img src="/brand-story.gif" alt="">
+                    <img src="https://cnt2010.cafe24.com/collection/medi/pc/pc_01_1.png" alt="">
                 </div>
 
             </div>
@@ -32,23 +34,107 @@
 
     <section class="intro">
         <div class="inner">
+
             <div class="title" data-brand-reveal>
-                <h2>새로운 이야기를 만나보세요</h2>
-                <p>
-                    쇼핑몰의 주요 콘텐츠와 다양한 소식을 소개합니다.<br>
-                    원하는 제목과 설명 문구로 자유롭게 변경해 주세요.
+                <h2 style="color:#96815E">자기장이 만드는 변화</h2>
+
+                <p style="color:#644D37">
+                    클라비스의 특허 자기장 기술은 착용 부위의 혈류를 촉진하고<br>
+                    생체 에너지 흐름을 최적화합니다.
                 </p>
             </div>
+
         </div>
     </section>
     
 
 
     <div class="wide_list">
+
         <section class="wide" data-brand-reveal>
-            <a href="/"><img src="/brand-wide-01-pc.gif" alt="PC용 이미지"></a>
+            <a href="/"><img src="https://cnt2010.cafe24.com/collection/medi/pc/pc_02.png" alt="PC용 이미지"></a>
             <a href="/"><img src="/brand-wide-01-mo.gif" alt="모바일용 이미지"></a>
         </section>
+
     </div>
+    
+    
+    <!-- 리뷰 영역 -->
+       <section class="review_area" data-brand-reveal>
+        <div class="inner">
+
+            <h2 class="review_tle">Review</h2>
+
+            <div class="review_list">
+
+                <div class="review_item">
+                    <img src="/review/review1.png" alt="고객 후기 이미지 1">
+                    <div class="review_text">
+                        <strong style="color:#96815E">디자인 좋아요</strong>
+                        <p style="color:#644D37">매일 착용하기 좋습니다.</p>
+                    </div>
+                </div>
+
+                <div class="review_item">
+                    <img src="/review/review2.png" alt="고객 후기 이미지 2">
+                    <div class="review_text">
+                        <strong style="color:#96815E">세련된 스타일</strong>
+                        <p style="color:#644D37">포멀 룩과도 잘 맞아요.</p>
+                    </div>
+                </div>
+
+                <div class="review_item">
+                    <img src="/review/review3.png" alt="고객 후기 이미지 3">
+                    <div class="review_text">
+                        <strong style="color:#96815E">착용감 만족</strong>
+                        <p style="color:#644D37">무겁지 않고 편안합니다.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 
+	background:linear-gradient(to top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%);
+	background: linear-gradient(to top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%); 
+	-->
+    <style>
+    .cnt-brand .review_area { margin:8rem 0; }
+    .cnt-brand .review_tle { margin:4rem 0 6.6rem; font-size:2.3rem; font-weight:500; line-height:1.1; letter-spacing:-0.02em; text-align:center; color:#96815E; }
+    .cnt-brand .review_list { display:grid; grid-template-columns:repeat(3, 1fr); gap:1.6rem; }
+    .cnt-brand .review_item { position:relative; overflow:hidden; }
+    .cnt-brand .review_item img { display:block; width:100%; height:100%; aspect-ratio:3 / 2; object-fit:cover; transition:transform .5s ease; }
+    .cnt-brand .review_item:hover img { transform:scale(1.03); }
+    .cnt-brand .review_text { position:absolute; left:0; right:0; bottom:0; padding:1.8rem; text-align:center; color:#fff; background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(255, 255, 255, 0.85) 50%
+); }
+    .cnt-brand .review_text strong { display:block; margin-bottom:0.4rem; font-size:1.5rem; font-weight:700; line-height:1.3; color:#fff; }
+    .cnt-brand .review_text p { margin:0; font-size:1.05rem; line-height:1.4; color:#644D37; }
+        
+    .stl-button {
+    	background-color: #ddd2b9; color: #644D37; 
+		background: linear-gradient(90deg,#d7c5a4 0%,#e9dcc2 20%,#f8eedc 50%,#e9dcc2 80%,#d7c5a4 100%); font-weight: bold;
+        border-radius: 4px; 
+    }
+
+    @media all and (max-width:1024px) {
+        .cnt-brand .review_area { margin:6rem 0; }
+        .cnt-brand .review_tle { font-size:3.4rem; }
+        .cnt-brand .review_list { gap:1.2rem; }
+        .cnt-brand .review_text { padding:1.4rem; }
+        .cnt-brand .review_text strong { font-size:1.3rem; }
+    }
+
+    @media all and (max-width:768px) {
+        .cnt-brand .review_list { grid-template-columns:1fr; gap:1rem; }
+        .cnt-brand .review_tle { font-size:2.8rem; }
+    }
+    </style>
+
+
 
 </div>
