@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* **************************** //필수 CSS 수정 및 삭제 불가 **************************** */
+
+/* tag reset */
+html { width:100%; height:100%; } 
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { margin:0; padding:0; }
+html,body,code,pre,div,ul,li,p,h2,h3,h4 { font-size:13px; } h2, h3, h4, strong, b { font-weight:500; } 
+@media all and (max-width:1024px) { html,body,code,pre,div,ul,li,p,h2,h3,h4 { font-size:14px; }}
+body,code,pre,textarea,select,input { font-family: Suit, sans-serif, verdana, Dotum, AppleGothic; color:#444; background:var(--mallbg); -webkit-text-size-adjust:none; font-variant-numeric: tabular-nums; letter-spacing:.01rem; } 
+.font_name_number, .item_tle_sale_price, .item_detail_price_text, .item_detail_price_text *, .ec-base-table .date, .ec-base-table .hit { font-family: Suit, sans-serif; letter-spacing:0px; } 
+body { height:100%; background:#FFF; background:var(--mallbg); } 
+body#popup { min-width:0; background:none; }
+html.noscroll, body.noscroll { overflow: hidden; }
+body.noscroll { width: 100%; height: 100%; touch-action: none; left: 0; right: 0; } 
+ul, li { list-style:none; } 
+img,fieldset { border:none; vertical-align:top; } 
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active { transition: background-color 5000s ease-in-out 0s; -webkit-transition: background-color 5000s ease-out; -webkit-box-shadow: 0 0 0 0 white inset !important; } 
+select { border-radius: 2px; min-height: 30px; font-size: 1rem; -webkit-appearance: none; appearance: none; box-sizing: border-box; } 
+table { width:100%; border:0; border-spacing:0; border-collapse:collapse; }
+caption { display:none; }
+th,td { border:0; vertical-align:top; }
+button { overflow:visible; padding:0; margin:0; border:0; cursor:pointer; font-size:1rem; }
+hr.layout { display:none; }
+a { text-decoration:none; color:#000; outline: none; select-dummy: expression(this.hideFocus=true); }
+a:hover { text-decoration:none; }
+a:active { text-decoration:none; } 
+html, body, a, button, input, textarea, label, [role="button"] { -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent; } 
+html *::-webkit-scrollbar { width: 6px; height: 6px; } html *::-webkit-scrollbar-thumb { background: rgba(120,120,120,0.7); border-radius: 10px; } html *::-webkit-scrollbar-track { background: transparent; } 
+.objHidden { visibility:hidden; position:absolute; left:-1000px; top:-1000px; height:0; width:0; }
+#content_CONTAINER table, #bi_inquire_content_CONTAINER table { border:0; margin:0 0 -1px; }
+#content_CONTAINER table:before, #bi_inquire_content_CONTAINER table:before { display:none; }
+#content_CONTAINER td, #bi_inquire_content_CONTAINER td { width:auto !important; padding:0; }
+table.nneditor-table { width:auto !important; }
+
+/* 결제진행바 */
+#progressPaybarBackground { position:absolute; z-index:99; left:0; top:0; width:100%; height:100%; }
+#progressPaybarView { position:absolute; z-index:100; top:160px; left:20px; width:471px; font-size:12px; }
+#progressPaybarView .box { height:180px; background:url(//img.cafe24.com/images/ec_hosting/popup/layer_guide/bg_layer_box1.gif) 0 0 no-repeat; }
+#progressPaybarView .box .graph { padding:15px 0 0 0; text-align:center;}
+#progressPaybarView .box .graph span { display:block; text-align:center; margin:20px 0; }
+#progressPaybarView .box .txt { text-align:center; padding:15px 0 0; color:#555555; }
+div.layerProgress { filter:alpha(opacity=40); opacity:0.4; -moz-opacity:0.4; background-color:#999; }
+
+/* contents */
+#skipNavigation {position:absolute; top:0; left:0; z-index:100; width:100%; height:0;}
+#skipNavigation p, #skipNavigation ul, #skipNavigation ul li {height:0;}
+#skipNavigation p a {position:absolute; left:0; top:0; display:block; overflow:hidden; width:1px; height:1px; margin-left:-1px; margin-bottom:-1px; text-align:center; color:#000; white-space:nowrap;}
+#skipNavigation p a:focus, #skipNavigation p a:hover, #skipNavigation p a:active {width:100%; height:auto; padding:10px 0; background:#c4122f; color:#fff; z-index:100;}
+
+.displaynone { display:none; } 
+.clear { clear:both; } 
+
+.mall_width, .mainImg_width { width:100%; margin-left:auto; margin-right:auto; } 
+.mall_width { max-width:1440px; } 
+@media (max-width: 1440px) {.mall_width { width:94%; margin-left:3%; margin-right:3%; }} 
+@media (max-width: 768px) {.mall_width { width:97%; margin-left:1.5%; margin-right:1.5%; } .mall_width.no_margin { width:100%; margin-left:0%; margin-right:0%; }}
+
+.mobile_width { max-width:400px; margin-left:auto; margin-right:auto; } 
+@media all and (max-width:400px) {.mobile_width { width:96%; margin:0 2%; }} 
+
+.inline { display:inline-block; zoom:1; *display:inline; }
+
+.fade_hide, .fade_hide_tiny, .fade_hide_lage, .fade_item { opacity: 0 !important; visibility: hidden; transition: opacity 0.05s ease; }
+.fade_hide.visible, .fade_hide_tiny.visible, .fade_hide_lage.visible, .fade_item.visible { opacity: 1 !important; visibility: visible; } 
+
+.swiper-fadein { opacity: 0; visibility: hidden; }
+.swiper-fadein.swiper-initialized { opacity: 1; visibility: visible; transition: opacity .05s ease; }
+
+img[class*='display_hide'] { animation: display-hide-img-css .4s forwards; } 
+[class*='display-setting'] { opacity: 0; visibility: hidden; animation: display-hide-css 0.1s forwards; animation-delay: .3s; } 
+
+.display_off, .display_off a, .display_off input, .display_off > div { width:0 !important; height:0 !important; line-height:0 !important; font-size:0 !important; padding:0 !important; margin:0 !important; overflow:hidden !important; opacity:0 !important; filter:alpha(opacity=0) !important; } 
+.display_off a { display:inline-block; } 
+.display_off.swiper-wrapper { width:auto !important; } 
+.pagination_off { opacity:0 !important; filter:alpha(opacity=0) !important; } 
+
+.menu_off { display:none !important; } 
+
+.dimmed { position:fixed; top:0; left:0; z-index:99; width:100%; height:100%; background:#fff; opacity:0.8; filter:alpha(opacity=80); } 
+/* **************************** 필수 CSS 수정 및 삭제 불가 **************************** */
