@@ -101,6 +101,25 @@
 	background: linear-gradient(to top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%); 
 	-->
     <style>
+    /* ------------------------------------------------------------
+       PC (1025 ~ 1440px) : story 2단 배치 가로 넘침 방지
+
+       스킨은 story_text 45% + story_img 50% (합 95%) 인데
+       1440px 이하에서 .inner 에 gap:5rem (65px) 이 고정값으로 붙습니다.
+       0.95W + 65 <= W 를 만족하려면 W >= 1300px 이어야 하므로
+       1025~1299px 구간에서는 가로 합계가 화면을 넘칩니다.
+       짝수번째 story 는 flex-direction:row-reverse 라 넘친 만큼
+       왼쪽이 잘려 문구가 브라우저 밖으로 가려집니다.
+
+       gap 을 비율(5%)로 바꾸면 45 + 50 + 5 = 100% 로 어떤 폭에서도
+       정확히 들어맞고, 좌우 15px 여백으로 화면 끝에 붙는 것도 막습니다.
+    ------------------------------------------------------------ */
+    @media all and (min-width:1025px) and (max-width:1440px) {
+        .cnt-brand .story_list > .story .inner {
+            box-sizing:border-box; padding:0 15px; gap:5%;
+        }
+    }
+
     .cnt-brand .review_area { margin:8rem 0; }
     .cnt-brand .review_tle { margin:4rem 0 6.6rem; font-size:2.3rem; font-weight:500; line-height:1.1; letter-spacing:-0.02em; text-align:center; color:#96815E; }
     .cnt-brand .review_list { display:grid; grid-template-columns:repeat(3, 1fr); gap:1.6rem; }
@@ -119,6 +138,30 @@
     	background-color: #ddd2b9; color: #644D37; 
 		background: linear-gradient(90deg,#d7c5a4 0%,#e9dcc2 20%,#f8eedc 50%,#e9dcc2 80%,#d7c5a4 100%); font-weight: bold;
         border-radius: 4px; 
+    }
+
+    /* ------------------------------------------------------------
+       태블릿 ~ 모바일 (1024px 이하) : story 텍스트 영역 중앙 정렬
+       스킨은 story_text 45% + story_img 50% + gap 5rem 이라 이 구간에서
+       가로 합계가 화면을 넘으므로, 스킨이 767px 이하에서 쓰는 세로 적층
+       레이아웃을 1024px 까지 끌어올린 뒤 중앙 정렬합니다.
+       (PC 2단 배치 / 좌측 정렬은 그대로 유지)
+    ------------------------------------------------------------ */
+    @media all and (max-width:1024px) {
+        .cnt-brand .story_list > .story .inner,
+        .cnt-brand .story_list > .story:nth-of-type(even) .inner {
+            flex-direction:column; width:100%; max-width:none;
+            align-items:stretch; justify-content:flex-start; gap:2.5rem;
+        }
+        .cnt-brand .story_list .story_img {
+            order:1; flex:0 0 auto; width:100%; max-width:none; margin:0;
+        }
+        .cnt-brand .story_list .story_text {
+            order:2; flex:0 0 auto; width:calc(100% - 30px); max-width:none; margin:0 auto;
+        }
+        .cnt-brand .story_list .story_text,
+        .cnt-brand .story_list .story_text h3,
+        .cnt-brand .story_list .story_text p { text-align:center; }
     }
 
     @media all and (max-width:1024px) {

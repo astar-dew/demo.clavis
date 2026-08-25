@@ -299,15 +299,62 @@
                     <p style="color:#644D37">
                         실리콘 밴드 내부에 자석 구조를 안정적으로 매립해<br>
                         피부에 닿는 착용감과 제품 완성도를 함께 고려합니다.<br>
-                        
                     </p>
-
-                   
                 </div>
 
             </div>
         </section>
 
     </div>
+
+
+    <!-- ============================================================
+      모바일(767px 이하 = 스킨이 이미지 위 / 텍스트 아래로 적층하는 지점)
+      story 텍스트 영역 중앙 정렬
+      (PC 는 기존 좌우 2단 배치 / 좌측 정렬 그대로 유지)
+    ============================================================= -->
+    <style>
+    /* ------------------------------------------------------------
+       PC (1025 ~ 1440px) : story 2단 배치 가로 넘침 방지
+
+       스킨은 story_text 45% + story_img 50% (합 95%) 인데
+       1440px 이하에서 .inner 에 gap:5rem (65px) 이 고정값으로 붙습니다.
+       0.95W + 65 <= W 를 만족하려면 W >= 1300px 이어야 하므로
+       1025~1299px 구간에서는 가로 합계가 화면을 넘칩니다.
+       짝수번째 story 는 flex-direction:row-reverse 라 넘친 만큼
+       왼쪽이 잘려 문구가 브라우저 밖으로 가려집니다.
+
+       gap 을 비율(5%)로 바꾸면 45 + 50 + 5 = 100% 로 어떤 폭에서도
+       정확히 들어맞고, 좌우 15px 여백으로 화면 끝에 붙는 것도 막습니다.
+    ------------------------------------------------------------ */
+    @media all and (min-width:1025px) and (max-width:1440px) {
+        .cnt-brand .story_list > .story .inner {
+            box-sizing:border-box; padding:0 15px; gap:5%;
+        }
+    }
+
+    /* ------------------------------------------------------------
+       태블릿 ~ 모바일 (1024px 이하) : story 세로 적층 + 텍스트 중앙 정렬
+       스킨이 767px 이하에서 쓰는 적층 레이아웃을 1024px 까지 끌어올립니다.
+       (PC 2단 배치 / 좌측 정렬은 그대로 유지)
+    ------------------------------------------------------------ */
+    @media all and (max-width:1024px) {
+        .cnt-brand .story_list > .story .inner,
+        .cnt-brand .story_list > .story:nth-of-type(even) .inner {
+            flex-direction:column; width:100%; max-width:none;
+            align-items:stretch; justify-content:flex-start; gap:2.5rem;
+        }
+        .cnt-brand .story_list .story_img {
+            order:1; flex:0 0 auto; width:100%; max-width:none; margin:0;
+        }
+        .cnt-brand .story_list .story_text {
+            order:2; flex:0 0 auto; width:calc(100% - 30px); max-width:none; margin:0 auto;
+        }
+        .cnt-brand .story_list .story_text,
+        .cnt-brand .story_list .story_text h3,
+        .cnt-brand .story_list .story_text p { text-align:center; }
+    }
+
+    </style>
 
 </div>

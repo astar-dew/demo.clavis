@@ -88,9 +88,7 @@
                         <p style='color:#644D37 ; font-weight: 200;'>
                              일상과 운동, 비즈니스 룩까지 자연스럽게 어우러집니다.
                         </p>
-                        <a href="/" class="story_btn" style='background-color: #ddd2b9; color: #644D37; 
-															background: linear-gradient(90deg,#d7c5a4 0%,#e9dcc2 20%,#f8eedc 50%,#e9dcc2 80%,#d7c5a4 100%); font-weight: bold;
-                                                             border-radius: 4px; '>
+                        <a href="/" class="cts_btn">
                             SHOP NOW
                         </a>
                     </div>
@@ -117,9 +115,7 @@
                             다양한 스타일에 편안하게 어울리는 실루엣을 갖췄습니다.
                         </p>
                         <!-- 바로가기 버튼 -->
-                        <a href="/" class="story_btn" style='background-color: #ddd2b9; color: #644D37; 
-                                                             background: linear-gradient(90deg,#d7c5a4 0%,#e9dcc2 20%,#f8eedc 50%,#e9dcc2 80%,#d7c5a4 100%); font-weight: bold;
-                                                             border-radius: 4px; '>
+                        <a href="/" class="cts_btn">
 							SHOP NOW
 						</a>
                     </div>
@@ -147,9 +143,7 @@
                             포멀 룩과 캐주얼 룩 모두에 안정적인 존재감을 더해줍니다.
                         </p>
                         <!-- 바로가기 버튼 -->
-                        <a href="/" class="story_btn" style='background-color: #ddd2b9; color: #644D37; 
-                                                             background:linear-gradient(90deg,#d7c5a4 0%,#e9dcc2 20%,#f8eedc 50%,#e9dcc2 80%,#d7c5a4 100%); font-weight: bold;
-                                                             border-radius: 4px; ' >
+                        <a href="/" class="cts_btn" >
 							SHOP NOW
 						</a>
                     </div>
@@ -176,9 +170,7 @@
                             가벼운 착용감과 세련된 포인트를 동시에 갖춘 시그니처 밴드입니다.
                         </p>
                         <!-- 바로가기 버튼 -->
-                        <a href="/" class="story_btn" style='background-color: #ddd2b9; color: #644D37; 
-                                                             background: linear-gradient(90deg,#d7c5a4 0%,#e9dcc2 20%,#f8eedc 50%,#e9dcc2 80%,#d7c5a4 100%);font-weight: bold;
-                                                             border-radius: 4px;'>
+                        <a href="/" class="cts_btn">
 							SHOP NOW
                         </a>
                     </div>
@@ -206,7 +198,7 @@
                                 필요한 경우 줄바꿈을 넣을 수 있습니다.
                             </p>
 
-                            <a href="/이동할-주소" class="story_btn">
+                            <a href="/이동할-주소" class="cts_btn">
                                 바로가기
                             </a>
                         </div>
@@ -272,5 +264,71 @@
 
         </div>
 
+
+
+    <!-- ============================================================
+      SHOP NOW 버튼 (cts_btn)
+      스킨의 .story_btn 을 쓰지 않고 이 파일에서 전부 정의합니다.
+      레이아웃 수치(height / padding / margin)는 스킨 .story_btn 값과 동일하게 맞춤.
+      display:inline-flex + align-items:center 가 글자 세로 중앙을 잡아주므로
+      아래 display 선언을 다른 값으로 바꾸면 글자가 버튼 위로 올라갑니다.
+    ============================================================= -->
+    <style>
+    .cnt-brand .story_list .cts_btn {
+        position:relative; display:inline-flex; box-sizing:border-box;
+        align-items:center; justify-content:center;
+        width:auto; min-width:100px; height:40px;
+        margin:1.8rem 0 0; padding:0 22px;
+        font-size:1rem; font-weight:bold; line-height:1; letter-spacing:0.02em;
+        text-align:center; text-decoration:none;
+        color:#644D37; border-radius:4px;
+        background:linear-gradient(90deg,#d7c5a4 0%,#e9dcc2 20%,#f8eedc 50%,#e9dcc2 80%,#d7c5a4 100%);
+        transition:filter .25s ease;
+    }
+    .cnt-brand .story_list .cts_btn:hover { filter:brightness(1.05); }
+
+    /* 모바일(767px 이하 = 스킨이 이미지 위 / 텍스트 아래로 적층하는 지점) : 텍스트 중앙 정렬 */
+    /* ------------------------------------------------------------
+       PC (1025 ~ 1440px) : story 2단 배치 가로 넘침 방지
+
+       스킨은 story_text 45% + story_img 50% (합 95%) 인데
+       1440px 이하에서 .inner 에 gap:5rem (65px) 이 고정값으로 붙습니다.
+       0.95W + 65 <= W 를 만족하려면 W >= 1300px 이어야 하므로
+       1025~1299px 구간에서는 가로 합계가 화면을 넘칩니다.
+       짝수번째 story 는 flex-direction:row-reverse 라 넘친 만큼
+       왼쪽이 잘려 문구가 브라우저 밖으로 가려집니다.
+
+       gap 을 비율(5%)로 바꾸면 45 + 50 + 5 = 100% 로 어떤 폭에서도
+       정확히 들어맞고, 좌우 15px 여백으로 화면 끝에 붙는 것도 막습니다.
+    ------------------------------------------------------------ */
+    @media all and (min-width:1025px) and (max-width:1440px) {
+        .cnt-brand .story_list > .story .inner {
+            box-sizing:border-box; padding:0 15px; gap:5%;
+        }
+    }
+
+    /* ------------------------------------------------------------
+       태블릿 ~ 모바일 (1024px 이하) : story 세로 적층 + 텍스트 중앙 정렬
+       스킨이 767px 이하에서 쓰는 적층 레이아웃을 1024px 까지 끌어올립니다.
+       (PC 2단 배치 / 좌측 정렬은 그대로 유지)
+    ------------------------------------------------------------ */
+    @media all and (max-width:1024px) {
+        .cnt-brand .story_list > .story .inner,
+        .cnt-brand .story_list > .story:nth-of-type(even) .inner {
+            flex-direction:column; width:100%; max-width:none;
+            align-items:stretch; justify-content:flex-start; gap:2.5rem;
+        }
+        .cnt-brand .story_list .story_img {
+            order:1; flex:0 0 auto; width:100%; max-width:none; margin:0;
+        }
+        .cnt-brand .story_list .story_text {
+            order:2; flex:0 0 auto; width:calc(100% - 30px); max-width:none; margin:0 auto;
+        }
+        .cnt-brand .story_list .story_text,
+        .cnt-brand .story_list .story_text h3,
+        .cnt-brand .story_list .story_text p { text-align:center; }
+    }
+
+    </style>
 
 </div>
