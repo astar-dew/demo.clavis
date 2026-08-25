@@ -144,10 +144,13 @@
        (PC 2단 배치 / 좌측 정렬은 그대로 유지)
     ------------------------------------------------------------ */
     @media all and (max-width:1024px) {
+        /* 이미지 <-> 글자 48px, 섹션 간 96px (1:2).
+           내부 간격을 넓히되 섹션 간격을 함께 올려 story 경계가 흐려지지 않게 함. */
+        .cnt-brand .story_list > .story { padding:0 0 96px; }
         .cnt-brand .story_list > .story .inner,
         .cnt-brand .story_list > .story:nth-of-type(even) .inner {
             flex-direction:column; width:100%; max-width:none;
-            align-items:stretch; justify-content:flex-start; gap:2.5rem;
+            align-items:stretch; justify-content:flex-start; gap:48px;
         }
         .cnt-brand .story_list .story_img {
             order:1; flex:0 0 auto; width:100%; max-width:none; margin:0;

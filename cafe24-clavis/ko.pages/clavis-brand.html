@@ -264,6 +264,33 @@
     ============================================================= -->
     <style>
     /* ------------------------------------------------------------
+       2560px 이상 : 상단 배너를 화면 전체 폭으로
+
+       스킨에 @media (min-width:2560px) { .cnt-brand .inner { width:1440px } }
+       규칙이 있어 이 구간부터 컨테이너 폭이 고정됩니다. 배너가 그 안에
+       갇히면 양옆에 여백이 생기므로, 뷰포트 기준으로 다시 펼칩니다.
+
+       상위 요소가 이미 전체 폭이면 margin 계산값이 0 이 되어 아무 변화가
+       없고(무해), 어딘가에서 폭이 잘려 있을 때만 실제로 펼쳐집니다.
+       #wrap 에 overflow:hidden 이 걸려 있어 가로 스크롤도 생기지 않습니다.
+    ------------------------------------------------------------ */
+    @media all and (min-width:2560px) {
+        .cnt-brand .hero,
+        .cnt-brand .wide_list,
+        .cnt-brand .wide_list > .wide {
+            width:100vw; max-width:none;
+            margin-left:calc(50% - 50vw);
+            margin-right:calc(50% - 50vw);
+        }
+        .cnt-brand .hero > img,
+        .cnt-brand .hero > a > img,
+        .cnt-brand .wide_list > .wide > img,
+        .cnt-brand .wide_list > .wide > a > img {
+            width:100%; max-width:none; height:auto;
+        }
+    }
+
+    /* ------------------------------------------------------------
        PC (1025 ~ 1440px) : story 2단 배치 가로 넘침 방지
 
        스킨은 story_text 45% + story_img 50% (합 95%) 인데
@@ -283,10 +310,13 @@
     }
 
     @media all and (max-width:1024px) {
+        /* 이미지 <-> 글자 48px, 섹션 간 96px (1:2).
+           내부 간격을 넓히되 섹션 간격을 함께 올려 story 경계가 흐려지지 않게 함. */
+        .cnt-brand .story_list > .story { padding:0 0 96px; }
         .cnt-brand .story_list > .story .inner,
         .cnt-brand .story_list > .story:nth-of-type(even) .inner {
             flex-direction:column; width:100%; max-width:none;
-            align-items:stretch; justify-content:flex-start; gap:2.5rem;
+            align-items:stretch; justify-content:flex-start; gap:48px;
         }
         .cnt-brand .story_list .story_img {
             order:1; flex:0 0 auto; width:100%; max-width:none; margin:0;
