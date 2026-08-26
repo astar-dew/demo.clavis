@@ -1,0 +1,103 @@
+<!--@layout(/layout/basic/layout_list_new.html)-->
+<div module="Product_menupackage">
+    <!--@css(/css/module/product/menupackage.css)-->
+    <!--js(/js/module/product/menucategory.js)-->
+    <div module="product_headcategory">
+        <div class="tle_banner category_img" module="product_headcategory">
+           {$top_image_tag}
+        </div>
+        <div class="path category_img_display">
+            <div class="mall_width">
+              <span>현재 위치</span>
+              <ol>
+                <li><a href="/">홈</a></li>
+                <li class="cate_1 {$disp_cate_1|display}"><a href="{$link_product_list_1}">{$name_1}</a></li>
+                <li class="cate_2 {$disp_cate_2|display}"><a href="{$link_product_list_2}">{$name_2}</a></li>
+                <li class="cate_3 {$disp_cate_3|display}"><a href="{$link_product_list_3}">{$name_3}</a></li>
+                <li class="cate_4 {$disp_cate_4|display}"><a href="{$link_product_list_4}">{$name_4}</a></li>
+              </ol>
+            </div>
+        </div>
+        <div class="titleArea category_img_display">
+            <h2 class="mall_width"><span>{$title_text|striptag}</span></h2>
+        </div>
+    </div>
+    
+    <!-- 중분류 --> 
+    <!--@import(/product/list_menupackage.html)-->
+    
+    <div class="mall_width" style="margin-bottom:20px;">
+        <!--@import(/product/shoppQ/searchContent.html)-->
+    </div>
+</div>
+
+<!--@import(/new/collection-medi-jewelry.html)-->
+
+<!--@css(/css/module/product/listrecommend.css)-->
+<!-- 추천상품 --> 
+<!--@import(/product/list_prd_listrecommend.html)-->
+<!-- 신상품 --> 
+<!--@import(/product/list_prd_listnew.html)-->
+
+<!-- 일반상품 -->
+<div module="product_normalpackage" class="item_normal_display">
+    <!--@css(/css/module/product/listnormal.css)-->
+    <div class="mall_width" module="product_normalmenu">
+        <!--
+        $compare_page = /product/compare.html
+        -->
+        <div class="function">
+            <p class="prdCount">- Total <strong>{$total_count}</strong> Items</p>
+            <div class="click_toggle_area">
+                <input id="prdOrderby" class="click_toggle_input" type="checkbox">
+                <label for="prdOrderby" class="click_toggle_label">상품정렬</label>    
+                <div class="click_toggle_inner">
+                    <ul id="type" module="product_Orderby">
+                        <li><a href="{$param}" {$style}>{$sort_name}</a></li>
+                        <li><a href="{$param}" {$style}>{$sort_name}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ec-base-product mall_width" module="product_listnormal">
+        <div class="clear" /> 
+        <!--
+        $count = 24
+        $moreview = yes
+        $cache = yes
+        $type = moreview
+        ※ 상품진열갯수를 설정할 수 있습니다. 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+        -->
+        
+        <div class="prdList_width grid_display_4">
+           <ul class="prdList inline_css grid_display_inner">
+              <li class="item column_grid"><!--@import(/product/listitem.html)--></li> 
+              <li class="item column_grid"><!--@import(/product/listitem.html)--></li> 
+           </ul>
+        </div>       
+    </div>
+    <div module="product_listmore" class="ec-base-product-more">
+         <a class="btnMore" href="javascript:;" onclick="{$more_action}">more view<span id="more_current_page">{$current_page}</span>/<span id="more_total_page">{$total_page}</span></a>
+    </div>   
+    
+</div>
+<div module="product_normalpaging" class="ec-base-paginate">
+    <a href="{$param_first}" class="first"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_first.gif" alt="첫 페이지" /></a>
+    <a href="{$param_before}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_prev.gif" alt="이전 페이지" /></a>
+    <ol>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <a href="{$param_next}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_next.gif" alt="다음 페이지" /></a>
+    <a href="{$param_last}" class="last"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_last.gif" alt="마지막 페이지" /></a>
+</div>
+
+
+
